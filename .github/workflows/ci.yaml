@@ -21,13 +21,14 @@ jobs:
           rm -rf node_modules package.json package-lock.json
           echo "# [redis.io](https://redis.io/)" > README.md
           ls -la
-      - name: Uoload SUMMARY
+      - name: Upload SUMMARY
         run: |
           git add SUMMARY.md
           git commit -m "Update SUMMARY.md"
           git -c http.extraheader="AUTHORIZATION: basic ${GITHUB_TOKEN}" push origin master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: github.event_name == 'push'  
       - name: gitbook-build
         uses: docker://khs1994/gitbook
       - name: gitbook-deploy
