@@ -27,7 +27,7 @@ jobs:
           git config user.email khs1994@khs1994.com
           git add SUMMARY.md
           git commit -m "Update SUMMARY.md" -s
-          git -c http.extraheader="AUTHORIZATION: basic ${GITHUB_TOKEN}" push origin master
+          git -c http.extraheader="AUTHORIZATION: basic ${GITHUB_TOKEN}" push origin $(git rev-parse --short HEAD):master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: github.event_name == 'push'  
