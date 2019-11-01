@@ -59,8 +59,8 @@ important to understand what the user is really able to do.
 
 By default there is a single user defined, that is called *default*. We
 can use the `ACL LIST` command in order to check the currently active ACLs
-and verify what the configuration of a freshly stared and unconfigured Redis
-instance is:
+and verify what the configuration of a freshly started, defaults-configured
+Redis instance is:
 
     > ACL LIST
     1) "user default on nopass ~* +@all"
@@ -85,7 +85,7 @@ without any explicit `AUTH` call needed.
 The following is the list of the valid ACL rules. Certain rules are just
 single words that are used in order to activate or remove a flag, or to
 perform a given change to the user ACL. Other rules are char prefixes that
-are concatenated with command or cagetories names, or key patterns, and
+are concatenated with command or categories names, or key patterns, and
 so forth.
 
 Enable and disallow users:
@@ -113,6 +113,8 @@ Configure valid passwords for the user:
 
 * `><password>`: Add this password to the list of valid passwords for the user. For example `>mypass` will add "mypass" to the list of valid passwords.  This directive clears the *nopass* flag (see later). Every user can have any number of passwords.
 * `<<password>`: Remove this password from the list of valid passwords. Emits an error in case the password you are trying to remove is actually not set.
+* `#<hash>`: Add this SHA-256 hash value to the list of valid passwords for the user. This hash value will be compared to the hash of a password entered for an ACL user. This allows users to store hashes in the `acl.conf` file rather than storing cleartext passwords. Only SHA-256 hash values are accepted as the password hash must be 64 characters and only container lowercase hexadecimal characters.
+* `!<hash>`: Remove this hash value from from the list of valid passwords. This is useful when you do not know the password specified by the hash value but would like to remove the password from the user.
 * `nopass`: All the set passwords of the user are removed, and the user is flagged as requiring no password: it means that every password will work against this user. If this directive is used for the default user, every new connection will be immediately authenticated with the default user without any explicit AUTH command required. Note that the *resetpass* directive will clear this condition.
 * `resetpass`: Flush the list of allowed passwords. Moreover removes the *nopass* status. After *resetpass* the user has no associated passwords and there is no way to authenticate without adding some password (or setting it as *nopass* later).
 
@@ -185,7 +187,7 @@ computers to read, while `ACL LIST` is more biased towards humans.
     1) "flags"
     2) 1) "on"
     3) "passwords"
-    4) 1) "p1pp0"
+    4) 1) "2d9c75..."
     5) "commands"
     6) "-@all +get"
     7) "keys"
@@ -195,7 +197,7 @@ The `ACL GETUSER` returns a field-value array describing the user in more parsab
 
     > ACL GETUSER alice
     1# "flags" => 1~ "on"
-    2# "passwords" => 1) "p1pp0"
+    2# "passwords" => 1) "2d9c75..."
     3# "commands" => "-@all +get"
     4# "keys" => 1) "cached:*"
 
@@ -206,7 +208,7 @@ Using another `ACL SETUSER` command (from a different user, because alice cannot
     > ACL SETUSER alice ~objects:* ~items:* ~public:*
     OK
     > ACL LIST
-    1) "user alice on >p1pp0 ~cached:* ~objects:* ~items:* ~public:* -@all +get"
+    1) "user alice on >2d9c75... ~cached:* ~objects:* ~items:* ~public:* -@all +get"
     2) "user default on nopass ~* +@all"
 
 The user representation in memory is now as we expect it to be.
@@ -228,7 +230,7 @@ the following sequence:
     > ACL SETUSER myuser +get
     OK
 
-Will result into myuser to be able to call both `GET` and `SET`:
+Will result in myuser being able to call both `GET` and `SET`:
 
     > ACL LIST
     1) "user default on nopass ~* +@all"
@@ -239,11 +241,11 @@ Will result into myuser to be able to call both `GET` and `SET`:
 Setting users ACLs by specifying all the commands one after the other is
 really annoying, so instead we do things like that:
 
-    > ACL SETUSER antirez on +@all -@dangerous >somepassword ~*
+    > ACL SETUSER antirez on +@all -@dangerous >42a979... ~*
 
 By saying +@all and -@dangerous we included all the commands and later removed
 all the commands that are tagged as dangerous inside the Redis command table.
-Please note that command categories **never include modules commnads** with
+Please note that command categories **never include modules commands** with
 the exception of +@all. If you say +@all all the commands can be executed by
 the user, even future commands loaded via the modules system. However if you
 use the ACL rule +@readonly or any other, the modules commands are always
@@ -311,7 +313,7 @@ dangerous and non dangerous operations. Many deployments may not be happy to
 provide the ability to execute `CLIENT KILL` to non admin-level users, but may
 still want them to be able to run `CLIENT SETNAME`.
 
-_Note: probably the new RESP3 `HELLO` command will provide a SETNAME option soon, but this is still a good exmaple anyway._
+_Note: the new RESP3 `HELLO` command will probably provide a SETNAME option soon, but this is still a good example anyway._
 
 In such case I could alter the ACL of a user in the following way:
 
@@ -340,12 +342,98 @@ other commands are called.
 In the previous section it was observed how it is possible to define commands
 ACLs based on adding/removing single commands.
 
+## How passwords are stored internally
+
+Redis internally stores passwords hashed with SHA256, if you set a password
+and check the output of `ACL LIST` or `GETUSER` you'll see a long hex
+string that looks pseudo random. Here is an example, because in the previous
+examples, for the sake of brevity, the long hex string was trimmed:
+
+    > ACL GETUSER default
+    1) "flags"
+    2) 1) "on"
+       2) "allkeys"
+       3) "allcommands"
+    3) "passwords"
+    4) 1) "2d9c75273d72b32df726fb545c8a4edc719f0a95a6fd993950b10c474ad9c927"
+    5) "commands"
+    6) "+@all"
+    7) "keys"
+    8) 1) "*"
+
+Also the old command `CONFIG GET requirepass` will, starting with Redis 6,
+no longer return the clear text password, but instead the hashed password.
+
+Using SHA256 provides the ability to avoid storing the password in clear text
+while still allowing for a very fast `AUTH` command, which is a very important
+feature of Redis and is coherent with what clients expect from Redis.
+
+However ACL *passwords* are not really passwords: they are shared secrets
+between the server and the client, because in that case the password is
+not an authentication token used by a human being. For instance:
+
+    * There are no length limits, the password will just be memorized in some client software, there is no human that need to recall a password in this context.
+    * The ACL password does not protect any other thing: it will never be, for instance, the password for some email account.
+    * Often when you are able to access the hashed password itself, by having full access to the Redis commands of a given server, or corrupting the system itself, you have already access to what such password is protecting: the Redis instance stability and the data it contains.
+
+For this reason to slowdown the password authentication in order to use an
+algorithm that uses time and space, in order to make password cracking hard,
+is a very poor choice. What we suggest instead is to generate very strong
+password, so that even having the hash nobody will be able to crack it using a
+dictionary nor a brute force attack. For this reason there is a special ACL
+command that generates passwords using the system cryptographic pseudorandom
+generator:
+
+    > ACL GENPASS
+    "0e8ad12c1962355a3eb35e0ca686343b"
+
+The command outputs a 16 bytes (128 bit) pseudorandom string converted to a
+32 byte alphanumerical string. This is long enough to avoid attacks and short
+enough to be easy to manage, cut & paste, store and so forth. This is what
+you should use in order to generate Redis passwords.
+
 ## Using an external ACL file
+
+There are two ways in order to store users inside the Redis configuration.
+
+    1. Users can be specified directly inside the `redis.conf` file.
+    2. It is possible to specify an external ACL file.
+
+The two methods are *mutually incompatible*, Redis will ask you to use one
+or the other. To specify users inside `redis.conf` is a very simple way
+good for simple use cases. When there are multiple users to define, in a
+complex environment, we strongly suggest you to use the ACL file.
+
+The format used inside `redis.conf` and in the external ACL file is exactly
+the same, so it is trivial to switch from one to the other, and is
+the following:
+
+    user <username> ... acl rules ...
+
+For instance:
+
+    user worker +@list +@connection ~jobs:* on >ffa9203c493aa99
+
+When you want to use an external ACL file, you are required to specify
+the configuration directive called `aclfile`, like this:
+
+    aclfile /etc/redis/users.acl
+
+When you are just specifying a few users directly inside the `redis.conf`
+file, you can use `CONFIG REWRITE` in order to store the new user configuration
+inside the file by rewriting it.
+
+The external ACL file however is more powerful. You can do the following:
+
+    * Use `ACL LOAD` if you modified the ACL file manually and you want Redis to reload the new configuration. Note that this command is able to load the file *only if all the users are correctly specified*, otherwise an error is reported to the user, and the old configuration will remain valid.
+    * USE `ACL SAVE` in order to save the current ACL configuration to the ACL file.
+
+Note that `CONFIG REWRITE` does not also trigger `ACL SAVE`: when you use
+an ACL file the configuration and the ACLs are handled separately.
 
 ## TODO list for this document
 
 * Make sure to specify that modules commands are ignored when adding/removing categories.
 * Document cost of keys matching with some benchmark.
 * Document how +@all also includes module commands and every future command.
-* Document how ACL SAVE is not included in CONFIG REWRITE.
 * Document backward compatibility with requirepass and single argument AUTH.
