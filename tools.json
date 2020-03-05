@@ -78,6 +78,13 @@
     "authors": ["srithedabbler"]
   },
   {
+    "name": "Redily",
+    "language": "Javascript",
+    "url": "https://www.redily.app",
+    "description": "An intuitive, cross-platform Redis GUI Client built in Electron.",
+    "authors": ["stefano_arnone"]
+  },
+  {
     "name": "Rdb-parser",
     "language": "Javascript",
     "repository": "https://github.com/pconstr/rdb-parser",
@@ -686,5 +693,35 @@
     "description": "Start a REST-like API service for your Redis database, without writing a single line of code.",
     "url": "https://github.com/XD-DENG/rediseen",
     "authors": ["XiaodongDENG1"]
+  },
+
+  {
+    "name": "redis-stats",
+    "language": "PHP",
+    "repository": "https://github.com/tessus/redis-stats",
+    "description": "A lightweight dashboard to show statistics about your Redis server. Flushing databases is available when set in config.",
+    "authors": []
+  },
+   {
+    "name": "Lua Redis Admin",
+    "language": "Lua",
+    "repository": "https://github.com/lifeblood/lua-redis-admin",
+    "description": "Redis client tool, Redis web client, Redis web UI, openresty lor Lua ",
+    "authors": ["nbdanny"]
+  },
+   {
+    "name": "RedisWebManager",
+    "language": "Ruby",
+    "repository": "https://github.com/OpenGems/redis_web_manager",
+    "description": "Web interface that allows you to manage easily your Redis instance (see keys, memory used, connected client, etc...).",
+    "authors": []
+  },
+
+  {
+    "name": "Reliable Message Delivery",
+    "language": "C#",
+    "repository": "https://github.com/Oriflame/RedisMessaging.ReliableDelivery",
+    "description": "This library provides reliability to delivering messages via Redis. By design Redis pub/sub message delivery is not reliable so it can happen that some messages can be lost due to network issues or they can be delivered more than once in case of Redis replication failure.",
+    "authors": ["PetrKozelek" , "OriflameSoftware"]
   }
 ]

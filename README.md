@@ -1,125 +1,37 @@
-# Redis documentation
+Introduction to Redis
+===
 
-## Clients
+Redis is an open source (BSD licensed), in-memory **data structure store**, used as a database, cache and message broker. It supports data structures such as
+[strings](/topics/data-types-intro#strings), [hashes](/topics/data-types-intro#hashes), [lists](/topics/data-types-intro#lists), [sets](/topics/data-types-intro#sets), [sorted sets](/topics/data-types-intro#sorted-sets) with range queries, [bitmaps](/topics/data-types-intro#bitmaps), [hyperloglogs](/topics/data-types-intro#hyperloglogs), [geospatial indexes](/commands/geoadd) with radius queries and [streams](/topics/streams-intro). Redis has built-in [replication](/topics/replication), [Lua scripting](/commands/eval), [LRU eviction](/topics/lru-cache), [transactions](/topics/transactions) and different levels of [on-disk persistence](/topics/persistence), and provides high availability via [Redis Sentinel](/topics/sentinel) and automatic partitioning with [Redis Cluster](/topics/cluster-tutorial).
 
-All clients are listed in the `clients.json` file.
-Each key in the JSON object represents a single client library.
-For example:
+You can run **atomic operations**
+on these types, like [appending to a string](/commands/append);
+[incrementing the value in a hash](/commands/hincrby); [pushing an element to a
+list](/commands/lpush); [computing set intersection](/commands/sinter),
+[union](/commands/sunion) and [difference](/commands/sdiff);
+or [getting the member with highest ranking in a sorted
+set](/commands/zrangebyscore).
 
-```
-"Rediska": {
+In order to achieve its outstanding performance, Redis works with an
+**in-memory dataset**. Depending on your use case, you can persist it either
+by [dumping the dataset to disk](/topics/persistence#snapshotting)
+every once in a while, or by [appending each command to a
+log](/topics/persistence#append-only-file). Persistence can be optionally
+disabled, if you just need a feature-rich, networked, in-memory cache.
 
-  # A programming language should be specified.
-  "language": "PHP",
+Redis also supports trivial-to-setup [master-slave asynchronous replication](/topics/replication), with very fast non-blocking first synchronization, auto-reconnection with partial resynchronization on net split.
 
-  # If the project has a website of its own, put it here.
-  # Otherwise, lose the "url" key.
-  "url": "http://rediska.geometria-lab.net",
+Other features include:
 
-  # A URL pointing to the repository where users can
-  # find the code.
-  "repository": "http://github.com/Shumkov/Rediska",
+* [Transactions](/topics/transactions)
+* [Pub/Sub](/topics/pubsub)
+* [Lua scripting](/commands/eval)
+* [Keys with a limited time-to-live](/commands/expire)
+* [LRU eviction of keys](/topics/lru-cache)
+* [Automatic failover](/topics/sentinel)
 
-  # A short, free-text description of the client.
-  # Should be objective. The goal is to help users
-  # choose the correct client they need.
-  "description": "A PHP client",
+You can use Redis from [most programming languages](/clients) out there.
 
-  # An array of Twitter usernames for the authors
-  # and maintainers of the library.
-  "authors": ["shumkov"]
-
-}
-```
-
-## Commands
-
-Redis commands are described in the `commands.json` file.
-
-For each command there's a Markdown file with a complete, human-readable
-description.
-We process this Markdown to provide a better experience, so some things to take
-into account:
-
-*   Inside text, all commands should be written in all caps, in between
-    backticks.
-    For example: `INCR`.
-
-*   You can use some magic keywords to name common elements in Redis.
-    For example: `@multi-bulk-reply`.
-    These keywords will get expanded and auto-linked to relevant parts of the
-    documentation.
-
-There should be at least two predefined sections: description and return value.
-The return value section is marked using the @return keyword:
-
-```
-Returns all keys matching the given pattern.
-
-@return
-
-@multi-bulk-reply: all the keys that matched the pattern.
-```
-
-## Styling guidelines
-
-Please use the following formatting rules:
-
-* Wrap lines to 80 characters.
-* Start every sentence on a new line.
-
-Luckily, this repository comes with an automated Markdown formatter.
-To only reformat the files you have modified, first stage them using `git add`
-(this makes sure that your changes won't be lost in case of an error), then run
-the formatter:
-
-```
-$ rake format:cached
-```
-
-The formatter has the following dependencies:
-
-* Redcarpet
-* Nokogiri
-* The `par` tool
-
-Installation of the Ruby gems:
-
-```
-gem install redcarpet nokogiri
-```
-
-Installation of par (OSX):
-
-```
-brew install par
-```
-
-Installation of par (Ubuntu):
-
-```
-sudo apt-get install par
-```
-
-## Checking your work
-
-You should check your changes using Make:
-
-```
-$ make
-```
-
-This will make sure that JSON and Markdown files compile and that all
-text files have no typos.
-
-You need to install a few Ruby gems and [Aspell][aspell] to run these checks.
-The gems are listed in the `.gems` file. Install them with the
-following command:
-
-```
-$ gem install $(sed -e 's/ -v /:/' .gems)
-```
-
-The spell checking exceptions should be added to `./wordlist`.
-
-[aspell]: http://aspell.net/
+Redis is written in **ANSI C** and works in most POSIX systems like Linux,
+\*BSD, OS X without external dependencies. Linux and OS X are the two operating systems where Redis is developed and tested the most, and we **recommend using Linux for deploying**. Redis may work in Solaris-derived systems like SmartOS, but the support is *best effort*.
+There is no official support for Windows builds.

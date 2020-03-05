@@ -376,7 +376,7 @@
     "arguments": [
       {
         "name": "client-id",
-        "type": "string"
+        "type": "integer"
       },
       {
         "name": "unblock-type",
@@ -1015,7 +1015,13 @@
       },
       {
         "name": "unit",
-        "type": "string",
+        "type": "enum",
+        "enum": [
+          "m",
+          "km",
+          "ft",
+          "mi"
+        ],
         "optional": true
       }
     ],
@@ -2519,6 +2525,14 @@
           "XX"
         ],
         "optional": true
+      },
+      {
+        "name": "keepttl",
+        "type": "enum",
+        "enum": [
+          "KEEPTTL"
+        ],
+        "optional": true
       }
     ],
     "since": "1.0.0",
@@ -2538,7 +2552,7 @@
       },
       {
         "name": "value",
-        "type": "string"
+        "type": "integer"
       }
     ],
     "since": "2.2.0",
@@ -2868,12 +2882,8 @@
     "complexity": "O(N) where N is the number of channels to subscribe to.",
     "arguments": [
       {
-        "name": [
-          "channel"
-        ],
-        "type": [
-          "string"
-        ],
+        "name": "channel",
+        "type": "string",
         "multiple": true
       }
     ],
@@ -2914,11 +2924,11 @@
     "summary": "Swaps two Redis databases",
     "arguments": [
       {
-        "name": "index",
+        "name": "index1",
         "type": "integer"
       },
       {
-        "name": "index",
+        "name": "index2",
         "type": "integer"
       }
     ],

@@ -267,7 +267,6 @@
   * [Internals Sds](topics/internals-sds.md)
   * [Internals Vm](topics/internals-vm.md)
   * [Internals](topics/internals.md)
-  * [Introduction](topics/introduction.md)
   * [Latency Monitor](topics/latency-monitor.md)
   * [Latency](topics/latency.md)
   * [Ldb](topics/ldb.md)

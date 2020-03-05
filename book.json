@@ -10,7 +10,7 @@
     "-sharing",
     "-highlight",
     "-livereload",
-    "-prism"
+    "prism"
   ],
   "pluginsConfig": {
     "prism": {

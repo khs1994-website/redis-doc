@@ -193,6 +193,15 @@
     "description": "A Redis client focused on streaming, with support for a print-like API, pipelining, Pub/Sub, and connection pooling.",
     "authors": ["stephensearles"]
   },
+  
+  {
+    "name": "go-resp3",
+    "language": "Go",
+    "repository": "https://github.com/d024441/go-resp3",
+    "description": "A Redis Go client implementation based on the Redis RESP3 protocol.",
+    "authors": [],
+    "active": true
+  },
 
   {
     "name": "hedis",
@@ -803,8 +812,9 @@
   {
     "name": "tedis",
     "language": "Node.js",
-    "repository": "https://github.com/myour-cc/tedis",
-    "description": "Tedis is a redis client developed for nodejs platform. Its name was inspired by the Java platform jedis and the development language was typescript. Therefore, Tedis is named as Tedis",
+    "repository": "https://github.com/silkjs/tedis",
+    "url": "https://tedis.silkjs.org",
+    "description": "Tedis is a redis client developed for Node.js . Its name was inspired by the Jedis and TypeScript.",
     "authors": ["dasoncheng"],
     "recommended": true,
     "active": true
@@ -927,6 +937,15 @@
     "language": "C++",
     "repository": "https://github.com/mrpi/redis-cplusplus-client",
     "authors": []
+  },
+
+  {
+    "name": "aedis",
+    "language": "C++",
+    "repository": "https://github.com/mzimbres/aedis",
+    "description": "An async redis client designed for simplicity and reliability.",
+    "authors": ["mzimbres"],
+    "active": true
   },
 
   {
@@ -1751,6 +1770,15 @@
     "language": "Python",
     "repository": "https://github.com/cf020031308/redisio",
     "description": "A tiny and fast redis client for script boys.",
+    "authors": [],
+    "active": true
+  },
+
+  {
+    "name": "viredis",
+    "language": "Java",
+    "repository": "https://github.com/virendradhankar/viredis",
+    "description": "A simple and small redis client for java.",
     "authors": [],
     "active": true
   }

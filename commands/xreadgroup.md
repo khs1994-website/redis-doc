@@ -53,7 +53,7 @@ The ID to specify in the **STREAMS** option when using `XREADGROUP` can
 be one of the following two:
 
 * The special `>` ID, which means that the consumer want to receive only messages that were *never delivered to any other consumer*. It just means, give me new messages.
-* Any other ID, that is, 0 or any other valid ID or incomplete ID (just the millisecond time part), will have the effect of returning entries that are pending for the consumer sending the command with IDs equal or greater to the one provided. So basically if the ID is not `>`, then the command will just let the client access its pending entries: messages delivered to it, but not yet acknowledged. Note that in this case, both `BLOCK` and `NOACK` are ignored.
+* Any other ID, that is, 0 or any other valid ID or incomplete ID (just the millisecond time part), will have the effect of returning entries that are pending for the consumer sending the command with IDs greater than the one provided. So basically if the ID is not `>`, then the command will just let the client access its pending entries: messages delivered to it, but not yet acknowledged. Note that in this case, both `BLOCK` and `NOACK` are ignored.
 
 Like `XREAD` the `XREADGROUP` command can be used in a blocking way. There
 are no differences in this regard.
@@ -95,7 +95,7 @@ not complete, because it does not handle recovering after a crash. What
 will happen if we crash in the middle of processing messages, is that our
 messages will remain in the pending entries list, so we can access our
 history by giving `XREADGROUP` initially an ID of 0, and performing the same
-loop. Once providing and ID of 0 the reply is an empty set of messages, we
+loop. Once providing an ID of 0 the reply is an empty set of messages, we
 know that we processed and acknowledged all the pending messages: we
 can start to use `>` as ID, in order to get the new messages and rejoin the
 consumers that are processing new things.

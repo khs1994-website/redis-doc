@@ -1,12 +1,12 @@
 Redis Modules: an introduction to the API
 ===
 
-The modules documentation is composed of the following files:
+The modules documentation is composed of the following pages:
 
-* `INTRO.md` (this file). An overview about Redis Modules system and API. It's a good idea to start your reading here.
-* `API.md` is generated from module.c top comments of RedisModule functions. It is a good reference in order to understand how each function works.
-* `TYPES.md` covers the implementation of native data types into modules.
-* `BLOCK.md` shows how to write blocking commands that will not reply immediately, but will block the client, without blocking the Redis server, and will provide a reply whenever will be possible.
+* Introduction to Redis modules (this file). An overview about Redis Modules system and API. It's a good idea to start your reading here.
+* [Implementing native data types](/topics/modules-native-types) covers the implementation of native data types into modules.
+* [Blocking operations](/topics/modules-blocking-ops) shows how to write blocking commands that will not reply immediately, but will block the client, without blocking the Redis server, and will provide a reply whenever will be possible.
+* [Redis modules API reference](/topics/modules-api-ref) is generated from module.c top comments of RedisModule functions. It is a good reference in order to understand how each function works.
 
 Redis modules make possible to extend Redis functionality using external
 modules, implementing new Redis commands at a speed and with features
@@ -71,7 +71,8 @@ simple module that implements a command that outputs a random number.
             == REDISMODULE_ERR) return REDISMODULE_ERR;
 
         if (RedisModule_CreateCommand(ctx,"helloworld.rand",
-            HelloworldRand_RedisCommand) == REDISMODULE_ERR)
+            HelloworldRand_RedisCommand, "fast random",
+            0, 0, 0) == REDISMODULE_ERR)
             return REDISMODULE_ERR;
 
         return REDISMODULE_OK;
@@ -117,17 +118,19 @@ otherwise the module will segfault and the Redis instance will crash.
 The second function called, `RedisModule_CreateCommand`, is used in order
 to register commands into the Redis core. The following is the prototype:
 
-    int RedisModule_CreateCommand(RedisModuleCtx *ctx, const char *cmdname,
-                                  RedisModuleCmdFunc cmdfunc);
+    int RedisModule_CreateCommand(RedisModuleCtx *ctx, const char *name,
+                                  RedisModuleCmdFunc cmdfunc, const char *strflags,
+                                  int firstkey, int lastkey, int keystep);
 
 As you can see, most Redis modules API calls all take as first argument
 the `context` of the module, so that they have a reference to the module
 calling it, to the command and client executing a given command, and so forth.
 
-To create a new command, the above function needs the context, the command
-name, and the function pointer of the function implementing the command,
-which must have the following prototype:
+To create a new command, the above function needs the context, the command's
+name, a pointer to the function implementing the command, the command's flags
+and the positions of key names in the command's arguments.
 
+The function that implements the command must have the following prototype:
 
     int mycommand(RedisModuleCtx *ctx, RedisModuleString **argv, int argc);
 
