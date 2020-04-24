@@ -1,11 +1,16 @@
 # [Redis 英文文档](https://github.com/antirez/redis-doc)
 
 - Commands
+  * [Acl Cat](commands/acl-cat.md)
+  * [Acl Deluser](commands/acl-deluser.md)
+  * [Acl Genpass](commands/acl-genpass.md)
   * [Acl List](commands/acl-list.md)
   * [Acl Load](commands/acl-load.md)
+  * [Acl Log](commands/acl-log.md)
   * [Acl Save](commands/acl-save.md)
   * [Acl Setuser](commands/acl-setuser.md)
   * [Acl Users](commands/acl-users.md)
+  * [Acl Whoami](commands/acl-whoami.md)
   * [Append](commands/append.md)
   * [Auth](commands/auth.md)
   * [Bgrewriteaof](commands/bgrewriteaof.md)
