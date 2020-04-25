@@ -203,6 +203,7 @@
   * [Srandmember](commands/srandmember.md)
   * [Srem](commands/srem.md)
   * [Sscan](commands/sscan.md)
+  * [Stralgo](commands/stralgo.md)
   * [Strlen](commands/strlen.md)
   * [Subscribe](commands/subscribe.md)
   * [Sunion](commands/sunion.md)
