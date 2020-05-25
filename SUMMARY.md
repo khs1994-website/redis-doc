@@ -4,6 +4,8 @@
   * [Acl Cat](commands/acl-cat.md)
   * [Acl Deluser](commands/acl-deluser.md)
   * [Acl Genpass](commands/acl-genpass.md)
+  * [Acl Getuser](commands/acl-getuser.md)
+  * [Acl Help](commands/acl-help.md)
   * [Acl List](commands/acl-list.md)
   * [Acl Load](commands/acl-load.md)
   * [Acl Log](commands/acl-log.md)
