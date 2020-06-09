@@ -433,6 +433,12 @@
         "optional": true
       },
       {
+        "command": "USER",
+        "name": "username",
+        "type": "string",
+        "optional": true
+      },
+      {
         "command": "ADDR",
         "name": "ip:port",
         "type": "string",
@@ -4480,7 +4486,8 @@
       {
         "name": "event",
         "type": "string",
-        "optional": true
+        "optional": true,
+        "multiple": true
       }
     ],
     "since": "2.8.13",
