@@ -129,6 +129,7 @@
   * [Llen](commands/llen.md)
   * [Lolwut](commands/lolwut.md)
   * [Lpop](commands/lpop.md)
+  * [Lpos](commands/lpos.md)
   * [Lpush](commands/lpush.md)
   * [Lpushx](commands/lpushx.md)
   * [Lrange](commands/lrange.md)
