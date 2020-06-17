@@ -312,7 +312,6 @@
   * [Replication](topics/replication.md)
   * [Security](topics/security.md)
   * [Sentinel Clients](topics/sentinel-clients.md)
-  * [Sentinel Spec](topics/sentinel-spec.md)
   * [Sentinel](topics/sentinel.md)
   * [Signals](topics/signals.md)
   * [Sponsors](topics/sponsors.md)
