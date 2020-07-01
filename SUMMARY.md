@@ -279,6 +279,7 @@
   * [Encryption](topics/encryption.md)
   * [Faq](topics/faq.md)
   * [Gopher](topics/gopher.md)
+  * [Governance](topics/governance.md)
   * [Indexes](topics/indexes.md)
   * [Internals Eventlib](topics/internals-eventlib.md)
   * [Internals Rediseventlib](topics/internals-rediseventlib.md)
