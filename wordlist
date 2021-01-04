@@ -187,6 +187,7 @@ cli
 cmsgpack
 codename
 commandstats
+errorstats
 conf
 config
 configEpoch
@@ -247,6 +248,7 @@ incrementing
 indexable
 indices
 infeasible
+ing
 init
 inline
 internet
@@ -421,3 +423,7 @@ wildcards
 ziplist
 ziplists
 zset
+GeoHash
+WITHSCORES
+deauthenticates
+reauthenticate

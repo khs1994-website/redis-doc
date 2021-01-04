@@ -15,6 +15,7 @@ The optional parameter can be used to select a specific section of information:
 *   `modules`: Modules section
 *   `keyspace`: Database related statistics
 *   `modules`: Module related sections
+*   `errorstats`: Redis error statistics
 
 It can also take the following values:
 
@@ -61,6 +62,7 @@ Here is the meaning of all fields in the **server** section:
 *   `run_id`: Random value identifying the Redis server (to be used by Sentinel
      and Cluster)
 *   `tcp_port`: TCP/IP listen port
+*   `server_time_in_usec`: Epoch-based system time with microsecond precision
 *   `uptime_in_seconds`: Number of seconds since Redis server start
 *   `uptime_in_days`: Same value expressed in days
 *   `hz`: The server's current frequency setting
@@ -73,6 +75,11 @@ Here is the meaning of all fields in the **clients** section:
 
 *   `connected_clients`: Number of client connections (excluding connections
      from replicas)
+*   `cluster_connections`: An approximation of the number of sockets used by the
+     cluster's bus
+*   `maxclients`: The value of the `maxclients` configuration directive. This is
+    the upper limit for the sum of `connected_clients`, `connected_slaves` and
+    `cluster_connections`.
 *   `client_longest_output_list`: Longest output list among current client
      connections
 *   `client_biggest_input_buf`: Biggest input buffer among current client
@@ -195,6 +202,8 @@ If a load operation is on-going, these additional fields will be added:
 *   `loading_start_time`: Epoch-based timestamp of the start of the load
      operation
 *   `loading_total_bytes`: Total file size
+*   `loading_rdb_used_mem`: The memory usage of the server that had generated
+    the RDB file at the time of the file's creation
 *   `loading_loaded_bytes`: Number of bytes already loaded
 *   `loading_loaded_perc`: Same value expressed as a percentage
 *   `loading_eta_seconds`: ETA in seconds for the load to be complete
@@ -226,6 +235,7 @@ Here is the meaning of all fields in the **stats** section:
 *   `pubsub_patterns`: Global number of pub/sub pattern with client
      subscriptions
 *   `latest_fork_usec`: Duration of the latest fork operation in microseconds
+*   `total_forks`: Total number of fork operations since the server start
 *   `migrate_cached_sockets`: The number of sockets open for `MIGRATE` purposes
 *   `slave_expires_tracked_keys`: The number of keys tracked for expiry purposes
      (applicable only to writable replicas)
@@ -243,6 +253,9 @@ Here is the meaning of all fields in the **stats** section:
     (only applicable for broadcast mode)
 *   `unexpected_error_replies`: Number of unexpected error replies, that are types
     of errors from an AOF load or replication
+*   `total_error_replies`: Total number of issued error replies, that is the sum of
+    rejected commands (errors prior command execution) and
+    failed commands (errors within the command execution)
 *    `total_reads_processed`: Total number of read events processed
 *    `total_writes_processed`: Total number of write events processed
 *    `io_threaded_reads_processed`: Number of read events processed by the main and I/O threads
@@ -277,7 +290,15 @@ If the instance is a replica, these additional fields are provided:
 
 If a SYNC operation is on-going, these additional fields are provided:
 
+*   `master_sync_total_bytes`: Total number of bytes that need to be 
+    transferred. this may be 0 when the size is unknown (for example, when
+    the `repl-diskless-sync` configuration directive is used)
+*   `master_sync_read_bytes`: Number of bytes already transferred
 *   `master_sync_left_bytes`: Number of bytes left before syncing is complete
+    (may be negative when `master_sync_total_bytes` is 0)
+*   `master_sync_perc`: The percentage `master_sync_read_bytes` from 
+    `master_sync_total_bytes`, or an approximation that uses
+    `loading_rdb_used_mem` when `master_sync_total_bytes` is 0
 *   `master_sync_last_io_seconds_ago`: Number of seconds since last transfer I/O
      during a SYNC operation
 
@@ -299,18 +320,30 @@ For each replica, the following line is added:
 
 Here is the meaning of all fields in the **cpu** section:
 
-*   `used_cpu_sys`: System CPU consumed by the Redis server
-*   `used_cpu_user`:User CPU consumed by the Redis server
+*   `used_cpu_sys`: System CPU consumed by the Redis server, which is the sum of system CPU consumed by all threads of the server process (main thread and background threads)
+*   `used_cpu_user`: User CPU consumed by the Redis server, which is the sum of user CPU consumed by all threads of the server process (main thread and background threads)
 *   `used_cpu_sys_children`: System CPU consumed by the background processes
 *   `used_cpu_user_children`: User CPU consumed by the background processes
+*   `used_cpu_sys_main_thread`: System CPU consumed by the Redis server main thread
+*   `used_cpu_user_main_thread`: User CPU consumed by the Redis server main thread
 
 The **commandstats** section provides statistics based on the command type,
-including the number of calls, the total CPU time consumed by these commands,
-and the average CPU consumed per command execution.
+ including the number of calls that reached command execution (not rejected),
+ the total CPU time consumed by these commands, the average CPU consumed
+ per command execution, the number of rejected calls
+ (errors prior command execution), and the number of failed calls
+ (errors within the command execution).
 
 For each command type, the following line is added:
 
-*   `cmdstat_XXX`: `calls=XXX,usec=XXX,usec_per_call=XXX`
+*   `cmdstat_XXX`: `calls=XXX,usec=XXX,usec_per_call=XXX,rejected_calls=XXX,failed_calls=XXX`
+
+The **errorstats** section enables keeping track of the different errors that occurred within Redis, 
+ based upon the reply error prefix ( The first word after the "-", up to the first space. Example: `ERR` ).
+
+For each error type, the following line is added:
+
+*   `errorstat_XXX`: `count=XXX`
 
 The **cluster** section currently only contains a unique field:
 
