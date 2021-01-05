@@ -224,7 +224,7 @@
     "language": "Haskell",
     "url": "http://hackage.haskell.org/package/hedis",
     "repository": "https://github.com/informatikr/hedis",
-    "description": "Supports the complete command set. Commands are automatically pipelined for high performance.",
+    "description": "Supports the complete command set and cluster. Commands are automatically pipelined for high performance.",
     "authors": [],
     "recommended": true,
     "active": true
@@ -885,6 +885,15 @@
     "description": "Tedis is a redis client developed for Node.js . Its name was inspired by the Jedis and TypeScript.",
     "authors": ["dasoncheng"],
     "recommended": true,
+    "active": true
+  },
+  
+  {
+    "name": "@camaro/redis",
+    "language": "Node.js",
+    "repository": "https://github.com/camarojs/redis",
+    "description": "Redis client for node, support resp3.",
+    "authors": [],
     "active": true
   },
 
