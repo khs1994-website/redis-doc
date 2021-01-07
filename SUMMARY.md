@@ -237,6 +237,7 @@
   * [Watch](commands/watch.md)
   * [Xack](commands/xack.md)
   * [Xadd](commands/xadd.md)
+  * [Xautoclaim](commands/xautoclaim.md)
   * [Xclaim](commands/xclaim.md)
   * [Xdel](commands/xdel.md)
   * [Xgroup](commands/xgroup.md)
