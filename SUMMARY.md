@@ -264,6 +264,7 @@
   * [Zrange](commands/zrange.md)
   * [Zrangebylex](commands/zrangebylex.md)
   * [Zrangebyscore](commands/zrangebyscore.md)
+  * [Zrangestore](commands/zrangestore.md)
   * [Zrank](commands/zrank.md)
   * [Zrem](commands/zrem.md)
   * [Zremrangebylex](commands/zremrangebylex.md)
