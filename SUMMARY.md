@@ -40,6 +40,7 @@
   * [Client Tracking](commands/client-tracking.md)
   * [Client Trackinginfo](commands/client-trackinginfo.md)
   * [Client Unblock](commands/client-unblock.md)
+  * [Client Unpause](commands/client-unpause.md)
   * [Cluster Addslots](commands/cluster-addslots.md)
   * [Cluster Bumpepoch](commands/cluster-bumpepoch.md)
   * [Cluster Count Failure Reports](commands/cluster-count-failure-reports.md)
