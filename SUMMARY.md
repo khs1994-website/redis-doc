@@ -101,6 +101,8 @@
   * [Geosearchstore](commands/geosearchstore.md)
   * [Get](commands/get.md)
   * [Getbit](commands/getbit.md)
+  * [Getdel](commands/getdel.md)
+  * [Getex](commands/getex.md)
   * [Getrange](commands/getrange.md)
   * [Getset](commands/getset.md)
   * [Hdel](commands/hdel.md)
