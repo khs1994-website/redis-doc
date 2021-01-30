@@ -1240,12 +1240,14 @@
   },
   "FLUSHALL": {
     "summary": "Remove all keys from all databases",
+    "complexity": "O(N) where N is the total number of keys in all databases",
     "arguments": [
       {
         "name": "async",
         "type": "enum",
         "enum": [
-          "ASYNC"
+          "ASYNC",
+          "SYNC"
         ],
         "optional": true
       }
@@ -1255,12 +1257,14 @@
   },
   "FLUSHDB": {
     "summary": "Remove all keys from the current database",
+    "complexity": "O(N) where N is the number of keys in the selected database",
     "arguments": [
       {
         "name": "async",
         "type": "enum",
         "enum": [
-          "ASYNC"
+          "ASYNC",
+          "SYNC"
         ],
         "optional": true
       }
@@ -2186,6 +2190,37 @@
       }
     ],
     "since": "2.0.0",
+    "group": "hash"
+  },
+  "HRANDFIELD": {
+    "summary": "Get one or multiple random fields from a hash",
+    "complexity": "O(N) where N is the number of fields returned",
+    "arguments": [
+      {
+        "name": "key",
+        "type": "key"
+      },
+      {
+        "name": "options",
+        "type": "block",
+        "block": [
+          {
+            "name": "count",
+            "type": "integer"
+          },
+          {
+            "name": "withvalues",
+            "type": "enum",
+            "enum": [
+              "WITHVALUES"
+            ],
+            "optional": true
+          }    
+        ],
+        "optional": true
+      }
+    ],
+    "since": "6.2.0",
     "group": "hash"
   },
   "HSTRLEN": {
@@ -3242,6 +3277,17 @@
   },
   "SCRIPT FLUSH": {
     "summary": "Remove all the scripts from the script cache.",
+    "arguments": [
+      {
+        "name": "async",
+        "type": "enum",
+        "enum": [
+          "ASYNC",
+          "SYNC"
+        ],
+        "optional": true
+      }
+    ],
     "complexity": "O(N) with N being the number of scripts in cache",
     "since": "2.6.0",
     "group": "scripting"
@@ -4199,6 +4245,37 @@
       }
     ],
     "since": "5.0.0",
+    "group": "sorted_set"
+  },
+  "ZRANDMEMBER": {
+    "summary": "Get one or multiple random elements from a sorted set",
+    "complexity": "O(N) where N is the number of elements returned",
+    "arguments": [
+      {
+        "name": "key",
+        "type": "key"
+      },
+      {
+        "name": "options",
+        "type": "block",
+        "block": [
+          {
+            "name": "count",
+            "type": "integer"
+          },
+          {
+            "name": "withscores",
+            "type": "enum",
+            "enum": [
+              "WITHSCORES"
+            ],
+            "optional": true
+          }    
+        ],
+        "optional": true
+      }
+    ],
+    "since": "6.2.0",
     "group": "sorted_set"
   },
   "ZRANGESTORE": {
