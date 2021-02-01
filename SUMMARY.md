@@ -87,6 +87,7 @@
   * [Exists](commands/exists.md)
   * [Expire](commands/expire.md)
   * [Expireat](commands/expireat.md)
+  * [Failover](commands/failover.md)
   * [Flushall](commands/flushall.md)
   * [Flushdb](commands/flushdb.md)
   * [Geoadd](commands/geoadd.md)
