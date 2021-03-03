@@ -1,0 +1,5365 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Modules Intro · Redis 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="modules-native-types.html" />
+    
+    
+    <link rel="prev" href="modules-blocking-ops.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Commands
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../commands/acl-cat.html">
+            
+                <a href="../commands/acl-cat.html">
+            
+                    
+                    Acl Cat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../commands/acl-deluser.html">
+            
+                <a href="../commands/acl-deluser.html">
+            
+                    
+                    Acl Deluser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../commands/acl-genpass.html">
+            
+                <a href="../commands/acl-genpass.html">
+            
+                    
+                    Acl Genpass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../commands/acl-getuser.html">
+            
+                <a href="../commands/acl-getuser.html">
+            
+                    
+                    Acl Getuser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../commands/acl-help.html">
+            
+                <a href="../commands/acl-help.html">
+            
+                    
+                    Acl Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../commands/acl-list.html">
+            
+                <a href="../commands/acl-list.html">
+            
+                    
+                    Acl List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../commands/acl-load.html">
+            
+                <a href="../commands/acl-load.html">
+            
+                    
+                    Acl Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../commands/acl-log.html">
+            
+                <a href="../commands/acl-log.html">
+            
+                    
+                    Acl Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../commands/acl-save.html">
+            
+                <a href="../commands/acl-save.html">
+            
+                    
+                    Acl Save
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../commands/acl-setuser.html">
+            
+                <a href="../commands/acl-setuser.html">
+            
+                    
+                    Acl Setuser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../commands/acl-users.html">
+            
+                <a href="../commands/acl-users.html">
+            
+                    
+                    Acl Users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../commands/acl-whoami.html">
+            
+                <a href="../commands/acl-whoami.html">
+            
+                    
+                    Acl Whoami
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../commands/append.html">
+            
+                <a href="../commands/append.html">
+            
+                    
+                    Append
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../commands/auth.html">
+            
+                <a href="../commands/auth.html">
+            
+                    
+                    Auth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../commands/bgrewriteaof.html">
+            
+                <a href="../commands/bgrewriteaof.html">
+            
+                    
+                    Bgrewriteaof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../commands/bgsave.html">
+            
+                <a href="../commands/bgsave.html">
+            
+                    
+                    Bgsave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../commands/bitcount.html">
+            
+                <a href="../commands/bitcount.html">
+            
+                    
+                    Bitcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../commands/bitfield.html">
+            
+                <a href="../commands/bitfield.html">
+            
+                    
+                    Bitfield
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../commands/bitop.html">
+            
+                <a href="../commands/bitop.html">
+            
+                    
+                    Bitop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="../commands/bitpos.html">
+            
+                <a href="../commands/bitpos.html">
+            
+                    
+                    Bitpos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="../commands/blmove.html">
+            
+                <a href="../commands/blmove.html">
+            
+                    
+                    Blmove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="../commands/blpop.html">
+            
+                <a href="../commands/blpop.html">
+            
+                    
+                    Blpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" data-path="../commands/brpop.html">
+            
+                <a href="../commands/brpop.html">
+            
+                    
+                    Brpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" data-path="../commands/brpoplpush.html">
+            
+                <a href="../commands/brpoplpush.html">
+            
+                    
+                    Brpoplpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" data-path="../commands/bzpopmax.html">
+            
+                <a href="../commands/bzpopmax.html">
+            
+                    
+                    Bzpopmax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.26" data-path="../commands/bzpopmin.html">
+            
+                <a href="../commands/bzpopmin.html">
+            
+                    
+                    Bzpopmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27" data-path="../commands/client-caching.html">
+            
+                <a href="../commands/client-caching.html">
+            
+                    
+                    Client Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.28" data-path="../commands/client-getname.html">
+            
+                <a href="../commands/client-getname.html">
+            
+                    
+                    Client Getname
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.29" data-path="../commands/client-getredir.html">
+            
+                <a href="../commands/client-getredir.html">
+            
+                    
+                    Client Getredir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.30" data-path="../commands/client-id.html">
+            
+                <a href="../commands/client-id.html">
+            
+                    
+                    Client Id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.31" data-path="../commands/client-info.html">
+            
+                <a href="../commands/client-info.html">
+            
+                    
+                    Client Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.32" data-path="../commands/client-kill.html">
+            
+                <a href="../commands/client-kill.html">
+            
+                    
+                    Client Kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.33" data-path="../commands/client-list.html">
+            
+                <a href="../commands/client-list.html">
+            
+                    
+                    Client List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.34" data-path="../commands/client-pause.html">
+            
+                <a href="../commands/client-pause.html">
+            
+                    
+                    Client Pause
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.35" data-path="../commands/client-reply.html">
+            
+                <a href="../commands/client-reply.html">
+            
+                    
+                    Client Reply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.36" data-path="../commands/client-setname.html">
+            
+                <a href="../commands/client-setname.html">
+            
+                    
+                    Client Setname
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.37" data-path="../commands/client-tracking.html">
+            
+                <a href="../commands/client-tracking.html">
+            
+                    
+                    Client Tracking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.38" data-path="../commands/client-trackinginfo.html">
+            
+                <a href="../commands/client-trackinginfo.html">
+            
+                    
+                    Client Trackinginfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.39" data-path="../commands/client-unblock.html">
+            
+                <a href="../commands/client-unblock.html">
+            
+                    
+                    Client Unblock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.40" data-path="../commands/client-unpause.html">
+            
+                <a href="../commands/client-unpause.html">
+            
+                    
+                    Client Unpause
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.41" data-path="../commands/cluster-addslots.html">
+            
+                <a href="../commands/cluster-addslots.html">
+            
+                    
+                    Cluster Addslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.42" data-path="../commands/cluster-bumpepoch.html">
+            
+                <a href="../commands/cluster-bumpepoch.html">
+            
+                    
+                    Cluster Bumpepoch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.43" data-path="../commands/cluster-count-failure-reports.html">
+            
+                <a href="../commands/cluster-count-failure-reports.html">
+            
+                    
+                    Cluster Count Failure Reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.44" data-path="../commands/cluster-countkeysinslot.html">
+            
+                <a href="../commands/cluster-countkeysinslot.html">
+            
+                    
+                    Cluster Countkeysinslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.45" data-path="../commands/cluster-delslots.html">
+            
+                <a href="../commands/cluster-delslots.html">
+            
+                    
+                    Cluster Delslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.46" data-path="../commands/cluster-failover.html">
+            
+                <a href="../commands/cluster-failover.html">
+            
+                    
+                    Cluster Failover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.47" data-path="../commands/cluster-flushslots.html">
+            
+                <a href="../commands/cluster-flushslots.html">
+            
+                    
+                    Cluster Flushslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.48" data-path="../commands/cluster-forget.html">
+            
+                <a href="../commands/cluster-forget.html">
+            
+                    
+                    Cluster Forget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.49" data-path="../commands/cluster-getkeysinslot.html">
+            
+                <a href="../commands/cluster-getkeysinslot.html">
+            
+                    
+                    Cluster Getkeysinslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.50" data-path="../commands/cluster-info.html">
+            
+                <a href="../commands/cluster-info.html">
+            
+                    
+                    Cluster Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.51" data-path="../commands/cluster-keyslot.html">
+            
+                <a href="../commands/cluster-keyslot.html">
+            
+                    
+                    Cluster Keyslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.52" data-path="../commands/cluster-meet.html">
+            
+                <a href="../commands/cluster-meet.html">
+            
+                    
+                    Cluster Meet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.53" data-path="../commands/cluster-myid.html">
+            
+                <a href="../commands/cluster-myid.html">
+            
+                    
+                    Cluster Myid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.54" data-path="../commands/cluster-nodes.html">
+            
+                <a href="../commands/cluster-nodes.html">
+            
+                    
+                    Cluster Nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.55" data-path="../commands/cluster-replicas.html">
+            
+                <a href="../commands/cluster-replicas.html">
+            
+                    
+                    Cluster Replicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.56" data-path="../commands/cluster-replicate.html">
+            
+                <a href="../commands/cluster-replicate.html">
+            
+                    
+                    Cluster Replicate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.57" data-path="../commands/cluster-reset.html">
+            
+                <a href="../commands/cluster-reset.html">
+            
+                    
+                    Cluster Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.58" data-path="../commands/cluster-saveconfig.html">
+            
+                <a href="../commands/cluster-saveconfig.html">
+            
+                    
+                    Cluster Saveconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.59" data-path="../commands/cluster-set-config-epoch.html">
+            
+                <a href="../commands/cluster-set-config-epoch.html">
+            
+                    
+                    Cluster Set Config Epoch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.60" data-path="../commands/cluster-setslot.html">
+            
+                <a href="../commands/cluster-setslot.html">
+            
+                    
+                    Cluster Setslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.61" data-path="../commands/cluster-slaves.html">
+            
+                <a href="../commands/cluster-slaves.html">
+            
+                    
+                    Cluster Slaves
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.62" data-path="../commands/cluster-slots.html">
+            
+                <a href="../commands/cluster-slots.html">
+            
+                    
+                    Cluster Slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.63" data-path="../commands/command-count.html">
+            
+                <a href="../commands/command-count.html">
+            
+                    
+                    Command Count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.64" data-path="../commands/command-getkeys.html">
+            
+                <a href="../commands/command-getkeys.html">
+            
+                    
+                    Command Getkeys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.65" data-path="../commands/command-info.html">
+            
+                <a href="../commands/command-info.html">
+            
+                    
+                    Command Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.66" data-path="../commands/command.html">
+            
+                <a href="../commands/command.html">
+            
+                    
+                    Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.67" data-path="../commands/config-get.html">
+            
+                <a href="../commands/config-get.html">
+            
+                    
+                    Config Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.68" data-path="../commands/config-resetstat.html">
+            
+                <a href="../commands/config-resetstat.html">
+            
+                    
+                    Config Resetstat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.69" data-path="../commands/config-rewrite.html">
+            
+                <a href="../commands/config-rewrite.html">
+            
+                    
+                    Config Rewrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.70" data-path="../commands/config-set.html">
+            
+                <a href="../commands/config-set.html">
+            
+                    
+                    Config Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.71" data-path="../commands/copy.html">
+            
+                <a href="../commands/copy.html">
+            
+                    
+                    Copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.72" data-path="../commands/dbsize.html">
+            
+                <a href="../commands/dbsize.html">
+            
+                    
+                    Dbsize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.73" data-path="../commands/debug-object.html">
+            
+                <a href="../commands/debug-object.html">
+            
+                    
+                    Debug Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.74" data-path="../commands/debug-segfault.html">
+            
+                <a href="../commands/debug-segfault.html">
+            
+                    
+                    Debug Segfault
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.75" data-path="../commands/decr.html">
+            
+                <a href="../commands/decr.html">
+            
+                    
+                    Decr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.76" data-path="../commands/decrby.html">
+            
+                <a href="../commands/decrby.html">
+            
+                    
+                    Decrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.77" data-path="../commands/del.html">
+            
+                <a href="../commands/del.html">
+            
+                    
+                    Del
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78" data-path="../commands/discard.html">
+            
+                <a href="../commands/discard.html">
+            
+                    
+                    Discard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.79" data-path="../commands/dump.html">
+            
+                <a href="../commands/dump.html">
+            
+                    
+                    Dump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.80" data-path="../commands/echo.html">
+            
+                <a href="../commands/echo.html">
+            
+                    
+                    Echo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.81" data-path="../commands/eval.html">
+            
+                <a href="../commands/eval.html">
+            
+                    
+                    Eval
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.82" data-path="../commands/evalsha.html">
+            
+                <a href="../commands/evalsha.html">
+            
+                    
+                    Evalsha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.83" data-path="../commands/exec.html">
+            
+                <a href="../commands/exec.html">
+            
+                    
+                    Exec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.84" data-path="../commands/exists.html">
+            
+                <a href="../commands/exists.html">
+            
+                    
+                    Exists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.85" data-path="../commands/expire.html">
+            
+                <a href="../commands/expire.html">
+            
+                    
+                    Expire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.86" data-path="../commands/expireat.html">
+            
+                <a href="../commands/expireat.html">
+            
+                    
+                    Expireat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.87" data-path="../commands/failover.html">
+            
+                <a href="../commands/failover.html">
+            
+                    
+                    Failover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.88" data-path="../commands/flushall.html">
+            
+                <a href="../commands/flushall.html">
+            
+                    
+                    Flushall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.89" data-path="../commands/flushdb.html">
+            
+                <a href="../commands/flushdb.html">
+            
+                    
+                    Flushdb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.90" data-path="../commands/geoadd.html">
+            
+                <a href="../commands/geoadd.html">
+            
+                    
+                    Geoadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.91" data-path="../commands/geodecode.html">
+            
+                <a href="../commands/geodecode.html">
+            
+                    
+                    Geodecode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.92" data-path="../commands/geodist.html">
+            
+                <a href="../commands/geodist.html">
+            
+                    
+                    Geodist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.93" data-path="../commands/geoencode.html">
+            
+                <a href="../commands/geoencode.html">
+            
+                    
+                    Geoencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.94" data-path="../commands/geohash.html">
+            
+                <a href="../commands/geohash.html">
+            
+                    
+                    Geohash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.95" data-path="../commands/geopos.html">
+            
+                <a href="../commands/geopos.html">
+            
+                    
+                    Geopos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.96" data-path="../commands/georadius.html">
+            
+                <a href="../commands/georadius.html">
+            
+                    
+                    Georadius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.97" data-path="../commands/georadiusbymember.html">
+            
+                <a href="../commands/georadiusbymember.html">
+            
+                    
+                    Georadiusbymember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.98" data-path="../commands/geosearch.html">
+            
+                <a href="../commands/geosearch.html">
+            
+                    
+                    Geosearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.99" data-path="../commands/geosearchstore.html">
+            
+                <a href="../commands/geosearchstore.html">
+            
+                    
+                    Geosearchstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.100" data-path="../commands/get.html">
+            
+                <a href="../commands/get.html">
+            
+                    
+                    Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.101" data-path="../commands/getbit.html">
+            
+                <a href="../commands/getbit.html">
+            
+                    
+                    Getbit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.102" data-path="../commands/getdel.html">
+            
+                <a href="../commands/getdel.html">
+            
+                    
+                    Getdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.103" data-path="../commands/getex.html">
+            
+                <a href="../commands/getex.html">
+            
+                    
+                    Getex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.104" data-path="../commands/getrange.html">
+            
+                <a href="../commands/getrange.html">
+            
+                    
+                    Getrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.105" data-path="../commands/getset.html">
+            
+                <a href="../commands/getset.html">
+            
+                    
+                    Getset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.106" data-path="../commands/hdel.html">
+            
+                <a href="../commands/hdel.html">
+            
+                    
+                    Hdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.107" data-path="../commands/hello.html">
+            
+                <a href="../commands/hello.html">
+            
+                    
+                    Hello
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.108" data-path="../commands/hexists.html">
+            
+                <a href="../commands/hexists.html">
+            
+                    
+                    Hexists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.109" data-path="../commands/hget.html">
+            
+                <a href="../commands/hget.html">
+            
+                    
+                    Hget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.110" data-path="../commands/hgetall.html">
+            
+                <a href="../commands/hgetall.html">
+            
+                    
+                    Hgetall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.111" data-path="../commands/hincrby.html">
+            
+                <a href="../commands/hincrby.html">
+            
+                    
+                    Hincrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.112" data-path="../commands/hincrbyfloat.html">
+            
+                <a href="../commands/hincrbyfloat.html">
+            
+                    
+                    Hincrbyfloat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.113" data-path="../commands/hkeys.html">
+            
+                <a href="../commands/hkeys.html">
+            
+                    
+                    Hkeys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.114" data-path="../commands/hlen.html">
+            
+                <a href="../commands/hlen.html">
+            
+                    
+                    Hlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.115" data-path="../commands/hmget.html">
+            
+                <a href="../commands/hmget.html">
+            
+                    
+                    Hmget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.116" data-path="../commands/hmset.html">
+            
+                <a href="../commands/hmset.html">
+            
+                    
+                    Hmset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.117" data-path="../commands/hrandfield.html">
+            
+                <a href="../commands/hrandfield.html">
+            
+                    
+                    Hrandfield
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.118" data-path="../commands/hscan.html">
+            
+                <a href="../commands/hscan.html">
+            
+                    
+                    Hscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.119" data-path="../commands/hset.html">
+            
+                <a href="../commands/hset.html">
+            
+                    
+                    Hset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.120" data-path="../commands/hsetnx.html">
+            
+                <a href="../commands/hsetnx.html">
+            
+                    
+                    Hsetnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.121" data-path="../commands/hstrlen.html">
+            
+                <a href="../commands/hstrlen.html">
+            
+                    
+                    Hstrlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.122" data-path="../commands/hvals.html">
+            
+                <a href="../commands/hvals.html">
+            
+                    
+                    Hvals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.123" data-path="../commands/incr.html">
+            
+                <a href="../commands/incr.html">
+            
+                    
+                    Incr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.124" data-path="../commands/incrby.html">
+            
+                <a href="../commands/incrby.html">
+            
+                    
+                    Incrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.125" data-path="../commands/incrbyfloat.html">
+            
+                <a href="../commands/incrbyfloat.html">
+            
+                    
+                    Incrbyfloat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.126" data-path="../commands/info.html">
+            
+                <a href="../commands/info.html">
+            
+                    
+                    Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.127" data-path="../commands/keys.html">
+            
+                <a href="../commands/keys.html">
+            
+                    
+                    Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.128" data-path="../commands/lastsave.html">
+            
+                <a href="../commands/lastsave.html">
+            
+                    
+                    Lastsave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.129" data-path="../commands/latency-doctor.html">
+            
+                <a href="../commands/latency-doctor.html">
+            
+                    
+                    Latency Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.130" data-path="../commands/latency-graph.html">
+            
+                <a href="../commands/latency-graph.html">
+            
+                    
+                    Latency Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.131" data-path="../commands/latency-help.html">
+            
+                <a href="../commands/latency-help.html">
+            
+                    
+                    Latency Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.132" data-path="../commands/latency-history.html">
+            
+                <a href="../commands/latency-history.html">
+            
+                    
+                    Latency History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.133" data-path="../commands/latency-latest.html">
+            
+                <a href="../commands/latency-latest.html">
+            
+                    
+                    Latency Latest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.134" data-path="../commands/latency-reset.html">
+            
+                <a href="../commands/latency-reset.html">
+            
+                    
+                    Latency Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.135" data-path="../commands/lindex.html">
+            
+                <a href="../commands/lindex.html">
+            
+                    
+                    Lindex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.136" data-path="../commands/linsert.html">
+            
+                <a href="../commands/linsert.html">
+            
+                    
+                    Linsert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.137" data-path="../commands/llen.html">
+            
+                <a href="../commands/llen.html">
+            
+                    
+                    Llen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.138" data-path="../commands/lmove.html">
+            
+                <a href="../commands/lmove.html">
+            
+                    
+                    Lmove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.139" data-path="../commands/lolwut.html">
+            
+                <a href="../commands/lolwut.html">
+            
+                    
+                    Lolwut
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.140" data-path="../commands/lpop.html">
+            
+                <a href="../commands/lpop.html">
+            
+                    
+                    Lpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.141" data-path="../commands/lpos.html">
+            
+                <a href="../commands/lpos.html">
+            
+                    
+                    Lpos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.142" data-path="../commands/lpush.html">
+            
+                <a href="../commands/lpush.html">
+            
+                    
+                    Lpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.143" data-path="../commands/lpushx.html">
+            
+                <a href="../commands/lpushx.html">
+            
+                    
+                    Lpushx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.144" data-path="../commands/lrange.html">
+            
+                <a href="../commands/lrange.html">
+            
+                    
+                    Lrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.145" data-path="../commands/lrem.html">
+            
+                <a href="../commands/lrem.html">
+            
+                    
+                    Lrem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.146" data-path="../commands/lset.html">
+            
+                <a href="../commands/lset.html">
+            
+                    
+                    Lset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.147" data-path="../commands/ltrim.html">
+            
+                <a href="../commands/ltrim.html">
+            
+                    
+                    Ltrim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.148" data-path="../commands/memory-doctor.html">
+            
+                <a href="../commands/memory-doctor.html">
+            
+                    
+                    Memory Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.149" data-path="../commands/memory-help.html">
+            
+                <a href="../commands/memory-help.html">
+            
+                    
+                    Memory Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.150" data-path="../commands/memory-malloc-stats.html">
+            
+                <a href="../commands/memory-malloc-stats.html">
+            
+                    
+                    Memory Malloc Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.151" data-path="../commands/memory-purge.html">
+            
+                <a href="../commands/memory-purge.html">
+            
+                    
+                    Memory Purge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.152" data-path="../commands/memory-stats.html">
+            
+                <a href="../commands/memory-stats.html">
+            
+                    
+                    Memory Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.153" data-path="../commands/memory-usage.html">
+            
+                <a href="../commands/memory-usage.html">
+            
+                    
+                    Memory Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.154" data-path="../commands/mget.html">
+            
+                <a href="../commands/mget.html">
+            
+                    
+                    Mget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.155" data-path="../commands/migrate.html">
+            
+                <a href="../commands/migrate.html">
+            
+                    
+                    Migrate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.156" data-path="../commands/module-list.html">
+            
+                <a href="../commands/module-list.html">
+            
+                    
+                    Module List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.157" data-path="../commands/module-load.html">
+            
+                <a href="../commands/module-load.html">
+            
+                    
+                    Module Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.158" data-path="../commands/module-unload.html">
+            
+                <a href="../commands/module-unload.html">
+            
+                    
+                    Module Unload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.159" data-path="../commands/monitor.html">
+            
+                <a href="../commands/monitor.html">
+            
+                    
+                    Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.160" data-path="../commands/move.html">
+            
+                <a href="../commands/move.html">
+            
+                    
+                    Move
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.161" data-path="../commands/mset.html">
+            
+                <a href="../commands/mset.html">
+            
+                    
+                    Mset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.162" data-path="../commands/msetnx.html">
+            
+                <a href="../commands/msetnx.html">
+            
+                    
+                    Msetnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.163" data-path="../commands/multi.html">
+            
+                <a href="../commands/multi.html">
+            
+                    
+                    Multi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.164" data-path="../commands/object.html">
+            
+                <a href="../commands/object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.165" data-path="../commands/persist.html">
+            
+                <a href="../commands/persist.html">
+            
+                    
+                    Persist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.166" data-path="../commands/pexpire.html">
+            
+                <a href="../commands/pexpire.html">
+            
+                    
+                    Pexpire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.167" data-path="../commands/pexpireat.html">
+            
+                <a href="../commands/pexpireat.html">
+            
+                    
+                    Pexpireat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.168" data-path="../commands/pfadd.html">
+            
+                <a href="../commands/pfadd.html">
+            
+                    
+                    Pfadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.169" data-path="../commands/pfcount.html">
+            
+                <a href="../commands/pfcount.html">
+            
+                    
+                    Pfcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.170" data-path="../commands/pfmerge.html">
+            
+                <a href="../commands/pfmerge.html">
+            
+                    
+                    Pfmerge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.171" data-path="../commands/ping.html">
+            
+                <a href="../commands/ping.html">
+            
+                    
+                    Ping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.172" data-path="../commands/psetex.html">
+            
+                <a href="../commands/psetex.html">
+            
+                    
+                    Psetex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.173" data-path="../commands/psubscribe.html">
+            
+                <a href="../commands/psubscribe.html">
+            
+                    
+                    Psubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.174" data-path="../commands/psync.html">
+            
+                <a href="../commands/psync.html">
+            
+                    
+                    Psync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.175" data-path="../commands/pttl.html">
+            
+                <a href="../commands/pttl.html">
+            
+                    
+                    Pttl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.176" data-path="../commands/publish.html">
+            
+                <a href="../commands/publish.html">
+            
+                    
+                    Publish
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.177" data-path="../commands/pubsub.html">
+            
+                <a href="../commands/pubsub.html">
+            
+                    
+                    Pubsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.178" data-path="../commands/punsubscribe.html">
+            
+                <a href="../commands/punsubscribe.html">
+            
+                    
+                    Punsubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.179" data-path="../commands/quit.html">
+            
+                <a href="../commands/quit.html">
+            
+                    
+                    Quit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.180" data-path="../commands/randomkey.html">
+            
+                <a href="../commands/randomkey.html">
+            
+                    
+                    Randomkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.181" data-path="../commands/readonly.html">
+            
+                <a href="../commands/readonly.html">
+            
+                    
+                    Readonly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.182" data-path="../commands/readwrite.html">
+            
+                <a href="../commands/readwrite.html">
+            
+                    
+                    Readwrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.183" data-path="../commands/rename.html">
+            
+                <a href="../commands/rename.html">
+            
+                    
+                    Rename
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.184" data-path="../commands/renamenx.html">
+            
+                <a href="../commands/renamenx.html">
+            
+                    
+                    Renamenx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.185" data-path="../commands/replicaof.html">
+            
+                <a href="../commands/replicaof.html">
+            
+                    
+                    Replicaof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.186" data-path="../commands/reset.html">
+            
+                <a href="../commands/reset.html">
+            
+                    
+                    Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.187" data-path="../commands/restore.html">
+            
+                <a href="../commands/restore.html">
+            
+                    
+                    Restore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.188" data-path="../commands/role.html">
+            
+                <a href="../commands/role.html">
+            
+                    
+                    Role
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.189" data-path="../commands/rpop.html">
+            
+                <a href="../commands/rpop.html">
+            
+                    
+                    Rpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.190" data-path="../commands/rpoplpush.html">
+            
+                <a href="../commands/rpoplpush.html">
+            
+                    
+                    Rpoplpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.191" data-path="../commands/rpush.html">
+            
+                <a href="../commands/rpush.html">
+            
+                    
+                    Rpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.192" data-path="../commands/rpushx.html">
+            
+                <a href="../commands/rpushx.html">
+            
+                    
+                    Rpushx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.193" data-path="../commands/sadd.html">
+            
+                <a href="../commands/sadd.html">
+            
+                    
+                    Sadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.194" data-path="../commands/save.html">
+            
+                <a href="../commands/save.html">
+            
+                    
+                    Save
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.195" data-path="../commands/scan.html">
+            
+                <a href="../commands/scan.html">
+            
+                    
+                    Scan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.196" data-path="../commands/scard.html">
+            
+                <a href="../commands/scard.html">
+            
+                    
+                    Scard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.197" data-path="../commands/script-debug.html">
+            
+                <a href="../commands/script-debug.html">
+            
+                    
+                    Script Debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.198" data-path="../commands/script-exists.html">
+            
+                <a href="../commands/script-exists.html">
+            
+                    
+                    Script Exists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.199" data-path="../commands/script-flush.html">
+            
+                <a href="../commands/script-flush.html">
+            
+                    
+                    Script Flush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.200" data-path="../commands/script-kill.html">
+            
+                <a href="../commands/script-kill.html">
+            
+                    
+                    Script Kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.201" data-path="../commands/script-load.html">
+            
+                <a href="../commands/script-load.html">
+            
+                    
+                    Script Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.202" data-path="../commands/sdiff.html">
+            
+                <a href="../commands/sdiff.html">
+            
+                    
+                    Sdiff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.203" data-path="../commands/sdiffstore.html">
+            
+                <a href="../commands/sdiffstore.html">
+            
+                    
+                    Sdiffstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.204" data-path="../commands/select.html">
+            
+                <a href="../commands/select.html">
+            
+                    
+                    Select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.205" data-path="../commands/set.html">
+            
+                <a href="../commands/set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.206" data-path="../commands/setbit.html">
+            
+                <a href="../commands/setbit.html">
+            
+                    
+                    Setbit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.207" data-path="../commands/setex.html">
+            
+                <a href="../commands/setex.html">
+            
+                    
+                    Setex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.208" data-path="../commands/setnx.html">
+            
+                <a href="../commands/setnx.html">
+            
+                    
+                    Setnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.209" data-path="../commands/setrange.html">
+            
+                <a href="../commands/setrange.html">
+            
+                    
+                    Setrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.210" data-path="../commands/shutdown.html">
+            
+                <a href="../commands/shutdown.html">
+            
+                    
+                    Shutdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.211" data-path="../commands/sinter.html">
+            
+                <a href="../commands/sinter.html">
+            
+                    
+                    Sinter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.212" data-path="../commands/sinterstore.html">
+            
+                <a href="../commands/sinterstore.html">
+            
+                    
+                    Sinterstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.213" data-path="../commands/sismember.html">
+            
+                <a href="../commands/sismember.html">
+            
+                    
+                    Sismember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.214" data-path="../commands/slaveof.html">
+            
+                <a href="../commands/slaveof.html">
+            
+                    
+                    Slaveof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.215" data-path="../commands/slowlog.html">
+            
+                <a href="../commands/slowlog.html">
+            
+                    
+                    Slowlog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.216" data-path="../commands/smembers.html">
+            
+                <a href="../commands/smembers.html">
+            
+                    
+                    Smembers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.217" data-path="../commands/smismember.html">
+            
+                <a href="../commands/smismember.html">
+            
+                    
+                    Smismember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.218" data-path="../commands/smove.html">
+            
+                <a href="../commands/smove.html">
+            
+                    
+                    Smove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.219" data-path="../commands/sort.html">
+            
+                <a href="../commands/sort.html">
+            
+                    
+                    Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.220" data-path="../commands/spop.html">
+            
+                <a href="../commands/spop.html">
+            
+                    
+                    Spop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.221" data-path="../commands/srandmember.html">
+            
+                <a href="../commands/srandmember.html">
+            
+                    
+                    Srandmember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.222" data-path="../commands/srem.html">
+            
+                <a href="../commands/srem.html">
+            
+                    
+                    Srem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.223" data-path="../commands/sscan.html">
+            
+                <a href="../commands/sscan.html">
+            
+                    
+                    Sscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.224" data-path="../commands/stralgo.html">
+            
+                <a href="../commands/stralgo.html">
+            
+                    
+                    Stralgo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.225" data-path="../commands/strlen.html">
+            
+                <a href="../commands/strlen.html">
+            
+                    
+                    Strlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.226" data-path="../commands/subscribe.html">
+            
+                <a href="../commands/subscribe.html">
+            
+                    
+                    Subscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.227" data-path="../commands/sunion.html">
+            
+                <a href="../commands/sunion.html">
+            
+                    
+                    Sunion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.228" data-path="../commands/sunionstore.html">
+            
+                <a href="../commands/sunionstore.html">
+            
+                    
+                    Sunionstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.229" data-path="../commands/swapdb.html">
+            
+                <a href="../commands/swapdb.html">
+            
+                    
+                    Swapdb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.230" data-path="../commands/sync.html">
+            
+                <a href="../commands/sync.html">
+            
+                    
+                    Sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.231" data-path="../commands/time.html">
+            
+                <a href="../commands/time.html">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.232" data-path="../commands/touch.html">
+            
+                <a href="../commands/touch.html">
+            
+                    
+                    Touch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.233" data-path="../commands/ttl.html">
+            
+                <a href="../commands/ttl.html">
+            
+                    
+                    Ttl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.234" data-path="../commands/type.html">
+            
+                <a href="../commands/type.html">
+            
+                    
+                    Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.235" data-path="../commands/unlink.html">
+            
+                <a href="../commands/unlink.html">
+            
+                    
+                    Unlink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.236" data-path="../commands/unsubscribe.html">
+            
+                <a href="../commands/unsubscribe.html">
+            
+                    
+                    Unsubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.237" data-path="../commands/unwatch.html">
+            
+                <a href="../commands/unwatch.html">
+            
+                    
+                    Unwatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.238" data-path="../commands/wait.html">
+            
+                <a href="../commands/wait.html">
+            
+                    
+                    Wait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.239" data-path="../commands/watch.html">
+            
+                <a href="../commands/watch.html">
+            
+                    
+                    Watch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.240" data-path="../commands/xack.html">
+            
+                <a href="../commands/xack.html">
+            
+                    
+                    Xack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.241" data-path="../commands/xadd.html">
+            
+                <a href="../commands/xadd.html">
+            
+                    
+                    Xadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.242" data-path="../commands/xautoclaim.html">
+            
+                <a href="../commands/xautoclaim.html">
+            
+                    
+                    Xautoclaim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.243" data-path="../commands/xclaim.html">
+            
+                <a href="../commands/xclaim.html">
+            
+                    
+                    Xclaim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.244" data-path="../commands/xdel.html">
+            
+                <a href="../commands/xdel.html">
+            
+                    
+                    Xdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.245" data-path="../commands/xgroup.html">
+            
+                <a href="../commands/xgroup.html">
+            
+                    
+                    Xgroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.246" data-path="../commands/xinfo.html">
+            
+                <a href="../commands/xinfo.html">
+            
+                    
+                    Xinfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.247" data-path="../commands/xlen.html">
+            
+                <a href="../commands/xlen.html">
+            
+                    
+                    Xlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.248" data-path="../commands/xpending.html">
+            
+                <a href="../commands/xpending.html">
+            
+                    
+                    Xpending
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.249" data-path="../commands/xrange.html">
+            
+                <a href="../commands/xrange.html">
+            
+                    
+                    Xrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.250" data-path="../commands/xread.html">
+            
+                <a href="../commands/xread.html">
+            
+                    
+                    Xread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.251" data-path="../commands/xreadgroup.html">
+            
+                <a href="../commands/xreadgroup.html">
+            
+                    
+                    Xreadgroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.252" data-path="../commands/xrevrange.html">
+            
+                <a href="../commands/xrevrange.html">
+            
+                    
+                    Xrevrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.253" data-path="../commands/xtrim.html">
+            
+                <a href="../commands/xtrim.html">
+            
+                    
+                    Xtrim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.254" data-path="../commands/zadd.html">
+            
+                <a href="../commands/zadd.html">
+            
+                    
+                    Zadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.255" data-path="../commands/zcard.html">
+            
+                <a href="../commands/zcard.html">
+            
+                    
+                    Zcard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.256" data-path="../commands/zcount.html">
+            
+                <a href="../commands/zcount.html">
+            
+                    
+                    Zcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.257" data-path="../commands/zdiff.html">
+            
+                <a href="../commands/zdiff.html">
+            
+                    
+                    Zdiff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.258" data-path="../commands/zdiffstore.html">
+            
+                <a href="../commands/zdiffstore.html">
+            
+                    
+                    Zdiffstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.259" data-path="../commands/zincrby.html">
+            
+                <a href="../commands/zincrby.html">
+            
+                    
+                    Zincrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.260" data-path="../commands/zinter.html">
+            
+                <a href="../commands/zinter.html">
+            
+                    
+                    Zinter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.261" data-path="../commands/zinterstore.html">
+            
+                <a href="../commands/zinterstore.html">
+            
+                    
+                    Zinterstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.262" data-path="../commands/zlexcount.html">
+            
+                <a href="../commands/zlexcount.html">
+            
+                    
+                    Zlexcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.263" data-path="../commands/zmscore.html">
+            
+                <a href="../commands/zmscore.html">
+            
+                    
+                    Zmscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.264" data-path="../commands/zpopmax.html">
+            
+                <a href="../commands/zpopmax.html">
+            
+                    
+                    Zpopmax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.265" data-path="../commands/zpopmin.html">
+            
+                <a href="../commands/zpopmin.html">
+            
+                    
+                    Zpopmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.266" data-path="../commands/zrandmember.html">
+            
+                <a href="../commands/zrandmember.html">
+            
+                    
+                    Zrandmember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.267" data-path="../commands/zrange.html">
+            
+                <a href="../commands/zrange.html">
+            
+                    
+                    Zrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.268" data-path="../commands/zrangebylex.html">
+            
+                <a href="../commands/zrangebylex.html">
+            
+                    
+                    Zrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.269" data-path="../commands/zrangebyscore.html">
+            
+                <a href="../commands/zrangebyscore.html">
+            
+                    
+                    Zrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.270" data-path="../commands/zrangestore.html">
+            
+                <a href="../commands/zrangestore.html">
+            
+                    
+                    Zrangestore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.271" data-path="../commands/zrank.html">
+            
+                <a href="../commands/zrank.html">
+            
+                    
+                    Zrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.272" data-path="../commands/zrem.html">
+            
+                <a href="../commands/zrem.html">
+            
+                    
+                    Zrem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.273" data-path="../commands/zremrangebylex.html">
+            
+                <a href="../commands/zremrangebylex.html">
+            
+                    
+                    Zremrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.274" data-path="../commands/zremrangebyrank.html">
+            
+                <a href="../commands/zremrangebyrank.html">
+            
+                    
+                    Zremrangebyrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.275" data-path="../commands/zremrangebyscore.html">
+            
+                <a href="../commands/zremrangebyscore.html">
+            
+                    
+                    Zremrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.276" data-path="../commands/zrevrange.html">
+            
+                <a href="../commands/zrevrange.html">
+            
+                    
+                    Zrevrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.277" data-path="../commands/zrevrangebylex.html">
+            
+                <a href="../commands/zrevrangebylex.html">
+            
+                    
+                    Zrevrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.278" data-path="../commands/zrevrangebyscore.html">
+            
+                <a href="../commands/zrevrangebyscore.html">
+            
+                    
+                    Zrevrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.279" data-path="../commands/zrevrank.html">
+            
+                <a href="../commands/zrevrank.html">
+            
+                    
+                    Zrevrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.280" data-path="../commands/zscan.html">
+            
+                <a href="../commands/zscan.html">
+            
+                    
+                    Zscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.281" data-path="../commands/zscore.html">
+            
+                <a href="../commands/zscore.html">
+            
+                    
+                    Zscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.282" data-path="../commands/zunion.html">
+            
+                <a href="../commands/zunion.html">
+            
+                    
+                    Zunion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.283" data-path="../commands/zunionstore.html">
+            
+                <a href="../commands/zunionstore.html">
+            
+                    
+                    Zunionstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Topics
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="acl.html">
+            
+                <a href="acl.html">
+            
+                    
+                    Acl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="ARM.html">
+            
+                <a href="ARM.html">
+            
+                    
+                    ARM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="benchmarks.html">
+            
+                <a href="benchmarks.html">
+            
+                    
+                    Benchmarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="client-side-caching.html">
+            
+                <a href="client-side-caching.html">
+            
+                    
+                    Client Side Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="clients.html">
+            
+                <a href="clients.html">
+            
+                    
+                    Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="cluster-spec.html">
+            
+                <a href="cluster-spec.html">
+            
+                    
+                    Cluster Spec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="cluster-tutorial.html">
+            
+                <a href="cluster-tutorial.html">
+            
+                    
+                    Cluster Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="data-types-intro.html">
+            
+                <a href="data-types-intro.html">
+            
+                    
+                    Data Types Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="data-types.html">
+            
+                <a href="data-types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="debugging.html">
+            
+                <a href="debugging.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="distlock.html">
+            
+                <a href="distlock.html">
+            
+                    
+                    Distlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="encryption.html">
+            
+                <a href="encryption.html">
+            
+                    
+                    Encryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    Faq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="gopher.html">
+            
+                <a href="gopher.html">
+            
+                    
+                    Gopher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="governance.html">
+            
+                <a href="governance.html">
+            
+                    
+                    Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="indexes.html">
+            
+                <a href="indexes.html">
+            
+                    
+                    Indexes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="internals-eventlib.html">
+            
+                <a href="internals-eventlib.html">
+            
+                    
+                    Internals Eventlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="internals-rediseventlib.html">
+            
+                <a href="internals-rediseventlib.html">
+            
+                    
+                    Internals Rediseventlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="internals-sds.html">
+            
+                <a href="internals-sds.html">
+            
+                    
+                    Internals Sds
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="internals-vm.html">
+            
+                <a href="internals-vm.html">
+            
+                    
+                    Internals Vm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="internals.html">
+            
+                <a href="internals.html">
+            
+                    
+                    Internals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="latency-monitor.html">
+            
+                <a href="latency-monitor.html">
+            
+                    
+                    Latency Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="latency.html">
+            
+                <a href="latency.html">
+            
+                    
+                    Latency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="ldb.html">
+            
+                <a href="ldb.html">
+            
+                    
+                    Ldb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.27" data-path="license.html">
+            
+                <a href="license.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.28" data-path="lru-cache.html">
+            
+                <a href="lru-cache.html">
+            
+                    
+                    Lru Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.29" data-path="mass-insert.html">
+            
+                <a href="mass-insert.html">
+            
+                    
+                    Mass Insert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.30" data-path="memory-optimization.html">
+            
+                <a href="memory-optimization.html">
+            
+                    
+                    Memory Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.31" data-path="modules-api-ref.html">
+            
+                <a href="modules-api-ref.html">
+            
+                    
+                    Modules Api Ref
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.32" data-path="modules-blocking-ops.html">
+            
+                <a href="modules-blocking-ops.html">
+            
+                    
+                    Modules Blocking Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.33" data-path="modules-intro.html">
+            
+                <a href="modules-intro.html">
+            
+                    
+                    Modules Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.34" data-path="modules-native-types.html">
+            
+                <a href="modules-native-types.html">
+            
+                    
+                    Modules Native Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.35" data-path="notifications.html">
+            
+                <a href="notifications.html">
+            
+                    
+                    Notifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.36" data-path="partitioning.html">
+            
+                <a href="partitioning.html">
+            
+                    
+                    Partitioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.37" data-path="persistence.html">
+            
+                <a href="persistence.html">
+            
+                    
+                    Persistence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.38" data-path="pipelining.html">
+            
+                <a href="pipelining.html">
+            
+                    
+                    Pipelining
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.39" data-path="problems.html">
+            
+                <a href="problems.html">
+            
+                    
+                    Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.40" data-path="protocol.html">
+            
+                <a href="protocol.html">
+            
+                    
+                    Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.41" data-path="pubsub.html">
+            
+                <a href="pubsub.html">
+            
+                    
+                    Pubsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.42" data-path="quickstart.html">
+            
+                <a href="quickstart.html">
+            
+                    
+                    Quickstart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.43" data-path="rdd-1.html">
+            
+                <a href="rdd-1.html">
+            
+                    
+                    Rdd 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.44" data-path="rdd-2.html">
+            
+                <a href="rdd-2.html">
+            
+                    
+                    Rdd 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.45" data-path="rdd.html">
+            
+                <a href="rdd.html">
+            
+                    
+                    Rdd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.46" data-path="rediscli.html">
+            
+                <a href="rediscli.html">
+            
+                    
+                    Rediscli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.47" data-path="releases.html">
+            
+                <a href="releases.html">
+            
+                    
+                    Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.48" data-path="replication.html">
+            
+                <a href="replication.html">
+            
+                    
+                    Replication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.49" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.50" data-path="sentinel-clients.html">
+            
+                <a href="sentinel-clients.html">
+            
+                    
+                    Sentinel Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.51" data-path="sentinel.html">
+            
+                <a href="sentinel.html">
+            
+                    
+                    Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.52" data-path="signals.html">
+            
+                <a href="signals.html">
+            
+                    
+                    Signals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.53" data-path="sponsors.html">
+            
+                <a href="sponsors.html">
+            
+                    
+                    Sponsors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.54" data-path="streams-intro.html">
+            
+                <a href="streams-intro.html">
+            
+                    
+                    Streams Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.55" data-path="trademark.html">
+            
+                <a href="trademark.html">
+            
+                    
+                    Trademark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.56" data-path="transactions.html">
+            
+                <a href="transactions.html">
+            
+                    
+                    Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.57" data-path="twitter-clone.html">
+            
+                <a href="twitter-clone.html">
+            
+                    
+                    Twitter Clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.58" data-path="virtual-memory.html">
+            
+                <a href="virtual-memory.html">
+            
+                    
+                    Virtual Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.59" data-path="whos-using-redis.html">
+            
+                <a href="whos-using-redis.html">
+            
+                    
+                    Whos Using Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Modules Intro</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="redis-modules-an-introduction-to-the-api">Redis Modules: an introduction to the API</h1>
+<p>The modules documentation is composed of the following pages:</p>
+<ul>
+<li>Introduction to Redis modules (this file). An overview about Redis Modules system and API. It&apos;s a good idea to start your reading here.</li>
+<li><a href="modules-native-types">Implementing native data types</a> covers the implementation of native data types into modules.</li>
+<li><a href="modules-blocking-ops">Blocking operations</a> shows how to write blocking commands that will not reply immediately, but will block the client, without blocking the Redis server, and will provide a reply whenever will be possible.</li>
+<li><a href="modules-api-ref">Redis modules API reference</a> is generated from module.c top comments of RedisModule functions. It is a good reference in order to understand how each function works.</li>
+</ul>
+<p>Redis modules make it possible to extend Redis functionality using external
+modules, rapidly implementing new Redis commands with features
+similar to what can be done inside the core itself.</p>
+<p>Redis modules are dynamic libraries that can be loaded into Redis at
+startup, or using the <code>MODULE LOAD</code> command. Redis exports a C API, in the
+form of a single C header file called <code>redismodule.h</code>. Modules are meant
+to be written in C, however it will be possible to use C++ or other languages
+that have C binding functionalities.</p>
+<p>Modules are designed in order to be loaded into different versions of Redis,
+so a given module does not need to be designed, or recompiled, in order to
+run with a specific version of Redis. For this reason, the module will
+register to the Redis core using a specific API version. The current API
+version is &quot;1&quot;.</p>
+<p>This document is about an alpha version of Redis modules. API, functionalities
+and other details may change in the future.</p>
+<h1 id="loading-modules">Loading modules</h1>
+<p>In order to test the module you are developing, you can load the module
+using the following <code>redis.conf</code> configuration directive:</p>
+<pre class="language-"><code>loadmodule /path/to/mymodule.so
+</code></pre><p>It is also possible to load a module at runtime using the following command:</p>
+<pre class="language-"><code>MODULE LOAD /path/to/mymodule.so
+</code></pre><p>In order to list all loaded modules, use:</p>
+<pre class="language-"><code>MODULE LIST
+</code></pre><p>Finally, you can unload (and later reload if you wish) a module using the
+following command:</p>
+<pre class="language-"><code>MODULE UNLOAD mymodule
+</code></pre><p>Note that <code>mymodule</code> above is not the filename without the <code>.so</code> suffix, but
+instead, the name the module used to register itself into the Redis core.
+The name can be obtained using <code>MODULE LIST</code>. However it is good practice
+that the filename of the dynamic library is the same as the name the module
+uses to register itself into the Redis core.</p>
+<h1 id="the-simplest-module-you-can-write">The simplest module you can write</h1>
+<p>In order to show the different parts of a module, here we&apos;ll show a very
+simple module that implements a command that outputs a random number.</p>
+<pre class="language-"><code>#include &quot;redismodule.h&quot;
+#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stdlib.h</span><span class="token punctuation">&gt;</span></span>
+
+int HelloworldRand_RedisCommand(RedisModuleCtx *ctx, RedisModuleString **argv, int argc) {
+    RedisModule_ReplyWithLongLong(ctx,rand());
+    return REDISMODULE_OK;
+}
+
+int RedisModule_OnLoad(RedisModuleCtx *ctx, RedisModuleString **argv, int argc) {
+    if (RedisModule_Init(ctx,&quot;helloworld&quot;,1,REDISMODULE_APIVER_1)
+        == REDISMODULE_ERR) return REDISMODULE_ERR;
+
+    if (RedisModule_CreateCommand(ctx,&quot;helloworld.rand&quot;,
+        HelloworldRand_RedisCommand, &quot;fast random&quot;,
+        0, 0, 0) == REDISMODULE_ERR)
+        return REDISMODULE_ERR;
+
+    return REDISMODULE_OK;
+}
+</code></pre><p>The example module has two functions. One implements a command called
+HELLOWORLD.RAND. This function is specific of that module. However the
+other function called <code>RedisModule_OnLoad()</code> must be present in each
+Redis module. It is the entry point for the module to be initialized,
+register its commands, and potentially other private data structures
+it uses.</p>
+<p>Note that it is a good idea for modules to call commands with the
+name of the module followed by a dot, and finally the command name,
+like in the case of <code>HELLOWORLD.RAND</code>. This way it is less likely to
+have collisions.</p>
+<p>Note that if different modules have colliding commands, they&apos;ll not be
+able to work in Redis at the same time, since the function
+<code>RedisModule_CreateCommand</code> will fail in one of the modules, so the module
+loading will abort returning an error condition.</p>
+<h1 id="module-initialization">Module initialization</h1>
+<p>The above example shows the usage of the function <code>RedisModule_Init()</code>.
+It should be the first function called by the module <code>OnLoad</code> function.
+The following is the function prototype:</p>
+<pre class="language-"><code>int RedisModule_Init(RedisModuleCtx *ctx, const char *modulename,
+                     int module_version, int api_version);
+</code></pre><p>The <code>Init</code> function announces the Redis core that the module has a given
+name, its version (that is reported by <code>MODULE LIST</code>), and that is willing
+to use a specific version of the API.</p>
+<p>If the API version is wrong, the name is already taken, or there are other
+similar errors, the function will return <code>REDISMODULE_ERR</code>, and the module
+<code>OnLoad</code> function should return ASAP with an error.</p>
+<p>Before the <code>Init</code> function is called, no other API function can be called,
+otherwise the module will segfault and the Redis instance will crash.</p>
+<p>The second function called, <code>RedisModule_CreateCommand</code>, is used in order
+to register commands into the Redis core. The following is the prototype:</p>
+<pre class="language-"><code>int RedisModule_CreateCommand(RedisModuleCtx *ctx, const char *name,
+                              RedisModuleCmdFunc cmdfunc, const char *strflags,
+                              int firstkey, int lastkey, int keystep);
+</code></pre><p>As you can see, most Redis modules API calls all take as first argument
+the <code>context</code> of the module, so that they have a reference to the module
+calling it, to the command and client executing a given command, and so forth.</p>
+<p>To create a new command, the above function needs the context, the command&apos;s
+name, a pointer to the function implementing the command, the command&apos;s flags
+and the positions of key names in the command&apos;s arguments.</p>
+<p>The function that implements the command must have the following prototype:</p>
+<pre class="language-"><code>int mycommand(RedisModuleCtx *ctx, RedisModuleString **argv, int argc);
+</code></pre><p>The command function arguments are just the context, that will be passed
+to all the other API calls, the command argument vector, and total number
+of arguments, as passed by the user.</p>
+<p>As you can see, the arguments are provided as pointers to a specific data
+type, the <code>RedisModuleString</code>. This is an opaque data type you have API
+functions to access and use, direct access to its fields is never needed.</p>
+<p>Zooming into the example command implementation, we can find another call:</p>
+<pre class="language-"><code>int RedisModule_ReplyWithLongLong(RedisModuleCtx *ctx, long long integer);
+</code></pre><p>This function returns an integer to the client that invoked the command,
+exactly like other Redis commands do, like for example <code>INCR</code> or <code>SCARD</code>.</p>
+<h1 id="module-cleanup">Module cleanup</h1>
+<p>In most cases, there is no need for special cleanup.
+When a module is unloaded, Redis will automatically unregister commands and
+unsubscribe from notifications.
+However in the case where a module contains some persistent memory or
+configuration, a module may include an optional <code>RedisModule_OnUnload</code>
+function.
+If a module provides this function, it will be invoked during the module unload
+process.
+The following is the function prototype:</p>
+<pre class="language-"><code>int RedisModule_OnUnload(RedisModuleCtx *ctx);
+</code></pre><p>The <code>OnUnload</code> function may prevent module unloading by returning
+<code>REDISMODULE_ERR</code>.
+Otherwise, <code>REDISMODULE_OK</code> should be returned.</p>
+<h1 id="setup-and-dependencies-of-a-redis-module">Setup and dependencies of a Redis module</h1>
+<p>Redis modules don&apos;t depend on Redis or some other library, nor they
+need to be compiled with a specific <code>redismodule.h</code> file. In order
+to create a new module, just copy a recent version of <code>redismodule.h</code>
+in your source tree, link all the libraries you want, and create
+a dynamic library having the <code>RedisModule_OnLoad()</code> function symbol
+exported.</p>
+<p>The module will be able to load into different versions of Redis.</p>
+<h1 id="passing-configuration-parameters-to-redis-modules">Passing configuration parameters to Redis modules</h1>
+<p>When the module is loaded with the <code>MODULE LOAD</code> command, or using the
+<code>loadmodule</code> directive in the <code>redis.conf</code> file, the user is able to pass
+configuration parameters to the module by adding arguments after the module
+file name:</p>
+<pre class="language-"><code>loadmodule mymodule.so foo bar 1234
+</code></pre><p>In the above example the strings <code>foo</code>, <code>bar</code> and <code>123</code> will be passed
+to the module <code>OnLoad()</code> function in the <code>argv</code> argument as an array
+of RedisModuleString pointers. The number of arguments passed is into <code>argc</code>.</p>
+<p>The way you can access those strings will be explained in the rest of this
+document. Normally the module will store the module configuration parameters
+in some <code>static</code> global variable that can be accessed module wide, so that
+the configuration can change the behavior of different commands.</p>
+<h1 id="working-with-redismodulestring-objects">Working with RedisModuleString objects</h1>
+<p>The command argument vector <code>argv</code> passed to module commands, and the
+return value of other module APIs functions, are of type <code>RedisModuleString</code>.</p>
+<p>Usually you directly pass module strings to other API calls, however sometimes
+you may need to directly access the string object.</p>
+<p>There are a few functions in order to work with string objects:</p>
+<pre class="language-"><code>const char *RedisModule_StringPtrLen(RedisModuleString *string, size_t *len);
+</code></pre><p>The above function accesses a string by returning its pointer and setting its
+length in <code>len</code>.
+You should never write to a string object pointer, as you can see from the
+<code>const</code> pointer qualifier.</p>
+<p>However, if you want, you can create new string objects using the following
+API:</p>
+<pre class="language-"><code>RedisModuleString *RedisModule_CreateString(RedisModuleCtx *ctx, const char *ptr, size_t len);
+</code></pre><p>The string returned by the above command must be freed using a corresponding
+call to <code>RedisModule_FreeString()</code>:</p>
+<pre class="language-"><code>void RedisModule_FreeString(RedisModuleString *str);
+</code></pre><p>However if you want to avoid having to free strings, the automatic memory
+management, covered later in this document, can be a good alternative, by
+doing it for you.</p>
+<p>Note that the strings provided via the argument vector <code>argv</code> never need
+to be freed. You only need to free new strings you create, or new strings
+returned by other APIs, where it is specified that the returned string must
+be freed.</p>
+<h2 id="creating-strings-from-numbers-or-parsing-strings-as-numbers">Creating strings from numbers or parsing strings as numbers</h2>
+<p>Creating a new string from an integer is a very common operation, so there
+is a function to do this:</p>
+<pre class="language-"><code>RedisModuleString *mystr = RedisModule_CreateStringFromLongLong(ctx,10);
+</code></pre><p>Similarly in order to parse a string as a number:</p>
+<pre class="language-"><code>long long myval;
+if (RedisModule_StringToLongLong(ctx,argv[1],&amp;myval) == REDISMODULE_OK) {
+    /* Do something with &apos;myval&apos; */
+}
+</code></pre><h2 id="accessing-redis-keys-from-modules">Accessing Redis keys from modules</h2>
+<p>Most Redis modules, in order to be useful, have to interact with the Redis
+data space (this is not always true, for example an ID generator may
+never touch Redis keys). Redis modules have two different APIs in order to
+access the Redis data space, one is a low level API that provides very
+fast access and a set of functions to manipulate Redis data structures.
+The other API is more high level, and allows to call Redis commands and
+fetch the result, similarly to how Lua scripts access Redis.</p>
+<p>The high level API is also useful in order to access Redis functionalities
+that are not available as APIs.</p>
+<p>In general modules developers should prefer the low level API, because commands
+implemented using the low level API run at a speed comparable to the speed
+of native Redis commands. However there are definitely use cases for the
+higher level API. For example often the bottleneck could be processing the
+data and not accessing it.</p>
+<p>Also note that sometimes using the low level API is not harder compared to
+the higher level one.</p>
+<h1 id="calling-redis-commands">Calling Redis commands</h1>
+<p>The high level API to access Redis is the sum of the <code>RedisModule_Call()</code>
+function, together with the functions needed in order to access the
+reply object returned by <code>Call()</code>.</p>
+<p><code>RedisModule_Call</code> uses a special calling convention, with a format specifier
+that is used to specify what kind of objects you are passing as arguments
+to the function.</p>
+<p>Redis commands are invoked just using a command name and a list of arguments.
+However when calling commands, the arguments may originate from different
+kind of strings: null-terminated C strings, RedisModuleString objects as
+received from the <code>argv</code> parameter in the command implementation, binary
+safe C buffers with a pointer and a length, and so forth.</p>
+<p>For example if I want to call <code>INCRBY</code> using a first argument (the key)
+a string received in the argument vector <code>argv</code>, which is an array
+of RedisModuleString object pointers, and a C string representing the
+number &quot;10&quot; as second argument (the increment), I&apos;ll use the following
+function call:</p>
+<pre class="language-"><code>RedisModuleCallReply *reply;
+reply = RedisModule_Call(ctx,&quot;INCRBY&quot;,&quot;sc&quot;,argv[1],&quot;10&quot;);
+</code></pre><p>The first argument is the context, and the second is always a null terminated
+C string with the command name. The third argument is the format specifier
+where each character corresponds to the type of the arguments that will follow.
+In the above case <code>&quot;sc&quot;</code> means a RedisModuleString object, and a null
+terminated C string. The other arguments are just the two arguments as
+specified. In fact <code>argv[1]</code> is a RedisModuleString and <code>&quot;10&quot;</code> is a null
+terminated C string.</p>
+<p>This is the full list of format specifiers:</p>
+<ul>
+<li><strong>c</strong> -- Null terminated C string pointer.</li>
+<li><strong>b</strong> -- C buffer, two arguments needed: C string pointer and <code>size_t</code> length.</li>
+<li><strong>s</strong> -- RedisModuleString as received in <code>argv</code> or by other Redis module APIs returning a RedisModuleString object.</li>
+<li><strong>l</strong> -- Long long integer.</li>
+<li><strong>v</strong> -- Array of RedisModuleString objects.</li>
+<li><strong>!</strong> -- This modifier just tells the function to replicate the command to replicas and AOF. It is ignored from the point of view of arguments parsing.</li>
+<li><strong>A</strong> -- This modifier, when <code>!</code> is given, tells to suppress AOF propagation: the command will be propagated only to replicas.</li>
+<li><strong>R</strong> -- This modifier, when <code>!</code> is given, tells to suppress replicas propagation: the command will be propagated only to the AOF if enabled.</li>
+</ul>
+<p>The function returns a <code>RedisModuleCallReply</code> object on success, on
+error NULL is returned.</p>
+<p>NULL is returned when the command name is invalid, the format specifier uses
+characters that are not recognized, or when the command is called with the
+wrong number of arguments. In the above cases the <code>errno</code> var is set to <code>EINVAL</code>. NULL is also returned when, in an instance with Cluster enabled, the target
+keys are about non local hash slots. In this case <code>errno</code> is set to <code>EPERM</code>.</p>
+<h2 id="working-with-redismodulecallreply-objects">Working with RedisModuleCallReply objects.</h2>
+<p><code>RedisModuleCall</code> returns reply objects that can be accessed using the
+<code>RedisModule_CallReply*</code> family of functions.</p>
+<p>In order to obtain the type or reply (corresponding to one of the data types
+supported by the Redis protocol), the function <code>RedisModule_CallReplyType()</code>
+is used:</p>
+<pre class="language-"><code>reply = RedisModule_Call(ctx,&quot;INCRBY&quot;,&quot;sc&quot;,argv[1],&quot;10&quot;);
+if (RedisModule_CallReplyType(reply) == REDISMODULE_REPLY_INTEGER) {
+    long long myval = RedisModule_CallReplyInteger(reply);
+    /* Do something with myval. */
+}
+</code></pre><p>Valid reply types are:</p>
+<ul>
+<li><code>REDISMODULE_REPLY_STRING</code> Bulk string or status replies.</li>
+<li><code>REDISMODULE_REPLY_ERROR</code> Errors.</li>
+<li><code>REDISMODULE_REPLY_INTEGER</code> Signed 64 bit integers.</li>
+<li><code>REDISMODULE_REPLY_ARRAY</code> Array of replies.</li>
+<li><code>REDISMODULE_REPLY_NULL</code> NULL reply.</li>
+</ul>
+<p>Strings, errors and arrays have an associated length. For strings and errors
+the length corresponds to the length of the string. For arrays the length
+is the number of elements. To obtain the reply length the following function
+is used:</p>
+<pre class="language-"><code>size_t reply_len = RedisModule_CallReplyLength(reply);
+</code></pre><p>In order to obtain the value of an integer reply, the following function is used, as already shown in the example above:</p>
+<pre class="language-"><code>long long reply_integer_val = RedisModule_CallReplyInteger(reply);
+</code></pre><p>Called with a reply object of the wrong type, the above function always
+returns <code>LLONG_MIN</code>.</p>
+<p>Sub elements of array replies are accessed this way:</p>
+<pre class="language-"><code>RedisModuleCallReply *subreply;
+subreply = RedisModule_CallReplyArrayElement(reply,idx);
+</code></pre><p>The above function returns NULL if you try to access out of range elements.</p>
+<p>Strings and errors (which are like strings but with a different type) can
+be accessed using in the following way, making sure to never write to
+the resulting pointer (that is returned as as <code>const</code> pointer so that
+misusing must be pretty explicit):</p>
+<pre class="language-"><code>size_t len;
+char *ptr = RedisModule_CallReplyStringPtr(reply,&amp;len);
+</code></pre><p>If the reply type is not a string or an error, NULL is returned.</p>
+<p>RedisCallReply objects are not the same as module string objects
+(RedisModuleString types). However sometimes you may need to pass replies
+of type string or integer, to API functions expecting a module string.</p>
+<p>When this is the case, you may want to evaluate if using the low level
+API could be a simpler way to implement your command, or you can use
+the following function in order to create a new string object from a
+call reply of type string, error or integer:</p>
+<pre class="language-"><code>RedisModuleString *mystr = RedisModule_CreateStringFromCallReply(myreply);
+</code></pre><p>If the reply is not of the right type, NULL is returned.
+The returned string object should be released with <code>RedisModule_FreeString()</code>
+as usually, or by enabling automatic memory management (see corresponding
+section).</p>
+<h1 id="releasing-call-reply-objects">Releasing call reply objects</h1>
+<p>Reply objects must be freed using <code>RedisModule_FreeCallReply</code>. For arrays,
+you need to free only the top level reply, not the nested replies.
+Currently the module implementation provides a protection in order to avoid
+crashing if you free a nested reply object for error, however this feature
+is not guaranteed to be here forever, so should not be considered part
+of the API.</p>
+<p>If you use automatic memory management (explained later in this document)
+you don&apos;t need to free replies (but you still could if you wish to release
+memory ASAP).</p>
+<h2 id="returning-values-from-redis-commands">Returning values from Redis commands</h2>
+<p>Like normal Redis commands, new commands implemented via modules must be
+able to return values to the caller. The API exports a set of functions for
+this goal, in order to return the usual types of the Redis protocol, and
+arrays of such types as elements. Also errors can be returned with any
+error string and code (the error code is the initial uppercase letters in
+the error message, like the &quot;BUSY&quot; string in the &quot;BUSY the sever is busy&quot; error
+message).</p>
+<p>All the functions to send a reply to the client are called
+<code>RedisModule_ReplyWith<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>something</span><span class="token punctuation">&gt;</span></span></code>.</p>
+<p>To return an error, use:</p>
+<pre class="language-"><code>RedisModule_ReplyWithError(RedisModuleCtx *ctx, const char *err);
+</code></pre><p>There is a predefined error string for key of wrong type errors:</p>
+<pre class="language-"><code>REDISMODULE_ERRORMSG_WRONGTYPE
+</code></pre><p>Example usage:</p>
+<pre class="language-"><code>RedisModule_ReplyWithError(ctx,&quot;ERR invalid arguments&quot;);
+</code></pre><p>We already saw how to reply with a long long in the examples above:</p>
+<pre class="language-"><code>RedisModule_ReplyWithLongLong(ctx,12345);
+</code></pre><p>To reply with a simple string, that can&apos;t contain binary values or newlines,
+(so it&apos;s suitable to send small words, like &quot;OK&quot;) we use:</p>
+<pre class="language-"><code>RedisModule_ReplyWithSimpleString(ctx,&quot;OK&quot;);
+</code></pre><p>It&apos;s possible to reply with &quot;bulk strings&quot; that are binary safe, using
+two different functions:</p>
+<pre class="language-"><code>int RedisModule_ReplyWithStringBuffer(RedisModuleCtx *ctx, const char *buf, size_t len);
+
+int RedisModule_ReplyWithString(RedisModuleCtx *ctx, RedisModuleString *str);
+</code></pre><p>The first function gets a C pointer and length. The second a RedisModuleString
+object. Use one or the other depending on the source type you have at hand.</p>
+<p>In order to reply with an array, you just need to use a function to emit the
+array length, followed by as many calls to the above functions as the number
+of elements of the array are:</p>
+<pre class="language-"><code>RedisModule_ReplyWithArray(ctx,2);
+RedisModule_ReplyWithStringBuffer(ctx,&quot;age&quot;,3);
+RedisModule_ReplyWithLongLong(ctx,22);
+</code></pre><p>To return nested arrays is easy, your nested array element just uses another
+call to <code>RedisModule_ReplyWithArray()</code> followed by the calls to emit the
+sub array elements.</p>
+<h2 id="returning-arrays-with-dynamic-length">Returning arrays with dynamic length</h2>
+<p>Sometimes it is not possible to know beforehand the number of items of
+an array. As an example, think of a Redis module implementing a FACTOR
+command that given a number outputs the prime factors. Instead of
+factorializing the number, storing the prime factors into an array, and
+later produce the command reply, a better solution is to start an array
+reply where the length is not known, and set it later. This is accomplished
+with a special argument to <code>RedisModule_ReplyWithArray()</code>:</p>
+<pre class="language-"><code>RedisModule_ReplyWithArray(ctx, REDISMODULE_POSTPONED_ARRAY_LEN);
+</code></pre><p>The above call starts an array reply so we can use other <code>ReplyWith</code> calls
+in order to produce the array items. Finally in order to set the length,
+use the following call:</p>
+<pre class="language-"><code>RedisModule_ReplySetArrayLength(ctx, number_of_items);
+</code></pre><p>In the case of the FACTOR command, this translates to some code similar
+to this:</p>
+<pre class="language-"><code>RedisModule_ReplyWithArray(ctx, REDISMODULE_POSTPONED_ARRAY_LEN);
+number_of_factors = 0;
+while(still_factors) {
+    RedisModule_ReplyWithLongLong(ctx, some_factor);
+    number_of_factors++;
+}
+RedisModule_ReplySetArrayLength(ctx, number_of_factors);
+</code></pre><p>Another common use case for this feature is iterating over the arrays of
+some collection and only returning the ones passing some kind of filtering.</p>
+<p>It is possible to have multiple nested arrays with postponed reply.
+Each call to <code>SetArray()</code> will set the length of the latest corresponding
+call to <code>ReplyWithArray()</code>:</p>
+<pre class="language-"><code>RedisModule_ReplyWithArray(ctx, REDISMODULE_POSTPONED_ARRAY_LEN);
+... generate 100 elements ...
+RedisModule_ReplyWithArray(ctx, REDISMODULE_POSTPONED_ARRAY_LEN);
+... generate 10 elements ...
+RedisModule_ReplySetArrayLength(ctx, 10);
+RedisModule_ReplySetArrayLength(ctx, 100);
+</code></pre><p>This creates a 100 items array having as last element a 10 items array.</p>
+<h1 id="arity-and-type-checks">Arity and type checks</h1>
+<p>Often commands need to check that the number of arguments and type of the key
+is correct. In order to report a wrong arity, there is a specific function
+called <code>RedisModule_WrongArity()</code>. The usage is trivial:</p>
+<pre class="language-"><code>if (argc != 2) return RedisModule_WrongArity(ctx);
+</code></pre><p>Checking for the wrong type involves opening the key and checking the type:</p>
+<pre class="language-"><code>RedisModuleKey *key = RedisModule_OpenKey(ctx,argv[1],
+    REDISMODULE_READ|REDISMODULE_WRITE);
+
+int keytype = RedisModule_KeyType(key);
+if (keytype != REDISMODULE_KEYTYPE_STRING &amp;&amp;
+    keytype != REDISMODULE_KEYTYPE_EMPTY)
+{
+    RedisModule_CloseKey(key);
+    return RedisModule_ReplyWithError(ctx,REDISMODULE_ERRORMSG_WRONGTYPE);
+}
+</code></pre><p>Note that you often want to proceed with a command both if the key
+is of the expected type, or if it&apos;s empty.</p>
+<h2 id="low-level-access-to-keys">Low level access to keys</h2>
+<p>Low level access to keys allow to perform operations on value objects associated
+to keys directly, with a speed similar to what Redis uses internally to
+implement the built-in commands.</p>
+<p>Once a key is opened, a key pointer is returned that will be used with all the
+other low level API calls in order to perform operations on the key or its
+associated value.</p>
+<p>Because the API is meant to be very fast, it cannot do too many run-time
+checks, so the user must be aware of certain rules to follow:</p>
+<ul>
+<li>Opening the same key multiple times where at least one instance is opened for writing, is undefined and may lead to crashes.</li>
+<li>While a key is open, it should only be accessed via the low level key API. For example opening a key, then calling DEL on the same key using the <code>RedisModule_Call()</code> API will result into a crash. However it is safe to open a key, perform some operation with the low level API, closing it, then using other APIs to manage the same key, and later opening it again to do some more work.</li>
+</ul>
+<p>In order to open a key the <code>RedisModule_OpenKey</code> function is used. It returns
+a key pointer, that we&apos;ll use with all the next calls to access and modify
+the value:</p>
+<pre class="language-"><code>RedisModuleKey *key;
+key = RedisModule_OpenKey(ctx,argv[1],REDISMODULE_READ);
+</code></pre><p>The second argument is the key name, that must be a <code>RedisModuleString</code> object.
+The third argument is the mode: <code>REDISMODULE_READ</code> or <code>REDISMODULE_WRITE</code>.
+It is possible to use <code>|</code> to bitwise OR the two modes to open the key in
+both modes. Currently a key opened for writing can also be accessed for reading
+but this is to be considered an implementation detail. The right mode should
+be used in sane modules.</p>
+<p>You can open non existing keys for writing, since the keys will be created
+when an attempt to write to the key is performed. However when opening keys
+just for reading, <code>RedisModule_OpenKey</code> will return NULL if the key does not
+exist.</p>
+<p>Once you are done using a key, you can close it with:</p>
+<pre class="language-"><code>RedisModule_CloseKey(key);
+</code></pre><p>Note that if automatic memory management is enabled, you are not forced to
+close keys. When the module function returns, Redis will take care to close
+all the keys which are still open.</p>
+<h2 id="getting-the-key-type">Getting the key type</h2>
+<p>In order to obtain the value of a key, use the <code>RedisModule_KeyType()</code> function:</p>
+<pre class="language-"><code>int keytype = RedisModule_KeyType(key);
+</code></pre><p>It returns one of the following values:</p>
+<pre class="language-"><code>REDISMODULE_KEYTYPE_EMPTY
+REDISMODULE_KEYTYPE_STRING
+REDISMODULE_KEYTYPE_LIST
+REDISMODULE_KEYTYPE_HASH
+REDISMODULE_KEYTYPE_SET
+REDISMODULE_KEYTYPE_ZSET
+</code></pre><p>The above are just the usual Redis key types, with the addition of an empty
+type, that signals the key pointer is associated with an empty key that
+does not yet exists.</p>
+<h2 id="creating-new-keys">Creating new keys</h2>
+<p>To create a new key, open it for writing and then write to it using one
+of the key writing functions. Example:</p>
+<pre class="language-"><code>RedisModuleKey *key;
+key = RedisModule_OpenKey(ctx,argv[1],REDISMODULE_WRITE);
+if (RedisModule_KeyType(key) == REDISMODULE_KEYTYPE_EMPTY) {
+    RedisModule_StringSet(key,argv[2]);
+}
+</code></pre><h2 id="deleting-keys">Deleting keys</h2>
+<p>Just use:</p>
+<pre class="language-"><code>RedisModule_DeleteKey(key);
+</code></pre><p>The function returns <code>REDISMODULE_ERR</code> if the key is not open for writing.
+Note that after a key gets deleted, it is setup in order to be targeted
+by new key commands. For example <code>RedisModule_KeyType()</code> will return it is
+an empty key, and writing to it will create a new key, possibly of another
+type (depending on the API used).</p>
+<h2 id="managing-key-expires-ttls">Managing key expires (TTLs)</h2>
+<p>To control key expires two functions are provided, that are able to set,
+modify, get, and unset the time to live associated with a key.</p>
+<p>One function is used in order to query the current expire of an open key:</p>
+<pre class="language-"><code>mstime_t RedisModule_GetExpire(RedisModuleKey *key);
+</code></pre><p>The function returns the time to live of the key in milliseconds, or
+<code>REDISMODULE_NO_EXPIRE</code> as a special value to signal the key has no associated
+expire or does not exist at all (you can differentiate the two cases checking
+if the key type is <code>REDISMODULE_KEYTYPE_EMPTY</code>).</p>
+<p>In order to change the expire of a key the following function is used instead:</p>
+<pre class="language-"><code>int RedisModule_SetExpire(RedisModuleKey *key, mstime_t expire);
+</code></pre><p>When called on a non existing key, <code>REDISMODULE_ERR</code> is returned, because
+the function can only associate expires to existing open keys (non existing
+open keys are only useful in order to create new values with data type
+specific write operations).</p>
+<p>Again the <code>expire</code> time is specified in milliseconds. If the key has currently
+no expire, a new expire is set. If the key already have an expire, it is
+replaced with the new value.</p>
+<p>If the key has an expire, and the special value <code>REDISMODULE_NO_EXPIRE</code> is
+used as a new expire, the expire is removed, similarly to the Redis
+<code>PERSIST</code> command. In case the key was already persistent, no operation is
+performed.</p>
+<h2 id="obtaining-the-length-of-values">Obtaining the length of values</h2>
+<p>There is a single function in order to retrieve the length of the value
+associated to an open key. The returned length is value-specific, and is
+the string length for strings, and the number of elements for the aggregated
+data types (how many elements there is in a list, set, sorted set, hash).</p>
+<pre class="language-"><code>size_t len = RedisModule_ValueLength(key);
+</code></pre><p>If the key does not exist, 0 is returned by the function:</p>
+<h2 id="string-type-api">String type API</h2>
+<p>Setting a new string value, like the Redis <code>SET</code> command does, is performed
+using:</p>
+<pre class="language-"><code>int RedisModule_StringSet(RedisModuleKey *key, RedisModuleString *str);
+</code></pre><p>The function works exactly like the Redis <code>SET</code> command itself, that is, if
+there is a prior value (of any type) it will be deleted.</p>
+<p>Accessing existing string values is performed using DMA (direct memory
+access) for speed. The API will return a pointer and a length, so that&apos;s
+possible to access and, if needed, modify the string directly.</p>
+<pre class="language-"><code>size_t len, j;
+char *myptr = RedisModule_StringDMA(key,&amp;len,REDISMODULE_WRITE);
+for (j = 0; j &lt; len; j++) myptr[j] = &apos;A&apos;;
+</code></pre><p>In the above example we write directly on the string. Note that if you want
+to write, you must be sure to ask for <code>WRITE</code> mode.</p>
+<p>DMA pointers are only valid if no other operations are performed with the key
+before using the pointer, after the DMA call.</p>
+<p>Sometimes when we want to manipulate strings directly, we need to change
+their size as well. For this scope, the <code>RedisModule_StringTruncate</code> function
+is used. Example:</p>
+<pre class="language-"><code>RedisModule_StringTruncate(mykey,1024);
+</code></pre><p>The function truncates, or enlarges the string as needed, padding it with
+zero bytes if the previous length is smaller than the new length we request.
+If the string does not exist since <code>key</code> is associated to an open empty key,
+a string value is created and associated to the key.</p>
+<p>Note that every time <code>StringTruncate()</code> is called, we need to re-obtain
+the DMA pointer again, since the old may be invalid.</p>
+<h2 id="list-type-api">List type API</h2>
+<p>It&apos;s possible to push and pop values from list values:</p>
+<pre class="language-"><code>int RedisModule_ListPush(RedisModuleKey *key, int where, RedisModuleString *ele);
+RedisModuleString *RedisModule_ListPop(RedisModuleKey *key, int where);
+</code></pre><p>In both the APIs the <code>where</code> argument specifies if to push or pop from tail
+or head, using the following macros:</p>
+<pre class="language-"><code>REDISMODULE_LIST_HEAD
+REDISMODULE_LIST_TAIL
+</code></pre><p>Elements returned by <code>RedisModule_ListPop()</code> are like strings created with
+<code>RedisModule_CreateString()</code>, they must be released with
+<code>RedisModule_FreeString()</code> or by enabling automatic memory management.</p>
+<h2 id="set-type-api">Set type API</h2>
+<p>Work in progress.</p>
+<h2 id="sorted-set-type-api">Sorted set type API</h2>
+<p>Documentation missing, please refer to the top comments inside <code>module.c</code>
+for the following functions:</p>
+<ul>
+<li><code>RedisModule_ZsetAdd</code></li>
+<li><code>RedisModule_ZsetIncrby</code></li>
+<li><code>RedisModule_ZsetScore</code></li>
+<li><code>RedisModule_ZsetRem</code></li>
+</ul>
+<p>And for the sorted set iterator:</p>
+<ul>
+<li><code>RedisModule_ZsetRangeStop</code></li>
+<li><code>RedisModule_ZsetFirstInScoreRange</code></li>
+<li><code>RedisModule_ZsetLastInScoreRange</code></li>
+<li><code>RedisModule_ZsetFirstInLexRange</code></li>
+<li><code>RedisModule_ZsetLastInLexRange</code></li>
+<li><code>RedisModule_ZsetRangeCurrentElement</code></li>
+<li><code>RedisModule_ZsetRangeNext</code></li>
+<li><code>RedisModule_ZsetRangePrev</code></li>
+<li><code>RedisModule_ZsetRangeEndReached</code></li>
+</ul>
+<h2 id="hash-type-api">Hash type API</h2>
+<p>Documentation missing, please refer to the top comments inside <code>module.c</code>
+for the following functions:</p>
+<ul>
+<li><code>RedisModule_HashSet</code></li>
+<li><code>RedisModule_HashGet</code></li>
+</ul>
+<h2 id="iterating-aggregated-values">Iterating aggregated values</h2>
+<p>Work in progress.</p>
+<h1 id="replicating-commands">Replicating commands</h1>
+<p>If you want to use module commands exactly like normal Redis commands, in the
+context of replicated Redis instances, or using the AOF file for persistence,
+it is important for module commands to handle their replication in a consistent
+way.</p>
+<p>When using the higher level APIs to invoke commands, replication happens
+automatically if you use the &quot;!&quot; modifier in the format string of
+<code>RedisModule_Call()</code> as in the following example:</p>
+<pre class="language-"><code>reply = RedisModule_Call(ctx,&quot;INCRBY&quot;,&quot;!sc&quot;,argv[1],&quot;10&quot;);
+</code></pre><p>As you can see the format specifier is <code>&quot;!sc&quot;</code>. The bang is not parsed as a
+format specifier, but it internally flags the command as &quot;must replicate&quot;.</p>
+<p>If you use the above programming style, there are no problems.
+However sometimes things are more complex than that, and you use the low level
+API. In this case, if there are no side effects in the command execution, and
+it consistently always performs the same work, what is possible to do is to
+replicate the command verbatim as the user executed it. To do that, you just
+need to call the following function:</p>
+<pre class="language-"><code>RedisModule_ReplicateVerbatim(ctx);
+</code></pre><p>When you use the above API, you should not use any other replication function
+since they are not guaranteed to mix well.</p>
+<p>However this is not the only option. It&apos;s also possible to exactly tell
+Redis what commands to replicate as the effect of the command execution, using
+an API similar to <code>RedisModule_Call()</code> but that instead of calling the command
+sends it to the AOF / slaves stream. Example:</p>
+<pre class="language-"><code>RedisModule_Replicate(ctx,&quot;INCRBY&quot;,&quot;cl&quot;,&quot;foo&quot;,my_increment);
+</code></pre><p>It&apos;s possible to call <code>RedisModule_Replicate</code> multiple times, and each
+will emit a command. All the sequence emitted is wrapped between a
+<code>MULTI/EXEC</code> transaction, so that the AOF and replication effects are the
+same as executing a single command.</p>
+<p>Note that <code>Call()</code> replication and <code>Replicate()</code> replication have a rule,
+in case you want to mix both forms of replication (not necessarily a good
+idea if there are simpler approaches). Commands replicated with <code>Call()</code>
+are always the first emitted in the final <code>MULTI/EXEC</code> block, while all
+the commands emitted with <code>Replicate()</code> will follow.</p>
+<h1 id="automatic-memory-management">Automatic memory management</h1>
+<p>Normally when writing programs in the C language, programmers need to manage
+memory manually. This is why the Redis modules API has functions to release
+strings, close open keys, free replies, and so forth.</p>
+<p>However given that commands are executed in a contained environment and
+with a set of strict APIs, Redis is able to provide automatic memory management
+to modules, at the cost of some performance (most of the time, a very low
+cost).</p>
+<p>When automatic memory management is enabled:</p>
+<ol>
+<li>You don&apos;t need to close open keys.</li>
+<li>You don&apos;t need to free replies.</li>
+<li>You don&apos;t need to free RedisModuleString objects.</li>
+</ol>
+<p>However you can still do it, if you want. For example, automatic memory
+management may be active, but inside a loop allocating a lot of strings,
+you may still want to free strings no longer used.</p>
+<p>In order to enable automatic memory management, just call the following
+function at the start of the command implementation:</p>
+<pre class="language-"><code>RedisModule_AutoMemory(ctx);
+</code></pre><p>Automatic memory management is usually the way to go, however experienced
+C programmers may not use it in order to gain some speed and memory usage
+benefit.</p>
+<h1 id="allocating-memory-into-modules">Allocating memory into modules</h1>
+<p>Normal C programs use <code>malloc()</code> and <code>free()</code> in order to allocate and
+release memory dynamically. While in Redis modules the use of malloc is
+not technically forbidden, it is a lot better to use the Redis Modules
+specific functions, that are exact replacements for <code>malloc</code>, <code>free</code>,
+<code>realloc</code> and <code>strdup</code>. These functions are:</p>
+<pre class="language-"><code>void *RedisModule_Alloc(size_t bytes);
+void* RedisModule_Realloc(void *ptr, size_t bytes);
+void RedisModule_Free(void *ptr);
+void RedisModule_Calloc(size_t nmemb, size_t size);
+char *RedisModule_Strdup(const char *str);
+</code></pre><p>They work exactly like their <code>libc</code> equivalent calls, however they use
+the same allocator Redis uses, and the memory allocated using these
+functions is reported by the <code>INFO</code> command in the memory section, is
+accounted when enforcing the <code>maxmemory</code> policy, and in general is
+a first citizen of the Redis executable. On the contrary, the method
+allocated inside modules with libc <code>malloc()</code> is transparent to Redis.</p>
+<p>Another reason to use the modules functions in order to allocate memory
+is that, when creating native data types inside modules, the RDB loading
+functions can return deserialized strings (from the RDB file) directly
+as <code>RedisModule_Alloc()</code> allocations, so they can be used directly to
+populate data structures after loading, instead of having to copy them
+to the data structure.</p>
+<h2 id="pool-allocator">Pool allocator</h2>
+<p>Sometimes in commands implementations, it is required to perform many
+small allocations that will be not retained at the end of the command
+execution, but are just functional to execute the command itself.</p>
+<p>This work can be more easily accomplished using the Redis pool allocator:</p>
+<pre class="language-"><code>void *RedisModule_PoolAlloc(RedisModuleCtx *ctx, size_t bytes);
+</code></pre><p>It works similarly to <code>malloc()</code>, and returns memory aligned to the
+next power of two of greater or equal to <code>bytes</code> (for a maximum alignment
+of 8 bytes). However it allocates memory in blocks, so it the overhead
+of the allocations is small, and more important, the memory allocated
+is automatically released when the command returns.</p>
+<p>So in general short living allocations are a good candidates for the pool
+allocator.</p>
+<h1 id="writing-commands-compatible-with-redis-cluster">Writing commands compatible with Redis Cluster</h1>
+<p>Documentation missing, please check the following functions inside <code>module.c</code>:</p>
+<pre class="language-"><code>RedisModule_IsKeysPositionRequest(ctx);
+RedisModule_KeyAtPos(ctx,pos);
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="modules-blocking-ops.html" class="navigation navigation-prev " aria-label="Previous page: Modules Blocking Ops">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="modules-native-types.html" class="navigation navigation-next " aria-label="Next page: Modules Native Types">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Modules Intro","level":"1.3.33","depth":2,"next":{"title":"Modules Native Types","level":"1.3.34","depth":2,"path":"topics/modules-native-types.md","ref":"topics/modules-native-types.md","articles":[]},"previous":{"title":"Modules Blocking Ops","level":"1.3.32","depth":2,"path":"topics/modules-blocking-ops.md","ref":"topics/modules-blocking-ops.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Redis 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"topics/modules-intro.md","mtime":"2021-03-03T00:55:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-03T01:00:54.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

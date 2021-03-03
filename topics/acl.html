@@ -1,0 +1,5094 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Acl · Redis 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="admin.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Commands
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../commands/acl-cat.html">
+            
+                <a href="../commands/acl-cat.html">
+            
+                    
+                    Acl Cat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../commands/acl-deluser.html">
+            
+                <a href="../commands/acl-deluser.html">
+            
+                    
+                    Acl Deluser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../commands/acl-genpass.html">
+            
+                <a href="../commands/acl-genpass.html">
+            
+                    
+                    Acl Genpass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../commands/acl-getuser.html">
+            
+                <a href="../commands/acl-getuser.html">
+            
+                    
+                    Acl Getuser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../commands/acl-help.html">
+            
+                <a href="../commands/acl-help.html">
+            
+                    
+                    Acl Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../commands/acl-list.html">
+            
+                <a href="../commands/acl-list.html">
+            
+                    
+                    Acl List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../commands/acl-load.html">
+            
+                <a href="../commands/acl-load.html">
+            
+                    
+                    Acl Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../commands/acl-log.html">
+            
+                <a href="../commands/acl-log.html">
+            
+                    
+                    Acl Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../commands/acl-save.html">
+            
+                <a href="../commands/acl-save.html">
+            
+                    
+                    Acl Save
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../commands/acl-setuser.html">
+            
+                <a href="../commands/acl-setuser.html">
+            
+                    
+                    Acl Setuser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../commands/acl-users.html">
+            
+                <a href="../commands/acl-users.html">
+            
+                    
+                    Acl Users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../commands/acl-whoami.html">
+            
+                <a href="../commands/acl-whoami.html">
+            
+                    
+                    Acl Whoami
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../commands/append.html">
+            
+                <a href="../commands/append.html">
+            
+                    
+                    Append
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../commands/auth.html">
+            
+                <a href="../commands/auth.html">
+            
+                    
+                    Auth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../commands/bgrewriteaof.html">
+            
+                <a href="../commands/bgrewriteaof.html">
+            
+                    
+                    Bgrewriteaof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../commands/bgsave.html">
+            
+                <a href="../commands/bgsave.html">
+            
+                    
+                    Bgsave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../commands/bitcount.html">
+            
+                <a href="../commands/bitcount.html">
+            
+                    
+                    Bitcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../commands/bitfield.html">
+            
+                <a href="../commands/bitfield.html">
+            
+                    
+                    Bitfield
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../commands/bitop.html">
+            
+                <a href="../commands/bitop.html">
+            
+                    
+                    Bitop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="../commands/bitpos.html">
+            
+                <a href="../commands/bitpos.html">
+            
+                    
+                    Bitpos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="../commands/blmove.html">
+            
+                <a href="../commands/blmove.html">
+            
+                    
+                    Blmove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="../commands/blpop.html">
+            
+                <a href="../commands/blpop.html">
+            
+                    
+                    Blpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" data-path="../commands/brpop.html">
+            
+                <a href="../commands/brpop.html">
+            
+                    
+                    Brpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" data-path="../commands/brpoplpush.html">
+            
+                <a href="../commands/brpoplpush.html">
+            
+                    
+                    Brpoplpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" data-path="../commands/bzpopmax.html">
+            
+                <a href="../commands/bzpopmax.html">
+            
+                    
+                    Bzpopmax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.26" data-path="../commands/bzpopmin.html">
+            
+                <a href="../commands/bzpopmin.html">
+            
+                    
+                    Bzpopmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27" data-path="../commands/client-caching.html">
+            
+                <a href="../commands/client-caching.html">
+            
+                    
+                    Client Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.28" data-path="../commands/client-getname.html">
+            
+                <a href="../commands/client-getname.html">
+            
+                    
+                    Client Getname
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.29" data-path="../commands/client-getredir.html">
+            
+                <a href="../commands/client-getredir.html">
+            
+                    
+                    Client Getredir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.30" data-path="../commands/client-id.html">
+            
+                <a href="../commands/client-id.html">
+            
+                    
+                    Client Id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.31" data-path="../commands/client-info.html">
+            
+                <a href="../commands/client-info.html">
+            
+                    
+                    Client Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.32" data-path="../commands/client-kill.html">
+            
+                <a href="../commands/client-kill.html">
+            
+                    
+                    Client Kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.33" data-path="../commands/client-list.html">
+            
+                <a href="../commands/client-list.html">
+            
+                    
+                    Client List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.34" data-path="../commands/client-pause.html">
+            
+                <a href="../commands/client-pause.html">
+            
+                    
+                    Client Pause
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.35" data-path="../commands/client-reply.html">
+            
+                <a href="../commands/client-reply.html">
+            
+                    
+                    Client Reply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.36" data-path="../commands/client-setname.html">
+            
+                <a href="../commands/client-setname.html">
+            
+                    
+                    Client Setname
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.37" data-path="../commands/client-tracking.html">
+            
+                <a href="../commands/client-tracking.html">
+            
+                    
+                    Client Tracking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.38" data-path="../commands/client-trackinginfo.html">
+            
+                <a href="../commands/client-trackinginfo.html">
+            
+                    
+                    Client Trackinginfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.39" data-path="../commands/client-unblock.html">
+            
+                <a href="../commands/client-unblock.html">
+            
+                    
+                    Client Unblock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.40" data-path="../commands/client-unpause.html">
+            
+                <a href="../commands/client-unpause.html">
+            
+                    
+                    Client Unpause
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.41" data-path="../commands/cluster-addslots.html">
+            
+                <a href="../commands/cluster-addslots.html">
+            
+                    
+                    Cluster Addslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.42" data-path="../commands/cluster-bumpepoch.html">
+            
+                <a href="../commands/cluster-bumpepoch.html">
+            
+                    
+                    Cluster Bumpepoch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.43" data-path="../commands/cluster-count-failure-reports.html">
+            
+                <a href="../commands/cluster-count-failure-reports.html">
+            
+                    
+                    Cluster Count Failure Reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.44" data-path="../commands/cluster-countkeysinslot.html">
+            
+                <a href="../commands/cluster-countkeysinslot.html">
+            
+                    
+                    Cluster Countkeysinslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.45" data-path="../commands/cluster-delslots.html">
+            
+                <a href="../commands/cluster-delslots.html">
+            
+                    
+                    Cluster Delslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.46" data-path="../commands/cluster-failover.html">
+            
+                <a href="../commands/cluster-failover.html">
+            
+                    
+                    Cluster Failover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.47" data-path="../commands/cluster-flushslots.html">
+            
+                <a href="../commands/cluster-flushslots.html">
+            
+                    
+                    Cluster Flushslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.48" data-path="../commands/cluster-forget.html">
+            
+                <a href="../commands/cluster-forget.html">
+            
+                    
+                    Cluster Forget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.49" data-path="../commands/cluster-getkeysinslot.html">
+            
+                <a href="../commands/cluster-getkeysinslot.html">
+            
+                    
+                    Cluster Getkeysinslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.50" data-path="../commands/cluster-info.html">
+            
+                <a href="../commands/cluster-info.html">
+            
+                    
+                    Cluster Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.51" data-path="../commands/cluster-keyslot.html">
+            
+                <a href="../commands/cluster-keyslot.html">
+            
+                    
+                    Cluster Keyslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.52" data-path="../commands/cluster-meet.html">
+            
+                <a href="../commands/cluster-meet.html">
+            
+                    
+                    Cluster Meet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.53" data-path="../commands/cluster-myid.html">
+            
+                <a href="../commands/cluster-myid.html">
+            
+                    
+                    Cluster Myid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.54" data-path="../commands/cluster-nodes.html">
+            
+                <a href="../commands/cluster-nodes.html">
+            
+                    
+                    Cluster Nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.55" data-path="../commands/cluster-replicas.html">
+            
+                <a href="../commands/cluster-replicas.html">
+            
+                    
+                    Cluster Replicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.56" data-path="../commands/cluster-replicate.html">
+            
+                <a href="../commands/cluster-replicate.html">
+            
+                    
+                    Cluster Replicate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.57" data-path="../commands/cluster-reset.html">
+            
+                <a href="../commands/cluster-reset.html">
+            
+                    
+                    Cluster Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.58" data-path="../commands/cluster-saveconfig.html">
+            
+                <a href="../commands/cluster-saveconfig.html">
+            
+                    
+                    Cluster Saveconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.59" data-path="../commands/cluster-set-config-epoch.html">
+            
+                <a href="../commands/cluster-set-config-epoch.html">
+            
+                    
+                    Cluster Set Config Epoch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.60" data-path="../commands/cluster-setslot.html">
+            
+                <a href="../commands/cluster-setslot.html">
+            
+                    
+                    Cluster Setslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.61" data-path="../commands/cluster-slaves.html">
+            
+                <a href="../commands/cluster-slaves.html">
+            
+                    
+                    Cluster Slaves
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.62" data-path="../commands/cluster-slots.html">
+            
+                <a href="../commands/cluster-slots.html">
+            
+                    
+                    Cluster Slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.63" data-path="../commands/command-count.html">
+            
+                <a href="../commands/command-count.html">
+            
+                    
+                    Command Count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.64" data-path="../commands/command-getkeys.html">
+            
+                <a href="../commands/command-getkeys.html">
+            
+                    
+                    Command Getkeys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.65" data-path="../commands/command-info.html">
+            
+                <a href="../commands/command-info.html">
+            
+                    
+                    Command Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.66" data-path="../commands/command.html">
+            
+                <a href="../commands/command.html">
+            
+                    
+                    Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.67" data-path="../commands/config-get.html">
+            
+                <a href="../commands/config-get.html">
+            
+                    
+                    Config Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.68" data-path="../commands/config-resetstat.html">
+            
+                <a href="../commands/config-resetstat.html">
+            
+                    
+                    Config Resetstat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.69" data-path="../commands/config-rewrite.html">
+            
+                <a href="../commands/config-rewrite.html">
+            
+                    
+                    Config Rewrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.70" data-path="../commands/config-set.html">
+            
+                <a href="../commands/config-set.html">
+            
+                    
+                    Config Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.71" data-path="../commands/copy.html">
+            
+                <a href="../commands/copy.html">
+            
+                    
+                    Copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.72" data-path="../commands/dbsize.html">
+            
+                <a href="../commands/dbsize.html">
+            
+                    
+                    Dbsize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.73" data-path="../commands/debug-object.html">
+            
+                <a href="../commands/debug-object.html">
+            
+                    
+                    Debug Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.74" data-path="../commands/debug-segfault.html">
+            
+                <a href="../commands/debug-segfault.html">
+            
+                    
+                    Debug Segfault
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.75" data-path="../commands/decr.html">
+            
+                <a href="../commands/decr.html">
+            
+                    
+                    Decr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.76" data-path="../commands/decrby.html">
+            
+                <a href="../commands/decrby.html">
+            
+                    
+                    Decrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.77" data-path="../commands/del.html">
+            
+                <a href="../commands/del.html">
+            
+                    
+                    Del
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78" data-path="../commands/discard.html">
+            
+                <a href="../commands/discard.html">
+            
+                    
+                    Discard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.79" data-path="../commands/dump.html">
+            
+                <a href="../commands/dump.html">
+            
+                    
+                    Dump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.80" data-path="../commands/echo.html">
+            
+                <a href="../commands/echo.html">
+            
+                    
+                    Echo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.81" data-path="../commands/eval.html">
+            
+                <a href="../commands/eval.html">
+            
+                    
+                    Eval
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.82" data-path="../commands/evalsha.html">
+            
+                <a href="../commands/evalsha.html">
+            
+                    
+                    Evalsha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.83" data-path="../commands/exec.html">
+            
+                <a href="../commands/exec.html">
+            
+                    
+                    Exec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.84" data-path="../commands/exists.html">
+            
+                <a href="../commands/exists.html">
+            
+                    
+                    Exists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.85" data-path="../commands/expire.html">
+            
+                <a href="../commands/expire.html">
+            
+                    
+                    Expire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.86" data-path="../commands/expireat.html">
+            
+                <a href="../commands/expireat.html">
+            
+                    
+                    Expireat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.87" data-path="../commands/failover.html">
+            
+                <a href="../commands/failover.html">
+            
+                    
+                    Failover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.88" data-path="../commands/flushall.html">
+            
+                <a href="../commands/flushall.html">
+            
+                    
+                    Flushall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.89" data-path="../commands/flushdb.html">
+            
+                <a href="../commands/flushdb.html">
+            
+                    
+                    Flushdb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.90" data-path="../commands/geoadd.html">
+            
+                <a href="../commands/geoadd.html">
+            
+                    
+                    Geoadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.91" data-path="../commands/geodecode.html">
+            
+                <a href="../commands/geodecode.html">
+            
+                    
+                    Geodecode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.92" data-path="../commands/geodist.html">
+            
+                <a href="../commands/geodist.html">
+            
+                    
+                    Geodist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.93" data-path="../commands/geoencode.html">
+            
+                <a href="../commands/geoencode.html">
+            
+                    
+                    Geoencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.94" data-path="../commands/geohash.html">
+            
+                <a href="../commands/geohash.html">
+            
+                    
+                    Geohash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.95" data-path="../commands/geopos.html">
+            
+                <a href="../commands/geopos.html">
+            
+                    
+                    Geopos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.96" data-path="../commands/georadius.html">
+            
+                <a href="../commands/georadius.html">
+            
+                    
+                    Georadius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.97" data-path="../commands/georadiusbymember.html">
+            
+                <a href="../commands/georadiusbymember.html">
+            
+                    
+                    Georadiusbymember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.98" data-path="../commands/geosearch.html">
+            
+                <a href="../commands/geosearch.html">
+            
+                    
+                    Geosearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.99" data-path="../commands/geosearchstore.html">
+            
+                <a href="../commands/geosearchstore.html">
+            
+                    
+                    Geosearchstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.100" data-path="../commands/get.html">
+            
+                <a href="../commands/get.html">
+            
+                    
+                    Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.101" data-path="../commands/getbit.html">
+            
+                <a href="../commands/getbit.html">
+            
+                    
+                    Getbit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.102" data-path="../commands/getdel.html">
+            
+                <a href="../commands/getdel.html">
+            
+                    
+                    Getdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.103" data-path="../commands/getex.html">
+            
+                <a href="../commands/getex.html">
+            
+                    
+                    Getex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.104" data-path="../commands/getrange.html">
+            
+                <a href="../commands/getrange.html">
+            
+                    
+                    Getrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.105" data-path="../commands/getset.html">
+            
+                <a href="../commands/getset.html">
+            
+                    
+                    Getset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.106" data-path="../commands/hdel.html">
+            
+                <a href="../commands/hdel.html">
+            
+                    
+                    Hdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.107" data-path="../commands/hello.html">
+            
+                <a href="../commands/hello.html">
+            
+                    
+                    Hello
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.108" data-path="../commands/hexists.html">
+            
+                <a href="../commands/hexists.html">
+            
+                    
+                    Hexists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.109" data-path="../commands/hget.html">
+            
+                <a href="../commands/hget.html">
+            
+                    
+                    Hget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.110" data-path="../commands/hgetall.html">
+            
+                <a href="../commands/hgetall.html">
+            
+                    
+                    Hgetall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.111" data-path="../commands/hincrby.html">
+            
+                <a href="../commands/hincrby.html">
+            
+                    
+                    Hincrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.112" data-path="../commands/hincrbyfloat.html">
+            
+                <a href="../commands/hincrbyfloat.html">
+            
+                    
+                    Hincrbyfloat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.113" data-path="../commands/hkeys.html">
+            
+                <a href="../commands/hkeys.html">
+            
+                    
+                    Hkeys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.114" data-path="../commands/hlen.html">
+            
+                <a href="../commands/hlen.html">
+            
+                    
+                    Hlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.115" data-path="../commands/hmget.html">
+            
+                <a href="../commands/hmget.html">
+            
+                    
+                    Hmget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.116" data-path="../commands/hmset.html">
+            
+                <a href="../commands/hmset.html">
+            
+                    
+                    Hmset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.117" data-path="../commands/hrandfield.html">
+            
+                <a href="../commands/hrandfield.html">
+            
+                    
+                    Hrandfield
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.118" data-path="../commands/hscan.html">
+            
+                <a href="../commands/hscan.html">
+            
+                    
+                    Hscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.119" data-path="../commands/hset.html">
+            
+                <a href="../commands/hset.html">
+            
+                    
+                    Hset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.120" data-path="../commands/hsetnx.html">
+            
+                <a href="../commands/hsetnx.html">
+            
+                    
+                    Hsetnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.121" data-path="../commands/hstrlen.html">
+            
+                <a href="../commands/hstrlen.html">
+            
+                    
+                    Hstrlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.122" data-path="../commands/hvals.html">
+            
+                <a href="../commands/hvals.html">
+            
+                    
+                    Hvals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.123" data-path="../commands/incr.html">
+            
+                <a href="../commands/incr.html">
+            
+                    
+                    Incr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.124" data-path="../commands/incrby.html">
+            
+                <a href="../commands/incrby.html">
+            
+                    
+                    Incrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.125" data-path="../commands/incrbyfloat.html">
+            
+                <a href="../commands/incrbyfloat.html">
+            
+                    
+                    Incrbyfloat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.126" data-path="../commands/info.html">
+            
+                <a href="../commands/info.html">
+            
+                    
+                    Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.127" data-path="../commands/keys.html">
+            
+                <a href="../commands/keys.html">
+            
+                    
+                    Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.128" data-path="../commands/lastsave.html">
+            
+                <a href="../commands/lastsave.html">
+            
+                    
+                    Lastsave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.129" data-path="../commands/latency-doctor.html">
+            
+                <a href="../commands/latency-doctor.html">
+            
+                    
+                    Latency Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.130" data-path="../commands/latency-graph.html">
+            
+                <a href="../commands/latency-graph.html">
+            
+                    
+                    Latency Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.131" data-path="../commands/latency-help.html">
+            
+                <a href="../commands/latency-help.html">
+            
+                    
+                    Latency Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.132" data-path="../commands/latency-history.html">
+            
+                <a href="../commands/latency-history.html">
+            
+                    
+                    Latency History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.133" data-path="../commands/latency-latest.html">
+            
+                <a href="../commands/latency-latest.html">
+            
+                    
+                    Latency Latest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.134" data-path="../commands/latency-reset.html">
+            
+                <a href="../commands/latency-reset.html">
+            
+                    
+                    Latency Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.135" data-path="../commands/lindex.html">
+            
+                <a href="../commands/lindex.html">
+            
+                    
+                    Lindex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.136" data-path="../commands/linsert.html">
+            
+                <a href="../commands/linsert.html">
+            
+                    
+                    Linsert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.137" data-path="../commands/llen.html">
+            
+                <a href="../commands/llen.html">
+            
+                    
+                    Llen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.138" data-path="../commands/lmove.html">
+            
+                <a href="../commands/lmove.html">
+            
+                    
+                    Lmove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.139" data-path="../commands/lolwut.html">
+            
+                <a href="../commands/lolwut.html">
+            
+                    
+                    Lolwut
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.140" data-path="../commands/lpop.html">
+            
+                <a href="../commands/lpop.html">
+            
+                    
+                    Lpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.141" data-path="../commands/lpos.html">
+            
+                <a href="../commands/lpos.html">
+            
+                    
+                    Lpos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.142" data-path="../commands/lpush.html">
+            
+                <a href="../commands/lpush.html">
+            
+                    
+                    Lpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.143" data-path="../commands/lpushx.html">
+            
+                <a href="../commands/lpushx.html">
+            
+                    
+                    Lpushx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.144" data-path="../commands/lrange.html">
+            
+                <a href="../commands/lrange.html">
+            
+                    
+                    Lrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.145" data-path="../commands/lrem.html">
+            
+                <a href="../commands/lrem.html">
+            
+                    
+                    Lrem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.146" data-path="../commands/lset.html">
+            
+                <a href="../commands/lset.html">
+            
+                    
+                    Lset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.147" data-path="../commands/ltrim.html">
+            
+                <a href="../commands/ltrim.html">
+            
+                    
+                    Ltrim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.148" data-path="../commands/memory-doctor.html">
+            
+                <a href="../commands/memory-doctor.html">
+            
+                    
+                    Memory Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.149" data-path="../commands/memory-help.html">
+            
+                <a href="../commands/memory-help.html">
+            
+                    
+                    Memory Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.150" data-path="../commands/memory-malloc-stats.html">
+            
+                <a href="../commands/memory-malloc-stats.html">
+            
+                    
+                    Memory Malloc Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.151" data-path="../commands/memory-purge.html">
+            
+                <a href="../commands/memory-purge.html">
+            
+                    
+                    Memory Purge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.152" data-path="../commands/memory-stats.html">
+            
+                <a href="../commands/memory-stats.html">
+            
+                    
+                    Memory Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.153" data-path="../commands/memory-usage.html">
+            
+                <a href="../commands/memory-usage.html">
+            
+                    
+                    Memory Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.154" data-path="../commands/mget.html">
+            
+                <a href="../commands/mget.html">
+            
+                    
+                    Mget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.155" data-path="../commands/migrate.html">
+            
+                <a href="../commands/migrate.html">
+            
+                    
+                    Migrate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.156" data-path="../commands/module-list.html">
+            
+                <a href="../commands/module-list.html">
+            
+                    
+                    Module List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.157" data-path="../commands/module-load.html">
+            
+                <a href="../commands/module-load.html">
+            
+                    
+                    Module Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.158" data-path="../commands/module-unload.html">
+            
+                <a href="../commands/module-unload.html">
+            
+                    
+                    Module Unload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.159" data-path="../commands/monitor.html">
+            
+                <a href="../commands/monitor.html">
+            
+                    
+                    Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.160" data-path="../commands/move.html">
+            
+                <a href="../commands/move.html">
+            
+                    
+                    Move
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.161" data-path="../commands/mset.html">
+            
+                <a href="../commands/mset.html">
+            
+                    
+                    Mset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.162" data-path="../commands/msetnx.html">
+            
+                <a href="../commands/msetnx.html">
+            
+                    
+                    Msetnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.163" data-path="../commands/multi.html">
+            
+                <a href="../commands/multi.html">
+            
+                    
+                    Multi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.164" data-path="../commands/object.html">
+            
+                <a href="../commands/object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.165" data-path="../commands/persist.html">
+            
+                <a href="../commands/persist.html">
+            
+                    
+                    Persist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.166" data-path="../commands/pexpire.html">
+            
+                <a href="../commands/pexpire.html">
+            
+                    
+                    Pexpire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.167" data-path="../commands/pexpireat.html">
+            
+                <a href="../commands/pexpireat.html">
+            
+                    
+                    Pexpireat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.168" data-path="../commands/pfadd.html">
+            
+                <a href="../commands/pfadd.html">
+            
+                    
+                    Pfadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.169" data-path="../commands/pfcount.html">
+            
+                <a href="../commands/pfcount.html">
+            
+                    
+                    Pfcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.170" data-path="../commands/pfmerge.html">
+            
+                <a href="../commands/pfmerge.html">
+            
+                    
+                    Pfmerge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.171" data-path="../commands/ping.html">
+            
+                <a href="../commands/ping.html">
+            
+                    
+                    Ping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.172" data-path="../commands/psetex.html">
+            
+                <a href="../commands/psetex.html">
+            
+                    
+                    Psetex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.173" data-path="../commands/psubscribe.html">
+            
+                <a href="../commands/psubscribe.html">
+            
+                    
+                    Psubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.174" data-path="../commands/psync.html">
+            
+                <a href="../commands/psync.html">
+            
+                    
+                    Psync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.175" data-path="../commands/pttl.html">
+            
+                <a href="../commands/pttl.html">
+            
+                    
+                    Pttl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.176" data-path="../commands/publish.html">
+            
+                <a href="../commands/publish.html">
+            
+                    
+                    Publish
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.177" data-path="../commands/pubsub.html">
+            
+                <a href="../commands/pubsub.html">
+            
+                    
+                    Pubsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.178" data-path="../commands/punsubscribe.html">
+            
+                <a href="../commands/punsubscribe.html">
+            
+                    
+                    Punsubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.179" data-path="../commands/quit.html">
+            
+                <a href="../commands/quit.html">
+            
+                    
+                    Quit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.180" data-path="../commands/randomkey.html">
+            
+                <a href="../commands/randomkey.html">
+            
+                    
+                    Randomkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.181" data-path="../commands/readonly.html">
+            
+                <a href="../commands/readonly.html">
+            
+                    
+                    Readonly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.182" data-path="../commands/readwrite.html">
+            
+                <a href="../commands/readwrite.html">
+            
+                    
+                    Readwrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.183" data-path="../commands/rename.html">
+            
+                <a href="../commands/rename.html">
+            
+                    
+                    Rename
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.184" data-path="../commands/renamenx.html">
+            
+                <a href="../commands/renamenx.html">
+            
+                    
+                    Renamenx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.185" data-path="../commands/replicaof.html">
+            
+                <a href="../commands/replicaof.html">
+            
+                    
+                    Replicaof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.186" data-path="../commands/reset.html">
+            
+                <a href="../commands/reset.html">
+            
+                    
+                    Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.187" data-path="../commands/restore.html">
+            
+                <a href="../commands/restore.html">
+            
+                    
+                    Restore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.188" data-path="../commands/role.html">
+            
+                <a href="../commands/role.html">
+            
+                    
+                    Role
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.189" data-path="../commands/rpop.html">
+            
+                <a href="../commands/rpop.html">
+            
+                    
+                    Rpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.190" data-path="../commands/rpoplpush.html">
+            
+                <a href="../commands/rpoplpush.html">
+            
+                    
+                    Rpoplpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.191" data-path="../commands/rpush.html">
+            
+                <a href="../commands/rpush.html">
+            
+                    
+                    Rpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.192" data-path="../commands/rpushx.html">
+            
+                <a href="../commands/rpushx.html">
+            
+                    
+                    Rpushx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.193" data-path="../commands/sadd.html">
+            
+                <a href="../commands/sadd.html">
+            
+                    
+                    Sadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.194" data-path="../commands/save.html">
+            
+                <a href="../commands/save.html">
+            
+                    
+                    Save
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.195" data-path="../commands/scan.html">
+            
+                <a href="../commands/scan.html">
+            
+                    
+                    Scan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.196" data-path="../commands/scard.html">
+            
+                <a href="../commands/scard.html">
+            
+                    
+                    Scard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.197" data-path="../commands/script-debug.html">
+            
+                <a href="../commands/script-debug.html">
+            
+                    
+                    Script Debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.198" data-path="../commands/script-exists.html">
+            
+                <a href="../commands/script-exists.html">
+            
+                    
+                    Script Exists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.199" data-path="../commands/script-flush.html">
+            
+                <a href="../commands/script-flush.html">
+            
+                    
+                    Script Flush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.200" data-path="../commands/script-kill.html">
+            
+                <a href="../commands/script-kill.html">
+            
+                    
+                    Script Kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.201" data-path="../commands/script-load.html">
+            
+                <a href="../commands/script-load.html">
+            
+                    
+                    Script Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.202" data-path="../commands/sdiff.html">
+            
+                <a href="../commands/sdiff.html">
+            
+                    
+                    Sdiff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.203" data-path="../commands/sdiffstore.html">
+            
+                <a href="../commands/sdiffstore.html">
+            
+                    
+                    Sdiffstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.204" data-path="../commands/select.html">
+            
+                <a href="../commands/select.html">
+            
+                    
+                    Select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.205" data-path="../commands/set.html">
+            
+                <a href="../commands/set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.206" data-path="../commands/setbit.html">
+            
+                <a href="../commands/setbit.html">
+            
+                    
+                    Setbit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.207" data-path="../commands/setex.html">
+            
+                <a href="../commands/setex.html">
+            
+                    
+                    Setex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.208" data-path="../commands/setnx.html">
+            
+                <a href="../commands/setnx.html">
+            
+                    
+                    Setnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.209" data-path="../commands/setrange.html">
+            
+                <a href="../commands/setrange.html">
+            
+                    
+                    Setrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.210" data-path="../commands/shutdown.html">
+            
+                <a href="../commands/shutdown.html">
+            
+                    
+                    Shutdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.211" data-path="../commands/sinter.html">
+            
+                <a href="../commands/sinter.html">
+            
+                    
+                    Sinter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.212" data-path="../commands/sinterstore.html">
+            
+                <a href="../commands/sinterstore.html">
+            
+                    
+                    Sinterstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.213" data-path="../commands/sismember.html">
+            
+                <a href="../commands/sismember.html">
+            
+                    
+                    Sismember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.214" data-path="../commands/slaveof.html">
+            
+                <a href="../commands/slaveof.html">
+            
+                    
+                    Slaveof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.215" data-path="../commands/slowlog.html">
+            
+                <a href="../commands/slowlog.html">
+            
+                    
+                    Slowlog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.216" data-path="../commands/smembers.html">
+            
+                <a href="../commands/smembers.html">
+            
+                    
+                    Smembers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.217" data-path="../commands/smismember.html">
+            
+                <a href="../commands/smismember.html">
+            
+                    
+                    Smismember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.218" data-path="../commands/smove.html">
+            
+                <a href="../commands/smove.html">
+            
+                    
+                    Smove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.219" data-path="../commands/sort.html">
+            
+                <a href="../commands/sort.html">
+            
+                    
+                    Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.220" data-path="../commands/spop.html">
+            
+                <a href="../commands/spop.html">
+            
+                    
+                    Spop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.221" data-path="../commands/srandmember.html">
+            
+                <a href="../commands/srandmember.html">
+            
+                    
+                    Srandmember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.222" data-path="../commands/srem.html">
+            
+                <a href="../commands/srem.html">
+            
+                    
+                    Srem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.223" data-path="../commands/sscan.html">
+            
+                <a href="../commands/sscan.html">
+            
+                    
+                    Sscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.224" data-path="../commands/stralgo.html">
+            
+                <a href="../commands/stralgo.html">
+            
+                    
+                    Stralgo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.225" data-path="../commands/strlen.html">
+            
+                <a href="../commands/strlen.html">
+            
+                    
+                    Strlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.226" data-path="../commands/subscribe.html">
+            
+                <a href="../commands/subscribe.html">
+            
+                    
+                    Subscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.227" data-path="../commands/sunion.html">
+            
+                <a href="../commands/sunion.html">
+            
+                    
+                    Sunion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.228" data-path="../commands/sunionstore.html">
+            
+                <a href="../commands/sunionstore.html">
+            
+                    
+                    Sunionstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.229" data-path="../commands/swapdb.html">
+            
+                <a href="../commands/swapdb.html">
+            
+                    
+                    Swapdb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.230" data-path="../commands/sync.html">
+            
+                <a href="../commands/sync.html">
+            
+                    
+                    Sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.231" data-path="../commands/time.html">
+            
+                <a href="../commands/time.html">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.232" data-path="../commands/touch.html">
+            
+                <a href="../commands/touch.html">
+            
+                    
+                    Touch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.233" data-path="../commands/ttl.html">
+            
+                <a href="../commands/ttl.html">
+            
+                    
+                    Ttl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.234" data-path="../commands/type.html">
+            
+                <a href="../commands/type.html">
+            
+                    
+                    Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.235" data-path="../commands/unlink.html">
+            
+                <a href="../commands/unlink.html">
+            
+                    
+                    Unlink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.236" data-path="../commands/unsubscribe.html">
+            
+                <a href="../commands/unsubscribe.html">
+            
+                    
+                    Unsubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.237" data-path="../commands/unwatch.html">
+            
+                <a href="../commands/unwatch.html">
+            
+                    
+                    Unwatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.238" data-path="../commands/wait.html">
+            
+                <a href="../commands/wait.html">
+            
+                    
+                    Wait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.239" data-path="../commands/watch.html">
+            
+                <a href="../commands/watch.html">
+            
+                    
+                    Watch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.240" data-path="../commands/xack.html">
+            
+                <a href="../commands/xack.html">
+            
+                    
+                    Xack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.241" data-path="../commands/xadd.html">
+            
+                <a href="../commands/xadd.html">
+            
+                    
+                    Xadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.242" data-path="../commands/xautoclaim.html">
+            
+                <a href="../commands/xautoclaim.html">
+            
+                    
+                    Xautoclaim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.243" data-path="../commands/xclaim.html">
+            
+                <a href="../commands/xclaim.html">
+            
+                    
+                    Xclaim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.244" data-path="../commands/xdel.html">
+            
+                <a href="../commands/xdel.html">
+            
+                    
+                    Xdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.245" data-path="../commands/xgroup.html">
+            
+                <a href="../commands/xgroup.html">
+            
+                    
+                    Xgroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.246" data-path="../commands/xinfo.html">
+            
+                <a href="../commands/xinfo.html">
+            
+                    
+                    Xinfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.247" data-path="../commands/xlen.html">
+            
+                <a href="../commands/xlen.html">
+            
+                    
+                    Xlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.248" data-path="../commands/xpending.html">
+            
+                <a href="../commands/xpending.html">
+            
+                    
+                    Xpending
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.249" data-path="../commands/xrange.html">
+            
+                <a href="../commands/xrange.html">
+            
+                    
+                    Xrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.250" data-path="../commands/xread.html">
+            
+                <a href="../commands/xread.html">
+            
+                    
+                    Xread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.251" data-path="../commands/xreadgroup.html">
+            
+                <a href="../commands/xreadgroup.html">
+            
+                    
+                    Xreadgroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.252" data-path="../commands/xrevrange.html">
+            
+                <a href="../commands/xrevrange.html">
+            
+                    
+                    Xrevrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.253" data-path="../commands/xtrim.html">
+            
+                <a href="../commands/xtrim.html">
+            
+                    
+                    Xtrim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.254" data-path="../commands/zadd.html">
+            
+                <a href="../commands/zadd.html">
+            
+                    
+                    Zadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.255" data-path="../commands/zcard.html">
+            
+                <a href="../commands/zcard.html">
+            
+                    
+                    Zcard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.256" data-path="../commands/zcount.html">
+            
+                <a href="../commands/zcount.html">
+            
+                    
+                    Zcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.257" data-path="../commands/zdiff.html">
+            
+                <a href="../commands/zdiff.html">
+            
+                    
+                    Zdiff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.258" data-path="../commands/zdiffstore.html">
+            
+                <a href="../commands/zdiffstore.html">
+            
+                    
+                    Zdiffstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.259" data-path="../commands/zincrby.html">
+            
+                <a href="../commands/zincrby.html">
+            
+                    
+                    Zincrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.260" data-path="../commands/zinter.html">
+            
+                <a href="../commands/zinter.html">
+            
+                    
+                    Zinter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.261" data-path="../commands/zinterstore.html">
+            
+                <a href="../commands/zinterstore.html">
+            
+                    
+                    Zinterstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.262" data-path="../commands/zlexcount.html">
+            
+                <a href="../commands/zlexcount.html">
+            
+                    
+                    Zlexcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.263" data-path="../commands/zmscore.html">
+            
+                <a href="../commands/zmscore.html">
+            
+                    
+                    Zmscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.264" data-path="../commands/zpopmax.html">
+            
+                <a href="../commands/zpopmax.html">
+            
+                    
+                    Zpopmax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.265" data-path="../commands/zpopmin.html">
+            
+                <a href="../commands/zpopmin.html">
+            
+                    
+                    Zpopmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.266" data-path="../commands/zrandmember.html">
+            
+                <a href="../commands/zrandmember.html">
+            
+                    
+                    Zrandmember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.267" data-path="../commands/zrange.html">
+            
+                <a href="../commands/zrange.html">
+            
+                    
+                    Zrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.268" data-path="../commands/zrangebylex.html">
+            
+                <a href="../commands/zrangebylex.html">
+            
+                    
+                    Zrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.269" data-path="../commands/zrangebyscore.html">
+            
+                <a href="../commands/zrangebyscore.html">
+            
+                    
+                    Zrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.270" data-path="../commands/zrangestore.html">
+            
+                <a href="../commands/zrangestore.html">
+            
+                    
+                    Zrangestore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.271" data-path="../commands/zrank.html">
+            
+                <a href="../commands/zrank.html">
+            
+                    
+                    Zrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.272" data-path="../commands/zrem.html">
+            
+                <a href="../commands/zrem.html">
+            
+                    
+                    Zrem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.273" data-path="../commands/zremrangebylex.html">
+            
+                <a href="../commands/zremrangebylex.html">
+            
+                    
+                    Zremrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.274" data-path="../commands/zremrangebyrank.html">
+            
+                <a href="../commands/zremrangebyrank.html">
+            
+                    
+                    Zremrangebyrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.275" data-path="../commands/zremrangebyscore.html">
+            
+                <a href="../commands/zremrangebyscore.html">
+            
+                    
+                    Zremrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.276" data-path="../commands/zrevrange.html">
+            
+                <a href="../commands/zrevrange.html">
+            
+                    
+                    Zrevrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.277" data-path="../commands/zrevrangebylex.html">
+            
+                <a href="../commands/zrevrangebylex.html">
+            
+                    
+                    Zrevrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.278" data-path="../commands/zrevrangebyscore.html">
+            
+                <a href="../commands/zrevrangebyscore.html">
+            
+                    
+                    Zrevrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.279" data-path="../commands/zrevrank.html">
+            
+                <a href="../commands/zrevrank.html">
+            
+                    
+                    Zrevrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.280" data-path="../commands/zscan.html">
+            
+                <a href="../commands/zscan.html">
+            
+                    
+                    Zscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.281" data-path="../commands/zscore.html">
+            
+                <a href="../commands/zscore.html">
+            
+                    
+                    Zscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.282" data-path="../commands/zunion.html">
+            
+                <a href="../commands/zunion.html">
+            
+                    
+                    Zunion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.283" data-path="../commands/zunionstore.html">
+            
+                <a href="../commands/zunionstore.html">
+            
+                    
+                    Zunionstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Topics
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="acl.html">
+            
+                <a href="acl.html">
+            
+                    
+                    Acl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="ARM.html">
+            
+                <a href="ARM.html">
+            
+                    
+                    ARM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="benchmarks.html">
+            
+                <a href="benchmarks.html">
+            
+                    
+                    Benchmarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="client-side-caching.html">
+            
+                <a href="client-side-caching.html">
+            
+                    
+                    Client Side Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="clients.html">
+            
+                <a href="clients.html">
+            
+                    
+                    Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="cluster-spec.html">
+            
+                <a href="cluster-spec.html">
+            
+                    
+                    Cluster Spec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="cluster-tutorial.html">
+            
+                <a href="cluster-tutorial.html">
+            
+                    
+                    Cluster Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="data-types-intro.html">
+            
+                <a href="data-types-intro.html">
+            
+                    
+                    Data Types Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="data-types.html">
+            
+                <a href="data-types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="debugging.html">
+            
+                <a href="debugging.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="distlock.html">
+            
+                <a href="distlock.html">
+            
+                    
+                    Distlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="encryption.html">
+            
+                <a href="encryption.html">
+            
+                    
+                    Encryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    Faq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="gopher.html">
+            
+                <a href="gopher.html">
+            
+                    
+                    Gopher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="governance.html">
+            
+                <a href="governance.html">
+            
+                    
+                    Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="indexes.html">
+            
+                <a href="indexes.html">
+            
+                    
+                    Indexes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="internals-eventlib.html">
+            
+                <a href="internals-eventlib.html">
+            
+                    
+                    Internals Eventlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="internals-rediseventlib.html">
+            
+                <a href="internals-rediseventlib.html">
+            
+                    
+                    Internals Rediseventlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="internals-sds.html">
+            
+                <a href="internals-sds.html">
+            
+                    
+                    Internals Sds
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="internals-vm.html">
+            
+                <a href="internals-vm.html">
+            
+                    
+                    Internals Vm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="internals.html">
+            
+                <a href="internals.html">
+            
+                    
+                    Internals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="latency-monitor.html">
+            
+                <a href="latency-monitor.html">
+            
+                    
+                    Latency Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="latency.html">
+            
+                <a href="latency.html">
+            
+                    
+                    Latency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="ldb.html">
+            
+                <a href="ldb.html">
+            
+                    
+                    Ldb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.27" data-path="license.html">
+            
+                <a href="license.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.28" data-path="lru-cache.html">
+            
+                <a href="lru-cache.html">
+            
+                    
+                    Lru Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.29" data-path="mass-insert.html">
+            
+                <a href="mass-insert.html">
+            
+                    
+                    Mass Insert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.30" data-path="memory-optimization.html">
+            
+                <a href="memory-optimization.html">
+            
+                    
+                    Memory Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.31" data-path="modules-api-ref.html">
+            
+                <a href="modules-api-ref.html">
+            
+                    
+                    Modules Api Ref
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.32" data-path="modules-blocking-ops.html">
+            
+                <a href="modules-blocking-ops.html">
+            
+                    
+                    Modules Blocking Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.33" data-path="modules-intro.html">
+            
+                <a href="modules-intro.html">
+            
+                    
+                    Modules Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.34" data-path="modules-native-types.html">
+            
+                <a href="modules-native-types.html">
+            
+                    
+                    Modules Native Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.35" data-path="notifications.html">
+            
+                <a href="notifications.html">
+            
+                    
+                    Notifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.36" data-path="partitioning.html">
+            
+                <a href="partitioning.html">
+            
+                    
+                    Partitioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.37" data-path="persistence.html">
+            
+                <a href="persistence.html">
+            
+                    
+                    Persistence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.38" data-path="pipelining.html">
+            
+                <a href="pipelining.html">
+            
+                    
+                    Pipelining
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.39" data-path="problems.html">
+            
+                <a href="problems.html">
+            
+                    
+                    Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.40" data-path="protocol.html">
+            
+                <a href="protocol.html">
+            
+                    
+                    Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.41" data-path="pubsub.html">
+            
+                <a href="pubsub.html">
+            
+                    
+                    Pubsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.42" data-path="quickstart.html">
+            
+                <a href="quickstart.html">
+            
+                    
+                    Quickstart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.43" data-path="rdd-1.html">
+            
+                <a href="rdd-1.html">
+            
+                    
+                    Rdd 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.44" data-path="rdd-2.html">
+            
+                <a href="rdd-2.html">
+            
+                    
+                    Rdd 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.45" data-path="rdd.html">
+            
+                <a href="rdd.html">
+            
+                    
+                    Rdd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.46" data-path="rediscli.html">
+            
+                <a href="rediscli.html">
+            
+                    
+                    Rediscli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.47" data-path="releases.html">
+            
+                <a href="releases.html">
+            
+                    
+                    Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.48" data-path="replication.html">
+            
+                <a href="replication.html">
+            
+                    
+                    Replication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.49" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.50" data-path="sentinel-clients.html">
+            
+                <a href="sentinel-clients.html">
+            
+                    
+                    Sentinel Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.51" data-path="sentinel.html">
+            
+                <a href="sentinel.html">
+            
+                    
+                    Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.52" data-path="signals.html">
+            
+                <a href="signals.html">
+            
+                    
+                    Signals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.53" data-path="sponsors.html">
+            
+                <a href="sponsors.html">
+            
+                    
+                    Sponsors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.54" data-path="streams-intro.html">
+            
+                <a href="streams-intro.html">
+            
+                    
+                    Streams Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.55" data-path="trademark.html">
+            
+                <a href="trademark.html">
+            
+                    
+                    Trademark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.56" data-path="transactions.html">
+            
+                <a href="transactions.html">
+            
+                    
+                    Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.57" data-path="twitter-clone.html">
+            
+                <a href="twitter-clone.html">
+            
+                    
+                    Twitter Clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.58" data-path="virtual-memory.html">
+            
+                <a href="virtual-memory.html">
+            
+                    
+                    Virtual Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.59" data-path="whos-using-redis.html">
+            
+                <a href="whos-using-redis.html">
+            
+                    
+                    Whos Using Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Acl</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="acl">ACL</h1>
+<p>The Redis ACL, short for Access Control List, is the feature that allows certain
+connections to be limited in terms of the commands that can be executed and the
+keys that can be accessed. The way it works is that, after connecting, a client
+is required to authenticate providing a username and a valid password: if
+the authentication stage succeeded, the connection is associated with a given
+user and the limits the user has. Redis can be configured so that new
+connections are already authenticated with a &quot;default&quot; user (this is the
+default configuration), so configuring the default user has, as a side effect,
+the ability to provide only a specific subset of functionalities to connections
+that are not explicitly authenticated.</p>
+<p>In the default configuration, Redis 6 (the first version to have ACLs) works
+exactly like older versions of Redis, that is, every new connection is
+capable of calling every possible command and accessing every key, so the
+ACL feature is backward compatible with old clients and applications. Also
+the old way to configure a password, using the <strong>requirepass</strong> configuration
+directive, still works as expected, but now what it does is just to
+set a password for the default user.</p>
+<p>The Redis <code>AUTH</code> command was extended in Redis 6, so now it is possible to
+use it in the two-arguments form:</p>
+<pre class="language-"><code>AUTH <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>username</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>password</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>When it is used according to the old form, that is:</p>
+<pre class="language-"><code>AUTH <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>password</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>What happens is that the username used to authenticate is &quot;default&quot;, so
+just specifying the password implies that we want to authenticate against
+the default user. This provides perfect backward compatibility with the past.</p>
+<h2 id="when-acls-are-useful">When ACLs are useful</h2>
+<p>Before using ACLs you may want to ask yourself what&apos;s the goal you want to
+accomplish by implementing this layer of protection. Normally there are
+two main goals that are well served by ACLs:</p>
+<ol>
+<li>You want to improve security by restricting the access to commands and keys, so that untrusted clients have no access and trusted clients have just the minimum access level to the database in order to perform the work needed. For instance certain clients may just be able to execute read only commands.</li>
+<li>You want to improve operational safety, so that processes or humans accessing Redis are not allowed, because of software errors or manual mistakes, to damage the data or the configuration. For instance there is no reason for a worker that fetches delayed jobs from Redis to be able to call the <code>FLUSHALL</code> command.</li>
+</ol>
+<p>Another typical usage of ACLs is related to managed Redis instances. Redis is
+often provided as a managed service both by internal company teams that handle
+the Redis infrastructure for the other internal customers they have, or is
+provided in a software-as-a-service setup by cloud providers. In both such
+setups we want to be sure that configuration commands are excluded for the
+customers. The way this was accomplished in the past, via command renaming, was
+a trick that allowed us to survive without ACLs for a long time, but is not
+ideal.</p>
+<h2 id="configuring-acls-using-the-acl-command">Configuring ACLs using the ACL command</h2>
+<p>ACLs are defined using a DSL (domain specific language) that describes what
+a given user is able to do or not. Such rules are always implemented from the
+first to the last, left-to-right, because sometimes the order of the rules is
+important to understand what the user is really able to do.</p>
+<p>By default there is a single user defined, that is called <em>default</em>. We
+can use the <code>ACL LIST</code> command in order to check the currently active ACLs
+and verify what the configuration of a freshly started, defaults-configured
+Redis instance is:</p>
+<pre class="language-"><code>&gt; ACL LIST
+1) &quot;user default on nopass ~* &amp;* +@all&quot;
+</code></pre><p>The command above reports the list of users in the same format that is
+used in the Redis configuration files, by translating the current ACLs set
+for the users back into their description.</p>
+<p>The first two words in each line are &quot;user&quot; followed by the username. The
+next words are ACL rules that describe different things. We&apos;ll show in
+details how the rules work, but for now it is enough to say that the default
+user is configured to be active (on), to require no password (nopass), to
+access every possible key (<code>~*</code>) and Pub/Sub channel (<code>&amp;*</code>), and be able to
+call every possible command (<code>+@all</code>).</p>
+<p>Also, in the special case of the default user, having the <em>nopass</em> rule means
+that new connections are automatically authenticated with the default user
+without any explicit <code>AUTH</code> call needed.</p>
+<h2 id="acl-rules">ACL rules</h2>
+<p>The following is the list of the valid ACL rules. Certain rules are just
+single words that are used in order to activate or remove a flag, or to
+perform a given change to the user ACL. Other rules are char prefixes that
+are concatenated with command or categories names, or key patterns, and
+so forth.</p>
+<p>Enable and disallow users:</p>
+<ul>
+<li><code>on</code>: Enable the user: it is possible to authenticate as this user.</li>
+<li><code>off</code>: Disable the user: it&apos;s no longer possible to authenticate with this user, however the already authenticated connections will still work. Note that if the default user is flagged as <em>off</em>, new connections will start not authenticated and will require the user to send <code>AUTH</code> or <code>HELLO</code> with the AUTH option in order to authenticate in some way, regardless of the default user configuration.</li>
+</ul>
+<p>Allow and disallow commands:</p>
+<ul>
+<li><code>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>command</span><span class="token punctuation">&gt;</span></span></code>: Add the command to the list of commands the user can call.</li>
+<li><code>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>command</span><span class="token punctuation">&gt;</span></span></code>: Remove the command to the list of commands the user can call.</li>
+<li><code>+@<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>category</span><span class="token punctuation">&gt;</span></span></code>: Add all the commands in such category to be called by the user, with valid categories being like @admin, @set, @sortedset, ... and so forth, see the full list by calling the <code>ACL CAT</code> command. The special category @all means all the commands, both the ones currently present in the server, and the ones that will be loaded in the future via modules.</li>
+<li><code>-@<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>category</span><span class="token punctuation">&gt;</span></span></code>: Like <code>+@<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>category</span><span class="token punctuation">&gt;</span></span></code> but removes the commands from the list of commands the client can call.</li>
+<li><code>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>command</span><span class="token punctuation">&gt;</span></span>|subcommand</code>: Allow a specific subcommand of an otherwise disabled command. Note that this form is not allowed as negative like <code>-DEBUG|SEGFAULT</code>, but only additive starting with &quot;+&quot;. This ACL will cause an error if the command is already active as a whole.</li>
+<li><code>allcommands</code>: Alias for +@all. Note that it implies the ability to execute all the future commands loaded via the modules system.</li>
+<li><code>nocommands</code>: Alias for -@all.</li>
+</ul>
+<p>Allow and disallow certain keys:</p>
+<ul>
+<li><code>~<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pattern</span><span class="token punctuation">&gt;</span></span></code>: Add a pattern of keys that can be mentioned as part of commands. For instance <code>~*</code> allows all the keys. The pattern is a glob-style pattern like the one of <code>KEYS</code>. It is possible to specify multiple patterns.</li>
+<li><code>allkeys</code>: Alias for <code>~*</code>.</li>
+<li><code>resetkeys</code>: Flush the list of allowed keys patterns. For instance the ACL <code>~foo:* ~bar:* resetkeys ~objects:*</code>, will result in the client only be able to access keys matching the pattern <code>objects:*</code>.</li>
+</ul>
+<p>Allow and disallow Pub/Sub channels:</p>
+<ul>
+<li><code>&amp;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pattern</span><span class="token punctuation">&gt;</span></span></code>: Add a glob style pattern of Pub/Sub channels that can be accessed by the user. It is possible to specify multiple channel patterns. Note that pattern matching is done only for channels mentioned by <code>PUBLISH</code> and <code>SUBSCRIBE</code>, whereas <code>PSUBSCRIBE</code> requires a literal match between its channel patterns and those allowed for user.</li>
+<li><code>allchannels</code>: Alias for <code>&amp;*</code> that allows the user to access all Pub/Sub channels.</li>
+<li><code>resetchannels</code>: Flush the list of allowed channel patterns and disconnect the user&apos;s Pub/Sub clients if these are no longer able to access their respective channels and/or channel patterns.</li>
+</ul>
+<p>Configure valid passwords for the user:</p>
+<ul>
+<li><code>&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>password</span><span class="token punctuation">&gt;</span></span></code>: Add this password to the list of valid passwords for the user. For example <code>&gt;mypass</code> will add &quot;mypass&quot; to the list of valid passwords.  This directive clears the <em>nopass</em> flag (see later). Every user can have any number of passwords.</li>
+<li><code>&lt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>password</span><span class="token punctuation">&gt;</span></span></code>: Remove this password from the list of valid passwords. Emits an error in case the password you are trying to remove is actually not set.</li>
+<li><code>#<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hash</span><span class="token punctuation">&gt;</span></span></code>: Add this SHA-256 hash value to the list of valid passwords for the user. This hash value will be compared to the hash of a password entered for an ACL user. This allows users to store hashes in the <code>acl.conf</code> file rather than storing cleartext passwords. Only SHA-256 hash values are accepted as the password hash must be 64 characters and only container lowercase hexadecimal characters.</li>
+<li><code>!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hash</span><span class="token punctuation">&gt;</span></span></code>: Remove this hash value from from the list of valid passwords. This is useful when you do not know the password specified by the hash value but would like to remove the password from the user.</li>
+<li><code>nopass</code>: All the set passwords of the user are removed, and the user is flagged as requiring no password: it means that every password will work against this user. If this directive is used for the default user, every new connection will be immediately authenticated with the default user without any explicit AUTH command required. Note that the <em>resetpass</em> directive will clear this condition.</li>
+<li><code>resetpass</code>: Flush the list of allowed passwords. Moreover removes the <em>nopass</em> status. After <em>resetpass</em> the user has no associated passwords and there is no way to authenticate without adding some password (or setting it as <em>nopass</em> later).</li>
+</ul>
+<p><em>Note: an use that is not flagged with nopass, and has no list of valid passwords, is effectively impossible to use, because there will be no way to log in as such user.</em></p>
+<p>Reset the user:</p>
+<ul>
+<li><code>reset</code> Performs the following actions: resetpass, resetkeys, resetchannels, off, -@all. The user returns to the same state it has immediately after its creation.</li>
+</ul>
+<h2 id="creating-and-editing-users-acls-with-the-acl-setuser-command">Creating and editing users ACLs with the ACL SETUSER command</h2>
+<p>Users can be created and modified in two main ways:</p>
+<ol>
+<li>Using the ACL command and its <code>ACL SETUSER</code> subcommand.</li>
+<li>Modifying the server configuration, where users can be defined, and restarting the server, or if we are using an <em>external ACL file</em>, just issuing <code>ACL LOAD</code>.</li>
+</ol>
+<p>In this section we&apos;ll learn how to define users using the <code>ACL</code> command.
+With such knowledge it will be trivial to do the same things via the
+configuration files. Defining users in the configuration deserves its own
+section and will be discussed later separately.</p>
+<p>To start let&apos;s try the simplest <code>ACL SETUSER</code> command call:</p>
+<pre class="language-"><code>&gt; ACL SETUSER alice
+OK
+</code></pre><p>The <code>SETUSER</code> command takes the username and a list of ACL rules to apply
+to the user. However in the above example I did not specify any rule at all.
+This will just create the user if it did not exist, using the defaults for new
+users. If the user already exist, the command above will do nothing at all.</p>
+<p>Let&apos;s check what is the default user status:</p>
+<pre class="language-"><code>&gt; ACL LIST
+1) &quot;user alice off &amp;* -@all&quot;
+2) &quot;user default on nopass ~* ~&amp; +@all&quot;
+</code></pre><p>The just created user &quot;alice&quot; is:</p>
+<ul>
+<li>In off status, that is, it&apos;s disabled. AUTH will not work.</li>
+<li>The user also has no passwords set.</li>
+<li>Cannot access any command. Note that the user is created by default without the ability to access any command, so the <code>-@all</code> in the output above could be omitted, however <code>ACL LIST</code> attempts to be explicit rather than implicit.</li>
+<li>There are no key patterns that the user can access.</li>
+<li>The user can access all Pub/Sub channels.</li>
+</ul>
+<p>New users are created with restrictive permissions by default. Starting with Redis 6.2, ACL provides Pub/Sub channels access management as well. To ensure backwards compatability with version 6.0 when upgrading to Redis 6.2, new users are granted the &apos;allchannels&apos; permission by default. The default can be set to <code>resetchannels</code> via the <code>acl-pubsub-default</code> configuration directive.</p>
+<p>Such user is completely useless. Let&apos;s try to define the user so that
+it is active, has a password, and can access with only the <code>GET</code> command
+to key names starting with the string &quot;cached:&quot;.</p>
+<pre class="language-"><code>&gt; ACL SETUSER alice on &gt;p1pp0 ~cached:* +get
+OK
+</code></pre><p>Now the user can do something, but will refuse to do other things:</p>
+<pre class="language-"><code>&gt; AUTH alice p1pp0
+OK
+&gt; GET foo
+(error) NOPERM this user has no permissions to access one of the keys used as arguments
+&gt; GET cached:1234
+(nil)
+&gt; SET cached:1234 zap
+(error) NOPERM this user has no permissions to run the &apos;set&apos; command or its subcommand
+</code></pre><p>Things are working as expected. In order to inspect the configuration of the
+user alice (remember that user names are case sensitive), it is possible to
+use an alternative to <code>ACL LIST</code> which is designed to be more suitable for
+computers to read, while <code>ACL LIST</code> is more biased towards humans.</p>
+<pre class="language-"><code>&gt; ACL GETUSER alice
+1) &quot;flags&quot;
+2) 1) &quot;on&quot;
+   2) &quot;allchannels&quot;
+3) &quot;passwords&quot;
+4) 1) &quot;2d9c75...&quot;
+5) &quot;commands&quot;
+6) &quot;-@all +get&quot;
+7) &quot;keys&quot;
+8) 1) &quot;cached:*&quot;
+9) &quot;channels&quot;
+10) 1) &quot;*&quot;
+</code></pre><p>The <code>ACL GETUSER</code> returns a field-value array describing the user in more parsable terms. The output includes the set of flags, a list of key patterns, passwords and so forth. The output is probably more readable if we use RESP3, so that it is returned as as map reply:</p>
+<pre class="language-"><code>&gt; ACL GETUSER alice
+1# &quot;flags&quot; =&gt; 1~ &quot;on&quot;
+   2~ &quot;allchannels&quot;
+2# &quot;passwords&quot; =&gt; 1) &quot;2d9c75273d72b32df726fb545c8a4edc719f0a95a6fd993950b10c474ad9c927&quot;
+3# &quot;commands&quot; =&gt; &quot;-@all +get&quot;
+4# &quot;keys&quot; =&gt; 1) &quot;cached:*&quot;
+5# &quot;channels&quot; =&gt; 1) &quot;*&quot;
+</code></pre><p><em>Note: from now on we&apos;ll continue using the Redis default protocol, version 2, because it will take some time for the community to switch to the new one.</em></p>
+<p>Using another <code>ACL SETUSER</code> command (from a different user, because alice cannot run the <code>ACL</code> command) we can add multiple patterns to the user:</p>
+<pre class="language-"><code>&gt; ACL SETUSER alice ~objects:* ~items:* ~public:*
+OK
+&gt; ACL LIST
+1) &quot;user alice on &gt;2d9c75... ~cached:* ~objects:* ~items:* ~public:* &amp;* -@all +get&quot;
+2) &quot;user default on nopass ~* &amp;* +@all&quot;
+</code></pre><p>The user representation in memory is now as we expect it to be.</p>
+<h2 id="what-happens-calling-acl-setuser-multiple-times">What happens calling ACL SETUSER multiple times</h2>
+<p>It is very important to understand what happens when ACL SETUSER is called
+multiple times. What is critical to know is that every <code>SETUSER</code> call will
+NOT reset the user, but will just apply the ACL rules to the existing user.
+The user is reset only if it was not known before: in that case a brand new
+user is created with zeroed-ACLs, that is, the user cannot do anything, is
+disabled, has no passwords and so forth: for safety this is the best default.</p>
+<p>However later calls will just modify the user incrementally so for instance
+the following sequence:</p>
+<pre class="language-"><code>&gt; ACL SETUSER myuser +set
+OK
+&gt; ACL SETUSER myuser +get
+OK
+</code></pre><p>Will result in myuser being able to call both <code>GET</code> and <code>SET</code>:</p>
+<pre class="language-"><code>&gt; ACL LIST
+1) &quot;user default on nopass ~* &amp;* +@all&quot;
+2) &quot;user myuser off &amp;* -@all +set +get&quot;
+</code></pre><h2 id="playings-with-command-categories">Playings with command categories</h2>
+<p>Setting users ACLs by specifying all the commands one after the other is
+really annoying, so instead we do things like that:</p>
+<pre class="language-"><code>&gt; ACL SETUSER antirez on +@all -@dangerous &gt;42a979... ~*
+</code></pre><p>By saying +@all and -@dangerous we included all the commands and later removed
+all the commands that are tagged as dangerous inside the Redis command table.
+Please note that command categories <strong>never include modules commands</strong> with
+the exception of +@all. If you say +@all all the commands can be executed by
+the user, even future commands loaded via the modules system. However if you
+use the ACL rule +@read or any other, the modules commands are always
+excluded. This is very important because you should just trust the Redis
+internal command table for sanity. Modules may expose dangerous things and in
+the case of an ACL that is just additive, that is, in the form of <code>+@all -...</code>
+You should be absolutely sure that you&apos;ll never include what you did not mean
+to.</p>
+<p>However to remember that categories are defined, and what commands each
+category exactly includes, is impossible and would be super boring, so the
+Redis <code>ACL</code> command exports the <code>CAT</code> subcommand that can be used in two forms:</p>
+<pre class="language-"><code>ACL CAT -- Will just list all the categories available
+ACL CAT <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>category-name</span><span class="token punctuation">&gt;</span></span> -- Will list all the commands inside the category
+</code></pre><p>Examples:</p>
+<pre class="language-"><code> &gt; ACL CAT
+ 1) &quot;keyspace&quot;
+ 2) &quot;read&quot;
+ 3) &quot;write&quot;
+ 4) &quot;set&quot;
+ 5) &quot;sortedset&quot;
+ 6) &quot;list&quot;
+ 7) &quot;hash&quot;
+ 8) &quot;string&quot;
+ 9) &quot;bitmap&quot;
+10) &quot;hyperloglog&quot;
+11) &quot;geo&quot;
+12) &quot;stream&quot;
+13) &quot;pubsub&quot;
+14) &quot;admin&quot;
+15) &quot;fast&quot;
+16) &quot;slow&quot;
+17) &quot;blocking&quot;
+18) &quot;dangerous&quot;
+19) &quot;connection&quot;
+20) &quot;transaction&quot;
+21) &quot;scripting&quot;
+</code></pre><p>As you can see so far there are 21 distinct categories. Now let&apos;s check what
+command is part of the <em>geo</em> category:</p>
+<pre class="language-"><code>&gt; ACL CAT geo
+1) &quot;geohash&quot;
+2) &quot;georadius_ro&quot;
+3) &quot;georadiusbymember&quot;
+4) &quot;geopos&quot;
+5) &quot;geoadd&quot;
+6) &quot;georadiusbymember_ro&quot;
+7) &quot;geodist&quot;
+8) &quot;georadius&quot;
+</code></pre><p>Note that commands may be part of multiple categories, so for instance an
+ACL rule like <code>+@geo -@read</code> will result in certain geo commands to be
+excluded because they are read-only commands.</p>
+<h2 id="adding-subcommands">Adding subcommands</h2>
+<p>Often the ability to exclude or include a command as a whole is not enough.
+Many Redis commands do multiple things based on the subcommand passed as
+argument. For example the <code>CLIENT</code> command can be used in order to do
+dangerous and non dangerous operations. Many deployments may not be happy to
+provide the ability to execute <code>CLIENT KILL</code> to non admin-level users, but may
+still want them to be able to run <code>CLIENT SETNAME</code>.</p>
+<p><em>Note: the new RESP3 <code>HELLO</code> handshake command provides a <code>SETNAME</code> option, but this is still a good example for subcommand control.</em></p>
+<p>In such case I could alter the ACL of a user in the following way:</p>
+<pre class="language-"><code>ACL SETUSER myuser -client +client|setname +client|getname
+</code></pre><p>I started removing the <code>CLIENT</code> command, and later added the two allowed
+subcommands. Note that <strong>it is not possible to do the reverse</strong>, the subcommands
+can be only added, and not excluded, because it is possible that in the future
+new subcommands may be added: it is a lot safer to specify all the subcommands
+that are valid for some user. Moreover, if you add a subcommand about a command
+that is not already disabled, an error is generated, because this can only
+be a bug in the ACL rules:</p>
+<pre class="language-"><code>&gt; ACL SETUSER default +debug|segfault
+(error) ERR Error in ACL SETUSER modifier &apos;+debug|segfault&apos;: Adding a
+subcommand of a command already fully added is not allowed. Remove the
+command to start. Example: -DEBUG +DEBUG|DIGEST
+</code></pre><p>Note that subcommand matching may add some performance penalty, however such
+penalty is very hard to measure even with synthetic benchmarks, and the
+additional CPU cost is only payed when such command is called, and not when
+other commands are called.</p>
+<h2 id="all-vs--all">+@all VS -@all</h2>
+<p>In the previous section it was observed how it is possible to define commands
+ACLs based on adding/removing single commands.</p>
+<h2 id="how-passwords-are-stored-internally">How passwords are stored internally</h2>
+<p>Redis internally stores passwords hashed with SHA256, if you set a password
+and check the output of <code>ACL LIST</code> or <code>GETUSER</code> you&apos;ll see a long hex
+string that looks pseudo random. Here is an example, because in the previous
+examples, for the sake of brevity, the long hex string was trimmed:</p>
+<pre class="language-"><code>&gt; ACL GETUSER default
+1) &quot;flags&quot;
+2) 1) &quot;on&quot;
+   2) &quot;allkeys&quot;
+   3) &quot;allcommands&quot;
+   4) &quot;allchannels&quot;
+3) &quot;passwords&quot;
+4) 1) &quot;2d9c75273d72b32df726fb545c8a4edc719f0a95a6fd993950b10c474ad9c927&quot;
+5) &quot;commands&quot;
+6) &quot;+@all&quot;
+7) &quot;keys&quot;
+8) 1) &quot;*&quot;
+9) &quot;channels&quot;
+10) 1) &quot;*&quot;
+</code></pre><p>Also, starting with Redis 6, the old command <code>CONFIG GET requirepass</code> will
+no longer return the clear text password, but instead the hashed password.</p>
+<p>Using SHA256 provides the ability to avoid storing the password in clear text
+while still allowing for a very fast <code>AUTH</code> command, which is a very important
+feature of Redis and is coherent with what clients expect from Redis.</p>
+<p>However ACL <em>passwords</em> are not really passwords: they are shared secrets
+between the server and the client, because in that case the password is
+not an authentication token used by a human being. For instance:</p>
+<pre class="language-"><code>* There are no length limits, the password will just be memorized in some client software, there is no human that need to recall a password in this context.
+* The ACL password does not protect any other thing: it will never be, for instance, the password for some email account.
+* Often when you are able to access the hashed password itself, by having full access to the Redis commands of a given server, or corrupting the system itself, you have already access to what such password is protecting: the Redis instance stability and the data it contains.
+</code></pre><p>For this reason to slowdown the password authentication in order to use an
+algorithm that uses time and space, in order to make password cracking hard,
+is a very poor choice. What we suggest instead is to generate very strong
+password, so that even having the hash nobody will be able to crack it using a
+dictionary nor a brute force attack. For this reason there is a special ACL
+command that generates passwords using the system cryptographic pseudorandom
+generator:</p>
+<pre class="language-"><code>&gt; ACL GENPASS
+&quot;dd721260bfe1b3d9601e7fbab36de6d04e2e67b0ef1c53de59d45950db0dd3cc&quot;
+</code></pre><p>The command outputs a 32 bytes (256 bit) pseudorandom string converted to a
+64 byte alphanumerical string. This is long enough to avoid attacks and short
+enough to be easy to manage, cut &amp; paste, store and so forth. This is what
+you should use in order to generate Redis passwords.</p>
+<h2 id="using-an-external-acl-file">Using an external ACL file</h2>
+<p>There are two ways in order to store users inside the Redis configuration.</p>
+<pre class="language-"><code>1. Users can be specified directly inside the `redis.conf` file.
+2. It is possible to specify an external ACL file.
+</code></pre><p>The two methods are <em>mutually incompatible</em>, Redis will ask you to use one
+or the other. To specify users inside <code>redis.conf</code> is a very simple way
+good for simple use cases. When there are multiple users to define, in a
+complex environment, we strongly suggest you to use the ACL file.</p>
+<p>The format used inside <code>redis.conf</code> and in the external ACL file is exactly
+the same, so it is trivial to switch from one to the other, and is
+the following:</p>
+<pre class="language-"><code>user <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>username</span><span class="token punctuation">&gt;</span></span> ... acl rules ...
+</code></pre><p>For instance:</p>
+<pre class="language-"><code>user worker +@list +@connection ~jobs:* on &gt;ffa9203c493aa99
+</code></pre><p>When you want to use an external ACL file, you are required to specify
+the configuration directive called <code>aclfile</code>, like this:</p>
+<pre class="language-"><code>aclfile /etc/redis/users.acl
+</code></pre><p>When you are just specifying a few users directly inside the <code>redis.conf</code>
+file, you can use <code>CONFIG REWRITE</code> in order to store the new user configuration
+inside the file by rewriting it.</p>
+<p>The external ACL file however is more powerful. You can do the following:</p>
+<pre class="language-"><code>* Use `ACL LOAD` if you modified the ACL file manually and you want Redis to reload the new configuration. Note that this command is able to load the file *only if all the users are correctly specified*, otherwise an error is reported to the user, and the old configuration will remain valid.
+* USE `ACL SAVE` in order to save the current ACL configuration to the ACL file.
+</code></pre><p>Note that <code>CONFIG REWRITE</code> does not also trigger <code>ACL SAVE</code>: when you use
+an ACL file the configuration and the ACLs are handled separately.</p>
+<h2 id="acl-rules-for-sentinel-and-replicas">ACL rules for Sentinel and Replicas</h2>
+<p>In case you don&apos;t want to provide Redis replicas and Redis Sentinel instances
+full access to your Redis instances, the following is the set of commands
+that must be allowed in order for everything to work correctly.</p>
+<p>For Sentinel, allow the user to access the following commands both in the master and replica instances:</p>
+<ul>
+<li>AUTH, CLIENT, SUBSCRIBE, SCRIPT, PUBLISH, PING, INFO, MULTI, SLAVEOF, CONFIG, CLIENT, EXEC.</li>
+</ul>
+<p>Sentinel does not need to access any key in the database but does use Pub/Sub, so the ACL rule would be the following (note: AUTH is not needed since is always allowed):</p>
+<pre class="language-"><code>ACL SETUSER sentinel-user on &gt;somepassword allchannels +multi +slaveof +ping +exec +subscribe +config|rewrite +role +publish +info +client|setname +client|kill +script|kill
+</code></pre><p>Redis replicas require the following commands to be whitelisted on the master instance:</p>
+<ul>
+<li>PSYNC, REPLCONF, PING</li>
+</ul>
+<p>No keys need to be accessed, so this translates to the following rules:</p>
+<pre class="language-"><code>ACL setuser replica-user on &gt;somepassword +psync +replconf +ping
+</code></pre><p>Note that you don&apos;t need to configure the replicas to allow the master to be able to execute any set of commands: the master is always authenticated as the root user from the point of view of replicas.</p>
+<h2 id="todo-list-for-this-document">TODO list for this document</h2>
+<ul>
+<li>Make sure to specify that modules commands are ignored when adding/removing categories.</li>
+<li>Document cost of keys matching with some benchmark.</li>
+<li>Document how +@all also includes module commands and every future command.</li>
+<li>Document backward compatibility with requirepass and single argument AUTH.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="admin.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Admin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Acl","level":"1.3.1","depth":2,"next":{"title":"Admin","level":"1.3.2","depth":2,"path":"topics/admin.md","ref":"topics/admin.md","articles":[]},"previous":{"title":"Topics","level":"1.3","depth":1,"ref":"","articles":[{"title":"Acl","level":"1.3.1","depth":2,"path":"topics/acl.md","ref":"topics/acl.md","articles":[]},{"title":"Admin","level":"1.3.2","depth":2,"path":"topics/admin.md","ref":"topics/admin.md","articles":[]},{"title":"ARM","level":"1.3.3","depth":2,"path":"topics/ARM.md","ref":"topics/ARM.md","articles":[]},{"title":"Benchmarks","level":"1.3.4","depth":2,"path":"topics/benchmarks.md","ref":"topics/benchmarks.md","articles":[]},{"title":"Client Side Caching","level":"1.3.5","depth":2,"path":"topics/client-side-caching.md","ref":"topics/client-side-caching.md","articles":[]},{"title":"Clients","level":"1.3.6","depth":2,"path":"topics/clients.md","ref":"topics/clients.md","articles":[]},{"title":"Cluster Spec","level":"1.3.7","depth":2,"path":"topics/cluster-spec.md","ref":"topics/cluster-spec.md","articles":[]},{"title":"Cluster Tutorial","level":"1.3.8","depth":2,"path":"topics/cluster-tutorial.md","ref":"topics/cluster-tutorial.md","articles":[]},{"title":"Config","level":"1.3.9","depth":2,"path":"topics/config.md","ref":"topics/config.md","articles":[]},{"title":"Data Types Intro","level":"1.3.10","depth":2,"path":"topics/data-types-intro.md","ref":"topics/data-types-intro.md","articles":[]},{"title":"Data Types","level":"1.3.11","depth":2,"path":"topics/data-types.md","ref":"topics/data-types.md","articles":[]},{"title":"Debugging","level":"1.3.12","depth":2,"path":"topics/debugging.md","ref":"topics/debugging.md","articles":[]},{"title":"Distlock","level":"1.3.13","depth":2,"path":"topics/distlock.md","ref":"topics/distlock.md","articles":[]},{"title":"Encryption","level":"1.3.14","depth":2,"path":"topics/encryption.md","ref":"topics/encryption.md","articles":[]},{"title":"Faq","level":"1.3.15","depth":2,"path":"topics/faq.md","ref":"topics/faq.md","articles":[]},{"title":"Gopher","level":"1.3.16","depth":2,"path":"topics/gopher.md","ref":"topics/gopher.md","articles":[]},{"title":"Governance","level":"1.3.17","depth":2,"path":"topics/governance.md","ref":"topics/governance.md","articles":[]},{"title":"Indexes","level":"1.3.18","depth":2,"path":"topics/indexes.md","ref":"topics/indexes.md","articles":[]},{"title":"Internals Eventlib","level":"1.3.19","depth":2,"path":"topics/internals-eventlib.md","ref":"topics/internals-eventlib.md","articles":[]},{"title":"Internals Rediseventlib","level":"1.3.20","depth":2,"path":"topics/internals-rediseventlib.md","ref":"topics/internals-rediseventlib.md","articles":[]},{"title":"Internals Sds","level":"1.3.21","depth":2,"path":"topics/internals-sds.md","ref":"topics/internals-sds.md","articles":[]},{"title":"Internals Vm","level":"1.3.22","depth":2,"path":"topics/internals-vm.md","ref":"topics/internals-vm.md","articles":[]},{"title":"Internals","level":"1.3.23","depth":2,"path":"topics/internals.md","ref":"topics/internals.md","articles":[]},{"title":"Latency Monitor","level":"1.3.24","depth":2,"path":"topics/latency-monitor.md","ref":"topics/latency-monitor.md","articles":[]},{"title":"Latency","level":"1.3.25","depth":2,"path":"topics/latency.md","ref":"topics/latency.md","articles":[]},{"title":"Ldb","level":"1.3.26","depth":2,"path":"topics/ldb.md","ref":"topics/ldb.md","articles":[]},{"title":"License","level":"1.3.27","depth":2,"path":"topics/license.md","ref":"topics/license.md","articles":[]},{"title":"Lru Cache","level":"1.3.28","depth":2,"path":"topics/lru-cache.md","ref":"topics/lru-cache.md","articles":[]},{"title":"Mass Insert","level":"1.3.29","depth":2,"path":"topics/mass-insert.md","ref":"topics/mass-insert.md","articles":[]},{"title":"Memory Optimization","level":"1.3.30","depth":2,"path":"topics/memory-optimization.md","ref":"topics/memory-optimization.md","articles":[]},{"title":"Modules Api Ref","level":"1.3.31","depth":2,"path":"topics/modules-api-ref.md","ref":"topics/modules-api-ref.md","articles":[]},{"title":"Modules Blocking Ops","level":"1.3.32","depth":2,"path":"topics/modules-blocking-ops.md","ref":"topics/modules-blocking-ops.md","articles":[]},{"title":"Modules Intro","level":"1.3.33","depth":2,"path":"topics/modules-intro.md","ref":"topics/modules-intro.md","articles":[]},{"title":"Modules Native Types","level":"1.3.34","depth":2,"path":"topics/modules-native-types.md","ref":"topics/modules-native-types.md","articles":[]},{"title":"Notifications","level":"1.3.35","depth":2,"path":"topics/notifications.md","ref":"topics/notifications.md","articles":[]},{"title":"Partitioning","level":"1.3.36","depth":2,"path":"topics/partitioning.md","ref":"topics/partitioning.md","articles":[]},{"title":"Persistence","level":"1.3.37","depth":2,"path":"topics/persistence.md","ref":"topics/persistence.md","articles":[]},{"title":"Pipelining","level":"1.3.38","depth":2,"path":"topics/pipelining.md","ref":"topics/pipelining.md","articles":[]},{"title":"Problems","level":"1.3.39","depth":2,"path":"topics/problems.md","ref":"topics/problems.md","articles":[]},{"title":"Protocol","level":"1.3.40","depth":2,"path":"topics/protocol.md","ref":"topics/protocol.md","articles":[]},{"title":"Pubsub","level":"1.3.41","depth":2,"path":"topics/pubsub.md","ref":"topics/pubsub.md","articles":[]},{"title":"Quickstart","level":"1.3.42","depth":2,"path":"topics/quickstart.md","ref":"topics/quickstart.md","articles":[]},{"title":"Rdd 1","level":"1.3.43","depth":2,"path":"topics/rdd-1.md","ref":"topics/rdd-1.md","articles":[]},{"title":"Rdd 2","level":"1.3.44","depth":2,"path":"topics/rdd-2.md","ref":"topics/rdd-2.md","articles":[]},{"title":"Rdd","level":"1.3.45","depth":2,"path":"topics/rdd.md","ref":"topics/rdd.md","articles":[]},{"title":"Rediscli","level":"1.3.46","depth":2,"path":"topics/rediscli.md","ref":"topics/rediscli.md","articles":[]},{"title":"Releases","level":"1.3.47","depth":2,"path":"topics/releases.md","ref":"topics/releases.md","articles":[]},{"title":"Replication","level":"1.3.48","depth":2,"path":"topics/replication.md","ref":"topics/replication.md","articles":[]},{"title":"Security","level":"1.3.49","depth":2,"path":"topics/security.md","ref":"topics/security.md","articles":[]},{"title":"Sentinel Clients","level":"1.3.50","depth":2,"path":"topics/sentinel-clients.md","ref":"topics/sentinel-clients.md","articles":[]},{"title":"Sentinel","level":"1.3.51","depth":2,"path":"topics/sentinel.md","ref":"topics/sentinel.md","articles":[]},{"title":"Signals","level":"1.3.52","depth":2,"path":"topics/signals.md","ref":"topics/signals.md","articles":[]},{"title":"Sponsors","level":"1.3.53","depth":2,"path":"topics/sponsors.md","ref":"topics/sponsors.md","articles":[]},{"title":"Streams Intro","level":"1.3.54","depth":2,"path":"topics/streams-intro.md","ref":"topics/streams-intro.md","articles":[]},{"title":"Trademark","level":"1.3.55","depth":2,"path":"topics/trademark.md","ref":"topics/trademark.md","articles":[]},{"title":"Transactions","level":"1.3.56","depth":2,"path":"topics/transactions.md","ref":"topics/transactions.md","articles":[]},{"title":"Twitter Clone","level":"1.3.57","depth":2,"path":"topics/twitter-clone.md","ref":"topics/twitter-clone.md","articles":[]},{"title":"Virtual Memory","level":"1.3.58","depth":2,"path":"topics/virtual-memory.md","ref":"topics/virtual-memory.md","articles":[]},{"title":"Whos Using Redis","level":"1.3.59","depth":2,"path":"topics/whos-using-redis.md","ref":"topics/whos-using-redis.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Redis 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"topics/acl.md","mtime":"2021-03-03T00:55:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-03T01:00:54.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

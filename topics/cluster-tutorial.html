@@ -1,0 +1,5503 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Cluster Tutorial · Redis 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="config.html" />
+    
+    
+    <link rel="prev" href="cluster-spec.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Commands
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../commands/acl-cat.html">
+            
+                <a href="../commands/acl-cat.html">
+            
+                    
+                    Acl Cat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../commands/acl-deluser.html">
+            
+                <a href="../commands/acl-deluser.html">
+            
+                    
+                    Acl Deluser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../commands/acl-genpass.html">
+            
+                <a href="../commands/acl-genpass.html">
+            
+                    
+                    Acl Genpass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../commands/acl-getuser.html">
+            
+                <a href="../commands/acl-getuser.html">
+            
+                    
+                    Acl Getuser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../commands/acl-help.html">
+            
+                <a href="../commands/acl-help.html">
+            
+                    
+                    Acl Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../commands/acl-list.html">
+            
+                <a href="../commands/acl-list.html">
+            
+                    
+                    Acl List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../commands/acl-load.html">
+            
+                <a href="../commands/acl-load.html">
+            
+                    
+                    Acl Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../commands/acl-log.html">
+            
+                <a href="../commands/acl-log.html">
+            
+                    
+                    Acl Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../commands/acl-save.html">
+            
+                <a href="../commands/acl-save.html">
+            
+                    
+                    Acl Save
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../commands/acl-setuser.html">
+            
+                <a href="../commands/acl-setuser.html">
+            
+                    
+                    Acl Setuser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../commands/acl-users.html">
+            
+                <a href="../commands/acl-users.html">
+            
+                    
+                    Acl Users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../commands/acl-whoami.html">
+            
+                <a href="../commands/acl-whoami.html">
+            
+                    
+                    Acl Whoami
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../commands/append.html">
+            
+                <a href="../commands/append.html">
+            
+                    
+                    Append
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../commands/auth.html">
+            
+                <a href="../commands/auth.html">
+            
+                    
+                    Auth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../commands/bgrewriteaof.html">
+            
+                <a href="../commands/bgrewriteaof.html">
+            
+                    
+                    Bgrewriteaof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../commands/bgsave.html">
+            
+                <a href="../commands/bgsave.html">
+            
+                    
+                    Bgsave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../commands/bitcount.html">
+            
+                <a href="../commands/bitcount.html">
+            
+                    
+                    Bitcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../commands/bitfield.html">
+            
+                <a href="../commands/bitfield.html">
+            
+                    
+                    Bitfield
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../commands/bitop.html">
+            
+                <a href="../commands/bitop.html">
+            
+                    
+                    Bitop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="../commands/bitpos.html">
+            
+                <a href="../commands/bitpos.html">
+            
+                    
+                    Bitpos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="../commands/blmove.html">
+            
+                <a href="../commands/blmove.html">
+            
+                    
+                    Blmove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="../commands/blpop.html">
+            
+                <a href="../commands/blpop.html">
+            
+                    
+                    Blpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" data-path="../commands/brpop.html">
+            
+                <a href="../commands/brpop.html">
+            
+                    
+                    Brpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" data-path="../commands/brpoplpush.html">
+            
+                <a href="../commands/brpoplpush.html">
+            
+                    
+                    Brpoplpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" data-path="../commands/bzpopmax.html">
+            
+                <a href="../commands/bzpopmax.html">
+            
+                    
+                    Bzpopmax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.26" data-path="../commands/bzpopmin.html">
+            
+                <a href="../commands/bzpopmin.html">
+            
+                    
+                    Bzpopmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27" data-path="../commands/client-caching.html">
+            
+                <a href="../commands/client-caching.html">
+            
+                    
+                    Client Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.28" data-path="../commands/client-getname.html">
+            
+                <a href="../commands/client-getname.html">
+            
+                    
+                    Client Getname
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.29" data-path="../commands/client-getredir.html">
+            
+                <a href="../commands/client-getredir.html">
+            
+                    
+                    Client Getredir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.30" data-path="../commands/client-id.html">
+            
+                <a href="../commands/client-id.html">
+            
+                    
+                    Client Id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.31" data-path="../commands/client-info.html">
+            
+                <a href="../commands/client-info.html">
+            
+                    
+                    Client Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.32" data-path="../commands/client-kill.html">
+            
+                <a href="../commands/client-kill.html">
+            
+                    
+                    Client Kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.33" data-path="../commands/client-list.html">
+            
+                <a href="../commands/client-list.html">
+            
+                    
+                    Client List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.34" data-path="../commands/client-pause.html">
+            
+                <a href="../commands/client-pause.html">
+            
+                    
+                    Client Pause
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.35" data-path="../commands/client-reply.html">
+            
+                <a href="../commands/client-reply.html">
+            
+                    
+                    Client Reply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.36" data-path="../commands/client-setname.html">
+            
+                <a href="../commands/client-setname.html">
+            
+                    
+                    Client Setname
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.37" data-path="../commands/client-tracking.html">
+            
+                <a href="../commands/client-tracking.html">
+            
+                    
+                    Client Tracking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.38" data-path="../commands/client-trackinginfo.html">
+            
+                <a href="../commands/client-trackinginfo.html">
+            
+                    
+                    Client Trackinginfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.39" data-path="../commands/client-unblock.html">
+            
+                <a href="../commands/client-unblock.html">
+            
+                    
+                    Client Unblock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.40" data-path="../commands/client-unpause.html">
+            
+                <a href="../commands/client-unpause.html">
+            
+                    
+                    Client Unpause
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.41" data-path="../commands/cluster-addslots.html">
+            
+                <a href="../commands/cluster-addslots.html">
+            
+                    
+                    Cluster Addslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.42" data-path="../commands/cluster-bumpepoch.html">
+            
+                <a href="../commands/cluster-bumpepoch.html">
+            
+                    
+                    Cluster Bumpepoch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.43" data-path="../commands/cluster-count-failure-reports.html">
+            
+                <a href="../commands/cluster-count-failure-reports.html">
+            
+                    
+                    Cluster Count Failure Reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.44" data-path="../commands/cluster-countkeysinslot.html">
+            
+                <a href="../commands/cluster-countkeysinslot.html">
+            
+                    
+                    Cluster Countkeysinslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.45" data-path="../commands/cluster-delslots.html">
+            
+                <a href="../commands/cluster-delslots.html">
+            
+                    
+                    Cluster Delslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.46" data-path="../commands/cluster-failover.html">
+            
+                <a href="../commands/cluster-failover.html">
+            
+                    
+                    Cluster Failover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.47" data-path="../commands/cluster-flushslots.html">
+            
+                <a href="../commands/cluster-flushslots.html">
+            
+                    
+                    Cluster Flushslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.48" data-path="../commands/cluster-forget.html">
+            
+                <a href="../commands/cluster-forget.html">
+            
+                    
+                    Cluster Forget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.49" data-path="../commands/cluster-getkeysinslot.html">
+            
+                <a href="../commands/cluster-getkeysinslot.html">
+            
+                    
+                    Cluster Getkeysinslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.50" data-path="../commands/cluster-info.html">
+            
+                <a href="../commands/cluster-info.html">
+            
+                    
+                    Cluster Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.51" data-path="../commands/cluster-keyslot.html">
+            
+                <a href="../commands/cluster-keyslot.html">
+            
+                    
+                    Cluster Keyslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.52" data-path="../commands/cluster-meet.html">
+            
+                <a href="../commands/cluster-meet.html">
+            
+                    
+                    Cluster Meet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.53" data-path="../commands/cluster-myid.html">
+            
+                <a href="../commands/cluster-myid.html">
+            
+                    
+                    Cluster Myid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.54" data-path="../commands/cluster-nodes.html">
+            
+                <a href="../commands/cluster-nodes.html">
+            
+                    
+                    Cluster Nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.55" data-path="../commands/cluster-replicas.html">
+            
+                <a href="../commands/cluster-replicas.html">
+            
+                    
+                    Cluster Replicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.56" data-path="../commands/cluster-replicate.html">
+            
+                <a href="../commands/cluster-replicate.html">
+            
+                    
+                    Cluster Replicate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.57" data-path="../commands/cluster-reset.html">
+            
+                <a href="../commands/cluster-reset.html">
+            
+                    
+                    Cluster Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.58" data-path="../commands/cluster-saveconfig.html">
+            
+                <a href="../commands/cluster-saveconfig.html">
+            
+                    
+                    Cluster Saveconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.59" data-path="../commands/cluster-set-config-epoch.html">
+            
+                <a href="../commands/cluster-set-config-epoch.html">
+            
+                    
+                    Cluster Set Config Epoch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.60" data-path="../commands/cluster-setslot.html">
+            
+                <a href="../commands/cluster-setslot.html">
+            
+                    
+                    Cluster Setslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.61" data-path="../commands/cluster-slaves.html">
+            
+                <a href="../commands/cluster-slaves.html">
+            
+                    
+                    Cluster Slaves
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.62" data-path="../commands/cluster-slots.html">
+            
+                <a href="../commands/cluster-slots.html">
+            
+                    
+                    Cluster Slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.63" data-path="../commands/command-count.html">
+            
+                <a href="../commands/command-count.html">
+            
+                    
+                    Command Count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.64" data-path="../commands/command-getkeys.html">
+            
+                <a href="../commands/command-getkeys.html">
+            
+                    
+                    Command Getkeys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.65" data-path="../commands/command-info.html">
+            
+                <a href="../commands/command-info.html">
+            
+                    
+                    Command Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.66" data-path="../commands/command.html">
+            
+                <a href="../commands/command.html">
+            
+                    
+                    Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.67" data-path="../commands/config-get.html">
+            
+                <a href="../commands/config-get.html">
+            
+                    
+                    Config Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.68" data-path="../commands/config-resetstat.html">
+            
+                <a href="../commands/config-resetstat.html">
+            
+                    
+                    Config Resetstat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.69" data-path="../commands/config-rewrite.html">
+            
+                <a href="../commands/config-rewrite.html">
+            
+                    
+                    Config Rewrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.70" data-path="../commands/config-set.html">
+            
+                <a href="../commands/config-set.html">
+            
+                    
+                    Config Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.71" data-path="../commands/copy.html">
+            
+                <a href="../commands/copy.html">
+            
+                    
+                    Copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.72" data-path="../commands/dbsize.html">
+            
+                <a href="../commands/dbsize.html">
+            
+                    
+                    Dbsize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.73" data-path="../commands/debug-object.html">
+            
+                <a href="../commands/debug-object.html">
+            
+                    
+                    Debug Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.74" data-path="../commands/debug-segfault.html">
+            
+                <a href="../commands/debug-segfault.html">
+            
+                    
+                    Debug Segfault
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.75" data-path="../commands/decr.html">
+            
+                <a href="../commands/decr.html">
+            
+                    
+                    Decr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.76" data-path="../commands/decrby.html">
+            
+                <a href="../commands/decrby.html">
+            
+                    
+                    Decrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.77" data-path="../commands/del.html">
+            
+                <a href="../commands/del.html">
+            
+                    
+                    Del
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78" data-path="../commands/discard.html">
+            
+                <a href="../commands/discard.html">
+            
+                    
+                    Discard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.79" data-path="../commands/dump.html">
+            
+                <a href="../commands/dump.html">
+            
+                    
+                    Dump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.80" data-path="../commands/echo.html">
+            
+                <a href="../commands/echo.html">
+            
+                    
+                    Echo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.81" data-path="../commands/eval.html">
+            
+                <a href="../commands/eval.html">
+            
+                    
+                    Eval
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.82" data-path="../commands/evalsha.html">
+            
+                <a href="../commands/evalsha.html">
+            
+                    
+                    Evalsha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.83" data-path="../commands/exec.html">
+            
+                <a href="../commands/exec.html">
+            
+                    
+                    Exec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.84" data-path="../commands/exists.html">
+            
+                <a href="../commands/exists.html">
+            
+                    
+                    Exists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.85" data-path="../commands/expire.html">
+            
+                <a href="../commands/expire.html">
+            
+                    
+                    Expire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.86" data-path="../commands/expireat.html">
+            
+                <a href="../commands/expireat.html">
+            
+                    
+                    Expireat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.87" data-path="../commands/failover.html">
+            
+                <a href="../commands/failover.html">
+            
+                    
+                    Failover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.88" data-path="../commands/flushall.html">
+            
+                <a href="../commands/flushall.html">
+            
+                    
+                    Flushall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.89" data-path="../commands/flushdb.html">
+            
+                <a href="../commands/flushdb.html">
+            
+                    
+                    Flushdb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.90" data-path="../commands/geoadd.html">
+            
+                <a href="../commands/geoadd.html">
+            
+                    
+                    Geoadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.91" data-path="../commands/geodecode.html">
+            
+                <a href="../commands/geodecode.html">
+            
+                    
+                    Geodecode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.92" data-path="../commands/geodist.html">
+            
+                <a href="../commands/geodist.html">
+            
+                    
+                    Geodist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.93" data-path="../commands/geoencode.html">
+            
+                <a href="../commands/geoencode.html">
+            
+                    
+                    Geoencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.94" data-path="../commands/geohash.html">
+            
+                <a href="../commands/geohash.html">
+            
+                    
+                    Geohash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.95" data-path="../commands/geopos.html">
+            
+                <a href="../commands/geopos.html">
+            
+                    
+                    Geopos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.96" data-path="../commands/georadius.html">
+            
+                <a href="../commands/georadius.html">
+            
+                    
+                    Georadius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.97" data-path="../commands/georadiusbymember.html">
+            
+                <a href="../commands/georadiusbymember.html">
+            
+                    
+                    Georadiusbymember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.98" data-path="../commands/geosearch.html">
+            
+                <a href="../commands/geosearch.html">
+            
+                    
+                    Geosearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.99" data-path="../commands/geosearchstore.html">
+            
+                <a href="../commands/geosearchstore.html">
+            
+                    
+                    Geosearchstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.100" data-path="../commands/get.html">
+            
+                <a href="../commands/get.html">
+            
+                    
+                    Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.101" data-path="../commands/getbit.html">
+            
+                <a href="../commands/getbit.html">
+            
+                    
+                    Getbit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.102" data-path="../commands/getdel.html">
+            
+                <a href="../commands/getdel.html">
+            
+                    
+                    Getdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.103" data-path="../commands/getex.html">
+            
+                <a href="../commands/getex.html">
+            
+                    
+                    Getex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.104" data-path="../commands/getrange.html">
+            
+                <a href="../commands/getrange.html">
+            
+                    
+                    Getrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.105" data-path="../commands/getset.html">
+            
+                <a href="../commands/getset.html">
+            
+                    
+                    Getset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.106" data-path="../commands/hdel.html">
+            
+                <a href="../commands/hdel.html">
+            
+                    
+                    Hdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.107" data-path="../commands/hello.html">
+            
+                <a href="../commands/hello.html">
+            
+                    
+                    Hello
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.108" data-path="../commands/hexists.html">
+            
+                <a href="../commands/hexists.html">
+            
+                    
+                    Hexists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.109" data-path="../commands/hget.html">
+            
+                <a href="../commands/hget.html">
+            
+                    
+                    Hget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.110" data-path="../commands/hgetall.html">
+            
+                <a href="../commands/hgetall.html">
+            
+                    
+                    Hgetall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.111" data-path="../commands/hincrby.html">
+            
+                <a href="../commands/hincrby.html">
+            
+                    
+                    Hincrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.112" data-path="../commands/hincrbyfloat.html">
+            
+                <a href="../commands/hincrbyfloat.html">
+            
+                    
+                    Hincrbyfloat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.113" data-path="../commands/hkeys.html">
+            
+                <a href="../commands/hkeys.html">
+            
+                    
+                    Hkeys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.114" data-path="../commands/hlen.html">
+            
+                <a href="../commands/hlen.html">
+            
+                    
+                    Hlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.115" data-path="../commands/hmget.html">
+            
+                <a href="../commands/hmget.html">
+            
+                    
+                    Hmget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.116" data-path="../commands/hmset.html">
+            
+                <a href="../commands/hmset.html">
+            
+                    
+                    Hmset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.117" data-path="../commands/hrandfield.html">
+            
+                <a href="../commands/hrandfield.html">
+            
+                    
+                    Hrandfield
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.118" data-path="../commands/hscan.html">
+            
+                <a href="../commands/hscan.html">
+            
+                    
+                    Hscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.119" data-path="../commands/hset.html">
+            
+                <a href="../commands/hset.html">
+            
+                    
+                    Hset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.120" data-path="../commands/hsetnx.html">
+            
+                <a href="../commands/hsetnx.html">
+            
+                    
+                    Hsetnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.121" data-path="../commands/hstrlen.html">
+            
+                <a href="../commands/hstrlen.html">
+            
+                    
+                    Hstrlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.122" data-path="../commands/hvals.html">
+            
+                <a href="../commands/hvals.html">
+            
+                    
+                    Hvals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.123" data-path="../commands/incr.html">
+            
+                <a href="../commands/incr.html">
+            
+                    
+                    Incr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.124" data-path="../commands/incrby.html">
+            
+                <a href="../commands/incrby.html">
+            
+                    
+                    Incrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.125" data-path="../commands/incrbyfloat.html">
+            
+                <a href="../commands/incrbyfloat.html">
+            
+                    
+                    Incrbyfloat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.126" data-path="../commands/info.html">
+            
+                <a href="../commands/info.html">
+            
+                    
+                    Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.127" data-path="../commands/keys.html">
+            
+                <a href="../commands/keys.html">
+            
+                    
+                    Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.128" data-path="../commands/lastsave.html">
+            
+                <a href="../commands/lastsave.html">
+            
+                    
+                    Lastsave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.129" data-path="../commands/latency-doctor.html">
+            
+                <a href="../commands/latency-doctor.html">
+            
+                    
+                    Latency Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.130" data-path="../commands/latency-graph.html">
+            
+                <a href="../commands/latency-graph.html">
+            
+                    
+                    Latency Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.131" data-path="../commands/latency-help.html">
+            
+                <a href="../commands/latency-help.html">
+            
+                    
+                    Latency Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.132" data-path="../commands/latency-history.html">
+            
+                <a href="../commands/latency-history.html">
+            
+                    
+                    Latency History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.133" data-path="../commands/latency-latest.html">
+            
+                <a href="../commands/latency-latest.html">
+            
+                    
+                    Latency Latest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.134" data-path="../commands/latency-reset.html">
+            
+                <a href="../commands/latency-reset.html">
+            
+                    
+                    Latency Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.135" data-path="../commands/lindex.html">
+            
+                <a href="../commands/lindex.html">
+            
+                    
+                    Lindex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.136" data-path="../commands/linsert.html">
+            
+                <a href="../commands/linsert.html">
+            
+                    
+                    Linsert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.137" data-path="../commands/llen.html">
+            
+                <a href="../commands/llen.html">
+            
+                    
+                    Llen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.138" data-path="../commands/lmove.html">
+            
+                <a href="../commands/lmove.html">
+            
+                    
+                    Lmove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.139" data-path="../commands/lolwut.html">
+            
+                <a href="../commands/lolwut.html">
+            
+                    
+                    Lolwut
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.140" data-path="../commands/lpop.html">
+            
+                <a href="../commands/lpop.html">
+            
+                    
+                    Lpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.141" data-path="../commands/lpos.html">
+            
+                <a href="../commands/lpos.html">
+            
+                    
+                    Lpos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.142" data-path="../commands/lpush.html">
+            
+                <a href="../commands/lpush.html">
+            
+                    
+                    Lpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.143" data-path="../commands/lpushx.html">
+            
+                <a href="../commands/lpushx.html">
+            
+                    
+                    Lpushx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.144" data-path="../commands/lrange.html">
+            
+                <a href="../commands/lrange.html">
+            
+                    
+                    Lrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.145" data-path="../commands/lrem.html">
+            
+                <a href="../commands/lrem.html">
+            
+                    
+                    Lrem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.146" data-path="../commands/lset.html">
+            
+                <a href="../commands/lset.html">
+            
+                    
+                    Lset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.147" data-path="../commands/ltrim.html">
+            
+                <a href="../commands/ltrim.html">
+            
+                    
+                    Ltrim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.148" data-path="../commands/memory-doctor.html">
+            
+                <a href="../commands/memory-doctor.html">
+            
+                    
+                    Memory Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.149" data-path="../commands/memory-help.html">
+            
+                <a href="../commands/memory-help.html">
+            
+                    
+                    Memory Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.150" data-path="../commands/memory-malloc-stats.html">
+            
+                <a href="../commands/memory-malloc-stats.html">
+            
+                    
+                    Memory Malloc Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.151" data-path="../commands/memory-purge.html">
+            
+                <a href="../commands/memory-purge.html">
+            
+                    
+                    Memory Purge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.152" data-path="../commands/memory-stats.html">
+            
+                <a href="../commands/memory-stats.html">
+            
+                    
+                    Memory Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.153" data-path="../commands/memory-usage.html">
+            
+                <a href="../commands/memory-usage.html">
+            
+                    
+                    Memory Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.154" data-path="../commands/mget.html">
+            
+                <a href="../commands/mget.html">
+            
+                    
+                    Mget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.155" data-path="../commands/migrate.html">
+            
+                <a href="../commands/migrate.html">
+            
+                    
+                    Migrate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.156" data-path="../commands/module-list.html">
+            
+                <a href="../commands/module-list.html">
+            
+                    
+                    Module List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.157" data-path="../commands/module-load.html">
+            
+                <a href="../commands/module-load.html">
+            
+                    
+                    Module Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.158" data-path="../commands/module-unload.html">
+            
+                <a href="../commands/module-unload.html">
+            
+                    
+                    Module Unload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.159" data-path="../commands/monitor.html">
+            
+                <a href="../commands/monitor.html">
+            
+                    
+                    Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.160" data-path="../commands/move.html">
+            
+                <a href="../commands/move.html">
+            
+                    
+                    Move
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.161" data-path="../commands/mset.html">
+            
+                <a href="../commands/mset.html">
+            
+                    
+                    Mset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.162" data-path="../commands/msetnx.html">
+            
+                <a href="../commands/msetnx.html">
+            
+                    
+                    Msetnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.163" data-path="../commands/multi.html">
+            
+                <a href="../commands/multi.html">
+            
+                    
+                    Multi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.164" data-path="../commands/object.html">
+            
+                <a href="../commands/object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.165" data-path="../commands/persist.html">
+            
+                <a href="../commands/persist.html">
+            
+                    
+                    Persist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.166" data-path="../commands/pexpire.html">
+            
+                <a href="../commands/pexpire.html">
+            
+                    
+                    Pexpire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.167" data-path="../commands/pexpireat.html">
+            
+                <a href="../commands/pexpireat.html">
+            
+                    
+                    Pexpireat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.168" data-path="../commands/pfadd.html">
+            
+                <a href="../commands/pfadd.html">
+            
+                    
+                    Pfadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.169" data-path="../commands/pfcount.html">
+            
+                <a href="../commands/pfcount.html">
+            
+                    
+                    Pfcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.170" data-path="../commands/pfmerge.html">
+            
+                <a href="../commands/pfmerge.html">
+            
+                    
+                    Pfmerge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.171" data-path="../commands/ping.html">
+            
+                <a href="../commands/ping.html">
+            
+                    
+                    Ping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.172" data-path="../commands/psetex.html">
+            
+                <a href="../commands/psetex.html">
+            
+                    
+                    Psetex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.173" data-path="../commands/psubscribe.html">
+            
+                <a href="../commands/psubscribe.html">
+            
+                    
+                    Psubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.174" data-path="../commands/psync.html">
+            
+                <a href="../commands/psync.html">
+            
+                    
+                    Psync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.175" data-path="../commands/pttl.html">
+            
+                <a href="../commands/pttl.html">
+            
+                    
+                    Pttl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.176" data-path="../commands/publish.html">
+            
+                <a href="../commands/publish.html">
+            
+                    
+                    Publish
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.177" data-path="../commands/pubsub.html">
+            
+                <a href="../commands/pubsub.html">
+            
+                    
+                    Pubsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.178" data-path="../commands/punsubscribe.html">
+            
+                <a href="../commands/punsubscribe.html">
+            
+                    
+                    Punsubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.179" data-path="../commands/quit.html">
+            
+                <a href="../commands/quit.html">
+            
+                    
+                    Quit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.180" data-path="../commands/randomkey.html">
+            
+                <a href="../commands/randomkey.html">
+            
+                    
+                    Randomkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.181" data-path="../commands/readonly.html">
+            
+                <a href="../commands/readonly.html">
+            
+                    
+                    Readonly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.182" data-path="../commands/readwrite.html">
+            
+                <a href="../commands/readwrite.html">
+            
+                    
+                    Readwrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.183" data-path="../commands/rename.html">
+            
+                <a href="../commands/rename.html">
+            
+                    
+                    Rename
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.184" data-path="../commands/renamenx.html">
+            
+                <a href="../commands/renamenx.html">
+            
+                    
+                    Renamenx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.185" data-path="../commands/replicaof.html">
+            
+                <a href="../commands/replicaof.html">
+            
+                    
+                    Replicaof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.186" data-path="../commands/reset.html">
+            
+                <a href="../commands/reset.html">
+            
+                    
+                    Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.187" data-path="../commands/restore.html">
+            
+                <a href="../commands/restore.html">
+            
+                    
+                    Restore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.188" data-path="../commands/role.html">
+            
+                <a href="../commands/role.html">
+            
+                    
+                    Role
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.189" data-path="../commands/rpop.html">
+            
+                <a href="../commands/rpop.html">
+            
+                    
+                    Rpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.190" data-path="../commands/rpoplpush.html">
+            
+                <a href="../commands/rpoplpush.html">
+            
+                    
+                    Rpoplpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.191" data-path="../commands/rpush.html">
+            
+                <a href="../commands/rpush.html">
+            
+                    
+                    Rpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.192" data-path="../commands/rpushx.html">
+            
+                <a href="../commands/rpushx.html">
+            
+                    
+                    Rpushx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.193" data-path="../commands/sadd.html">
+            
+                <a href="../commands/sadd.html">
+            
+                    
+                    Sadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.194" data-path="../commands/save.html">
+            
+                <a href="../commands/save.html">
+            
+                    
+                    Save
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.195" data-path="../commands/scan.html">
+            
+                <a href="../commands/scan.html">
+            
+                    
+                    Scan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.196" data-path="../commands/scard.html">
+            
+                <a href="../commands/scard.html">
+            
+                    
+                    Scard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.197" data-path="../commands/script-debug.html">
+            
+                <a href="../commands/script-debug.html">
+            
+                    
+                    Script Debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.198" data-path="../commands/script-exists.html">
+            
+                <a href="../commands/script-exists.html">
+            
+                    
+                    Script Exists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.199" data-path="../commands/script-flush.html">
+            
+                <a href="../commands/script-flush.html">
+            
+                    
+                    Script Flush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.200" data-path="../commands/script-kill.html">
+            
+                <a href="../commands/script-kill.html">
+            
+                    
+                    Script Kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.201" data-path="../commands/script-load.html">
+            
+                <a href="../commands/script-load.html">
+            
+                    
+                    Script Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.202" data-path="../commands/sdiff.html">
+            
+                <a href="../commands/sdiff.html">
+            
+                    
+                    Sdiff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.203" data-path="../commands/sdiffstore.html">
+            
+                <a href="../commands/sdiffstore.html">
+            
+                    
+                    Sdiffstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.204" data-path="../commands/select.html">
+            
+                <a href="../commands/select.html">
+            
+                    
+                    Select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.205" data-path="../commands/set.html">
+            
+                <a href="../commands/set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.206" data-path="../commands/setbit.html">
+            
+                <a href="../commands/setbit.html">
+            
+                    
+                    Setbit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.207" data-path="../commands/setex.html">
+            
+                <a href="../commands/setex.html">
+            
+                    
+                    Setex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.208" data-path="../commands/setnx.html">
+            
+                <a href="../commands/setnx.html">
+            
+                    
+                    Setnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.209" data-path="../commands/setrange.html">
+            
+                <a href="../commands/setrange.html">
+            
+                    
+                    Setrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.210" data-path="../commands/shutdown.html">
+            
+                <a href="../commands/shutdown.html">
+            
+                    
+                    Shutdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.211" data-path="../commands/sinter.html">
+            
+                <a href="../commands/sinter.html">
+            
+                    
+                    Sinter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.212" data-path="../commands/sinterstore.html">
+            
+                <a href="../commands/sinterstore.html">
+            
+                    
+                    Sinterstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.213" data-path="../commands/sismember.html">
+            
+                <a href="../commands/sismember.html">
+            
+                    
+                    Sismember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.214" data-path="../commands/slaveof.html">
+            
+                <a href="../commands/slaveof.html">
+            
+                    
+                    Slaveof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.215" data-path="../commands/slowlog.html">
+            
+                <a href="../commands/slowlog.html">
+            
+                    
+                    Slowlog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.216" data-path="../commands/smembers.html">
+            
+                <a href="../commands/smembers.html">
+            
+                    
+                    Smembers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.217" data-path="../commands/smismember.html">
+            
+                <a href="../commands/smismember.html">
+            
+                    
+                    Smismember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.218" data-path="../commands/smove.html">
+            
+                <a href="../commands/smove.html">
+            
+                    
+                    Smove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.219" data-path="../commands/sort.html">
+            
+                <a href="../commands/sort.html">
+            
+                    
+                    Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.220" data-path="../commands/spop.html">
+            
+                <a href="../commands/spop.html">
+            
+                    
+                    Spop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.221" data-path="../commands/srandmember.html">
+            
+                <a href="../commands/srandmember.html">
+            
+                    
+                    Srandmember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.222" data-path="../commands/srem.html">
+            
+                <a href="../commands/srem.html">
+            
+                    
+                    Srem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.223" data-path="../commands/sscan.html">
+            
+                <a href="../commands/sscan.html">
+            
+                    
+                    Sscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.224" data-path="../commands/stralgo.html">
+            
+                <a href="../commands/stralgo.html">
+            
+                    
+                    Stralgo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.225" data-path="../commands/strlen.html">
+            
+                <a href="../commands/strlen.html">
+            
+                    
+                    Strlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.226" data-path="../commands/subscribe.html">
+            
+                <a href="../commands/subscribe.html">
+            
+                    
+                    Subscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.227" data-path="../commands/sunion.html">
+            
+                <a href="../commands/sunion.html">
+            
+                    
+                    Sunion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.228" data-path="../commands/sunionstore.html">
+            
+                <a href="../commands/sunionstore.html">
+            
+                    
+                    Sunionstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.229" data-path="../commands/swapdb.html">
+            
+                <a href="../commands/swapdb.html">
+            
+                    
+                    Swapdb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.230" data-path="../commands/sync.html">
+            
+                <a href="../commands/sync.html">
+            
+                    
+                    Sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.231" data-path="../commands/time.html">
+            
+                <a href="../commands/time.html">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.232" data-path="../commands/touch.html">
+            
+                <a href="../commands/touch.html">
+            
+                    
+                    Touch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.233" data-path="../commands/ttl.html">
+            
+                <a href="../commands/ttl.html">
+            
+                    
+                    Ttl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.234" data-path="../commands/type.html">
+            
+                <a href="../commands/type.html">
+            
+                    
+                    Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.235" data-path="../commands/unlink.html">
+            
+                <a href="../commands/unlink.html">
+            
+                    
+                    Unlink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.236" data-path="../commands/unsubscribe.html">
+            
+                <a href="../commands/unsubscribe.html">
+            
+                    
+                    Unsubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.237" data-path="../commands/unwatch.html">
+            
+                <a href="../commands/unwatch.html">
+            
+                    
+                    Unwatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.238" data-path="../commands/wait.html">
+            
+                <a href="../commands/wait.html">
+            
+                    
+                    Wait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.239" data-path="../commands/watch.html">
+            
+                <a href="../commands/watch.html">
+            
+                    
+                    Watch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.240" data-path="../commands/xack.html">
+            
+                <a href="../commands/xack.html">
+            
+                    
+                    Xack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.241" data-path="../commands/xadd.html">
+            
+                <a href="../commands/xadd.html">
+            
+                    
+                    Xadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.242" data-path="../commands/xautoclaim.html">
+            
+                <a href="../commands/xautoclaim.html">
+            
+                    
+                    Xautoclaim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.243" data-path="../commands/xclaim.html">
+            
+                <a href="../commands/xclaim.html">
+            
+                    
+                    Xclaim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.244" data-path="../commands/xdel.html">
+            
+                <a href="../commands/xdel.html">
+            
+                    
+                    Xdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.245" data-path="../commands/xgroup.html">
+            
+                <a href="../commands/xgroup.html">
+            
+                    
+                    Xgroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.246" data-path="../commands/xinfo.html">
+            
+                <a href="../commands/xinfo.html">
+            
+                    
+                    Xinfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.247" data-path="../commands/xlen.html">
+            
+                <a href="../commands/xlen.html">
+            
+                    
+                    Xlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.248" data-path="../commands/xpending.html">
+            
+                <a href="../commands/xpending.html">
+            
+                    
+                    Xpending
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.249" data-path="../commands/xrange.html">
+            
+                <a href="../commands/xrange.html">
+            
+                    
+                    Xrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.250" data-path="../commands/xread.html">
+            
+                <a href="../commands/xread.html">
+            
+                    
+                    Xread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.251" data-path="../commands/xreadgroup.html">
+            
+                <a href="../commands/xreadgroup.html">
+            
+                    
+                    Xreadgroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.252" data-path="../commands/xrevrange.html">
+            
+                <a href="../commands/xrevrange.html">
+            
+                    
+                    Xrevrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.253" data-path="../commands/xtrim.html">
+            
+                <a href="../commands/xtrim.html">
+            
+                    
+                    Xtrim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.254" data-path="../commands/zadd.html">
+            
+                <a href="../commands/zadd.html">
+            
+                    
+                    Zadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.255" data-path="../commands/zcard.html">
+            
+                <a href="../commands/zcard.html">
+            
+                    
+                    Zcard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.256" data-path="../commands/zcount.html">
+            
+                <a href="../commands/zcount.html">
+            
+                    
+                    Zcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.257" data-path="../commands/zdiff.html">
+            
+                <a href="../commands/zdiff.html">
+            
+                    
+                    Zdiff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.258" data-path="../commands/zdiffstore.html">
+            
+                <a href="../commands/zdiffstore.html">
+            
+                    
+                    Zdiffstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.259" data-path="../commands/zincrby.html">
+            
+                <a href="../commands/zincrby.html">
+            
+                    
+                    Zincrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.260" data-path="../commands/zinter.html">
+            
+                <a href="../commands/zinter.html">
+            
+                    
+                    Zinter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.261" data-path="../commands/zinterstore.html">
+            
+                <a href="../commands/zinterstore.html">
+            
+                    
+                    Zinterstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.262" data-path="../commands/zlexcount.html">
+            
+                <a href="../commands/zlexcount.html">
+            
+                    
+                    Zlexcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.263" data-path="../commands/zmscore.html">
+            
+                <a href="../commands/zmscore.html">
+            
+                    
+                    Zmscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.264" data-path="../commands/zpopmax.html">
+            
+                <a href="../commands/zpopmax.html">
+            
+                    
+                    Zpopmax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.265" data-path="../commands/zpopmin.html">
+            
+                <a href="../commands/zpopmin.html">
+            
+                    
+                    Zpopmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.266" data-path="../commands/zrandmember.html">
+            
+                <a href="../commands/zrandmember.html">
+            
+                    
+                    Zrandmember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.267" data-path="../commands/zrange.html">
+            
+                <a href="../commands/zrange.html">
+            
+                    
+                    Zrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.268" data-path="../commands/zrangebylex.html">
+            
+                <a href="../commands/zrangebylex.html">
+            
+                    
+                    Zrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.269" data-path="../commands/zrangebyscore.html">
+            
+                <a href="../commands/zrangebyscore.html">
+            
+                    
+                    Zrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.270" data-path="../commands/zrangestore.html">
+            
+                <a href="../commands/zrangestore.html">
+            
+                    
+                    Zrangestore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.271" data-path="../commands/zrank.html">
+            
+                <a href="../commands/zrank.html">
+            
+                    
+                    Zrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.272" data-path="../commands/zrem.html">
+            
+                <a href="../commands/zrem.html">
+            
+                    
+                    Zrem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.273" data-path="../commands/zremrangebylex.html">
+            
+                <a href="../commands/zremrangebylex.html">
+            
+                    
+                    Zremrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.274" data-path="../commands/zremrangebyrank.html">
+            
+                <a href="../commands/zremrangebyrank.html">
+            
+                    
+                    Zremrangebyrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.275" data-path="../commands/zremrangebyscore.html">
+            
+                <a href="../commands/zremrangebyscore.html">
+            
+                    
+                    Zremrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.276" data-path="../commands/zrevrange.html">
+            
+                <a href="../commands/zrevrange.html">
+            
+                    
+                    Zrevrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.277" data-path="../commands/zrevrangebylex.html">
+            
+                <a href="../commands/zrevrangebylex.html">
+            
+                    
+                    Zrevrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.278" data-path="../commands/zrevrangebyscore.html">
+            
+                <a href="../commands/zrevrangebyscore.html">
+            
+                    
+                    Zrevrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.279" data-path="../commands/zrevrank.html">
+            
+                <a href="../commands/zrevrank.html">
+            
+                    
+                    Zrevrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.280" data-path="../commands/zscan.html">
+            
+                <a href="../commands/zscan.html">
+            
+                    
+                    Zscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.281" data-path="../commands/zscore.html">
+            
+                <a href="../commands/zscore.html">
+            
+                    
+                    Zscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.282" data-path="../commands/zunion.html">
+            
+                <a href="../commands/zunion.html">
+            
+                    
+                    Zunion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.283" data-path="../commands/zunionstore.html">
+            
+                <a href="../commands/zunionstore.html">
+            
+                    
+                    Zunionstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Topics
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="acl.html">
+            
+                <a href="acl.html">
+            
+                    
+                    Acl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="ARM.html">
+            
+                <a href="ARM.html">
+            
+                    
+                    ARM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="benchmarks.html">
+            
+                <a href="benchmarks.html">
+            
+                    
+                    Benchmarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="client-side-caching.html">
+            
+                <a href="client-side-caching.html">
+            
+                    
+                    Client Side Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="clients.html">
+            
+                <a href="clients.html">
+            
+                    
+                    Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="cluster-spec.html">
+            
+                <a href="cluster-spec.html">
+            
+                    
+                    Cluster Spec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.8" data-path="cluster-tutorial.html">
+            
+                <a href="cluster-tutorial.html">
+            
+                    
+                    Cluster Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="data-types-intro.html">
+            
+                <a href="data-types-intro.html">
+            
+                    
+                    Data Types Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="data-types.html">
+            
+                <a href="data-types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="debugging.html">
+            
+                <a href="debugging.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="distlock.html">
+            
+                <a href="distlock.html">
+            
+                    
+                    Distlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="encryption.html">
+            
+                <a href="encryption.html">
+            
+                    
+                    Encryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    Faq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="gopher.html">
+            
+                <a href="gopher.html">
+            
+                    
+                    Gopher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="governance.html">
+            
+                <a href="governance.html">
+            
+                    
+                    Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="indexes.html">
+            
+                <a href="indexes.html">
+            
+                    
+                    Indexes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="internals-eventlib.html">
+            
+                <a href="internals-eventlib.html">
+            
+                    
+                    Internals Eventlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="internals-rediseventlib.html">
+            
+                <a href="internals-rediseventlib.html">
+            
+                    
+                    Internals Rediseventlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="internals-sds.html">
+            
+                <a href="internals-sds.html">
+            
+                    
+                    Internals Sds
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="internals-vm.html">
+            
+                <a href="internals-vm.html">
+            
+                    
+                    Internals Vm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="internals.html">
+            
+                <a href="internals.html">
+            
+                    
+                    Internals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="latency-monitor.html">
+            
+                <a href="latency-monitor.html">
+            
+                    
+                    Latency Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="latency.html">
+            
+                <a href="latency.html">
+            
+                    
+                    Latency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="ldb.html">
+            
+                <a href="ldb.html">
+            
+                    
+                    Ldb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.27" data-path="license.html">
+            
+                <a href="license.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.28" data-path="lru-cache.html">
+            
+                <a href="lru-cache.html">
+            
+                    
+                    Lru Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.29" data-path="mass-insert.html">
+            
+                <a href="mass-insert.html">
+            
+                    
+                    Mass Insert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.30" data-path="memory-optimization.html">
+            
+                <a href="memory-optimization.html">
+            
+                    
+                    Memory Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.31" data-path="modules-api-ref.html">
+            
+                <a href="modules-api-ref.html">
+            
+                    
+                    Modules Api Ref
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.32" data-path="modules-blocking-ops.html">
+            
+                <a href="modules-blocking-ops.html">
+            
+                    
+                    Modules Blocking Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.33" data-path="modules-intro.html">
+            
+                <a href="modules-intro.html">
+            
+                    
+                    Modules Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.34" data-path="modules-native-types.html">
+            
+                <a href="modules-native-types.html">
+            
+                    
+                    Modules Native Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.35" data-path="notifications.html">
+            
+                <a href="notifications.html">
+            
+                    
+                    Notifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.36" data-path="partitioning.html">
+            
+                <a href="partitioning.html">
+            
+                    
+                    Partitioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.37" data-path="persistence.html">
+            
+                <a href="persistence.html">
+            
+                    
+                    Persistence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.38" data-path="pipelining.html">
+            
+                <a href="pipelining.html">
+            
+                    
+                    Pipelining
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.39" data-path="problems.html">
+            
+                <a href="problems.html">
+            
+                    
+                    Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.40" data-path="protocol.html">
+            
+                <a href="protocol.html">
+            
+                    
+                    Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.41" data-path="pubsub.html">
+            
+                <a href="pubsub.html">
+            
+                    
+                    Pubsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.42" data-path="quickstart.html">
+            
+                <a href="quickstart.html">
+            
+                    
+                    Quickstart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.43" data-path="rdd-1.html">
+            
+                <a href="rdd-1.html">
+            
+                    
+                    Rdd 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.44" data-path="rdd-2.html">
+            
+                <a href="rdd-2.html">
+            
+                    
+                    Rdd 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.45" data-path="rdd.html">
+            
+                <a href="rdd.html">
+            
+                    
+                    Rdd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.46" data-path="rediscli.html">
+            
+                <a href="rediscli.html">
+            
+                    
+                    Rediscli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.47" data-path="releases.html">
+            
+                <a href="releases.html">
+            
+                    
+                    Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.48" data-path="replication.html">
+            
+                <a href="replication.html">
+            
+                    
+                    Replication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.49" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.50" data-path="sentinel-clients.html">
+            
+                <a href="sentinel-clients.html">
+            
+                    
+                    Sentinel Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.51" data-path="sentinel.html">
+            
+                <a href="sentinel.html">
+            
+                    
+                    Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.52" data-path="signals.html">
+            
+                <a href="signals.html">
+            
+                    
+                    Signals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.53" data-path="sponsors.html">
+            
+                <a href="sponsors.html">
+            
+                    
+                    Sponsors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.54" data-path="streams-intro.html">
+            
+                <a href="streams-intro.html">
+            
+                    
+                    Streams Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.55" data-path="trademark.html">
+            
+                <a href="trademark.html">
+            
+                    
+                    Trademark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.56" data-path="transactions.html">
+            
+                <a href="transactions.html">
+            
+                    
+                    Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.57" data-path="twitter-clone.html">
+            
+                <a href="twitter-clone.html">
+            
+                    
+                    Twitter Clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.58" data-path="virtual-memory.html">
+            
+                <a href="virtual-memory.html">
+            
+                    
+                    Virtual Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.59" data-path="whos-using-redis.html">
+            
+                <a href="whos-using-redis.html">
+            
+                    
+                    Whos Using Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Cluster Tutorial</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="redis-cluster-tutorial">Redis cluster tutorial</h1>
+<p>This document is a gentle introduction to Redis Cluster, that does not use
+difficult to understand concepts of distributed systems . It provides
+instructions about how to setup a cluster, test, and operate it, without
+going into the details that are covered in
+the <a href="cluster-spec">Redis Cluster specification</a> but just describing
+how the system behaves from the point of view of the user.</p>
+<p>However this tutorial tries to provide information about the availability
+and consistency characteristics of Redis Cluster from the point of view
+of the final user, stated in a simple to understand way.</p>
+<p>Note this tutorial requires Redis version 3.0 or higher.</p>
+<p>If you plan to run a serious Redis Cluster deployment, the
+more formal specification is a suggested reading, even if not
+strictly required. However it is a good idea to start from this document,
+play with Redis Cluster some time, and only later read the specification.</p>
+<h2 id="redis-cluster-101">Redis Cluster 101</h2>
+<p>Redis Cluster provides a way to run a Redis installation where data is
+<strong>automatically sharded across multiple Redis nodes</strong>.</p>
+<p>Redis Cluster also provides <strong>some degree of availability during partitions</strong>,
+that is in practical terms the ability to continue the operations when
+some nodes fail or are not able to communicate. However the cluster stops
+to operate in the event of larger failures (for example when the majority of
+masters are unavailable).</p>
+<p>So in practical terms, what do you get with Redis Cluster?</p>
+<ul>
+<li>The ability to <strong>automatically split your dataset among multiple nodes</strong>.</li>
+<li>The ability to <strong>continue operations when a subset of the nodes are experiencing failures</strong> or are unable to communicate with the rest of the cluster.</li>
+</ul>
+<h2 id="redis-cluster-tcp-ports">Redis Cluster TCP ports</h2>
+<p>Every Redis Cluster node requires two TCP connections open. The normal Redis
+TCP port used to serve clients, for example 6379, plus the port obtained by
+adding 10000 to the data port, so 16379 in the example.</p>
+<p>This second <em>high</em> port is used for the Cluster bus, that is a node-to-node
+communication channel using a binary protocol. The Cluster bus is used by
+nodes for failure detection, configuration update, failover authorization
+and so forth. Clients should never try to communicate with the cluster bus
+port, but always with the normal Redis command port, however make sure you
+open both ports in your firewall, otherwise Redis cluster nodes will be
+not able to communicate.</p>
+<p>The command port and cluster bus port offset is fixed and is always 10000.</p>
+<p>Note that for a Redis Cluster to work properly you need, for each node:</p>
+<ol>
+<li>The normal client communication port (usually 6379) used to communicate with clients to be open to all the clients that need to reach the cluster, plus all the other cluster nodes (that use the client port for keys migrations).</li>
+<li>The cluster bus port (the client port + 10000) must be reachable from all the other cluster nodes.</li>
+</ol>
+<p>If you don&apos;t open both TCP ports, your cluster will not work as expected.</p>
+<p>The cluster bus uses a different, binary protocol, for node to node data
+exchange, which is more suited to exchange information between nodes using
+little bandwidth and processing time.</p>
+<h2 id="redis-cluster-and-docker">Redis Cluster and Docker</h2>
+<p>Currently Redis Cluster does not support NATted environments and in general
+environments where IP addresses or TCP ports are remapped.</p>
+<p>Docker uses a technique called <em>port mapping</em>: programs running inside Docker
+containers may be exposed with a different port compared to the one the
+program believes to be using. This is useful in order to run multiple
+containers using the same ports, at the same time, in the same server.</p>
+<p>In order to make Docker compatible with Redis Cluster you need to use
+the <strong>host networking mode</strong> of Docker. Please check the <code>--net=host</code> option
+in the <a href="https://docs.docker.com/engine/userguide/networking/dockernetworks/" target="_blank">Docker documentation</a> for more information.</p>
+<h2 id="redis-cluster-data-sharding">Redis Cluster data sharding</h2>
+<p>Redis Cluster does not use consistent hashing, but a different form of sharding
+where every key is conceptually part of what we call a <strong>hash slot</strong>.</p>
+<p>There are 16384 hash slots in Redis Cluster, and to compute what is the hash
+slot of a given key, we simply take the CRC16 of the key modulo
+16384.</p>
+<p>Every node in a Redis Cluster is responsible for a subset of the hash slots,
+so for example you may have a cluster with 3 nodes, where:</p>
+<ul>
+<li>Node A contains hash slots from 0 to 5500.</li>
+<li>Node B contains hash slots from 5501 to 11000.</li>
+<li>Node C contains hash slots from 11001 to 16383.</li>
+</ul>
+<p>This allows to add and remove nodes in the cluster easily. For example if
+I want to add a new node D, I need to move some hash slot from nodes A, B, C
+to D. Similarly if I want to remove node A from the cluster I can just
+move the hash slots served by A to B and C. When the node A will be empty
+I can remove it from the cluster completely.</p>
+<p>Because moving hash slots from a node to another does not require to stop
+operations, adding and removing nodes, or changing the percentage of hash
+slots hold by nodes, does not require any downtime.</p>
+<p>Redis Cluster supports multiple key operations as long as all the keys involved
+into a single command execution (or whole transaction, or Lua script
+execution) all belong to the same hash slot. The user can force multiple keys
+to be part of the same hash slot by using a concept called <em>hash tags</em>.</p>
+<p>Hash tags are documented in the Redis Cluster specification, but the gist is
+that if there is a substring between {} brackets in a key, only what is
+inside the string is hashed, so for example <code>this{foo}key</code> and <code>another{foo}key</code>
+are guaranteed to be in the same hash slot, and can be used together in a
+command with multiple keys as arguments.</p>
+<h2 id="redis-cluster-master-slave-model">Redis Cluster master-slave model</h2>
+<p>In order to remain available when a subset of master nodes are failing or are
+not able to communicate with the majority of nodes, Redis Cluster uses a
+master-slave model where every hash slot has from 1 (the master itself) to N
+replicas (N-1 additional slaves nodes).</p>
+<p>In our example cluster with nodes A, B, C, if node B fails the cluster is not
+able to continue, since we no longer have a way to serve hash slots in the
+range 5501-11000.</p>
+<p>However when the cluster is created (or at a later time) we add a slave
+node to every master, so that the final cluster is composed of A, B, C
+that are master nodes, and A1, B1, C1 that are slave nodes.
+This way, the system is able to continue if node B fails.</p>
+<p>Node B1 replicates B, and B fails, the cluster will promote node B1 as the new
+master and will continue to operate correctly.</p>
+<p>However, note that if nodes B and B1 fail at the same time, Redis Cluster is not
+able to continue to operate.</p>
+<h2 id="redis-cluster-consistency-guarantees">Redis Cluster consistency guarantees</h2>
+<p>Redis Cluster is not able to guarantee <strong>strong consistency</strong>. In practical
+terms this means that under certain conditions it is possible that Redis
+Cluster will lose writes that were acknowledged by the system to the client.</p>
+<p>The first reason why Redis Cluster can lose writes is because it uses
+asynchronous replication. This means that during writes the following
+happens:</p>
+<ul>
+<li>Your client writes to the master B.</li>
+<li>The master B replies OK to your client.</li>
+<li>The master B propagates the write to its slaves B1, B2 and B3.</li>
+</ul>
+<p>As you can see, B does not wait for an acknowledgement from B1, B2, B3 before
+replying to the client, since this would be a prohibitive latency penalty
+for Redis, so if your client writes something, B acknowledges the write,
+but crashes before being able to send the write to its slaves, one of the
+slaves (that did not receive the write) can be promoted to master, losing
+the write forever.</p>
+<p>This is <strong>very similar to what happens</strong> with most databases that are
+configured to flush data to disk every second, so it is a scenario you
+are already able to reason about because of past experiences with traditional
+database systems not involving distributed systems. Similarly you can
+improve consistency by forcing the database to flush data to disk before
+replying to the client, but this usually results in prohibitively low
+performance. That would be the equivalent of synchronous replication in
+the case of Redis Cluster.</p>
+<p>Basically, there is a trade-off to be made between performance and consistency.</p>
+<p>Redis Cluster has support for synchronous writes when absolutely needed,
+implemented via the <code>WAIT</code> command. This makes losing writes a lot less
+likely. However, note that Redis Cluster does not implement strong consistency
+even when synchronous replication is used: it is always possible, under more
+complex failure scenarios, that a slave that was not able to receive the write
+will be elected as master.</p>
+<p>There is another notable scenario where Redis Cluster will lose writes, that
+happens during a network partition where a client is isolated with a minority
+of instances including at least a master.</p>
+<p>Take as an example our 6 nodes cluster composed of A, B, C, A1, B1, C1,
+with 3 masters and 3 slaves. There is also a client, that we will call Z1.</p>
+<p>After a partition occurs, it is possible that in one side of the
+partition we have A, C, A1, B1, C1, and in the other side we have B and Z1.</p>
+<p>Z1 is still able to write to B, which will accept its writes. If the
+partition heals in a very short time, the cluster will continue normally.
+However, if the partition lasts enough time for B1 to be promoted to master
+on the majority side of the partition, the writes that Z1 has sent to B
+in the mean time will be lost.</p>
+<p>Note that there is a <strong>maximum window</strong> to the amount of writes Z1 will be able
+to send to B: if enough time has elapsed for the majority side of the
+partition to elect a slave as master, every master node in the minority
+side will have stopped accepting writes.</p>
+<p>This amount of time is a very important configuration directive of Redis
+Cluster, and is called the <strong>node timeout</strong>.</p>
+<p>After node timeout has elapsed, a master node is considered to be failing,
+and can be replaced by one of its replicas.
+Similarly, after node timeout has elapsed without a master node to be able
+to sense the majority of the other master nodes, it enters an error state
+and stops accepting writes.</p>
+<h1 id="redis-cluster-configuration-parameters">Redis Cluster configuration parameters</h1>
+<p>We are about to create an example cluster deployment. Before we continue,
+let&apos;s introduce the configuration parameters that Redis Cluster introduces
+in the <code>redis.conf</code> file. Some will be obvious, others will be more clear
+as you continue reading.</p>
+<ul>
+<li><strong>cluster-enabled <code>&lt;yes/no&gt;</code></strong>: If yes, enables Redis Cluster support in a specific Redis instance. Otherwise the instance starts as a stand alone instance as usual.</li>
+<li><strong>cluster-config-file <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filename</span><span class="token punctuation">&gt;</span></span></code></strong>: Note that despite the name of this option, this is not a user editable configuration file, but the file where a Redis Cluster node automatically persists the cluster configuration (the state, basically) every time there is a change, in order to be able to re-read it at startup. The file lists things like the other nodes in the cluster, their state, persistent variables, and so forth. Often this file is rewritten and flushed on disk as a result of some message reception.</li>
+<li><strong>cluster-node-timeout <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>milliseconds</span><span class="token punctuation">&gt;</span></span></code></strong>: The maximum amount of time a Redis Cluster node can be unavailable, without it being considered as failing. If a master node is not reachable for more than the specified amount of time, it will be failed over by its slaves. This parameter controls other important things in Redis Cluster. Notably, every node that can&apos;t reach the majority of master nodes for the specified amount of time, will stop accepting queries.</li>
+<li><strong>cluster-slave-validity-factor <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>factor</span><span class="token punctuation">&gt;</span></span></code></strong>: If set to zero, a slave will always consider itself valid, and will therefore always try to failover a master, regardless of the amount of time the link between the master and the slave remained disconnected. If the value is positive, a maximum disconnection time is calculated as the <em>node timeout</em> value multiplied by the factor provided with this option, and if the node is a slave, it will not try to start a failover if the master link was disconnected for more than the specified amount of time. For example, if the node timeout is set to 5 seconds and the validity factor is set to 10, a slave disconnected from the master for more than 50 seconds will not try to failover its master. Note that any value different than zero may result in Redis Cluster being unavailable after a master failure if there is no slave that is able to failover it. In that case the cluster will return to being available only when the original master rejoins the cluster.</li>
+<li><strong>cluster-migration-barrier <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>count</span><span class="token punctuation">&gt;</span></span></code></strong>: Minimum number of slaves a master will remain connected with, for another slave to migrate to a master which is no longer covered by any slave. See the appropriate section about replica migration in this tutorial for more information.</li>
+<li><strong>cluster-require-full-coverage <code>&lt;yes/no&gt;</code></strong>: If this is set to yes, as it is by default, the cluster stops accepting writes if some percentage of the key space is not covered by any node. If the option is set to no, the cluster will still serve queries even if only requests about a subset of keys can be processed.</li>
+<li><strong>cluster-allow-reads-when-down <code>&lt;yes/no&gt;</code></strong>: If this is set to no, as it is by default, a node in a Redis Cluster will stop serving all traffic when the cluster is marked as failed, either when a node can&apos;t reach a quorum of masters or when full coverage is not met. This prevents reading potentially inconsistent data from a node that is unaware of changes in the cluster. This option can be set to yes to allow reads from a node during the fail state, which is useful for applications that want to prioritize read availability but still want to prevent inconsistent writes. It can also be used for when using Redis Cluster with only one or two shards, as it allows the nodes to continue serving writes when a master fails but automatic failover is impossible.</li>
+</ul>
+<h1 id="creating-and-using-a-redis-cluster">Creating and using a Redis Cluster</h1>
+<p>Note: to deploy a Redis Cluster manually it is <strong>very important to learn</strong> certain
+operational aspects of it. However if you want to get a cluster up and running
+ASAP (As Soon As Possible) skip this section and the next one and go directly to <strong>Creating a Redis Cluster using the create-cluster script</strong>.</p>
+<p>To create a cluster, the first thing we need is to have a few empty
+Redis instances running in <strong>cluster mode</strong>. This basically means that
+clusters are not created using normal Redis instances as a special mode
+needs to be configured so that the Redis instance will enable the Cluster
+specific features and commands.</p>
+<p>The following is a minimal Redis cluster configuration file:</p>
+<pre class="language-"><code>port 7000
+cluster-enabled yes
+cluster-config-file nodes.conf
+cluster-node-timeout 5000
+appendonly yes
+</code></pre><p>As you can see what enables the cluster mode is simply the <code>cluster-enabled</code>
+directive. Every instance also contains the path of a file where the
+configuration for this node is stored, which by default is <code>nodes.conf</code>.
+This file is never touched by humans; it is simply generated at startup
+by the Redis Cluster instances, and updated every time it is needed.</p>
+<p>Note that the <strong>minimal cluster</strong> that works as expected requires to contain
+at least three master nodes. For your first tests it is strongly suggested
+to start a six nodes cluster with three masters and three slaves.</p>
+<p>To do so, enter a new directory, and create the following directories named
+after the port number of the instance we&apos;ll run inside any given directory.</p>
+<p>Something like:</p>
+<pre class="language-"><code>mkdir cluster-test
+cd cluster-test
+mkdir 7000 7001 7002 7003 7004 7005
+</code></pre><p>Create a <code>redis.conf</code> file inside each of the directories, from 7000 to 7005.
+As a template for your configuration file just use the small example above,
+but make sure to replace the port number <code>7000</code> with the right port number
+according to the directory name.</p>
+<p>Now copy your redis-server executable, <strong>compiled from the latest sources in the unstable branch at GitHub</strong>, into the <code>cluster-test</code> directory, and finally open 6 terminal tabs in your favorite terminal application.</p>
+<p>Start every instance like that, one every tab:</p>
+<pre class="language-"><code>cd 7000
+../redis-server ./redis.conf
+</code></pre><p>As you can see from the logs of every instance, since no <code>nodes.conf</code> file
+existed, every node assigns itself a new ID.</p>
+<pre class="language-"><code>[82462] 26 Nov 11:56:55.329 * No cluster configuration found, I&apos;m 97a3a64667477371c4479320d683e4c8db5858b1
+</code></pre><p>This ID will be used forever by this specific instance in order for the instance
+to have a unique name in the context of the cluster. Every node
+remembers every other node using this IDs, and not by IP or port.
+IP addresses and ports may change, but the unique node identifier will never
+change for all the life of the node. We call this identifier simply <strong>Node ID</strong>.</p>
+<h2 id="creating-the-cluster">Creating the cluster</h2>
+<p>Now that we have a number of instances running, we need to create our
+cluster by writing some meaningful configuration to the nodes.</p>
+<p>If you are using Redis 5 or higher, this is very easy to accomplish as we are helped by the Redis Cluster command line utility embedded into <code>redis-cli</code>, that can be used to create new clusters, check or reshard an existing cluster, and so forth.</p>
+<p>For Redis version 3 or 4, there is the older tool called <code>redis-trib.rb</code> which is very similar. You can find it in the <code>src</code> directory of the Redis source code distribution. You need to install <code>redis</code> gem to be able to run <code>redis-trib</code>.</p>
+<pre class="language-"><code>gem install redis
+</code></pre><p>The first example, that is, the cluster creation, will be shown using both <code>redis-cli</code> in Redis 5 and <code>redis-trib</code> in Redis 3 and 4. However all the next examples will only use <code>redis-cli</code>, since as you can see the syntax is very similar, and you can trivially change one command line into the other by using <code>redis-trib.rb help</code> to get info about the old syntax. <strong>Important:</strong> note that you can use Redis 5 <code>redis-cli</code> against Redis 4 clusters without issues if you wish.</p>
+<p>To create your cluster for Redis 5 with <code>redis-cli</code> simply type:</p>
+<pre class="language-"><code>redis-cli --cluster create 127.0.0.1:7000 127.0.0.1:7001 \
+127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005 \
+--cluster-replicas 1
+</code></pre><p>Using <code>redis-trib.rb</code> for Redis 4 or 3 type:</p>
+<pre class="language-"><code>./redis-trib.rb create --replicas 1 127.0.0.1:7000 127.0.0.1:7001 \
+127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005
+</code></pre><p>The command used here is <strong>create</strong>, since we want to create a new cluster.
+The option <code>--cluster-replicas 1</code> means that we want a slave for every master created.
+The other arguments are the list of addresses of the instances I want to use
+to create the new cluster.</p>
+<p>Obviously the only setup with our requirements is to create a cluster with
+3 masters and 3 slaves.</p>
+<p>Redis-cli will propose you a configuration. Accept the proposed configuration by typing <strong>yes</strong>.
+The cluster will be configured and <em>joined</em>, which means, instances will be
+bootstrapped into talking with each other. Finally, if everything went well,
+you&apos;ll see a message like that:</p>
+<pre class="language-"><code>[OK] All 16384 slots covered
+</code></pre><p>This means that there is at least a master instance serving each of the
+16384 slots available.</p>
+<h2 id="creating-a-redis-cluster-using-the-create-cluster-script">Creating a Redis Cluster using the create-cluster script</h2>
+<p>If you don&apos;t want to create a Redis Cluster by configuring and executing
+individual instances manually as explained above, there is a much simpler
+system (but you&apos;ll not learn the same amount of operational details).</p>
+<p>Just check <code>utils/create-cluster</code> directory in the Redis distribution.
+There is a script called <code>create-cluster</code> inside (same name as the directory
+it is contained into), it&apos;s a simple bash script. In order to start
+a 6 nodes cluster with 3 masters and 3 slaves just type the following
+commands:</p>
+<ol>
+<li><code>create-cluster start</code></li>
+<li><code>create-cluster create</code></li>
+</ol>
+<p>Reply to <code>yes</code> in step 2 when the <code>redis-cli</code> utility wants you to accept
+the cluster layout.</p>
+<p>You can now interact with the cluster, the first node will start at port 30001
+by default. When you are done, stop the cluster with:</p>
+<ol>
+<li><code>create-cluster stop</code>.</li>
+</ol>
+<p>Please read the <code>README</code> inside this directory for more information on how
+to run the script.</p>
+<h2 id="playing-with-the-cluster">Playing with the cluster</h2>
+<p>At this stage one of the problems with Redis Cluster is the lack of
+client libraries implementations.</p>
+<p>I&apos;m aware of the following implementations:</p>
+<ul>
+<li><a href="http://github.com/antirez/redis-rb-cluster" target="_blank">redis-rb-cluster</a> is a Ruby implementation written by me (@antirez) as a reference for other languages. It is a simple wrapper around the original redis-rb, implementing the minimal semantics to talk with the cluster efficiently.</li>
+<li><a href="https://github.com/Grokzen/redis-py-cluster" target="_blank">redis-py-cluster</a> A port of redis-rb-cluster to Python. Supports majority of <em>redis-py</em> functionality. Is in active development.</li>
+<li>The popular <a href="https://github.com/nrk/predis" target="_blank">Predis</a> has support for Redis Cluster, the support was recently updated and is in active development.</li>
+<li>The most used Java client, <a href="https://github.com/xetorthio/jedis" target="_blank">Jedis</a> recently added support for Redis Cluster, see the <em>Jedis Cluster</em> section in the project README.</li>
+<li><a href="https://github.com/StackExchange/StackExchange.Redis" target="_blank">StackExchange.Redis</a> offers support for C# (and should work fine with most .NET languages; VB, F#, etc)</li>
+<li><a href="https://github.com/thunks/thunk-redis" target="_blank">thunk-redis</a> offers support for Node.js and io.js, it is a thunk/promise-based redis client with pipelining and cluster.</li>
+<li><a href="https://github.com/chasex/redis-go-cluster" target="_blank">redis-go-cluster</a> is an implementation of Redis Cluster for the Go language using the <a href="https://github.com/garyburd/redigo" target="_blank">Redigo library client</a> as the base client. Implements MGET/MSET via result aggregation.</li>
+<li><a href="https://github.com/luin/ioredis" target="_blank">ioredis</a> is a popular Node.js client, providing a robust support for Redis Cluster.</li>
+<li>The <code>redis-cli</code> utility implements basic cluster support when started with the <code>-c</code> switch.</li>
+</ul>
+<p>An easy way to test Redis Cluster is either to try any of the above clients
+or simply the <code>redis-cli</code> command line utility. The following is an example
+of interaction using the latter:</p>
+<pre class="language-"><code>$ redis-cli -c -p 7000
+redis 127.0.0.1:7000&gt; set foo bar
+-&gt; Redirected to slot [12182] located at 127.0.0.1:7002
+OK
+redis 127.0.0.1:7002&gt; set hello world
+-&gt; Redirected to slot [866] located at 127.0.0.1:7000
+OK
+redis 127.0.0.1:7000&gt; get foo
+-&gt; Redirected to slot [12182] located at 127.0.0.1:7002
+&quot;bar&quot;
+redis 127.0.0.1:7002&gt; get hello
+-&gt; Redirected to slot [866] located at 127.0.0.1:7000
+&quot;world&quot;
+</code></pre><p><strong>Note:</strong> if you created the cluster using the script your nodes may listen
+to different ports, starting from 30001 by default.</p>
+<p>The redis-cli cluster support is very basic so it always uses the fact that
+Redis Cluster nodes are able to redirect a client to the right node.
+A serious client is able to do better than that, and cache the map between
+hash slots and nodes addresses, to directly use the right connection to the
+right node. The map is refreshed only when something changed in the cluster
+configuration, for example after a failover or after the system administrator
+changed the cluster layout by adding or removing nodes.</p>
+<h2 id="writing-an-example-app-with-redis-rb-cluster">Writing an example app with redis-rb-cluster</h2>
+<p>Before going forward showing how to operate the Redis Cluster, doing things
+like a failover, or a resharding, we need to create some example application
+or at least to be able to understand the semantics of a simple Redis Cluster
+client interaction.</p>
+<p>In this way we can run an example and at the same time try to make nodes
+failing, or start a resharding, to see how Redis Cluster behaves under real
+world conditions. It is not very helpful to see what happens while nobody
+is writing to the cluster.</p>
+<p>This section explains some basic usage of
+<a href="https://github.com/antirez/redis-rb-cluster" target="_blank">redis-rb-cluster</a> showing two
+examples. The first is the following, and is the
+<a href="https://github.com/antirez/redis-rb-cluster/blob/master/example.rb" target="_blank"><code>example.rb</code></a>
+file inside the redis-rb-cluster distribution:</p>
+<pre class="language-"><code>   1  require &apos;./cluster&apos;
+   2
+   3  if ARGV.length != 2
+   4      startup_nodes = [
+   5          {:host =&gt; &quot;127.0.0.1&quot;, :port =&gt; 7000},
+   6          {:host =&gt; &quot;127.0.0.1&quot;, :port =&gt; 7001}
+   7      ]
+   8  else
+   9      startup_nodes = [
+  10          {:host =&gt; ARGV[0], :port =&gt; ARGV[1].to_i}
+  11      ]
+  12  end
+  13
+  14  rc = RedisCluster.new(startup_nodes,32,:timeout =&gt; 0.1)
+  15
+  16  last = false
+  17
+  18  while not last
+  19      begin
+  20          last = rc.get(&quot;__last__&quot;)
+  21          last = 0 if !last
+  22      rescue =&gt; e
+  23          puts &quot;error #{e.to_s}&quot;
+  24          sleep 1
+  25      end
+  26  end
+  27
+  28  ((last.to_i+1)..1000000000).each{|x|
+  29      begin
+  30          rc.set(&quot;foo#{x}&quot;,x)
+  31          puts rc.get(&quot;foo#{x}&quot;)
+  32          rc.set(&quot;__last__&quot;,x)
+  33      rescue =&gt; e
+  34          puts &quot;error #{e.to_s}&quot;
+  35      end
+  36      sleep 0.1
+  37  }
+</code></pre><p>The application does a very simple thing, it sets keys in the form <code>foo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>number</span><span class="token punctuation">&gt;</span></span></code> to <code>number</code>, one after the other. So if you run the program the result is the
+following stream of commands:</p>
+<ul>
+<li>SET foo0 0</li>
+<li>SET foo1 1</li>
+<li>SET foo2 2</li>
+<li>And so forth...</li>
+</ul>
+<p>The program looks more complex than it should usually as it is designed to
+show errors on the screen instead of exiting with an exception, so every
+operation performed with the cluster is wrapped by <code>begin</code> <code>rescue</code> blocks.</p>
+<p>The <strong>line 14</strong> is the first interesting line in the program. It creates the
+Redis Cluster object, using as argument a list of <em>startup nodes</em>, the maximum
+number of connections this object is allowed to take against different nodes,
+and finally the timeout after a given operation is considered to be failed.</p>
+<p>The startup nodes don&apos;t need to be all the nodes of the cluster. The important
+thing is that at least one node is reachable. Also note that redis-rb-cluster
+updates this list of startup nodes as soon as it is able to connect with the
+first node. You should expect such a behavior with any other serious client.</p>
+<p>Now that we have the Redis Cluster object instance stored in the <strong>rc</strong> variable
+we are ready to use the object like if it was a normal Redis object instance.</p>
+<p>This is exactly what happens in <strong>line 18 to 26</strong>: when we restart the example
+we don&apos;t want to start again with <code>foo0</code>, so we store the counter inside
+Redis itself. The code above is designed to read this counter, or if the
+counter does not exist, to assign it the value of zero.</p>
+<p>However note how it is a while loop, as we want to try again and again even
+if the cluster is down and is returning errors. Normal applications don&apos;t need
+to be so careful.</p>
+<p><strong>Lines between 28 and 37</strong> start the main loop where the keys are set or
+an error is displayed.</p>
+<p>Note the <code>sleep</code> call at the end of the loop. In your tests you can remove
+the sleep if you want to write to the cluster as fast as possible (relatively
+to the fact that this is a busy loop without real parallelism of course, so
+you&apos;ll get the usually 10k ops/second in the best of the conditions).</p>
+<p>Normally writes are slowed down in order for the example application to be
+easier to follow by humans.</p>
+<p>Starting the application produces the following output:</p>
+<pre class="language-"><code>ruby ./example.rb
+1
+2
+3
+4
+5
+6
+7
+8
+9
+^C (I stopped the program here)
+</code></pre><p>This is not a very interesting program and we&apos;ll use a better one in a moment
+but we can already see what happens during a resharding when the program
+is running.</p>
+<h2 id="resharding-the-cluster">Resharding the cluster</h2>
+<p>Now we are ready to try a cluster resharding. To do this please
+keep the example.rb program running, so that you can see if there is some
+impact on the program running. Also you may want to comment the <code>sleep</code>
+call in order to have some more serious write load during resharding.</p>
+<p>Resharding basically means to move hash slots from a set of nodes to another
+set of nodes, and like cluster creation it is accomplished using the
+redis-cli utility.</p>
+<p>To start a resharding just type:</p>
+<pre class="language-"><code>redis-cli --cluster reshard 127.0.0.1:7000
+</code></pre><p>You only need to specify a single node, redis-cli will find the other nodes
+automatically.</p>
+<p>Currently redis-cli is only able to reshard with the administrator support,
+you can&apos;t just say move 5% of slots from this node to the other one (but
+this is pretty trivial to implement). So it starts with questions. The first
+is how much a big resharding do you want to do:</p>
+<pre class="language-"><code>How many slots do you want to move (from 1 to 16384)?
+</code></pre><p>We can try to reshard 1000 hash slots, that should already contain a non
+trivial amount of keys if the example is still running without the sleep
+call.</p>
+<p>Then redis-cli needs to know what is the target of the resharding, that is,
+the node that will receive the hash slots.
+I&apos;ll use the first master node, that is, 127.0.0.1:7000, but I need
+to specify the Node ID of the instance. This was already printed in a
+list by redis-cli, but I can always find the ID of a node with the following
+command if I need:</p>
+<pre class="language-"><code>$ redis-cli -p 7000 cluster nodes | grep myself
+97a3a64667477371c4479320d683e4c8db5858b1 :0 myself,master - 0 0 0 connected 0-5460
+</code></pre><p>Ok so my target node is 97a3a64667477371c4479320d683e4c8db5858b1.</p>
+<p>Now you&apos;ll get asked from what nodes you want to take those keys.
+I&apos;ll just type <code>all</code> in order to take a bit of hash slots from all the
+other master nodes.</p>
+<p>After the final confirmation you&apos;ll see a message for every slot that
+redis-cli is going to move from a node to another, and a dot will be printed
+for every actual key moved from one side to the other.</p>
+<p>While the resharding is in progress you should be able to see your
+example program running unaffected. You can stop and restart it multiple times
+during the resharding if you want.</p>
+<p>At the end of the resharding, you can test the health of the cluster with
+the following command:</p>
+<pre class="language-"><code>redis-cli --cluster check 127.0.0.1:7000
+</code></pre><p>All the slots will be covered as usual, but this time the master at
+127.0.0.1:7000 will have more hash slots, something around 6461.</p>
+<h2 id="scripting-a-resharding-operation">Scripting a resharding operation</h2>
+<p>Resharding can be performed automatically without the need to manually
+enter the parameters in an interactive way. This is possible using a command
+line like the following:</p>
+<pre class="language-"><code>redis-cli --cluster reshard <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>host</span><span class="token punctuation">&gt;</span></span>:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>port</span><span class="token punctuation">&gt;</span></span> --cluster-from <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>node-id</span><span class="token punctuation">&gt;</span></span> --cluster-to <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>node-id</span><span class="token punctuation">&gt;</span></span> --cluster-slots <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>number</span> <span class="token attr-name">of</span> <span class="token attr-name">slots</span><span class="token punctuation">&gt;</span></span> --cluster-yes
+</code></pre><p>This allows to build some automatism if you are likely to reshard often,
+however currently there is no way for <code>redis-cli</code> to automatically
+rebalance the cluster checking the distribution of keys across the cluster
+nodes and intelligently moving slots as needed. This feature will be added
+in the future.</p>
+<p>The <code>--cluster-yes</code> option instructs the cluster manager to automatically answer
+&quot;yes&quot; to the command&apos;s prompts, allowing it to run in a non-interactive mode.
+Note that this option can also be activated by setting the
+<code>REDISCLI_CLUSTER_YES</code> environment variable.</p>
+<h2 id="a-more-interesting-example-application">A more interesting example application</h2>
+<p>The example application we wrote early is not very good.
+It writes to the cluster in a simple way without even checking if what was
+written is the right thing.</p>
+<p>From our point of view the cluster receiving the writes could just always
+write the key <code>foo</code> to <code>42</code> to every operation, and we would not notice at
+all.</p>
+<p>So in the <code>redis-rb-cluster</code> repository, there is a more interesting application
+that is called <code>consistency-test.rb</code>. It uses a set of counters, by default 1000, and sends <code>INCR</code> commands in order to increment the counters.</p>
+<p>However instead of just writing, the application does two additional things:</p>
+<ul>
+<li>When a counter is updated using <code>INCR</code>, the application remembers the write.</li>
+<li>It also reads a random counter before every write, and check if the value is what we expected it to be, comparing it with the value it has in memory.</li>
+</ul>
+<p>What this means is that this application is a simple <strong>consistency checker</strong>,
+and is able to tell you if the cluster lost some write, or if it accepted
+a write that we did not receive acknowledgment for. In the first case we&apos;ll
+see a counter having a value that is smaller than the one we remember, while
+in the second case the value will be greater.</p>
+<p>Running the consistency-test application produces a line of output every
+second:</p>
+<pre class="language-"><code>$ ruby consistency-test.rb
+925 R (0 err) | 925 W (0 err) |
+5030 R (0 err) | 5030 W (0 err) |
+9261 R (0 err) | 9261 W (0 err) |
+13517 R (0 err) | 13517 W (0 err) |
+17780 R (0 err) | 17780 W (0 err) |
+22025 R (0 err) | 22025 W (0 err) |
+25818 R (0 err) | 25818 W (0 err) |
+</code></pre><p>The line shows the number of <strong>R</strong>eads and <strong>W</strong>rites performed, and the
+number of errors (query not accepted because of errors since the system was
+not available).</p>
+<p>If some inconsistency is found, new lines are added to the output.
+This is what happens, for example, if I reset a counter manually while
+the program is running:</p>
+<pre class="language-"><code>$ redis-cli -h 127.0.0.1 -p 7000 set key_217 0
+OK
+
+(in the other tab I see...)
+
+94774 R (0 err) | 94774 W (0 err) |
+98821 R (0 err) | 98821 W (0 err) |
+102886 R (0 err) | 102886 W (0 err) | 114 lost |
+107046 R (0 err) | 107046 W (0 err) | 114 lost |
+</code></pre><p>When I set the counter to 0 the real value was 114, so the program reports
+114 lost writes (<code>INCR</code> commands that are not remembered by the cluster).</p>
+<p>This program is much more interesting as a test case, so we&apos;ll use it
+to test the Redis Cluster failover.</p>
+<h2 id="testing-the-failover">Testing the failover</h2>
+<p>Note: during this test, you should take a tab open with the consistency test
+application running.</p>
+<p>In order to trigger the failover, the simplest thing we can do (that is also
+the semantically simplest failure that can occur in a distributed system)
+is to crash a single process, in our case a single master.</p>
+<p>We can identify a master and crash it with the following command:</p>
+<pre class="language-"><code>$ redis-cli -p 7000 cluster nodes | grep master
+3e3a6cb0d9a9a87168e266b0a0b24026c0aae3f0 127.0.0.1:7001 master - 0 1385482984082 0 connected 5960-10921
+2938205e12de373867bf38f1ca29d31d0ddb3e46 127.0.0.1:7002 master - 0 1385482983582 0 connected 11423-16383
+97a3a64667477371c4479320d683e4c8db5858b1 :0 myself,master - 0 0 0 connected 0-5959 10922-11422
+</code></pre><p>Ok, so 7000, 7001, and 7002 are masters. Let&apos;s crash node 7002 with the
+<strong>DEBUG SEGFAULT</strong> command:</p>
+<pre class="language-"><code>$ redis-cli -p 7002 debug segfault
+Error: Server closed the connection
+</code></pre><p>Now we can look at the output of the consistency test to see what it reported.</p>
+<pre class="language-"><code>18849 R (0 err) | 18849 W (0 err) |
+23151 R (0 err) | 23151 W (0 err) |
+27302 R (0 err) | 27302 W (0 err) |
+
+... many error warnings here ...
+
+29659 R (578 err) | 29660 W (577 err) |
+33749 R (578 err) | 33750 W (577 err) |
+37918 R (578 err) | 37919 W (577 err) |
+42077 R (578 err) | 42078 W (577 err) |
+</code></pre><p>As you can see during the failover the system was not able to accept 578 reads and 577 writes, however no inconsistency was created in the database. This may
+sound unexpected as in the first part of this tutorial we stated that Redis
+Cluster can lose writes during the failover because it uses asynchronous
+replication. What we did not say is that this is not very likely to happen
+because Redis sends the reply to the client, and the commands to replicate
+to the slaves, about at the same time, so there is a very small window to
+lose data. However the fact that it is hard to trigger does not mean that it
+is impossible, so this does not change the consistency guarantees provided
+by Redis cluster.</p>
+<p>We can now check what is the cluster setup after the failover (note that
+in the meantime I restarted the crashed instance so that it rejoins the
+cluster as a slave):</p>
+<pre class="language-"><code>$ redis-cli -p 7000 cluster nodes
+3fc783611028b1707fd65345e763befb36454d73 127.0.0.1:7004 slave 3e3a6cb0d9a9a87168e266b0a0b24026c0aae3f0 0 1385503418521 0 connected
+a211e242fc6b22a9427fed61285e85892fa04e08 127.0.0.1:7003 slave 97a3a64667477371c4479320d683e4c8db5858b1 0 1385503419023 0 connected
+97a3a64667477371c4479320d683e4c8db5858b1 :0 myself,master - 0 0 0 connected 0-5959 10922-11422
+3c3a0c74aae0b56170ccb03a76b60cfe7dc1912e 127.0.0.1:7005 master - 0 1385503419023 3 connected 11423-16383
+3e3a6cb0d9a9a87168e266b0a0b24026c0aae3f0 127.0.0.1:7001 master - 0 1385503417005 0 connected 5960-10921
+2938205e12de373867bf38f1ca29d31d0ddb3e46 127.0.0.1:7002 slave 3c3a0c74aae0b56170ccb03a76b60cfe7dc1912e 0 1385503418016 3 connected
+</code></pre><p>Now the masters are running on ports 7000, 7001 and 7005. What was previously
+a master, that is the Redis instance running on port 7002, is now a slave of
+7005.</p>
+<p>The output of the <code>CLUSTER NODES</code> command may look intimidating, but it is actually pretty simple, and is composed of the following tokens:</p>
+<ul>
+<li>Node ID</li>
+<li>ip:port</li>
+<li>flags: master, slave, myself, fail, ...</li>
+<li>if it is a slave, the Node ID of the master</li>
+<li>Time of the last pending PING still waiting for a reply.</li>
+<li>Time of the last PONG received.</li>
+<li>Configuration epoch for this node (see the Cluster specification).</li>
+<li>Status of the link to this node.</li>
+<li>Slots served...</li>
+</ul>
+<h2 id="manual-failover">Manual failover</h2>
+<p>Sometimes it is useful to force a failover without actually causing any problem
+on a master. For example in order to upgrade the Redis process of one of the
+master nodes it is a good idea to failover it in order to turn it into a slave
+with minimal impact on availability.</p>
+<p>Manual failovers are supported by Redis Cluster using the <code>CLUSTER FAILOVER</code>
+command, that must be executed in one of the <strong>slaves</strong> of the master you want
+to failover.</p>
+<p>Manual failovers are special and are safer compared to failovers resulting from
+actual master failures, since they occur in a way that avoid data loss in the
+process, by switching clients from the original master to the new master only
+when the system is sure that the new master processed all the replication stream
+from the old one.</p>
+<p>This is what you see in the slave log when you perform a manual failover:</p>
+<pre class="language-"><code># Manual failover user request accepted.
+# Received replication offset for paused master manual failover: 347540
+# All master replication stream processed, manual failover can start.
+# Start of election delayed for 0 milliseconds (rank #0, offset 347540).
+# Starting a failover election for epoch 7545.
+# Failover election won: I&apos;m the new master.
+</code></pre><p>Basically clients connected to the master we are failing over are stopped.
+At the same time the master sends its replication offset to the slave, that
+waits to reach the offset on its side. When the replication offset is reached,
+the failover starts, and the old master is informed about the configuration
+switch. When the clients are unblocked on the old master, they are redirected
+to the new master.</p>
+<h2 id="adding-a-new-node">Adding a new node</h2>
+<p>Adding a new node is basically the process of adding an empty node and then
+moving some data into it, in case it is a new master, or telling it to
+setup as a replica of a known node, in case it is a slave.</p>
+<p>We&apos;ll show both, starting with the addition of a new master instance.</p>
+<p>In both cases the first step to perform is <strong>adding an empty node</strong>.</p>
+<p>This is as simple as to start a new node in port 7006 (we already used
+from 7000 to 7005 for our existing 6 nodes) with the same configuration
+used for the other nodes, except for the port number, so what you should
+do in order to conform with the setup we used for the previous nodes:</p>
+<ul>
+<li>Create a new tab in your terminal application.</li>
+<li>Enter the <code>cluster-test</code> directory.</li>
+<li>Create a directory named <code>7006</code>.</li>
+<li>Create a redis.conf file inside, similar to the one used for the other nodes but using 7006 as port number.</li>
+<li>Finally start the server with <code>../redis-server ./redis.conf</code></li>
+</ul>
+<p>At this point the server should be running.</p>
+<p>Now we can use <strong>redis-cli</strong> as usual in order to add the node to
+the existing cluster.</p>
+<pre class="language-"><code>redis-cli --cluster add-node 127.0.0.1:7006 127.0.0.1:7000
+</code></pre><p>As you can see I used the <strong>add-node</strong> command specifying the address of the
+new node as first argument, and the address of a random existing node in the
+cluster as second argument.</p>
+<p>In practical terms redis-cli here did very little to help us, it just
+sent a <code>CLUSTER MEET</code> message to the node, something that is also possible
+to accomplish manually. However redis-cli also checks the state of the
+cluster before to operate, so it is a good idea to perform cluster operations
+always via redis-cli even when you know how the internals work.</p>
+<p>Now we can connect to the new node to see if it really joined the cluster:</p>
+<pre class="language-"><code>redis 127.0.0.1:7006&gt; cluster nodes
+3e3a6cb0d9a9a87168e266b0a0b24026c0aae3f0 127.0.0.1:7001 master - 0 1385543178575 0 connected 5960-10921
+3fc783611028b1707fd65345e763befb36454d73 127.0.0.1:7004 slave 3e3a6cb0d9a9a87168e266b0a0b24026c0aae3f0 0 1385543179583 0 connected
+f093c80dde814da99c5cf72a7dd01590792b783b :0 myself,master - 0 0 0 connected
+2938205e12de373867bf38f1ca29d31d0ddb3e46 127.0.0.1:7002 slave 3c3a0c74aae0b56170ccb03a76b60cfe7dc1912e 0 1385543178072 3 connected
+a211e242fc6b22a9427fed61285e85892fa04e08 127.0.0.1:7003 slave 97a3a64667477371c4479320d683e4c8db5858b1 0 1385543178575 0 connected
+97a3a64667477371c4479320d683e4c8db5858b1 127.0.0.1:7000 master - 0 1385543179080 0 connected 0-5959 10922-11422
+3c3a0c74aae0b56170ccb03a76b60cfe7dc1912e 127.0.0.1:7005 master - 0 1385543177568 3 connected 11423-16383
+</code></pre><p>Note that since this node is already connected to the cluster it is already
+able to redirect client queries correctly and is generally speaking part of
+the cluster. However it has two peculiarities compared to the other masters:</p>
+<ul>
+<li>It holds no data as it has no assigned hash slots.</li>
+<li>Because it is a master without assigned slots, it does not participate in the election process when a slave wants to become a master.</li>
+</ul>
+<p>Now it is possible to assign hash slots to this node using the resharding
+feature of <code>redis-cli</code>. It is basically useless to show this as we already
+did in a previous section, there is no difference, it is just a resharding
+having as a target the empty node.</p>
+<h2 id="adding-a-new-node-as-a-replica">Adding a new node as a replica</h2>
+<p>Adding a new Replica can be performed in two ways. The obvious one is to
+use redis-cli again, but with the --cluster-slave option, like this:</p>
+<pre class="language-"><code>redis-cli --cluster add-node 127.0.0.1:7006 127.0.0.1:7000 --cluster-slave
+</code></pre><p>Note that the command line here is exactly like the one we used to add
+a new master, so we are not specifying to which master we want to add
+the replica. In this case what happens is that redis-cli will add the new
+node as replica of a random master among the masters with less replicas.</p>
+<p>However you can specify exactly what master you want to target with your
+new replica with the following command line:</p>
+<pre class="language-"><code>redis-cli --cluster add-node 127.0.0.1:7006 127.0.0.1:7000 --cluster-slave --cluster-master-id 3c3a0c74aae0b56170ccb03a76b60cfe7dc1912e
+</code></pre><p>This way we assign the new replica to a specific master.</p>
+<p>A more manual way to add a replica to a specific master is to add the new
+node as an empty master, and then turn it into a replica using the
+<code>CLUSTER REPLICATE</code> command. This also works if the node was added as a slave
+but you want to move it as a replica of a different master.</p>
+<p>For example in order to add a replica for the node 127.0.0.1:7005 that is
+currently serving hash slots in the range 11423-16383, that has a Node ID
+3c3a0c74aae0b56170ccb03a76b60cfe7dc1912e, all I need to do is to connect
+with the new node (already added as empty master) and send the command:</p>
+<pre class="language-"><code>redis 127.0.0.1:7006&gt; cluster replicate 3c3a0c74aae0b56170ccb03a76b60cfe7dc1912e
+</code></pre><p>That&apos;s it. Now we have a new replica for this set of hash slots, and all
+the other nodes in the cluster already know (after a few seconds needed to
+update their config). We can verify with the following command:</p>
+<pre class="language-"><code>$ redis-cli -p 7000 cluster nodes | grep slave | grep 3c3a0c74aae0b56170ccb03a76b60cfe7dc1912e
+f093c80dde814da99c5cf72a7dd01590792b783b 127.0.0.1:7006 slave 3c3a0c74aae0b56170ccb03a76b60cfe7dc1912e 0 1385543617702 3 connected
+2938205e12de373867bf38f1ca29d31d0ddb3e46 127.0.0.1:7002 slave 3c3a0c74aae0b56170ccb03a76b60cfe7dc1912e 0 1385543617198 3 connected
+</code></pre><p>The node 3c3a0c... now has two slaves, running on ports 7002 (the existing one) and 7006 (the new one).</p>
+<h2 id="removing-a-node">Removing a node</h2>
+<p>To remove a slave node just use the <code>del-node</code> command of redis-cli:</p>
+<pre class="language-"><code>redis-cli --cluster del-node 127.0.0.1:7000 `<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>node-id</span><span class="token punctuation">&gt;</span></span>`
+</code></pre><p>The first argument is just a random node in the cluster, the second argument
+is the ID of the node you want to remove.</p>
+<p>You can remove a master node in the same way as well, <strong>however in order to
+remove a master node it must be empty</strong>. If the master is not empty you need
+to reshard data away from it to all the other master nodes before.</p>
+<p>An alternative to remove a master node is to perform a manual failover of it
+over one of its slaves and remove the node after it turned into a slave of the
+new master. Obviously this does not help when you want to reduce the actual
+number of masters in your cluster, in that case, a resharding is needed.</p>
+<h2 id="replicas-migration">Replicas migration</h2>
+<p>In Redis Cluster it is possible to reconfigure a slave to replicate with a
+different master at any time just using the following command:</p>
+<pre class="language-"><code>CLUSTER REPLICATE <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>master-node-id</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>However there is a special scenario where you want replicas to move from one
+master to another one automatically, without the help of the system administrator.
+The automatic reconfiguration of replicas is called <em>replicas migration</em> and is
+able to improve the reliability of a Redis Cluster.</p>
+<p>Note: you can read the details of replicas migration in the <a href="cluster-spec">Redis Cluster Specification</a>, here we&apos;ll only provide some information about the
+general idea and what you should do in order to benefit from it.</p>
+<p>The reason why you may want to let your cluster replicas to move from one master
+to another under certain condition, is that usually the Redis Cluster is as
+resistant to failures as the number of replicas attached to a given master.</p>
+<p>For example a cluster where every master has a single replica can&apos;t continue
+operations if the master and its replica fail at the same time, simply because
+there is no other instance to have a copy of the hash slots the master was
+serving. However while net-splits are likely to isolate a number of nodes
+at the same time, many other kind of failures, like hardware or software failures
+local to a single node, are a very notable class of failures that are unlikely
+to happen at the same time, so it is possible that in your cluster where
+every master has a slave, the slave is killed at 4am, and the master is killed
+at 6am. This still will result in a cluster that can no longer operate.</p>
+<p>To improve reliability of the system we have the option to add additional
+replicas to every master, but this is expensive. Replica migration allows to
+add more slaves to just a few masters. So you have 10 masters with 1 slave
+each, for a total of 20 instances. However you add, for example, 3 instances
+more as slaves of some of your masters, so certain masters will have more
+than a single slave.</p>
+<p>With replicas migration what happens is that if a master is left without
+slaves, a replica from a master that has multiple slaves will migrate to
+the <em>orphaned</em> master. So after your slave goes down at 4am as in the example
+we made above, another slave will take its place, and when the master
+will fail as well at 5am, there is still a slave that can be elected so that
+the cluster can continue to operate.</p>
+<p>So what you should know about replicas migration in short?</p>
+<ul>
+<li>The cluster will try to migrate a replica from the master that has the greatest number of replicas in a given moment.</li>
+<li>To benefit from replica migration you have just to add a few more replicas to a single master in your cluster, it does not matter what master.</li>
+<li>There is a configuration parameter that controls the replica migration feature that is called <code>cluster-migration-barrier</code>: you can read more about it in the example <code>redis.conf</code> file provided with Redis Cluster.</li>
+</ul>
+<h2 id="upgrading-nodes-in-a-redis-cluster">Upgrading nodes in a Redis Cluster</h2>
+<p>Upgrading slave nodes is easy since you just need to stop the node and restart
+it with an updated version of Redis. If there are clients scaling reads using
+slave nodes, they should be able to reconnect to a different slave if a given
+one is not available.</p>
+<p>Upgrading masters is a bit more complex, and the suggested procedure is:</p>
+<ol>
+<li>Use CLUSTER FAILOVER to trigger a manual failover of the master to one of its slaves (see the &quot;Manual failover&quot; section of this documentation).</li>
+<li>Wait for the master to turn into a slave.</li>
+<li>Finally upgrade the node as you do for slaves.</li>
+<li>If you want the master to be the node you just upgraded, trigger a new manual failover in order to turn back the upgraded node into a master.</li>
+</ol>
+<p>Following this procedure you should upgrade one node after the other until
+all the nodes are upgraded.</p>
+<h2 id="migrating-to-redis-cluster">Migrating to Redis Cluster</h2>
+<p>Users willing to migrate to Redis Cluster may have just a single master, or
+may already using a preexisting sharding setup, where keys
+are split among N nodes, using some in-house algorithm or a sharding algorithm
+implemented by their client library or Redis proxy.</p>
+<p>In both cases it is possible to migrate to Redis Cluster easily, however
+what is the most important detail is if multiple-keys operations are used
+by the application, and how. There are three different cases:</p>
+<ol>
+<li>Multiple keys operations, or transactions, or Lua scripts involving multiple keys, are not used. Keys are accessed independently (even if accessed via transactions or Lua scripts grouping multiple commands, about the same key, together).</li>
+<li>Multiple keys operations, transactions, or Lua scripts involving multiple keys are used but only with keys having the same <strong>hash tag</strong>, which means that the keys used together all have a <code>{...}</code> sub-string that happens to be identical. For example the following multiple keys operation is defined in the context of the same hash tag: <code>SUNION {user:1000}.foo {user:1000}.bar</code>.</li>
+<li>Multiple keys operations, transactions, or Lua scripts involving multiple keys are used with key names not having an explicit, or the same, hash tag.</li>
+</ol>
+<p>The third case is not handled by Redis Cluster: the application requires to
+be modified in order to don&apos;t use multi keys operations or only use them in
+the context of the same hash tag.</p>
+<p>Case 1 and 2 are covered, so we&apos;ll focus on those two cases, that are handled
+in the same way, so no distinction will be made in the documentation.</p>
+<p>Assuming you have your preexisting data set split into N masters, where
+N=1 if you have no preexisting sharding, the following steps are needed
+in order to migrate your data set to Redis Cluster:</p>
+<ol>
+<li>Stop your clients. No automatic live-migration to Redis Cluster is currently possible. You may be able to do it orchestrating a live migration in the context of your application / environment.</li>
+<li>Generate an append only file for all of your N masters using the BGREWRITEAOF command, and waiting for the AOF file to be completely generated.</li>
+<li>Save your AOF files from aof-1 to aof-N somewhere. At this point you can stop your old instances if you wish (this is useful since in non-virtualized deployments you often need to reuse the same computers).</li>
+<li>Create a Redis Cluster composed of N masters and zero slaves. You&apos;ll add slaves later. Make sure all your nodes are using the append only file for persistence.</li>
+<li>Stop all the cluster nodes, substitute their append only file with your pre-existing append only files, aof-1 for the first node, aof-2 for the second node, up to aof-N.</li>
+<li>Restart your Redis Cluster nodes with the new AOF files. They&apos;ll complain that there are keys that should not be there according to their configuration.</li>
+<li>Use <code>redis-cli --cluster fix</code> command in order to fix the cluster so that keys will be migrated according to the hash slots each node is authoritative or not.</li>
+<li>Use <code>redis-cli --cluster check</code> at the end to make sure your cluster is ok.</li>
+<li>Restart your clients modified to use a Redis Cluster aware client library.</li>
+</ol>
+<p>There is an alternative way to import data from external instances to a Redis
+Cluster, which is to use the <code>redis-cli --cluster import</code> command.</p>
+<p>The command moves all the keys of a running instance (deleting the keys from
+the source instance) to the specified pre-existing Redis Cluster. However
+note that if you use a Redis 2.8 instance as source instance the operation
+may be slow since 2.8 does not implement migrate connection caching, so you
+may want to restart your source instance with a Redis 3.x version before
+to perform such operation.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="cluster-spec.html" class="navigation navigation-prev " aria-label="Previous page: Cluster Spec">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="config.html" class="navigation navigation-next " aria-label="Next page: Config">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Cluster Tutorial","level":"1.3.8","depth":2,"next":{"title":"Config","level":"1.3.9","depth":2,"path":"topics/config.md","ref":"topics/config.md","articles":[]},"previous":{"title":"Cluster Spec","level":"1.3.7","depth":2,"path":"topics/cluster-spec.md","ref":"topics/cluster-spec.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Redis 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"topics/cluster-tutorial.md","mtime":"2021-03-03T00:55:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-03T01:00:54.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

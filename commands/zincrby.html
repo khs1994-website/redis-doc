@@ -1,0 +1,4737 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Zincrby · Redis 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="zinter.html" />
+    
+    
+    <link rel="prev" href="zdiffstore.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Commands
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="acl-cat.html">
+            
+                <a href="acl-cat.html">
+            
+                    
+                    Acl Cat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="acl-deluser.html">
+            
+                <a href="acl-deluser.html">
+            
+                    
+                    Acl Deluser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="acl-genpass.html">
+            
+                <a href="acl-genpass.html">
+            
+                    
+                    Acl Genpass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="acl-getuser.html">
+            
+                <a href="acl-getuser.html">
+            
+                    
+                    Acl Getuser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="acl-help.html">
+            
+                <a href="acl-help.html">
+            
+                    
+                    Acl Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="acl-list.html">
+            
+                <a href="acl-list.html">
+            
+                    
+                    Acl List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="acl-load.html">
+            
+                <a href="acl-load.html">
+            
+                    
+                    Acl Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="acl-log.html">
+            
+                <a href="acl-log.html">
+            
+                    
+                    Acl Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="acl-save.html">
+            
+                <a href="acl-save.html">
+            
+                    
+                    Acl Save
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="acl-setuser.html">
+            
+                <a href="acl-setuser.html">
+            
+                    
+                    Acl Setuser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="acl-users.html">
+            
+                <a href="acl-users.html">
+            
+                    
+                    Acl Users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="acl-whoami.html">
+            
+                <a href="acl-whoami.html">
+            
+                    
+                    Acl Whoami
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="append.html">
+            
+                <a href="append.html">
+            
+                    
+                    Append
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="auth.html">
+            
+                <a href="auth.html">
+            
+                    
+                    Auth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="bgrewriteaof.html">
+            
+                <a href="bgrewriteaof.html">
+            
+                    
+                    Bgrewriteaof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="bgsave.html">
+            
+                <a href="bgsave.html">
+            
+                    
+                    Bgsave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="bitcount.html">
+            
+                <a href="bitcount.html">
+            
+                    
+                    Bitcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="bitfield.html">
+            
+                <a href="bitfield.html">
+            
+                    
+                    Bitfield
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="bitop.html">
+            
+                <a href="bitop.html">
+            
+                    
+                    Bitop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="bitpos.html">
+            
+                <a href="bitpos.html">
+            
+                    
+                    Bitpos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="blmove.html">
+            
+                <a href="blmove.html">
+            
+                    
+                    Blmove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="blpop.html">
+            
+                <a href="blpop.html">
+            
+                    
+                    Blpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" data-path="brpop.html">
+            
+                <a href="brpop.html">
+            
+                    
+                    Brpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" data-path="brpoplpush.html">
+            
+                <a href="brpoplpush.html">
+            
+                    
+                    Brpoplpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" data-path="bzpopmax.html">
+            
+                <a href="bzpopmax.html">
+            
+                    
+                    Bzpopmax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.26" data-path="bzpopmin.html">
+            
+                <a href="bzpopmin.html">
+            
+                    
+                    Bzpopmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27" data-path="client-caching.html">
+            
+                <a href="client-caching.html">
+            
+                    
+                    Client Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.28" data-path="client-getname.html">
+            
+                <a href="client-getname.html">
+            
+                    
+                    Client Getname
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.29" data-path="client-getredir.html">
+            
+                <a href="client-getredir.html">
+            
+                    
+                    Client Getredir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.30" data-path="client-id.html">
+            
+                <a href="client-id.html">
+            
+                    
+                    Client Id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.31" data-path="client-info.html">
+            
+                <a href="client-info.html">
+            
+                    
+                    Client Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.32" data-path="client-kill.html">
+            
+                <a href="client-kill.html">
+            
+                    
+                    Client Kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.33" data-path="client-list.html">
+            
+                <a href="client-list.html">
+            
+                    
+                    Client List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.34" data-path="client-pause.html">
+            
+                <a href="client-pause.html">
+            
+                    
+                    Client Pause
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.35" data-path="client-reply.html">
+            
+                <a href="client-reply.html">
+            
+                    
+                    Client Reply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.36" data-path="client-setname.html">
+            
+                <a href="client-setname.html">
+            
+                    
+                    Client Setname
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.37" data-path="client-tracking.html">
+            
+                <a href="client-tracking.html">
+            
+                    
+                    Client Tracking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.38" data-path="client-trackinginfo.html">
+            
+                <a href="client-trackinginfo.html">
+            
+                    
+                    Client Trackinginfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.39" data-path="client-unblock.html">
+            
+                <a href="client-unblock.html">
+            
+                    
+                    Client Unblock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.40" data-path="client-unpause.html">
+            
+                <a href="client-unpause.html">
+            
+                    
+                    Client Unpause
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.41" data-path="cluster-addslots.html">
+            
+                <a href="cluster-addslots.html">
+            
+                    
+                    Cluster Addslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.42" data-path="cluster-bumpepoch.html">
+            
+                <a href="cluster-bumpepoch.html">
+            
+                    
+                    Cluster Bumpepoch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.43" data-path="cluster-count-failure-reports.html">
+            
+                <a href="cluster-count-failure-reports.html">
+            
+                    
+                    Cluster Count Failure Reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.44" data-path="cluster-countkeysinslot.html">
+            
+                <a href="cluster-countkeysinslot.html">
+            
+                    
+                    Cluster Countkeysinslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.45" data-path="cluster-delslots.html">
+            
+                <a href="cluster-delslots.html">
+            
+                    
+                    Cluster Delslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.46" data-path="cluster-failover.html">
+            
+                <a href="cluster-failover.html">
+            
+                    
+                    Cluster Failover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.47" data-path="cluster-flushslots.html">
+            
+                <a href="cluster-flushslots.html">
+            
+                    
+                    Cluster Flushslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.48" data-path="cluster-forget.html">
+            
+                <a href="cluster-forget.html">
+            
+                    
+                    Cluster Forget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.49" data-path="cluster-getkeysinslot.html">
+            
+                <a href="cluster-getkeysinslot.html">
+            
+                    
+                    Cluster Getkeysinslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.50" data-path="cluster-info.html">
+            
+                <a href="cluster-info.html">
+            
+                    
+                    Cluster Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.51" data-path="cluster-keyslot.html">
+            
+                <a href="cluster-keyslot.html">
+            
+                    
+                    Cluster Keyslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.52" data-path="cluster-meet.html">
+            
+                <a href="cluster-meet.html">
+            
+                    
+                    Cluster Meet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.53" data-path="cluster-myid.html">
+            
+                <a href="cluster-myid.html">
+            
+                    
+                    Cluster Myid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.54" data-path="cluster-nodes.html">
+            
+                <a href="cluster-nodes.html">
+            
+                    
+                    Cluster Nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.55" data-path="cluster-replicas.html">
+            
+                <a href="cluster-replicas.html">
+            
+                    
+                    Cluster Replicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.56" data-path="cluster-replicate.html">
+            
+                <a href="cluster-replicate.html">
+            
+                    
+                    Cluster Replicate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.57" data-path="cluster-reset.html">
+            
+                <a href="cluster-reset.html">
+            
+                    
+                    Cluster Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.58" data-path="cluster-saveconfig.html">
+            
+                <a href="cluster-saveconfig.html">
+            
+                    
+                    Cluster Saveconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.59" data-path="cluster-set-config-epoch.html">
+            
+                <a href="cluster-set-config-epoch.html">
+            
+                    
+                    Cluster Set Config Epoch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.60" data-path="cluster-setslot.html">
+            
+                <a href="cluster-setslot.html">
+            
+                    
+                    Cluster Setslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.61" data-path="cluster-slaves.html">
+            
+                <a href="cluster-slaves.html">
+            
+                    
+                    Cluster Slaves
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.62" data-path="cluster-slots.html">
+            
+                <a href="cluster-slots.html">
+            
+                    
+                    Cluster Slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.63" data-path="command-count.html">
+            
+                <a href="command-count.html">
+            
+                    
+                    Command Count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.64" data-path="command-getkeys.html">
+            
+                <a href="command-getkeys.html">
+            
+                    
+                    Command Getkeys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.65" data-path="command-info.html">
+            
+                <a href="command-info.html">
+            
+                    
+                    Command Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.66" data-path="command.html">
+            
+                <a href="command.html">
+            
+                    
+                    Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.67" data-path="config-get.html">
+            
+                <a href="config-get.html">
+            
+                    
+                    Config Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.68" data-path="config-resetstat.html">
+            
+                <a href="config-resetstat.html">
+            
+                    
+                    Config Resetstat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.69" data-path="config-rewrite.html">
+            
+                <a href="config-rewrite.html">
+            
+                    
+                    Config Rewrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.70" data-path="config-set.html">
+            
+                <a href="config-set.html">
+            
+                    
+                    Config Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.71" data-path="copy.html">
+            
+                <a href="copy.html">
+            
+                    
+                    Copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.72" data-path="dbsize.html">
+            
+                <a href="dbsize.html">
+            
+                    
+                    Dbsize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.73" data-path="debug-object.html">
+            
+                <a href="debug-object.html">
+            
+                    
+                    Debug Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.74" data-path="debug-segfault.html">
+            
+                <a href="debug-segfault.html">
+            
+                    
+                    Debug Segfault
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.75" data-path="decr.html">
+            
+                <a href="decr.html">
+            
+                    
+                    Decr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.76" data-path="decrby.html">
+            
+                <a href="decrby.html">
+            
+                    
+                    Decrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.77" data-path="del.html">
+            
+                <a href="del.html">
+            
+                    
+                    Del
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78" data-path="discard.html">
+            
+                <a href="discard.html">
+            
+                    
+                    Discard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.79" data-path="dump.html">
+            
+                <a href="dump.html">
+            
+                    
+                    Dump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.80" data-path="echo.html">
+            
+                <a href="echo.html">
+            
+                    
+                    Echo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.81" data-path="eval.html">
+            
+                <a href="eval.html">
+            
+                    
+                    Eval
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.82" data-path="evalsha.html">
+            
+                <a href="evalsha.html">
+            
+                    
+                    Evalsha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.83" data-path="exec.html">
+            
+                <a href="exec.html">
+            
+                    
+                    Exec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.84" data-path="exists.html">
+            
+                <a href="exists.html">
+            
+                    
+                    Exists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.85" data-path="expire.html">
+            
+                <a href="expire.html">
+            
+                    
+                    Expire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.86" data-path="expireat.html">
+            
+                <a href="expireat.html">
+            
+                    
+                    Expireat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.87" data-path="failover.html">
+            
+                <a href="failover.html">
+            
+                    
+                    Failover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.88" data-path="flushall.html">
+            
+                <a href="flushall.html">
+            
+                    
+                    Flushall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.89" data-path="flushdb.html">
+            
+                <a href="flushdb.html">
+            
+                    
+                    Flushdb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.90" data-path="geoadd.html">
+            
+                <a href="geoadd.html">
+            
+                    
+                    Geoadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.91" data-path="geodecode.html">
+            
+                <a href="geodecode.html">
+            
+                    
+                    Geodecode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.92" data-path="geodist.html">
+            
+                <a href="geodist.html">
+            
+                    
+                    Geodist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.93" data-path="geoencode.html">
+            
+                <a href="geoencode.html">
+            
+                    
+                    Geoencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.94" data-path="geohash.html">
+            
+                <a href="geohash.html">
+            
+                    
+                    Geohash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.95" data-path="geopos.html">
+            
+                <a href="geopos.html">
+            
+                    
+                    Geopos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.96" data-path="georadius.html">
+            
+                <a href="georadius.html">
+            
+                    
+                    Georadius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.97" data-path="georadiusbymember.html">
+            
+                <a href="georadiusbymember.html">
+            
+                    
+                    Georadiusbymember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.98" data-path="geosearch.html">
+            
+                <a href="geosearch.html">
+            
+                    
+                    Geosearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.99" data-path="geosearchstore.html">
+            
+                <a href="geosearchstore.html">
+            
+                    
+                    Geosearchstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.100" data-path="get.html">
+            
+                <a href="get.html">
+            
+                    
+                    Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.101" data-path="getbit.html">
+            
+                <a href="getbit.html">
+            
+                    
+                    Getbit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.102" data-path="getdel.html">
+            
+                <a href="getdel.html">
+            
+                    
+                    Getdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.103" data-path="getex.html">
+            
+                <a href="getex.html">
+            
+                    
+                    Getex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.104" data-path="getrange.html">
+            
+                <a href="getrange.html">
+            
+                    
+                    Getrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.105" data-path="getset.html">
+            
+                <a href="getset.html">
+            
+                    
+                    Getset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.106" data-path="hdel.html">
+            
+                <a href="hdel.html">
+            
+                    
+                    Hdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.107" data-path="hello.html">
+            
+                <a href="hello.html">
+            
+                    
+                    Hello
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.108" data-path="hexists.html">
+            
+                <a href="hexists.html">
+            
+                    
+                    Hexists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.109" data-path="hget.html">
+            
+                <a href="hget.html">
+            
+                    
+                    Hget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.110" data-path="hgetall.html">
+            
+                <a href="hgetall.html">
+            
+                    
+                    Hgetall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.111" data-path="hincrby.html">
+            
+                <a href="hincrby.html">
+            
+                    
+                    Hincrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.112" data-path="hincrbyfloat.html">
+            
+                <a href="hincrbyfloat.html">
+            
+                    
+                    Hincrbyfloat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.113" data-path="hkeys.html">
+            
+                <a href="hkeys.html">
+            
+                    
+                    Hkeys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.114" data-path="hlen.html">
+            
+                <a href="hlen.html">
+            
+                    
+                    Hlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.115" data-path="hmget.html">
+            
+                <a href="hmget.html">
+            
+                    
+                    Hmget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.116" data-path="hmset.html">
+            
+                <a href="hmset.html">
+            
+                    
+                    Hmset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.117" data-path="hrandfield.html">
+            
+                <a href="hrandfield.html">
+            
+                    
+                    Hrandfield
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.118" data-path="hscan.html">
+            
+                <a href="hscan.html">
+            
+                    
+                    Hscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.119" data-path="hset.html">
+            
+                <a href="hset.html">
+            
+                    
+                    Hset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.120" data-path="hsetnx.html">
+            
+                <a href="hsetnx.html">
+            
+                    
+                    Hsetnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.121" data-path="hstrlen.html">
+            
+                <a href="hstrlen.html">
+            
+                    
+                    Hstrlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.122" data-path="hvals.html">
+            
+                <a href="hvals.html">
+            
+                    
+                    Hvals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.123" data-path="incr.html">
+            
+                <a href="incr.html">
+            
+                    
+                    Incr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.124" data-path="incrby.html">
+            
+                <a href="incrby.html">
+            
+                    
+                    Incrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.125" data-path="incrbyfloat.html">
+            
+                <a href="incrbyfloat.html">
+            
+                    
+                    Incrbyfloat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.126" data-path="info.html">
+            
+                <a href="info.html">
+            
+                    
+                    Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.127" data-path="keys.html">
+            
+                <a href="keys.html">
+            
+                    
+                    Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.128" data-path="lastsave.html">
+            
+                <a href="lastsave.html">
+            
+                    
+                    Lastsave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.129" data-path="latency-doctor.html">
+            
+                <a href="latency-doctor.html">
+            
+                    
+                    Latency Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.130" data-path="latency-graph.html">
+            
+                <a href="latency-graph.html">
+            
+                    
+                    Latency Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.131" data-path="latency-help.html">
+            
+                <a href="latency-help.html">
+            
+                    
+                    Latency Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.132" data-path="latency-history.html">
+            
+                <a href="latency-history.html">
+            
+                    
+                    Latency History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.133" data-path="latency-latest.html">
+            
+                <a href="latency-latest.html">
+            
+                    
+                    Latency Latest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.134" data-path="latency-reset.html">
+            
+                <a href="latency-reset.html">
+            
+                    
+                    Latency Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.135" data-path="lindex.html">
+            
+                <a href="lindex.html">
+            
+                    
+                    Lindex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.136" data-path="linsert.html">
+            
+                <a href="linsert.html">
+            
+                    
+                    Linsert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.137" data-path="llen.html">
+            
+                <a href="llen.html">
+            
+                    
+                    Llen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.138" data-path="lmove.html">
+            
+                <a href="lmove.html">
+            
+                    
+                    Lmove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.139" data-path="lolwut.html">
+            
+                <a href="lolwut.html">
+            
+                    
+                    Lolwut
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.140" data-path="lpop.html">
+            
+                <a href="lpop.html">
+            
+                    
+                    Lpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.141" data-path="lpos.html">
+            
+                <a href="lpos.html">
+            
+                    
+                    Lpos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.142" data-path="lpush.html">
+            
+                <a href="lpush.html">
+            
+                    
+                    Lpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.143" data-path="lpushx.html">
+            
+                <a href="lpushx.html">
+            
+                    
+                    Lpushx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.144" data-path="lrange.html">
+            
+                <a href="lrange.html">
+            
+                    
+                    Lrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.145" data-path="lrem.html">
+            
+                <a href="lrem.html">
+            
+                    
+                    Lrem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.146" data-path="lset.html">
+            
+                <a href="lset.html">
+            
+                    
+                    Lset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.147" data-path="ltrim.html">
+            
+                <a href="ltrim.html">
+            
+                    
+                    Ltrim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.148" data-path="memory-doctor.html">
+            
+                <a href="memory-doctor.html">
+            
+                    
+                    Memory Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.149" data-path="memory-help.html">
+            
+                <a href="memory-help.html">
+            
+                    
+                    Memory Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.150" data-path="memory-malloc-stats.html">
+            
+                <a href="memory-malloc-stats.html">
+            
+                    
+                    Memory Malloc Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.151" data-path="memory-purge.html">
+            
+                <a href="memory-purge.html">
+            
+                    
+                    Memory Purge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.152" data-path="memory-stats.html">
+            
+                <a href="memory-stats.html">
+            
+                    
+                    Memory Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.153" data-path="memory-usage.html">
+            
+                <a href="memory-usage.html">
+            
+                    
+                    Memory Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.154" data-path="mget.html">
+            
+                <a href="mget.html">
+            
+                    
+                    Mget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.155" data-path="migrate.html">
+            
+                <a href="migrate.html">
+            
+                    
+                    Migrate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.156" data-path="module-list.html">
+            
+                <a href="module-list.html">
+            
+                    
+                    Module List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.157" data-path="module-load.html">
+            
+                <a href="module-load.html">
+            
+                    
+                    Module Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.158" data-path="module-unload.html">
+            
+                <a href="module-unload.html">
+            
+                    
+                    Module Unload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.159" data-path="monitor.html">
+            
+                <a href="monitor.html">
+            
+                    
+                    Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.160" data-path="move.html">
+            
+                <a href="move.html">
+            
+                    
+                    Move
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.161" data-path="mset.html">
+            
+                <a href="mset.html">
+            
+                    
+                    Mset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.162" data-path="msetnx.html">
+            
+                <a href="msetnx.html">
+            
+                    
+                    Msetnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.163" data-path="multi.html">
+            
+                <a href="multi.html">
+            
+                    
+                    Multi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.164" data-path="object.html">
+            
+                <a href="object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.165" data-path="persist.html">
+            
+                <a href="persist.html">
+            
+                    
+                    Persist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.166" data-path="pexpire.html">
+            
+                <a href="pexpire.html">
+            
+                    
+                    Pexpire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.167" data-path="pexpireat.html">
+            
+                <a href="pexpireat.html">
+            
+                    
+                    Pexpireat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.168" data-path="pfadd.html">
+            
+                <a href="pfadd.html">
+            
+                    
+                    Pfadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.169" data-path="pfcount.html">
+            
+                <a href="pfcount.html">
+            
+                    
+                    Pfcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.170" data-path="pfmerge.html">
+            
+                <a href="pfmerge.html">
+            
+                    
+                    Pfmerge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.171" data-path="ping.html">
+            
+                <a href="ping.html">
+            
+                    
+                    Ping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.172" data-path="psetex.html">
+            
+                <a href="psetex.html">
+            
+                    
+                    Psetex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.173" data-path="psubscribe.html">
+            
+                <a href="psubscribe.html">
+            
+                    
+                    Psubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.174" data-path="psync.html">
+            
+                <a href="psync.html">
+            
+                    
+                    Psync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.175" data-path="pttl.html">
+            
+                <a href="pttl.html">
+            
+                    
+                    Pttl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.176" data-path="publish.html">
+            
+                <a href="publish.html">
+            
+                    
+                    Publish
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.177" data-path="pubsub.html">
+            
+                <a href="pubsub.html">
+            
+                    
+                    Pubsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.178" data-path="punsubscribe.html">
+            
+                <a href="punsubscribe.html">
+            
+                    
+                    Punsubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.179" data-path="quit.html">
+            
+                <a href="quit.html">
+            
+                    
+                    Quit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.180" data-path="randomkey.html">
+            
+                <a href="randomkey.html">
+            
+                    
+                    Randomkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.181" data-path="readonly.html">
+            
+                <a href="readonly.html">
+            
+                    
+                    Readonly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.182" data-path="readwrite.html">
+            
+                <a href="readwrite.html">
+            
+                    
+                    Readwrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.183" data-path="rename.html">
+            
+                <a href="rename.html">
+            
+                    
+                    Rename
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.184" data-path="renamenx.html">
+            
+                <a href="renamenx.html">
+            
+                    
+                    Renamenx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.185" data-path="replicaof.html">
+            
+                <a href="replicaof.html">
+            
+                    
+                    Replicaof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.186" data-path="reset.html">
+            
+                <a href="reset.html">
+            
+                    
+                    Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.187" data-path="restore.html">
+            
+                <a href="restore.html">
+            
+                    
+                    Restore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.188" data-path="role.html">
+            
+                <a href="role.html">
+            
+                    
+                    Role
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.189" data-path="rpop.html">
+            
+                <a href="rpop.html">
+            
+                    
+                    Rpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.190" data-path="rpoplpush.html">
+            
+                <a href="rpoplpush.html">
+            
+                    
+                    Rpoplpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.191" data-path="rpush.html">
+            
+                <a href="rpush.html">
+            
+                    
+                    Rpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.192" data-path="rpushx.html">
+            
+                <a href="rpushx.html">
+            
+                    
+                    Rpushx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.193" data-path="sadd.html">
+            
+                <a href="sadd.html">
+            
+                    
+                    Sadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.194" data-path="save.html">
+            
+                <a href="save.html">
+            
+                    
+                    Save
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.195" data-path="scan.html">
+            
+                <a href="scan.html">
+            
+                    
+                    Scan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.196" data-path="scard.html">
+            
+                <a href="scard.html">
+            
+                    
+                    Scard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.197" data-path="script-debug.html">
+            
+                <a href="script-debug.html">
+            
+                    
+                    Script Debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.198" data-path="script-exists.html">
+            
+                <a href="script-exists.html">
+            
+                    
+                    Script Exists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.199" data-path="script-flush.html">
+            
+                <a href="script-flush.html">
+            
+                    
+                    Script Flush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.200" data-path="script-kill.html">
+            
+                <a href="script-kill.html">
+            
+                    
+                    Script Kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.201" data-path="script-load.html">
+            
+                <a href="script-load.html">
+            
+                    
+                    Script Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.202" data-path="sdiff.html">
+            
+                <a href="sdiff.html">
+            
+                    
+                    Sdiff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.203" data-path="sdiffstore.html">
+            
+                <a href="sdiffstore.html">
+            
+                    
+                    Sdiffstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.204" data-path="select.html">
+            
+                <a href="select.html">
+            
+                    
+                    Select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.205" data-path="set.html">
+            
+                <a href="set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.206" data-path="setbit.html">
+            
+                <a href="setbit.html">
+            
+                    
+                    Setbit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.207" data-path="setex.html">
+            
+                <a href="setex.html">
+            
+                    
+                    Setex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.208" data-path="setnx.html">
+            
+                <a href="setnx.html">
+            
+                    
+                    Setnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.209" data-path="setrange.html">
+            
+                <a href="setrange.html">
+            
+                    
+                    Setrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.210" data-path="shutdown.html">
+            
+                <a href="shutdown.html">
+            
+                    
+                    Shutdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.211" data-path="sinter.html">
+            
+                <a href="sinter.html">
+            
+                    
+                    Sinter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.212" data-path="sinterstore.html">
+            
+                <a href="sinterstore.html">
+            
+                    
+                    Sinterstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.213" data-path="sismember.html">
+            
+                <a href="sismember.html">
+            
+                    
+                    Sismember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.214" data-path="slaveof.html">
+            
+                <a href="slaveof.html">
+            
+                    
+                    Slaveof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.215" data-path="slowlog.html">
+            
+                <a href="slowlog.html">
+            
+                    
+                    Slowlog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.216" data-path="smembers.html">
+            
+                <a href="smembers.html">
+            
+                    
+                    Smembers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.217" data-path="smismember.html">
+            
+                <a href="smismember.html">
+            
+                    
+                    Smismember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.218" data-path="smove.html">
+            
+                <a href="smove.html">
+            
+                    
+                    Smove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.219" data-path="sort.html">
+            
+                <a href="sort.html">
+            
+                    
+                    Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.220" data-path="spop.html">
+            
+                <a href="spop.html">
+            
+                    
+                    Spop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.221" data-path="srandmember.html">
+            
+                <a href="srandmember.html">
+            
+                    
+                    Srandmember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.222" data-path="srem.html">
+            
+                <a href="srem.html">
+            
+                    
+                    Srem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.223" data-path="sscan.html">
+            
+                <a href="sscan.html">
+            
+                    
+                    Sscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.224" data-path="stralgo.html">
+            
+                <a href="stralgo.html">
+            
+                    
+                    Stralgo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.225" data-path="strlen.html">
+            
+                <a href="strlen.html">
+            
+                    
+                    Strlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.226" data-path="subscribe.html">
+            
+                <a href="subscribe.html">
+            
+                    
+                    Subscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.227" data-path="sunion.html">
+            
+                <a href="sunion.html">
+            
+                    
+                    Sunion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.228" data-path="sunionstore.html">
+            
+                <a href="sunionstore.html">
+            
+                    
+                    Sunionstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.229" data-path="swapdb.html">
+            
+                <a href="swapdb.html">
+            
+                    
+                    Swapdb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.230" data-path="sync.html">
+            
+                <a href="sync.html">
+            
+                    
+                    Sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.231" data-path="time.html">
+            
+                <a href="time.html">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.232" data-path="touch.html">
+            
+                <a href="touch.html">
+            
+                    
+                    Touch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.233" data-path="ttl.html">
+            
+                <a href="ttl.html">
+            
+                    
+                    Ttl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.234" data-path="type.html">
+            
+                <a href="type.html">
+            
+                    
+                    Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.235" data-path="unlink.html">
+            
+                <a href="unlink.html">
+            
+                    
+                    Unlink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.236" data-path="unsubscribe.html">
+            
+                <a href="unsubscribe.html">
+            
+                    
+                    Unsubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.237" data-path="unwatch.html">
+            
+                <a href="unwatch.html">
+            
+                    
+                    Unwatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.238" data-path="wait.html">
+            
+                <a href="wait.html">
+            
+                    
+                    Wait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.239" data-path="watch.html">
+            
+                <a href="watch.html">
+            
+                    
+                    Watch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.240" data-path="xack.html">
+            
+                <a href="xack.html">
+            
+                    
+                    Xack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.241" data-path="xadd.html">
+            
+                <a href="xadd.html">
+            
+                    
+                    Xadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.242" data-path="xautoclaim.html">
+            
+                <a href="xautoclaim.html">
+            
+                    
+                    Xautoclaim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.243" data-path="xclaim.html">
+            
+                <a href="xclaim.html">
+            
+                    
+                    Xclaim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.244" data-path="xdel.html">
+            
+                <a href="xdel.html">
+            
+                    
+                    Xdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.245" data-path="xgroup.html">
+            
+                <a href="xgroup.html">
+            
+                    
+                    Xgroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.246" data-path="xinfo.html">
+            
+                <a href="xinfo.html">
+            
+                    
+                    Xinfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.247" data-path="xlen.html">
+            
+                <a href="xlen.html">
+            
+                    
+                    Xlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.248" data-path="xpending.html">
+            
+                <a href="xpending.html">
+            
+                    
+                    Xpending
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.249" data-path="xrange.html">
+            
+                <a href="xrange.html">
+            
+                    
+                    Xrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.250" data-path="xread.html">
+            
+                <a href="xread.html">
+            
+                    
+                    Xread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.251" data-path="xreadgroup.html">
+            
+                <a href="xreadgroup.html">
+            
+                    
+                    Xreadgroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.252" data-path="xrevrange.html">
+            
+                <a href="xrevrange.html">
+            
+                    
+                    Xrevrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.253" data-path="xtrim.html">
+            
+                <a href="xtrim.html">
+            
+                    
+                    Xtrim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.254" data-path="zadd.html">
+            
+                <a href="zadd.html">
+            
+                    
+                    Zadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.255" data-path="zcard.html">
+            
+                <a href="zcard.html">
+            
+                    
+                    Zcard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.256" data-path="zcount.html">
+            
+                <a href="zcount.html">
+            
+                    
+                    Zcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.257" data-path="zdiff.html">
+            
+                <a href="zdiff.html">
+            
+                    
+                    Zdiff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.258" data-path="zdiffstore.html">
+            
+                <a href="zdiffstore.html">
+            
+                    
+                    Zdiffstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.259" data-path="zincrby.html">
+            
+                <a href="zincrby.html">
+            
+                    
+                    Zincrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.260" data-path="zinter.html">
+            
+                <a href="zinter.html">
+            
+                    
+                    Zinter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.261" data-path="zinterstore.html">
+            
+                <a href="zinterstore.html">
+            
+                    
+                    Zinterstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.262" data-path="zlexcount.html">
+            
+                <a href="zlexcount.html">
+            
+                    
+                    Zlexcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.263" data-path="zmscore.html">
+            
+                <a href="zmscore.html">
+            
+                    
+                    Zmscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.264" data-path="zpopmax.html">
+            
+                <a href="zpopmax.html">
+            
+                    
+                    Zpopmax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.265" data-path="zpopmin.html">
+            
+                <a href="zpopmin.html">
+            
+                    
+                    Zpopmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.266" data-path="zrandmember.html">
+            
+                <a href="zrandmember.html">
+            
+                    
+                    Zrandmember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.267" data-path="zrange.html">
+            
+                <a href="zrange.html">
+            
+                    
+                    Zrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.268" data-path="zrangebylex.html">
+            
+                <a href="zrangebylex.html">
+            
+                    
+                    Zrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.269" data-path="zrangebyscore.html">
+            
+                <a href="zrangebyscore.html">
+            
+                    
+                    Zrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.270" data-path="zrangestore.html">
+            
+                <a href="zrangestore.html">
+            
+                    
+                    Zrangestore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.271" data-path="zrank.html">
+            
+                <a href="zrank.html">
+            
+                    
+                    Zrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.272" data-path="zrem.html">
+            
+                <a href="zrem.html">
+            
+                    
+                    Zrem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.273" data-path="zremrangebylex.html">
+            
+                <a href="zremrangebylex.html">
+            
+                    
+                    Zremrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.274" data-path="zremrangebyrank.html">
+            
+                <a href="zremrangebyrank.html">
+            
+                    
+                    Zremrangebyrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.275" data-path="zremrangebyscore.html">
+            
+                <a href="zremrangebyscore.html">
+            
+                    
+                    Zremrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.276" data-path="zrevrange.html">
+            
+                <a href="zrevrange.html">
+            
+                    
+                    Zrevrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.277" data-path="zrevrangebylex.html">
+            
+                <a href="zrevrangebylex.html">
+            
+                    
+                    Zrevrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.278" data-path="zrevrangebyscore.html">
+            
+                <a href="zrevrangebyscore.html">
+            
+                    
+                    Zrevrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.279" data-path="zrevrank.html">
+            
+                <a href="zrevrank.html">
+            
+                    
+                    Zrevrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.280" data-path="zscan.html">
+            
+                <a href="zscan.html">
+            
+                    
+                    Zscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.281" data-path="zscore.html">
+            
+                <a href="zscore.html">
+            
+                    
+                    Zscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.282" data-path="zunion.html">
+            
+                <a href="zunion.html">
+            
+                    
+                    Zunion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.283" data-path="zunionstore.html">
+            
+                <a href="zunionstore.html">
+            
+                    
+                    Zunionstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Topics
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../topics/acl.html">
+            
+                <a href="../topics/acl.html">
+            
+                    
+                    Acl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../topics/admin.html">
+            
+                <a href="../topics/admin.html">
+            
+                    
+                    Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../topics/ARM.html">
+            
+                <a href="../topics/ARM.html">
+            
+                    
+                    ARM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../topics/benchmarks.html">
+            
+                <a href="../topics/benchmarks.html">
+            
+                    
+                    Benchmarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../topics/client-side-caching.html">
+            
+                <a href="../topics/client-side-caching.html">
+            
+                    
+                    Client Side Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../topics/clients.html">
+            
+                <a href="../topics/clients.html">
+            
+                    
+                    Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../topics/cluster-spec.html">
+            
+                <a href="../topics/cluster-spec.html">
+            
+                    
+                    Cluster Spec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../topics/cluster-tutorial.html">
+            
+                <a href="../topics/cluster-tutorial.html">
+            
+                    
+                    Cluster Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../topics/config.html">
+            
+                <a href="../topics/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../topics/data-types-intro.html">
+            
+                <a href="../topics/data-types-intro.html">
+            
+                    
+                    Data Types Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../topics/data-types.html">
+            
+                <a href="../topics/data-types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../topics/debugging.html">
+            
+                <a href="../topics/debugging.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../topics/distlock.html">
+            
+                <a href="../topics/distlock.html">
+            
+                    
+                    Distlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../topics/encryption.html">
+            
+                <a href="../topics/encryption.html">
+            
+                    
+                    Encryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../topics/faq.html">
+            
+                <a href="../topics/faq.html">
+            
+                    
+                    Faq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../topics/gopher.html">
+            
+                <a href="../topics/gopher.html">
+            
+                    
+                    Gopher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../topics/governance.html">
+            
+                <a href="../topics/governance.html">
+            
+                    
+                    Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../topics/indexes.html">
+            
+                <a href="../topics/indexes.html">
+            
+                    
+                    Indexes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../topics/internals-eventlib.html">
+            
+                <a href="../topics/internals-eventlib.html">
+            
+                    
+                    Internals Eventlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../topics/internals-rediseventlib.html">
+            
+                <a href="../topics/internals-rediseventlib.html">
+            
+                    
+                    Internals Rediseventlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../topics/internals-sds.html">
+            
+                <a href="../topics/internals-sds.html">
+            
+                    
+                    Internals Sds
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../topics/internals-vm.html">
+            
+                <a href="../topics/internals-vm.html">
+            
+                    
+                    Internals Vm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../topics/internals.html">
+            
+                <a href="../topics/internals.html">
+            
+                    
+                    Internals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../topics/latency-monitor.html">
+            
+                <a href="../topics/latency-monitor.html">
+            
+                    
+                    Latency Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="../topics/latency.html">
+            
+                <a href="../topics/latency.html">
+            
+                    
+                    Latency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="../topics/ldb.html">
+            
+                <a href="../topics/ldb.html">
+            
+                    
+                    Ldb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.27" data-path="../topics/license.html">
+            
+                <a href="../topics/license.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.28" data-path="../topics/lru-cache.html">
+            
+                <a href="../topics/lru-cache.html">
+            
+                    
+                    Lru Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.29" data-path="../topics/mass-insert.html">
+            
+                <a href="../topics/mass-insert.html">
+            
+                    
+                    Mass Insert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.30" data-path="../topics/memory-optimization.html">
+            
+                <a href="../topics/memory-optimization.html">
+            
+                    
+                    Memory Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.31" data-path="../topics/modules-api-ref.html">
+            
+                <a href="../topics/modules-api-ref.html">
+            
+                    
+                    Modules Api Ref
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.32" data-path="../topics/modules-blocking-ops.html">
+            
+                <a href="../topics/modules-blocking-ops.html">
+            
+                    
+                    Modules Blocking Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.33" data-path="../topics/modules-intro.html">
+            
+                <a href="../topics/modules-intro.html">
+            
+                    
+                    Modules Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.34" data-path="../topics/modules-native-types.html">
+            
+                <a href="../topics/modules-native-types.html">
+            
+                    
+                    Modules Native Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.35" data-path="../topics/notifications.html">
+            
+                <a href="../topics/notifications.html">
+            
+                    
+                    Notifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.36" data-path="../topics/partitioning.html">
+            
+                <a href="../topics/partitioning.html">
+            
+                    
+                    Partitioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.37" data-path="../topics/persistence.html">
+            
+                <a href="../topics/persistence.html">
+            
+                    
+                    Persistence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.38" data-path="../topics/pipelining.html">
+            
+                <a href="../topics/pipelining.html">
+            
+                    
+                    Pipelining
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.39" data-path="../topics/problems.html">
+            
+                <a href="../topics/problems.html">
+            
+                    
+                    Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.40" data-path="../topics/protocol.html">
+            
+                <a href="../topics/protocol.html">
+            
+                    
+                    Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.41" data-path="../topics/pubsub.html">
+            
+                <a href="../topics/pubsub.html">
+            
+                    
+                    Pubsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.42" data-path="../topics/quickstart.html">
+            
+                <a href="../topics/quickstart.html">
+            
+                    
+                    Quickstart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.43" data-path="../topics/rdd-1.html">
+            
+                <a href="../topics/rdd-1.html">
+            
+                    
+                    Rdd 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.44" data-path="../topics/rdd-2.html">
+            
+                <a href="../topics/rdd-2.html">
+            
+                    
+                    Rdd 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.45" data-path="../topics/rdd.html">
+            
+                <a href="../topics/rdd.html">
+            
+                    
+                    Rdd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.46" data-path="../topics/rediscli.html">
+            
+                <a href="../topics/rediscli.html">
+            
+                    
+                    Rediscli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.47" data-path="../topics/releases.html">
+            
+                <a href="../topics/releases.html">
+            
+                    
+                    Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.48" data-path="../topics/replication.html">
+            
+                <a href="../topics/replication.html">
+            
+                    
+                    Replication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.49" data-path="../topics/security.html">
+            
+                <a href="../topics/security.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.50" data-path="../topics/sentinel-clients.html">
+            
+                <a href="../topics/sentinel-clients.html">
+            
+                    
+                    Sentinel Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.51" data-path="../topics/sentinel.html">
+            
+                <a href="../topics/sentinel.html">
+            
+                    
+                    Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.52" data-path="../topics/signals.html">
+            
+                <a href="../topics/signals.html">
+            
+                    
+                    Signals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.53" data-path="../topics/sponsors.html">
+            
+                <a href="../topics/sponsors.html">
+            
+                    
+                    Sponsors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.54" data-path="../topics/streams-intro.html">
+            
+                <a href="../topics/streams-intro.html">
+            
+                    
+                    Streams Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.55" data-path="../topics/trademark.html">
+            
+                <a href="../topics/trademark.html">
+            
+                    
+                    Trademark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.56" data-path="../topics/transactions.html">
+            
+                <a href="../topics/transactions.html">
+            
+                    
+                    Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.57" data-path="../topics/twitter-clone.html">
+            
+                <a href="../topics/twitter-clone.html">
+            
+                    
+                    Twitter Clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.58" data-path="../topics/virtual-memory.html">
+            
+                <a href="../topics/virtual-memory.html">
+            
+                    
+                    Virtual Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.59" data-path="../topics/whos-using-redis.html">
+            
+                <a href="../topics/whos-using-redis.html">
+            
+                    
+                    Whos Using Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Zincrby</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Increments the score of <code>member</code> in the sorted set stored at <code>key</code> by
+<code>increment</code>.
+If <code>member</code> does not exist in the sorted set, it is added with <code>increment</code> as
+its score (as if its previous score was <code>0.0</code>).
+If <code>key</code> does not exist, a new sorted set with the specified <code>member</code> as its
+sole member is created.</p>
+<p>An error is returned when <code>key</code> exists but does not hold a sorted set.</p>
+<p>The <code>score</code> value should be the string representation of a numeric value, and
+accepts double precision floating point numbers.
+It is possible to provide a negative value to decrement the score.</p>
+<p>@return</p>
+<p>@bulk-string-reply: the new score of <code>member</code> (a double precision floating point
+number), represented as string.</p>
+<p>@examples</p>
+<pre class="language-"><code class="lang-cli">ZADD myzset 1 &quot;one&quot;
+ZADD myzset 2 &quot;two&quot;
+ZINCRBY myzset 2 &quot;one&quot;
+ZRANGE myzset 0 -1 WITHSCORES
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="zdiffstore.html" class="navigation navigation-prev " aria-label="Previous page: Zdiffstore">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="zinter.html" class="navigation navigation-next " aria-label="Next page: Zinter">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Zincrby","level":"1.2.259","depth":2,"next":{"title":"Zinter","level":"1.2.260","depth":2,"path":"commands/zinter.md","ref":"commands/zinter.md","articles":[]},"previous":{"title":"Zdiffstore","level":"1.2.258","depth":2,"path":"commands/zdiffstore.md","ref":"commands/zdiffstore.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Redis 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"commands/zincrby.md","mtime":"2021-03-03T00:55:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-03T01:00:54.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,5214 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Streams Intro · Redis 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="trademark.html" />
+    
+    
+    <link rel="prev" href="sponsors.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Commands
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../commands/acl-cat.html">
+            
+                <a href="../commands/acl-cat.html">
+            
+                    
+                    Acl Cat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../commands/acl-deluser.html">
+            
+                <a href="../commands/acl-deluser.html">
+            
+                    
+                    Acl Deluser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../commands/acl-genpass.html">
+            
+                <a href="../commands/acl-genpass.html">
+            
+                    
+                    Acl Genpass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../commands/acl-getuser.html">
+            
+                <a href="../commands/acl-getuser.html">
+            
+                    
+                    Acl Getuser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../commands/acl-help.html">
+            
+                <a href="../commands/acl-help.html">
+            
+                    
+                    Acl Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../commands/acl-list.html">
+            
+                <a href="../commands/acl-list.html">
+            
+                    
+                    Acl List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../commands/acl-load.html">
+            
+                <a href="../commands/acl-load.html">
+            
+                    
+                    Acl Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../commands/acl-log.html">
+            
+                <a href="../commands/acl-log.html">
+            
+                    
+                    Acl Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../commands/acl-save.html">
+            
+                <a href="../commands/acl-save.html">
+            
+                    
+                    Acl Save
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../commands/acl-setuser.html">
+            
+                <a href="../commands/acl-setuser.html">
+            
+                    
+                    Acl Setuser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../commands/acl-users.html">
+            
+                <a href="../commands/acl-users.html">
+            
+                    
+                    Acl Users
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../commands/acl-whoami.html">
+            
+                <a href="../commands/acl-whoami.html">
+            
+                    
+                    Acl Whoami
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../commands/append.html">
+            
+                <a href="../commands/append.html">
+            
+                    
+                    Append
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../commands/auth.html">
+            
+                <a href="../commands/auth.html">
+            
+                    
+                    Auth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../commands/bgrewriteaof.html">
+            
+                <a href="../commands/bgrewriteaof.html">
+            
+                    
+                    Bgrewriteaof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../commands/bgsave.html">
+            
+                <a href="../commands/bgsave.html">
+            
+                    
+                    Bgsave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../commands/bitcount.html">
+            
+                <a href="../commands/bitcount.html">
+            
+                    
+                    Bitcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../commands/bitfield.html">
+            
+                <a href="../commands/bitfield.html">
+            
+                    
+                    Bitfield
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../commands/bitop.html">
+            
+                <a href="../commands/bitop.html">
+            
+                    
+                    Bitop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="../commands/bitpos.html">
+            
+                <a href="../commands/bitpos.html">
+            
+                    
+                    Bitpos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="../commands/blmove.html">
+            
+                <a href="../commands/blmove.html">
+            
+                    
+                    Blmove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="../commands/blpop.html">
+            
+                <a href="../commands/blpop.html">
+            
+                    
+                    Blpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" data-path="../commands/brpop.html">
+            
+                <a href="../commands/brpop.html">
+            
+                    
+                    Brpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" data-path="../commands/brpoplpush.html">
+            
+                <a href="../commands/brpoplpush.html">
+            
+                    
+                    Brpoplpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" data-path="../commands/bzpopmax.html">
+            
+                <a href="../commands/bzpopmax.html">
+            
+                    
+                    Bzpopmax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.26" data-path="../commands/bzpopmin.html">
+            
+                <a href="../commands/bzpopmin.html">
+            
+                    
+                    Bzpopmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27" data-path="../commands/client-caching.html">
+            
+                <a href="../commands/client-caching.html">
+            
+                    
+                    Client Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.28" data-path="../commands/client-getname.html">
+            
+                <a href="../commands/client-getname.html">
+            
+                    
+                    Client Getname
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.29" data-path="../commands/client-getredir.html">
+            
+                <a href="../commands/client-getredir.html">
+            
+                    
+                    Client Getredir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.30" data-path="../commands/client-id.html">
+            
+                <a href="../commands/client-id.html">
+            
+                    
+                    Client Id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.31" data-path="../commands/client-info.html">
+            
+                <a href="../commands/client-info.html">
+            
+                    
+                    Client Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.32" data-path="../commands/client-kill.html">
+            
+                <a href="../commands/client-kill.html">
+            
+                    
+                    Client Kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.33" data-path="../commands/client-list.html">
+            
+                <a href="../commands/client-list.html">
+            
+                    
+                    Client List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.34" data-path="../commands/client-pause.html">
+            
+                <a href="../commands/client-pause.html">
+            
+                    
+                    Client Pause
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.35" data-path="../commands/client-reply.html">
+            
+                <a href="../commands/client-reply.html">
+            
+                    
+                    Client Reply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.36" data-path="../commands/client-setname.html">
+            
+                <a href="../commands/client-setname.html">
+            
+                    
+                    Client Setname
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.37" data-path="../commands/client-tracking.html">
+            
+                <a href="../commands/client-tracking.html">
+            
+                    
+                    Client Tracking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.38" data-path="../commands/client-trackinginfo.html">
+            
+                <a href="../commands/client-trackinginfo.html">
+            
+                    
+                    Client Trackinginfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.39" data-path="../commands/client-unblock.html">
+            
+                <a href="../commands/client-unblock.html">
+            
+                    
+                    Client Unblock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.40" data-path="../commands/client-unpause.html">
+            
+                <a href="../commands/client-unpause.html">
+            
+                    
+                    Client Unpause
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.41" data-path="../commands/cluster-addslots.html">
+            
+                <a href="../commands/cluster-addslots.html">
+            
+                    
+                    Cluster Addslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.42" data-path="../commands/cluster-bumpepoch.html">
+            
+                <a href="../commands/cluster-bumpepoch.html">
+            
+                    
+                    Cluster Bumpepoch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.43" data-path="../commands/cluster-count-failure-reports.html">
+            
+                <a href="../commands/cluster-count-failure-reports.html">
+            
+                    
+                    Cluster Count Failure Reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.44" data-path="../commands/cluster-countkeysinslot.html">
+            
+                <a href="../commands/cluster-countkeysinslot.html">
+            
+                    
+                    Cluster Countkeysinslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.45" data-path="../commands/cluster-delslots.html">
+            
+                <a href="../commands/cluster-delslots.html">
+            
+                    
+                    Cluster Delslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.46" data-path="../commands/cluster-failover.html">
+            
+                <a href="../commands/cluster-failover.html">
+            
+                    
+                    Cluster Failover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.47" data-path="../commands/cluster-flushslots.html">
+            
+                <a href="../commands/cluster-flushslots.html">
+            
+                    
+                    Cluster Flushslots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.48" data-path="../commands/cluster-forget.html">
+            
+                <a href="../commands/cluster-forget.html">
+            
+                    
+                    Cluster Forget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.49" data-path="../commands/cluster-getkeysinslot.html">
+            
+                <a href="../commands/cluster-getkeysinslot.html">
+            
+                    
+                    Cluster Getkeysinslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.50" data-path="../commands/cluster-info.html">
+            
+                <a href="../commands/cluster-info.html">
+            
+                    
+                    Cluster Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.51" data-path="../commands/cluster-keyslot.html">
+            
+                <a href="../commands/cluster-keyslot.html">
+            
+                    
+                    Cluster Keyslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.52" data-path="../commands/cluster-meet.html">
+            
+                <a href="../commands/cluster-meet.html">
+            
+                    
+                    Cluster Meet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.53" data-path="../commands/cluster-myid.html">
+            
+                <a href="../commands/cluster-myid.html">
+            
+                    
+                    Cluster Myid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.54" data-path="../commands/cluster-nodes.html">
+            
+                <a href="../commands/cluster-nodes.html">
+            
+                    
+                    Cluster Nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.55" data-path="../commands/cluster-replicas.html">
+            
+                <a href="../commands/cluster-replicas.html">
+            
+                    
+                    Cluster Replicas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.56" data-path="../commands/cluster-replicate.html">
+            
+                <a href="../commands/cluster-replicate.html">
+            
+                    
+                    Cluster Replicate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.57" data-path="../commands/cluster-reset.html">
+            
+                <a href="../commands/cluster-reset.html">
+            
+                    
+                    Cluster Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.58" data-path="../commands/cluster-saveconfig.html">
+            
+                <a href="../commands/cluster-saveconfig.html">
+            
+                    
+                    Cluster Saveconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.59" data-path="../commands/cluster-set-config-epoch.html">
+            
+                <a href="../commands/cluster-set-config-epoch.html">
+            
+                    
+                    Cluster Set Config Epoch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.60" data-path="../commands/cluster-setslot.html">
+            
+                <a href="../commands/cluster-setslot.html">
+            
+                    
+                    Cluster Setslot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.61" data-path="../commands/cluster-slaves.html">
+            
+                <a href="../commands/cluster-slaves.html">
+            
+                    
+                    Cluster Slaves
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.62" data-path="../commands/cluster-slots.html">
+            
+                <a href="../commands/cluster-slots.html">
+            
+                    
+                    Cluster Slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.63" data-path="../commands/command-count.html">
+            
+                <a href="../commands/command-count.html">
+            
+                    
+                    Command Count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.64" data-path="../commands/command-getkeys.html">
+            
+                <a href="../commands/command-getkeys.html">
+            
+                    
+                    Command Getkeys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.65" data-path="../commands/command-info.html">
+            
+                <a href="../commands/command-info.html">
+            
+                    
+                    Command Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.66" data-path="../commands/command.html">
+            
+                <a href="../commands/command.html">
+            
+                    
+                    Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.67" data-path="../commands/config-get.html">
+            
+                <a href="../commands/config-get.html">
+            
+                    
+                    Config Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.68" data-path="../commands/config-resetstat.html">
+            
+                <a href="../commands/config-resetstat.html">
+            
+                    
+                    Config Resetstat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.69" data-path="../commands/config-rewrite.html">
+            
+                <a href="../commands/config-rewrite.html">
+            
+                    
+                    Config Rewrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.70" data-path="../commands/config-set.html">
+            
+                <a href="../commands/config-set.html">
+            
+                    
+                    Config Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.71" data-path="../commands/copy.html">
+            
+                <a href="../commands/copy.html">
+            
+                    
+                    Copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.72" data-path="../commands/dbsize.html">
+            
+                <a href="../commands/dbsize.html">
+            
+                    
+                    Dbsize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.73" data-path="../commands/debug-object.html">
+            
+                <a href="../commands/debug-object.html">
+            
+                    
+                    Debug Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.74" data-path="../commands/debug-segfault.html">
+            
+                <a href="../commands/debug-segfault.html">
+            
+                    
+                    Debug Segfault
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.75" data-path="../commands/decr.html">
+            
+                <a href="../commands/decr.html">
+            
+                    
+                    Decr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.76" data-path="../commands/decrby.html">
+            
+                <a href="../commands/decrby.html">
+            
+                    
+                    Decrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.77" data-path="../commands/del.html">
+            
+                <a href="../commands/del.html">
+            
+                    
+                    Del
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.78" data-path="../commands/discard.html">
+            
+                <a href="../commands/discard.html">
+            
+                    
+                    Discard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.79" data-path="../commands/dump.html">
+            
+                <a href="../commands/dump.html">
+            
+                    
+                    Dump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.80" data-path="../commands/echo.html">
+            
+                <a href="../commands/echo.html">
+            
+                    
+                    Echo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.81" data-path="../commands/eval.html">
+            
+                <a href="../commands/eval.html">
+            
+                    
+                    Eval
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.82" data-path="../commands/evalsha.html">
+            
+                <a href="../commands/evalsha.html">
+            
+                    
+                    Evalsha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.83" data-path="../commands/exec.html">
+            
+                <a href="../commands/exec.html">
+            
+                    
+                    Exec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.84" data-path="../commands/exists.html">
+            
+                <a href="../commands/exists.html">
+            
+                    
+                    Exists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.85" data-path="../commands/expire.html">
+            
+                <a href="../commands/expire.html">
+            
+                    
+                    Expire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.86" data-path="../commands/expireat.html">
+            
+                <a href="../commands/expireat.html">
+            
+                    
+                    Expireat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.87" data-path="../commands/failover.html">
+            
+                <a href="../commands/failover.html">
+            
+                    
+                    Failover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.88" data-path="../commands/flushall.html">
+            
+                <a href="../commands/flushall.html">
+            
+                    
+                    Flushall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.89" data-path="../commands/flushdb.html">
+            
+                <a href="../commands/flushdb.html">
+            
+                    
+                    Flushdb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.90" data-path="../commands/geoadd.html">
+            
+                <a href="../commands/geoadd.html">
+            
+                    
+                    Geoadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.91" data-path="../commands/geodecode.html">
+            
+                <a href="../commands/geodecode.html">
+            
+                    
+                    Geodecode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.92" data-path="../commands/geodist.html">
+            
+                <a href="../commands/geodist.html">
+            
+                    
+                    Geodist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.93" data-path="../commands/geoencode.html">
+            
+                <a href="../commands/geoencode.html">
+            
+                    
+                    Geoencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.94" data-path="../commands/geohash.html">
+            
+                <a href="../commands/geohash.html">
+            
+                    
+                    Geohash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.95" data-path="../commands/geopos.html">
+            
+                <a href="../commands/geopos.html">
+            
+                    
+                    Geopos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.96" data-path="../commands/georadius.html">
+            
+                <a href="../commands/georadius.html">
+            
+                    
+                    Georadius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.97" data-path="../commands/georadiusbymember.html">
+            
+                <a href="../commands/georadiusbymember.html">
+            
+                    
+                    Georadiusbymember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.98" data-path="../commands/geosearch.html">
+            
+                <a href="../commands/geosearch.html">
+            
+                    
+                    Geosearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.99" data-path="../commands/geosearchstore.html">
+            
+                <a href="../commands/geosearchstore.html">
+            
+                    
+                    Geosearchstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.100" data-path="../commands/get.html">
+            
+                <a href="../commands/get.html">
+            
+                    
+                    Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.101" data-path="../commands/getbit.html">
+            
+                <a href="../commands/getbit.html">
+            
+                    
+                    Getbit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.102" data-path="../commands/getdel.html">
+            
+                <a href="../commands/getdel.html">
+            
+                    
+                    Getdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.103" data-path="../commands/getex.html">
+            
+                <a href="../commands/getex.html">
+            
+                    
+                    Getex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.104" data-path="../commands/getrange.html">
+            
+                <a href="../commands/getrange.html">
+            
+                    
+                    Getrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.105" data-path="../commands/getset.html">
+            
+                <a href="../commands/getset.html">
+            
+                    
+                    Getset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.106" data-path="../commands/hdel.html">
+            
+                <a href="../commands/hdel.html">
+            
+                    
+                    Hdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.107" data-path="../commands/hello.html">
+            
+                <a href="../commands/hello.html">
+            
+                    
+                    Hello
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.108" data-path="../commands/hexists.html">
+            
+                <a href="../commands/hexists.html">
+            
+                    
+                    Hexists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.109" data-path="../commands/hget.html">
+            
+                <a href="../commands/hget.html">
+            
+                    
+                    Hget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.110" data-path="../commands/hgetall.html">
+            
+                <a href="../commands/hgetall.html">
+            
+                    
+                    Hgetall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.111" data-path="../commands/hincrby.html">
+            
+                <a href="../commands/hincrby.html">
+            
+                    
+                    Hincrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.112" data-path="../commands/hincrbyfloat.html">
+            
+                <a href="../commands/hincrbyfloat.html">
+            
+                    
+                    Hincrbyfloat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.113" data-path="../commands/hkeys.html">
+            
+                <a href="../commands/hkeys.html">
+            
+                    
+                    Hkeys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.114" data-path="../commands/hlen.html">
+            
+                <a href="../commands/hlen.html">
+            
+                    
+                    Hlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.115" data-path="../commands/hmget.html">
+            
+                <a href="../commands/hmget.html">
+            
+                    
+                    Hmget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.116" data-path="../commands/hmset.html">
+            
+                <a href="../commands/hmset.html">
+            
+                    
+                    Hmset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.117" data-path="../commands/hrandfield.html">
+            
+                <a href="../commands/hrandfield.html">
+            
+                    
+                    Hrandfield
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.118" data-path="../commands/hscan.html">
+            
+                <a href="../commands/hscan.html">
+            
+                    
+                    Hscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.119" data-path="../commands/hset.html">
+            
+                <a href="../commands/hset.html">
+            
+                    
+                    Hset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.120" data-path="../commands/hsetnx.html">
+            
+                <a href="../commands/hsetnx.html">
+            
+                    
+                    Hsetnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.121" data-path="../commands/hstrlen.html">
+            
+                <a href="../commands/hstrlen.html">
+            
+                    
+                    Hstrlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.122" data-path="../commands/hvals.html">
+            
+                <a href="../commands/hvals.html">
+            
+                    
+                    Hvals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.123" data-path="../commands/incr.html">
+            
+                <a href="../commands/incr.html">
+            
+                    
+                    Incr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.124" data-path="../commands/incrby.html">
+            
+                <a href="../commands/incrby.html">
+            
+                    
+                    Incrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.125" data-path="../commands/incrbyfloat.html">
+            
+                <a href="../commands/incrbyfloat.html">
+            
+                    
+                    Incrbyfloat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.126" data-path="../commands/info.html">
+            
+                <a href="../commands/info.html">
+            
+                    
+                    Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.127" data-path="../commands/keys.html">
+            
+                <a href="../commands/keys.html">
+            
+                    
+                    Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.128" data-path="../commands/lastsave.html">
+            
+                <a href="../commands/lastsave.html">
+            
+                    
+                    Lastsave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.129" data-path="../commands/latency-doctor.html">
+            
+                <a href="../commands/latency-doctor.html">
+            
+                    
+                    Latency Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.130" data-path="../commands/latency-graph.html">
+            
+                <a href="../commands/latency-graph.html">
+            
+                    
+                    Latency Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.131" data-path="../commands/latency-help.html">
+            
+                <a href="../commands/latency-help.html">
+            
+                    
+                    Latency Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.132" data-path="../commands/latency-history.html">
+            
+                <a href="../commands/latency-history.html">
+            
+                    
+                    Latency History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.133" data-path="../commands/latency-latest.html">
+            
+                <a href="../commands/latency-latest.html">
+            
+                    
+                    Latency Latest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.134" data-path="../commands/latency-reset.html">
+            
+                <a href="../commands/latency-reset.html">
+            
+                    
+                    Latency Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.135" data-path="../commands/lindex.html">
+            
+                <a href="../commands/lindex.html">
+            
+                    
+                    Lindex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.136" data-path="../commands/linsert.html">
+            
+                <a href="../commands/linsert.html">
+            
+                    
+                    Linsert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.137" data-path="../commands/llen.html">
+            
+                <a href="../commands/llen.html">
+            
+                    
+                    Llen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.138" data-path="../commands/lmove.html">
+            
+                <a href="../commands/lmove.html">
+            
+                    
+                    Lmove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.139" data-path="../commands/lolwut.html">
+            
+                <a href="../commands/lolwut.html">
+            
+                    
+                    Lolwut
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.140" data-path="../commands/lpop.html">
+            
+                <a href="../commands/lpop.html">
+            
+                    
+                    Lpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.141" data-path="../commands/lpos.html">
+            
+                <a href="../commands/lpos.html">
+            
+                    
+                    Lpos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.142" data-path="../commands/lpush.html">
+            
+                <a href="../commands/lpush.html">
+            
+                    
+                    Lpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.143" data-path="../commands/lpushx.html">
+            
+                <a href="../commands/lpushx.html">
+            
+                    
+                    Lpushx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.144" data-path="../commands/lrange.html">
+            
+                <a href="../commands/lrange.html">
+            
+                    
+                    Lrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.145" data-path="../commands/lrem.html">
+            
+                <a href="../commands/lrem.html">
+            
+                    
+                    Lrem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.146" data-path="../commands/lset.html">
+            
+                <a href="../commands/lset.html">
+            
+                    
+                    Lset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.147" data-path="../commands/ltrim.html">
+            
+                <a href="../commands/ltrim.html">
+            
+                    
+                    Ltrim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.148" data-path="../commands/memory-doctor.html">
+            
+                <a href="../commands/memory-doctor.html">
+            
+                    
+                    Memory Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.149" data-path="../commands/memory-help.html">
+            
+                <a href="../commands/memory-help.html">
+            
+                    
+                    Memory Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.150" data-path="../commands/memory-malloc-stats.html">
+            
+                <a href="../commands/memory-malloc-stats.html">
+            
+                    
+                    Memory Malloc Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.151" data-path="../commands/memory-purge.html">
+            
+                <a href="../commands/memory-purge.html">
+            
+                    
+                    Memory Purge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.152" data-path="../commands/memory-stats.html">
+            
+                <a href="../commands/memory-stats.html">
+            
+                    
+                    Memory Stats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.153" data-path="../commands/memory-usage.html">
+            
+                <a href="../commands/memory-usage.html">
+            
+                    
+                    Memory Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.154" data-path="../commands/mget.html">
+            
+                <a href="../commands/mget.html">
+            
+                    
+                    Mget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.155" data-path="../commands/migrate.html">
+            
+                <a href="../commands/migrate.html">
+            
+                    
+                    Migrate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.156" data-path="../commands/module-list.html">
+            
+                <a href="../commands/module-list.html">
+            
+                    
+                    Module List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.157" data-path="../commands/module-load.html">
+            
+                <a href="../commands/module-load.html">
+            
+                    
+                    Module Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.158" data-path="../commands/module-unload.html">
+            
+                <a href="../commands/module-unload.html">
+            
+                    
+                    Module Unload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.159" data-path="../commands/monitor.html">
+            
+                <a href="../commands/monitor.html">
+            
+                    
+                    Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.160" data-path="../commands/move.html">
+            
+                <a href="../commands/move.html">
+            
+                    
+                    Move
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.161" data-path="../commands/mset.html">
+            
+                <a href="../commands/mset.html">
+            
+                    
+                    Mset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.162" data-path="../commands/msetnx.html">
+            
+                <a href="../commands/msetnx.html">
+            
+                    
+                    Msetnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.163" data-path="../commands/multi.html">
+            
+                <a href="../commands/multi.html">
+            
+                    
+                    Multi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.164" data-path="../commands/object.html">
+            
+                <a href="../commands/object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.165" data-path="../commands/persist.html">
+            
+                <a href="../commands/persist.html">
+            
+                    
+                    Persist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.166" data-path="../commands/pexpire.html">
+            
+                <a href="../commands/pexpire.html">
+            
+                    
+                    Pexpire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.167" data-path="../commands/pexpireat.html">
+            
+                <a href="../commands/pexpireat.html">
+            
+                    
+                    Pexpireat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.168" data-path="../commands/pfadd.html">
+            
+                <a href="../commands/pfadd.html">
+            
+                    
+                    Pfadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.169" data-path="../commands/pfcount.html">
+            
+                <a href="../commands/pfcount.html">
+            
+                    
+                    Pfcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.170" data-path="../commands/pfmerge.html">
+            
+                <a href="../commands/pfmerge.html">
+            
+                    
+                    Pfmerge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.171" data-path="../commands/ping.html">
+            
+                <a href="../commands/ping.html">
+            
+                    
+                    Ping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.172" data-path="../commands/psetex.html">
+            
+                <a href="../commands/psetex.html">
+            
+                    
+                    Psetex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.173" data-path="../commands/psubscribe.html">
+            
+                <a href="../commands/psubscribe.html">
+            
+                    
+                    Psubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.174" data-path="../commands/psync.html">
+            
+                <a href="../commands/psync.html">
+            
+                    
+                    Psync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.175" data-path="../commands/pttl.html">
+            
+                <a href="../commands/pttl.html">
+            
+                    
+                    Pttl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.176" data-path="../commands/publish.html">
+            
+                <a href="../commands/publish.html">
+            
+                    
+                    Publish
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.177" data-path="../commands/pubsub.html">
+            
+                <a href="../commands/pubsub.html">
+            
+                    
+                    Pubsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.178" data-path="../commands/punsubscribe.html">
+            
+                <a href="../commands/punsubscribe.html">
+            
+                    
+                    Punsubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.179" data-path="../commands/quit.html">
+            
+                <a href="../commands/quit.html">
+            
+                    
+                    Quit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.180" data-path="../commands/randomkey.html">
+            
+                <a href="../commands/randomkey.html">
+            
+                    
+                    Randomkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.181" data-path="../commands/readonly.html">
+            
+                <a href="../commands/readonly.html">
+            
+                    
+                    Readonly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.182" data-path="../commands/readwrite.html">
+            
+                <a href="../commands/readwrite.html">
+            
+                    
+                    Readwrite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.183" data-path="../commands/rename.html">
+            
+                <a href="../commands/rename.html">
+            
+                    
+                    Rename
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.184" data-path="../commands/renamenx.html">
+            
+                <a href="../commands/renamenx.html">
+            
+                    
+                    Renamenx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.185" data-path="../commands/replicaof.html">
+            
+                <a href="../commands/replicaof.html">
+            
+                    
+                    Replicaof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.186" data-path="../commands/reset.html">
+            
+                <a href="../commands/reset.html">
+            
+                    
+                    Reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.187" data-path="../commands/restore.html">
+            
+                <a href="../commands/restore.html">
+            
+                    
+                    Restore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.188" data-path="../commands/role.html">
+            
+                <a href="../commands/role.html">
+            
+                    
+                    Role
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.189" data-path="../commands/rpop.html">
+            
+                <a href="../commands/rpop.html">
+            
+                    
+                    Rpop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.190" data-path="../commands/rpoplpush.html">
+            
+                <a href="../commands/rpoplpush.html">
+            
+                    
+                    Rpoplpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.191" data-path="../commands/rpush.html">
+            
+                <a href="../commands/rpush.html">
+            
+                    
+                    Rpush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.192" data-path="../commands/rpushx.html">
+            
+                <a href="../commands/rpushx.html">
+            
+                    
+                    Rpushx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.193" data-path="../commands/sadd.html">
+            
+                <a href="../commands/sadd.html">
+            
+                    
+                    Sadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.194" data-path="../commands/save.html">
+            
+                <a href="../commands/save.html">
+            
+                    
+                    Save
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.195" data-path="../commands/scan.html">
+            
+                <a href="../commands/scan.html">
+            
+                    
+                    Scan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.196" data-path="../commands/scard.html">
+            
+                <a href="../commands/scard.html">
+            
+                    
+                    Scard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.197" data-path="../commands/script-debug.html">
+            
+                <a href="../commands/script-debug.html">
+            
+                    
+                    Script Debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.198" data-path="../commands/script-exists.html">
+            
+                <a href="../commands/script-exists.html">
+            
+                    
+                    Script Exists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.199" data-path="../commands/script-flush.html">
+            
+                <a href="../commands/script-flush.html">
+            
+                    
+                    Script Flush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.200" data-path="../commands/script-kill.html">
+            
+                <a href="../commands/script-kill.html">
+            
+                    
+                    Script Kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.201" data-path="../commands/script-load.html">
+            
+                <a href="../commands/script-load.html">
+            
+                    
+                    Script Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.202" data-path="../commands/sdiff.html">
+            
+                <a href="../commands/sdiff.html">
+            
+                    
+                    Sdiff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.203" data-path="../commands/sdiffstore.html">
+            
+                <a href="../commands/sdiffstore.html">
+            
+                    
+                    Sdiffstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.204" data-path="../commands/select.html">
+            
+                <a href="../commands/select.html">
+            
+                    
+                    Select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.205" data-path="../commands/set.html">
+            
+                <a href="../commands/set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.206" data-path="../commands/setbit.html">
+            
+                <a href="../commands/setbit.html">
+            
+                    
+                    Setbit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.207" data-path="../commands/setex.html">
+            
+                <a href="../commands/setex.html">
+            
+                    
+                    Setex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.208" data-path="../commands/setnx.html">
+            
+                <a href="../commands/setnx.html">
+            
+                    
+                    Setnx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.209" data-path="../commands/setrange.html">
+            
+                <a href="../commands/setrange.html">
+            
+                    
+                    Setrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.210" data-path="../commands/shutdown.html">
+            
+                <a href="../commands/shutdown.html">
+            
+                    
+                    Shutdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.211" data-path="../commands/sinter.html">
+            
+                <a href="../commands/sinter.html">
+            
+                    
+                    Sinter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.212" data-path="../commands/sinterstore.html">
+            
+                <a href="../commands/sinterstore.html">
+            
+                    
+                    Sinterstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.213" data-path="../commands/sismember.html">
+            
+                <a href="../commands/sismember.html">
+            
+                    
+                    Sismember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.214" data-path="../commands/slaveof.html">
+            
+                <a href="../commands/slaveof.html">
+            
+                    
+                    Slaveof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.215" data-path="../commands/slowlog.html">
+            
+                <a href="../commands/slowlog.html">
+            
+                    
+                    Slowlog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.216" data-path="../commands/smembers.html">
+            
+                <a href="../commands/smembers.html">
+            
+                    
+                    Smembers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.217" data-path="../commands/smismember.html">
+            
+                <a href="../commands/smismember.html">
+            
+                    
+                    Smismember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.218" data-path="../commands/smove.html">
+            
+                <a href="../commands/smove.html">
+            
+                    
+                    Smove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.219" data-path="../commands/sort.html">
+            
+                <a href="../commands/sort.html">
+            
+                    
+                    Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.220" data-path="../commands/spop.html">
+            
+                <a href="../commands/spop.html">
+            
+                    
+                    Spop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.221" data-path="../commands/srandmember.html">
+            
+                <a href="../commands/srandmember.html">
+            
+                    
+                    Srandmember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.222" data-path="../commands/srem.html">
+            
+                <a href="../commands/srem.html">
+            
+                    
+                    Srem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.223" data-path="../commands/sscan.html">
+            
+                <a href="../commands/sscan.html">
+            
+                    
+                    Sscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.224" data-path="../commands/stralgo.html">
+            
+                <a href="../commands/stralgo.html">
+            
+                    
+                    Stralgo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.225" data-path="../commands/strlen.html">
+            
+                <a href="../commands/strlen.html">
+            
+                    
+                    Strlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.226" data-path="../commands/subscribe.html">
+            
+                <a href="../commands/subscribe.html">
+            
+                    
+                    Subscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.227" data-path="../commands/sunion.html">
+            
+                <a href="../commands/sunion.html">
+            
+                    
+                    Sunion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.228" data-path="../commands/sunionstore.html">
+            
+                <a href="../commands/sunionstore.html">
+            
+                    
+                    Sunionstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.229" data-path="../commands/swapdb.html">
+            
+                <a href="../commands/swapdb.html">
+            
+                    
+                    Swapdb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.230" data-path="../commands/sync.html">
+            
+                <a href="../commands/sync.html">
+            
+                    
+                    Sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.231" data-path="../commands/time.html">
+            
+                <a href="../commands/time.html">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.232" data-path="../commands/touch.html">
+            
+                <a href="../commands/touch.html">
+            
+                    
+                    Touch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.233" data-path="../commands/ttl.html">
+            
+                <a href="../commands/ttl.html">
+            
+                    
+                    Ttl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.234" data-path="../commands/type.html">
+            
+                <a href="../commands/type.html">
+            
+                    
+                    Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.235" data-path="../commands/unlink.html">
+            
+                <a href="../commands/unlink.html">
+            
+                    
+                    Unlink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.236" data-path="../commands/unsubscribe.html">
+            
+                <a href="../commands/unsubscribe.html">
+            
+                    
+                    Unsubscribe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.237" data-path="../commands/unwatch.html">
+            
+                <a href="../commands/unwatch.html">
+            
+                    
+                    Unwatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.238" data-path="../commands/wait.html">
+            
+                <a href="../commands/wait.html">
+            
+                    
+                    Wait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.239" data-path="../commands/watch.html">
+            
+                <a href="../commands/watch.html">
+            
+                    
+                    Watch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.240" data-path="../commands/xack.html">
+            
+                <a href="../commands/xack.html">
+            
+                    
+                    Xack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.241" data-path="../commands/xadd.html">
+            
+                <a href="../commands/xadd.html">
+            
+                    
+                    Xadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.242" data-path="../commands/xautoclaim.html">
+            
+                <a href="../commands/xautoclaim.html">
+            
+                    
+                    Xautoclaim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.243" data-path="../commands/xclaim.html">
+            
+                <a href="../commands/xclaim.html">
+            
+                    
+                    Xclaim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.244" data-path="../commands/xdel.html">
+            
+                <a href="../commands/xdel.html">
+            
+                    
+                    Xdel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.245" data-path="../commands/xgroup.html">
+            
+                <a href="../commands/xgroup.html">
+            
+                    
+                    Xgroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.246" data-path="../commands/xinfo.html">
+            
+                <a href="../commands/xinfo.html">
+            
+                    
+                    Xinfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.247" data-path="../commands/xlen.html">
+            
+                <a href="../commands/xlen.html">
+            
+                    
+                    Xlen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.248" data-path="../commands/xpending.html">
+            
+                <a href="../commands/xpending.html">
+            
+                    
+                    Xpending
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.249" data-path="../commands/xrange.html">
+            
+                <a href="../commands/xrange.html">
+            
+                    
+                    Xrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.250" data-path="../commands/xread.html">
+            
+                <a href="../commands/xread.html">
+            
+                    
+                    Xread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.251" data-path="../commands/xreadgroup.html">
+            
+                <a href="../commands/xreadgroup.html">
+            
+                    
+                    Xreadgroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.252" data-path="../commands/xrevrange.html">
+            
+                <a href="../commands/xrevrange.html">
+            
+                    
+                    Xrevrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.253" data-path="../commands/xtrim.html">
+            
+                <a href="../commands/xtrim.html">
+            
+                    
+                    Xtrim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.254" data-path="../commands/zadd.html">
+            
+                <a href="../commands/zadd.html">
+            
+                    
+                    Zadd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.255" data-path="../commands/zcard.html">
+            
+                <a href="../commands/zcard.html">
+            
+                    
+                    Zcard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.256" data-path="../commands/zcount.html">
+            
+                <a href="../commands/zcount.html">
+            
+                    
+                    Zcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.257" data-path="../commands/zdiff.html">
+            
+                <a href="../commands/zdiff.html">
+            
+                    
+                    Zdiff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.258" data-path="../commands/zdiffstore.html">
+            
+                <a href="../commands/zdiffstore.html">
+            
+                    
+                    Zdiffstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.259" data-path="../commands/zincrby.html">
+            
+                <a href="../commands/zincrby.html">
+            
+                    
+                    Zincrby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.260" data-path="../commands/zinter.html">
+            
+                <a href="../commands/zinter.html">
+            
+                    
+                    Zinter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.261" data-path="../commands/zinterstore.html">
+            
+                <a href="../commands/zinterstore.html">
+            
+                    
+                    Zinterstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.262" data-path="../commands/zlexcount.html">
+            
+                <a href="../commands/zlexcount.html">
+            
+                    
+                    Zlexcount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.263" data-path="../commands/zmscore.html">
+            
+                <a href="../commands/zmscore.html">
+            
+                    
+                    Zmscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.264" data-path="../commands/zpopmax.html">
+            
+                <a href="../commands/zpopmax.html">
+            
+                    
+                    Zpopmax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.265" data-path="../commands/zpopmin.html">
+            
+                <a href="../commands/zpopmin.html">
+            
+                    
+                    Zpopmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.266" data-path="../commands/zrandmember.html">
+            
+                <a href="../commands/zrandmember.html">
+            
+                    
+                    Zrandmember
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.267" data-path="../commands/zrange.html">
+            
+                <a href="../commands/zrange.html">
+            
+                    
+                    Zrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.268" data-path="../commands/zrangebylex.html">
+            
+                <a href="../commands/zrangebylex.html">
+            
+                    
+                    Zrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.269" data-path="../commands/zrangebyscore.html">
+            
+                <a href="../commands/zrangebyscore.html">
+            
+                    
+                    Zrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.270" data-path="../commands/zrangestore.html">
+            
+                <a href="../commands/zrangestore.html">
+            
+                    
+                    Zrangestore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.271" data-path="../commands/zrank.html">
+            
+                <a href="../commands/zrank.html">
+            
+                    
+                    Zrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.272" data-path="../commands/zrem.html">
+            
+                <a href="../commands/zrem.html">
+            
+                    
+                    Zrem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.273" data-path="../commands/zremrangebylex.html">
+            
+                <a href="../commands/zremrangebylex.html">
+            
+                    
+                    Zremrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.274" data-path="../commands/zremrangebyrank.html">
+            
+                <a href="../commands/zremrangebyrank.html">
+            
+                    
+                    Zremrangebyrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.275" data-path="../commands/zremrangebyscore.html">
+            
+                <a href="../commands/zremrangebyscore.html">
+            
+                    
+                    Zremrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.276" data-path="../commands/zrevrange.html">
+            
+                <a href="../commands/zrevrange.html">
+            
+                    
+                    Zrevrange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.277" data-path="../commands/zrevrangebylex.html">
+            
+                <a href="../commands/zrevrangebylex.html">
+            
+                    
+                    Zrevrangebylex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.278" data-path="../commands/zrevrangebyscore.html">
+            
+                <a href="../commands/zrevrangebyscore.html">
+            
+                    
+                    Zrevrangebyscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.279" data-path="../commands/zrevrank.html">
+            
+                <a href="../commands/zrevrank.html">
+            
+                    
+                    Zrevrank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.280" data-path="../commands/zscan.html">
+            
+                <a href="../commands/zscan.html">
+            
+                    
+                    Zscan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.281" data-path="../commands/zscore.html">
+            
+                <a href="../commands/zscore.html">
+            
+                    
+                    Zscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.282" data-path="../commands/zunion.html">
+            
+                <a href="../commands/zunion.html">
+            
+                    
+                    Zunion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.283" data-path="../commands/zunionstore.html">
+            
+                <a href="../commands/zunionstore.html">
+            
+                    
+                    Zunionstore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Topics
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="acl.html">
+            
+                <a href="acl.html">
+            
+                    
+                    Acl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="ARM.html">
+            
+                <a href="ARM.html">
+            
+                    
+                    ARM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="benchmarks.html">
+            
+                <a href="benchmarks.html">
+            
+                    
+                    Benchmarks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="client-side-caching.html">
+            
+                <a href="client-side-caching.html">
+            
+                    
+                    Client Side Caching
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="clients.html">
+            
+                <a href="clients.html">
+            
+                    
+                    Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="cluster-spec.html">
+            
+                <a href="cluster-spec.html">
+            
+                    
+                    Cluster Spec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="cluster-tutorial.html">
+            
+                <a href="cluster-tutorial.html">
+            
+                    
+                    Cluster Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="data-types-intro.html">
+            
+                <a href="data-types-intro.html">
+            
+                    
+                    Data Types Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="data-types.html">
+            
+                <a href="data-types.html">
+            
+                    
+                    Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="debugging.html">
+            
+                <a href="debugging.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="distlock.html">
+            
+                <a href="distlock.html">
+            
+                    
+                    Distlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="encryption.html">
+            
+                <a href="encryption.html">
+            
+                    
+                    Encryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    Faq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="gopher.html">
+            
+                <a href="gopher.html">
+            
+                    
+                    Gopher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="governance.html">
+            
+                <a href="governance.html">
+            
+                    
+                    Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="indexes.html">
+            
+                <a href="indexes.html">
+            
+                    
+                    Indexes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="internals-eventlib.html">
+            
+                <a href="internals-eventlib.html">
+            
+                    
+                    Internals Eventlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="internals-rediseventlib.html">
+            
+                <a href="internals-rediseventlib.html">
+            
+                    
+                    Internals Rediseventlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="internals-sds.html">
+            
+                <a href="internals-sds.html">
+            
+                    
+                    Internals Sds
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="internals-vm.html">
+            
+                <a href="internals-vm.html">
+            
+                    
+                    Internals Vm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="internals.html">
+            
+                <a href="internals.html">
+            
+                    
+                    Internals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="latency-monitor.html">
+            
+                <a href="latency-monitor.html">
+            
+                    
+                    Latency Monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="latency.html">
+            
+                <a href="latency.html">
+            
+                    
+                    Latency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="ldb.html">
+            
+                <a href="ldb.html">
+            
+                    
+                    Ldb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.27" data-path="license.html">
+            
+                <a href="license.html">
+            
+                    
+                    License
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.28" data-path="lru-cache.html">
+            
+                <a href="lru-cache.html">
+            
+                    
+                    Lru Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.29" data-path="mass-insert.html">
+            
+                <a href="mass-insert.html">
+            
+                    
+                    Mass Insert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.30" data-path="memory-optimization.html">
+            
+                <a href="memory-optimization.html">
+            
+                    
+                    Memory Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.31" data-path="modules-api-ref.html">
+            
+                <a href="modules-api-ref.html">
+            
+                    
+                    Modules Api Ref
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.32" data-path="modules-blocking-ops.html">
+            
+                <a href="modules-blocking-ops.html">
+            
+                    
+                    Modules Blocking Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.33" data-path="modules-intro.html">
+            
+                <a href="modules-intro.html">
+            
+                    
+                    Modules Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.34" data-path="modules-native-types.html">
+            
+                <a href="modules-native-types.html">
+            
+                    
+                    Modules Native Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.35" data-path="notifications.html">
+            
+                <a href="notifications.html">
+            
+                    
+                    Notifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.36" data-path="partitioning.html">
+            
+                <a href="partitioning.html">
+            
+                    
+                    Partitioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.37" data-path="persistence.html">
+            
+                <a href="persistence.html">
+            
+                    
+                    Persistence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.38" data-path="pipelining.html">
+            
+                <a href="pipelining.html">
+            
+                    
+                    Pipelining
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.39" data-path="problems.html">
+            
+                <a href="problems.html">
+            
+                    
+                    Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.40" data-path="protocol.html">
+            
+                <a href="protocol.html">
+            
+                    
+                    Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.41" data-path="pubsub.html">
+            
+                <a href="pubsub.html">
+            
+                    
+                    Pubsub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.42" data-path="quickstart.html">
+            
+                <a href="quickstart.html">
+            
+                    
+                    Quickstart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.43" data-path="rdd-1.html">
+            
+                <a href="rdd-1.html">
+            
+                    
+                    Rdd 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.44" data-path="rdd-2.html">
+            
+                <a href="rdd-2.html">
+            
+                    
+                    Rdd 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.45" data-path="rdd.html">
+            
+                <a href="rdd.html">
+            
+                    
+                    Rdd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.46" data-path="rediscli.html">
+            
+                <a href="rediscli.html">
+            
+                    
+                    Rediscli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.47" data-path="releases.html">
+            
+                <a href="releases.html">
+            
+                    
+                    Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.48" data-path="replication.html">
+            
+                <a href="replication.html">
+            
+                    
+                    Replication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.49" data-path="security.html">
+            
+                <a href="security.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.50" data-path="sentinel-clients.html">
+            
+                <a href="sentinel-clients.html">
+            
+                    
+                    Sentinel Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.51" data-path="sentinel.html">
+            
+                <a href="sentinel.html">
+            
+                    
+                    Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.52" data-path="signals.html">
+            
+                <a href="signals.html">
+            
+                    
+                    Signals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.53" data-path="sponsors.html">
+            
+                <a href="sponsors.html">
+            
+                    
+                    Sponsors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.54" data-path="streams-intro.html">
+            
+                <a href="streams-intro.html">
+            
+                    
+                    Streams Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.55" data-path="trademark.html">
+            
+                <a href="trademark.html">
+            
+                    
+                    Trademark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.56" data-path="transactions.html">
+            
+                <a href="transactions.html">
+            
+                    
+                    Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.57" data-path="twitter-clone.html">
+            
+                <a href="twitter-clone.html">
+            
+                    
+                    Twitter Clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.58" data-path="virtual-memory.html">
+            
+                <a href="virtual-memory.html">
+            
+                    
+                    Virtual Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.59" data-path="whos-using-redis.html">
+            
+                <a href="whos-using-redis.html">
+            
+                    
+                    Whos Using Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Streams Intro</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#xFEFF;# Introduction to Redis Streams</p>
+<p>The Stream is a new data type introduced with Redis 5.0, which models a <em>log data structure</em> in a more abstract way. However the essence of a log is still intact: like a log file, often implemented as a file open in append only mode, Redis Streams are primarily an append only data structure. At least conceptually, because being an abstract data type represented in memory, Redis Streams implement powerful operations to overcome the limitations of a log file.</p>
+<p>What makes Redis streams the most complex type of Redis, despite the data structure itself being quite simple, is the fact that it implements additional, non mandatory features: a set of blocking operations allowing consumers to wait for new data added to a stream by producers, and in addition to that a concept called <strong>Consumer Groups</strong>.</p>
+<p>Consumer groups were initially introduced by the popular messaging system Kafka (TM). Redis reimplements a similar idea in completely different terms, but the goal is the same: to allow a group of clients to cooperate consuming a different portion of the same stream of messages.</p>
+<h2 id="streams-basics">Streams basics</h2>
+<p>For the goal of understanding what Redis Streams are and how to use them, we will ignore all the advanced features, and instead focus on the data structure itself, in terms of commands used to manipulate and access it. This is, basically, the part which is common to most of the other Redis data types, like Lists, Sets, Sorted Sets and so forth. However, note that lists also have an optional more complex blocking API, exported by commands like <strong>BLPOP</strong> and similar. So streams are not much different than lists in this regard, it&apos;s just that the additional API is more complex and more powerful.</p>
+<p>Because Streams are an append only data structure, the fundamental write command, called <strong>XADD</strong>, appends a new entry into the specified stream. A stream entry is not just a string, but is instead composed of one or multiple field-value pairs. This way, each entry of a stream is already structured, like an append only file written in CSV format where multiple separated fields are present in each line.</p>
+<pre class="language-"><code>&gt; XADD mystream * sensor-id 1234 temperature 19.8
+1518951480106-0
+</code></pre><p>The above call to the <strong>XADD</strong> command adds an entry <code>sensor-id: 1234, temperature: 19.8</code> to the stream at key <code>mystream</code>, using an auto-generated entry ID, which is the one returned by the command, specifically <code>1518951480106-0</code>. It gets as its first argument the key name <code>mystream</code>, the second argument is the entry ID that identifies every entry inside a stream. However, in this case, we passed <code>*</code> because we want the server to generate a new ID for us. Every new ID will be monotonically increasing, so in more simple terms, every new entry added will have a higher ID compared to all the past entries. Auto-generation of IDs by the server is almost always what you want, and the reasons for specifying an ID explicitly are very rare. We&apos;ll talk more about this later. The fact that each Stream entry has an ID is another similarity with log files, where line numbers, or the byte offset inside the file, can be used in order to identify a given entry. Returning back at our <strong>XADD</strong> example, after the key name and ID, the next arguments are the field-value pairs composing our stream entry.</p>
+<p>It is possible to get the number of items inside a Stream just using the <strong>XLEN</strong> command:</p>
+<pre class="language-"><code>&gt; XLEN mystream
+(integer) 1
+</code></pre><h3 id="entry-ids">Entry IDs</h3>
+<p>The entry ID returned by the <strong>XADD</strong> command, and identifying univocally each entry inside a given stream, is composed of two parts:</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>millisecondsTime</span><span class="token punctuation">&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sequenceNumber</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>The milliseconds time part is actually the local time in the local Redis node generating the stream ID, however if the current milliseconds time happens to be smaller than the previous entry time, then the previous entry time is used instead, so if a clock jumps backward the monotonically incrementing ID property still holds. The sequence number is used for entries created in the same millisecond. Since the sequence number is 64 bit wide, in practical terms there are no limits to the number of entries that can be generated within the same millisecond.</p>
+<p>The format of such IDs may look strange at first, and the gentle reader may wonder why the time is part of the ID. The reason is that Redis streams support range queries by ID. Because the ID is related to the time the entry is generated, this gives the ability to query for time ranges basically for free. We will see this soon while covering the <strong>XRANGE</strong> command.</p>
+<p>If for some reason the user needs incremental IDs that are not related to time but are actually associated to another external system ID, as previously mentioned, the <strong>XADD</strong> command can take an explicit ID instead of the <code>*</code> wildcard ID that triggers auto-generation, like in the following examples:</p>
+<pre class="language-"><code>&gt; XADD somestream 0-1 field value
+0-1
+&gt; XADD somestream 0-2 foo bar
+0-2
+</code></pre><p>Note that in this case, the minimum ID is 0-1 and that the command will not accept an ID equal or smaller than a previous one:</p>
+<pre class="language-"><code>&gt; XADD somestream 0-1 foo bar
+(error) ERR The ID specified in XADD is equal or smaller than the target stream top item
+</code></pre><h2 id="getting-data-from-streams">Getting data from Streams</h2>
+<p>Now we are finally able to append entries in our stream via <strong>XADD</strong>. However, while appending data to a stream is quite obvious, the way streams can be queried in order to extract data is not so obvious. If we continue with the analogy of the log file, one obvious way is to mimic what we normally do with the Unix command <code>tail -f</code>, that is, we may start to listen in order to get the new messages that are appended to the stream. Note that unlike the blocking list operations of Redis, where a given element will reach a single client which is blocking in a <em>pop style</em> operation like <strong>BLPOP</strong>, with streams we want multiple consumers to see the new messages appended to the stream (the same way many <code>tail -f</code> processes can see what is added to a log). Using the traditional terminology we want the streams to be able to <em>fan out</em> messages to multiple clients.</p>
+<p>However, this is just one potential access mode. We could also see a stream in quite a different way: not as a messaging system, but as a <em>time series store</em>. In this case, maybe it&apos;s also useful to get the new messages appended, but another natural query mode is to get messages by ranges of time, or alternatively to iterate the messages using a cursor to incrementally check all the history. This is definitely another useful access mode.</p>
+<p>Finally, if we see a stream from the point of view of consumers, we may want to access the stream in yet another way, that is, as a stream of messages that can be partitioned to multiple consumers that are processing such messages, so that groups of consumers can only see a subset of the messages arriving in a single stream. In this way, it is possible to scale the message processing across different consumers, without single consumers having to process all the messages: each consumer will just get different messages to process. This is basically what Kafka (TM) does with consumer groups. Reading messages via consumer groups is yet another interesting mode of reading from a Redis Stream.</p>
+<p>Redis Streams support all the three query modes described above via different commands. The next sections will show them all, starting from the simplest and more direct to use: range queries.</p>
+<h3 id="querying-by-range-xrange-and-xrevrange">Querying by range: XRANGE and XREVRANGE</h3>
+<p>To query the stream by range we are only required to specify two IDs, <em>start</em> and <em>end</em>. The range returned will include the elements having start or end as ID, so the range is inclusive. The two special IDs <code>-</code> and <code>+</code> respectively mean the smallest and the greatest ID possible.</p>
+<pre class="language-"><code>&gt; XRANGE mystream - +
+1) 1) 1518951480106-0
+   2) 1) &quot;sensor-id&quot;
+      2) &quot;1234&quot;
+      3) &quot;temperature&quot;
+      4) &quot;19.8&quot;
+2) 1) 1518951482479-0
+   2) 1) &quot;sensor-id&quot;
+      2) &quot;9999&quot;
+      3) &quot;temperature&quot;
+      4) &quot;18.2&quot;
+</code></pre><p>Each entry returned is an array of two items: the ID and the list of field-value pairs. We already said that the entry IDs have a relation with the time, because the part at the left of the <code>-</code> character is the Unix time in milliseconds of the local node that created the stream entry, at the moment the entry was created (however note that streams are replicated with fully specified <strong>XADD</strong> commands, so the replicas will have identical IDs to the master). This means that I could query a range of time using <strong>XRANGE</strong>. In order to do so, however, I may want to omit the sequence part of the ID: if omitted, in the start of the range it will be assumed to be 0, while in the end part it will be assumed to be the maximum sequence number available. This way, querying using just two milliseconds Unix times, we get all the entries that were generated in that range of time, in an inclusive way. For instance, if I want to query a two milliseconds period I could use:</p>
+<pre class="language-"><code>&gt; XRANGE mystream 1518951480106 1518951480107
+1) 1) 1518951480106-0
+   2) 1) &quot;sensor-id&quot;
+      2) &quot;1234&quot;
+      3) &quot;temperature&quot;
+      4) &quot;19.8&quot;
+</code></pre><p>I have only a single entry in this range, however in real data sets, I could query for ranges of hours, or there could be many items in just two milliseconds, and the result returned could be huge. For this reason, <strong>XRANGE</strong> supports an optional <strong>COUNT</strong> option at the end. By specifying a count, I can just get the first <em>N</em> items. If I want more, I can get the last ID returned, increment the sequence part by one, and query again. Let&apos;s see this in the following example. We start adding 10 items with <strong>XADD</strong> (I won&apos;t show that, lets assume that the stream <code>mystream</code> was populated with 10 items). To start my iteration, getting 2 items per command, I start with the full range, but with a count of 2.</p>
+<pre class="language-"><code>&gt; XRANGE mystream - + COUNT 2
+1) 1) 1519073278252-0
+   2) 1) &quot;foo&quot;
+      2) &quot;value_1&quot;
+2) 1) 1519073279157-0
+   2) 1) &quot;foo&quot;
+      2) &quot;value_2&quot;
+</code></pre><p>In order to continue the iteration with the next two items, I have to pick the last ID returned, that is <code>1519073279157-0</code> and add the prefix <code>(</code> to it. The resulting exclusive range interval, that is <code>(1519073279157-0</code> in this case, can now be used as the new <em>start</em> argument for the next <strong>XRANGE</strong> call:</p>
+<pre class="language-"><code>&gt; XRANGE mystream (1519073279157-0 + COUNT 2
+1) 1) 1519073280281-0
+   2) 1) &quot;foo&quot;
+      2) &quot;value_3&quot;
+2) 1) 1519073281432-0
+   2) 1) &quot;foo&quot;
+      2) &quot;value_4&quot;
+</code></pre><p>And so forth. Since <strong>XRANGE</strong> complexity is <em>O(log(N))</em> to seek, and then <em>O(M)</em> to return M elements, with a small count the command has a logarithmic time complexity, which means that each step of the iteration is fast. So <strong>XRANGE</strong> is also the de facto <em>streams iterator</em> and does not require an <strong>XSCAN</strong> command.</p>
+<p>The command <strong>XREVRANGE</strong> is the equivalent of <strong>XRANGE</strong> but returning the elements in inverted order, so a practical use for <strong>XREVRANGE</strong> is to check what is the last item in a Stream:</p>
+<pre class="language-"><code>&gt; XREVRANGE mystream + - COUNT 1
+1) 1) 1519073287312-0
+   2) 1) &quot;foo&quot;
+      2) &quot;value_10&quot;
+</code></pre><p>Note that the <strong>XREVRANGE</strong> command takes the <em>start</em> and <em>stop</em> arguments in reverse order.</p>
+<h2 id="listening-for-new-items-with-xread">Listening for new items with XREAD</h2>
+<p>When we do not want to access items by a range in a stream, usually what we want instead is to <em>subscribe</em> to new items arriving to the stream. This concept may appear related to Redis Pub/Sub, where you subscribe to a channel, or to Redis blocking lists, where you wait for a key to get new elements to fetch, but there are fundamental differences in the way you consume a stream:</p>
+<ol>
+<li>A stream can have multiple clients (consumers) waiting for data. Every new item, by default, will be delivered to <em>every consumer</em> that is waiting for data in a given stream. This behavior is different than blocking lists, where each consumer will get a different element. However, the ability to <em>fan out</em> to multiple consumers is similar to Pub/Sub.</li>
+<li>While in Pub/Sub messages are <em>fire and forget</em> and are never stored anyway, and while when using blocking lists, when a message is received by the client it is <em>popped</em> (effectively removed) from the list, streams work in a fundamentally different way. All the messages are appended in the stream indefinitely (unless the user explicitly asks to delete entries): different consumers will know what is a new message from its point of view by remembering the ID of the last message received.</li>
+<li>Streams Consumer Groups provide a level of control that Pub/Sub or blocking lists cannot achieve, with different groups for the same stream, explicit acknowledgment of processed items, ability to inspect the pending items, claiming of unprocessed messages, and coherent history visibility for each single client, that is only able to see its private past history of messages.</li>
+</ol>
+<p>The command that provides the ability to listen for new messages arriving into a stream is called <strong>XREAD</strong>. It&apos;s a bit more complex than <strong>XRANGE</strong>, so we&apos;ll start showing simple forms, and later the whole command layout will be provided.</p>
+<pre class="language-"><code>&gt; XREAD COUNT 2 STREAMS mystream 0
+1) 1) &quot;mystream&quot;
+   2) 1) 1) 1519073278252-0
+         2) 1) &quot;foo&quot;
+            2) &quot;value_1&quot;
+      2) 1) 1519073279157-0
+         2) 1) &quot;foo&quot;
+            2) &quot;value_2&quot;
+</code></pre><p>The above is the non-blocking form of <strong>XREAD</strong>. Note that the <strong>COUNT</strong> option is not mandatory, in fact the only mandatory option of the command is the <strong>STREAMS</strong> option, that specifies a list of keys together with the corresponding maximum ID already seen for each stream by the calling consumer, so that the command will provide the client only with messages with an ID greater than the one we specified.</p>
+<p>In the above command we wrote <code>STREAMS mystream 0</code> so we want all the messages in the Stream <code>mystream</code> having an ID greater than <code>0-0</code>. As you can see in the example above, the command returns the key name, because actually it is possible to call this command with more than one key to read from different streams at the same time. I could write, for instance: <code>STREAMS mystream otherstream 0 0</code>. Note how after the <strong>STREAMS</strong> option we need to provide the key names, and later the IDs. For this reason, the <strong>STREAMS</strong> option must always be the last one.</p>
+<p>Apart from the fact that <strong>XREAD</strong> can access multiple streams at once, and that we are able to specify the last ID we own to just get newer messages, in this simple form the command is not doing something so different compared to <strong>XRANGE</strong>. However, the interesting part is that we can turn <strong>XREAD</strong> into a <em>blocking command</em> easily, by specifying the <strong>BLOCK</strong> argument:</p>
+<pre class="language-"><code>&gt; XREAD BLOCK 0 STREAMS mystream $
+</code></pre><p>Note that in the example above, other than removing <strong>COUNT</strong>, I specified the new <strong>BLOCK</strong> option with a timeout of 0 milliseconds (that means to never timeout). Moreover, instead of passing a normal ID for the stream <code>mystream</code> I passed the special ID <code>$</code>. This special ID means that <strong>XREAD</strong> should use as last ID the maximum ID already stored in the stream <code>mystream</code>, so that we will receive only <em>new</em> messages, starting from the time we started listening. This is similar to the <code>tail -f</code> Unix command in some way.</p>
+<p>Note that when the <strong>BLOCK</strong> option is used, we do not have to use the special ID <code>$</code>. We can use any valid ID. If the command is able to serve our request immediately without blocking, it will do so, otherwise it will block. Normally if we want to consume the stream starting from new entries, we start with the ID <code>$</code>, and after that we continue using the ID of the last message received to make the next call, and so forth.</p>
+<p>The blocking form of <strong>XREAD</strong> is also able to listen to multiple Streams, just by specifying multiple key names. If the request can be served synchronously because there is at least one stream with elements greater than the corresponding ID we specified, it returns with the results. Otherwise, the command will block and will return the items of the first stream which gets new data (according to the specified ID).</p>
+<p>Similarly to blocking list operations, blocking stream reads are <em>fair</em> from the point of view of clients waiting for data, since the semantics is FIFO style. The first client that blocked for a given stream will be the first to be unblocked when new items are available.</p>
+<p><strong>XREAD</strong> has no other options than <strong>COUNT</strong> and <strong>BLOCK</strong>, so it&apos;s a pretty basic command with a specific purpose to attach consumers to one or multiple streams. More powerful features to consume streams are available using the consumer groups API, however reading via consumer groups is implemented by a different command called <strong>XREADGROUP</strong>, covered in the next section of this guide.</p>
+<h2 id="consumer-groups">Consumer groups</h2>
+<p>When the task at hand is to consume the same stream from different clients, then <strong>XREAD</strong> already offers a way to <em>fan-out</em> to N clients, potentially also using replicas in order to provide more read scalability. However in certain problems what we want to do is not to provide the same stream of messages to many clients, but to provide a <em>different subset</em> of messages from the same stream to many clients. An obvious case where this is useful is that of messages which are slow to process: the ability to have N different workers that will receive different parts of the stream allows us to scale message processing, by routing different messages to different workers that are ready to do more work.</p>
+<p>In practical terms, if we imagine having three consumers C1, C2, C3, and a stream that contains the messages 1, 2, 3, 4, 5, 6, 7 then what we want is to serve the messages according to the following diagram:</p>
+<pre class="language-"><code>1 -&gt; C1
+2 -&gt; C2
+3 -&gt; C3
+4 -&gt; C1
+5 -&gt; C2
+6 -&gt; C3
+7 -&gt; C1
+</code></pre><p>In order to achieve this, Redis uses a concept called <em>consumer groups</em>. It is very important to understand that Redis consumer groups have nothing to do, from an implementation standpoint, with Kafka (TM) consumer groups. Yet they are similar in functionality, so I decided to keep Kafka&apos;s (TM) terminology, as it originaly popularized this idea.</p>
+<p>A consumer group is like a <em>pseudo consumer</em> that gets data from a stream, and actually serves multiple consumers, providing certain guarantees:</p>
+<ol>
+<li>Each message is served to a different consumer so that it is not possible that the same message will be delivered to multiple consumers.</li>
+<li>Consumers are identified, within a consumer group, by a name, which is a case-sensitive string that the clients implementing consumers must choose. This means that even after a disconnect, the stream consumer group retains all the state, since the client will claim again to be the same consumer. However, this also means that it is up to the client to provide a unique identifier.</li>
+<li>Each consumer group has the concept of the <em>first ID never consumed</em> so that, when a consumer asks for new messages, it can provide just messages that were not previously delivered.</li>
+<li>Consuming a message, however, requires an explicit acknowledgment using a specific command. Redis interperts the acknowledgment as: this message was correctly processed so it can be evicted from the consumer group.</li>
+<li>A consumer group tracks all the messages that are currently pending, that is, messages that were delivered to some consumer of the consumer group, but are yet to be acknowledged as processed. Thanks to this feature, when accessing the message history of a stream, each consumer <em>will only see messages that were delivered to it</em>.</li>
+</ol>
+<p>In a way, a consumer group can be imagined as some <em>amount of state</em> about a stream:</p>
+<pre class="language-"><code>+----------------------------------------+
+| consumer_group_name: mygroup           |
+| consumer_group_stream: somekey         |
+| last_delivered_id: 1292309234234-92    |
+|                                        |
+| consumers:                             |
+|    &quot;consumer-1&quot; with pending messages  |
+|       1292309234234-4                  |
+|       1292309234232-8                  |
+|    &quot;consumer-42&quot; with pending messages |
+|       ... (and so forth)               |
++----------------------------------------+
+</code></pre><p>If you see this from this point of view, it is very simple to understand what a consumer group can do, how it is able to just provide consumers with their history of pending messages, and how consumers asking for new messages will just be served with message IDs greater than <code>last_delivered_id</code>. At the same time, if you look at the consumer group as an auxiliary data structure for Redis streams, it is obvious that a single stream can have multiple consumer groups, that have a different set of consumers. Actually, it is even possible for the same stream to have clients reading without consumer groups via <strong>XREAD</strong>, and clients reading via <strong>XREADGROUP</strong> in different consumer groups.</p>
+<p>Now it&apos;s time to zoom in to see the fundamental consumer group commands. They are the following:</p>
+<ul>
+<li><strong>XGROUP</strong> is used in order to create, destroy and manage consumer groups.</li>
+<li><strong>XREADGROUP</strong> is used to read from a stream via a consumer group.</li>
+<li><strong>XACK</strong> is the command that allows a consumer to mark a pending message as correctly processed.</li>
+</ul>
+<h2 id="creating-a-consumer-group">Creating a consumer group</h2>
+<p>Assuming I have a key <code>mystream</code> of type stream already existing, in order to create a consumer group I just need to do the following:</p>
+<pre class="language-"><code>&gt; XGROUP CREATE mystream mygroup $
+OK
+</code></pre><p>As you can see in the command above when creating the consumer group we have to specify an ID, which in the example is just <code>$</code>. This is needed because the consumer group, among the other states, must have an idea about what message to serve next at the first consumer connecting, that is, what was the <em>last message ID</em> when the group was just created. If we provide <code>$</code> as we did, then only new messages arriving in the stream from now on will be provided to the consumers in the group. If we specify <code>0</code> instead the consumer group will consume <em>all</em> the messages in the stream history to start with. Of course, you can specify any other valid ID. What you know is that the consumer group will start delivering messages that are greater than the ID you specify. Because <code>$</code> means the current greatest ID in the stream, specifying <code>$</code> will have the effect of consuming only new messages.</p>
+<p><code>XGROUP CREATE</code> also supports creating the stream automatically, if it doesn&apos;t exist, using the optional <code>MKSTREAM</code> subcommand as the last argument:</p>
+<pre class="language-"><code>&gt; XGROUP CREATE newstream mygroup $ MKSTREAM
+OK
+</code></pre><p>Now that the consumer group is created we can immediately try to read messages via the consumer group using the <strong>XREADGROUP</strong> command. We&apos;ll read from consumers, that we will call Alice and Bob, to see how the system will return different messages to Alice or Bob.</p>
+<p><strong>XREADGROUP</strong> is very similar to <strong>XREAD</strong> and provides the same <strong>BLOCK</strong> option, otherwise it is a synchronous command. However there is a <em>mandatory</em> option that must be always specified, which is <strong>GROUP</strong> and has two arguments: the name of the consumer group, and the name of the consumer that is attempting to read. The option <strong>COUNT</strong> is also supported and is identical to the one in <strong>XREAD</strong>.</p>
+<p>Before reading from the stream, let&apos;s put some messages inside:</p>
+<pre class="language-"><code>&gt; XADD mystream * message apple
+1526569495631-0
+&gt; XADD mystream * message orange
+1526569498055-0
+&gt; XADD mystream * message strawberry
+1526569506935-0
+&gt; XADD mystream * message apricot
+1526569535168-0
+&gt; XADD mystream * message banana
+1526569544280-0
+</code></pre><p>Note: <em>here message is the field name, and the fruit is the associated value, remember that stream items are small dictionaries.</em></p>
+<p>It is time to try reading something using the consumer group:</p>
+<pre class="language-"><code>&gt; XREADGROUP GROUP mygroup Alice COUNT 1 STREAMS mystream &gt;
+1) 1) &quot;mystream&quot;
+   2) 1) 1) 1526569495631-0
+         2) 1) &quot;message&quot;
+            2) &quot;apple&quot;
+</code></pre><p><strong>XREADGROUP</strong> replies are just like <strong>XREAD</strong> replies. Note however the <code>GROUP <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>group-name</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>consumer-name</span><span class="token punctuation">&gt;</span></span></code> provided above. It states that I want to read from the stream using the consumer group <code>mygroup</code> and I&apos;m the consumer <code>Alice</code>. Every time a consumer performs an operation with a consumer group, it must specify its name, uniquely identifying this consumer inside the group.</p>
+<p>There is another very important detail in the command line above, after the mandatory <strong>STREAMS</strong> option the ID requested for the key <code>mystream</code> is the special ID <code>&gt;</code>. This special ID is only valid in the context of consumer groups, and it means: <strong>messages never delivered to other consumers so far</strong>.</p>
+<p>This is almost always what you want, however it is also possible to specify a real ID, such as <code>0</code> or any other valid ID, in this case, however, what happens is that we request from <strong>XREADGROUP</strong> to just provide us with the <strong>history of pending messages</strong>, and in such case, will never see new messages in the group. So basically <strong>XREADGROUP</strong> has the following behavior based on the ID we specify:</p>
+<ul>
+<li>If the ID is the special ID <code>&gt;</code> then the command will return only new messages never delivered to other consumers so far, and as a side effect, will update the consumer group&apos;s <em>last ID</em>.</li>
+<li>If the ID is any other valid numerical ID, then the command will let us access our <em>history of pending messages</em>. That is, the set of messages that were delivered to this specified consumer (identified by the provided name), and never acknowledged so far with <strong>XACK</strong>.</li>
+</ul>
+<p>We can test this behavior immediately specifying an ID of 0, without any <strong>COUNT</strong> option: we&apos;ll just see the only pending message, that is, the one about apples:</p>
+<pre class="language-"><code>&gt; XREADGROUP GROUP mygroup Alice STREAMS mystream 0
+1) 1) &quot;mystream&quot;
+   2) 1) 1) 1526569495631-0
+         2) 1) &quot;message&quot;
+            2) &quot;apple&quot;
+</code></pre><p>However, if we acknowledge the message as processed, it will no longer be part of the pending messages history, so the system will no longer report anything:</p>
+<pre class="language-"><code>&gt; XACK mystream mygroup 1526569495631-0
+(integer) 1
+&gt; XREADGROUP GROUP mygroup Alice STREAMS mystream 0
+1) 1) &quot;mystream&quot;
+   2) (empty list or set)
+</code></pre><p>Don&apos;t worry if you yet don&apos;t know how <strong>XACK</strong> works, the idea is just that processed messages are no longer part of the history that we can access.</p>
+<p>Now it&apos;s Bob&apos;s turn to read something:</p>
+<pre class="language-"><code>&gt; XREADGROUP GROUP mygroup Bob COUNT 2 STREAMS mystream &gt;
+1) 1) &quot;mystream&quot;
+   2) 1) 1) 1526569498055-0
+         2) 1) &quot;message&quot;
+            2) &quot;orange&quot;
+      2) 1) 1526569506935-0
+         2) 1) &quot;message&quot;
+            2) &quot;strawberry&quot;
+</code></pre><p>Bob asked for a maximum of two messages and is reading via the same group <code>mygroup</code>. So what happens is that Redis reports just <em>new</em> messages. As you can see the &quot;apple&quot; message is not delivered, since it was already delivered to Alice, so Bob gets orange and strawberry, and so forth.</p>
+<p>This way Alice, Bob, and any other consumer in the group, are able to read different messages from the same stream, to read their history of yet to process messages, or to mark messages as processed. This allows creating different topologies and semantics for consuming messages from a stream.</p>
+<p>There are a few things to keep in mind:</p>
+<ul>
+<li>Consumers are auto-created the first time they are mentioned, no need for explicit creation.</li>
+<li>Even with <strong>XREADGROUP</strong> you can read from multiple keys at the same time, however for this to work, you need to create a consumer group with the same name in every stream. This is not a common need, but it is worth mentioning that the feature is technically available.</li>
+<li><strong>XREADGROUP</strong> is a <em>write command</em> because even if it reads from the stream, the consumer group is modified as a side effect of reading, so it can only be called on master instances.</li>
+</ul>
+<p>An example of a consumer implementation, using consumer groups, written in the Ruby language could be the following. The Ruby code is aimed to be readable by virtually any experienced programmer, even if they do not know Ruby:</p>
+<pre class="language-"><code class="lang-ruby"><span class="token keyword">require</span> <span class="token string">&apos;redis&apos;</span>
+
+<span class="token keyword">if</span> <span class="token constant">ARGV</span><span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span>
+    puts <span class="token string">&quot;Please specify a consumer name&quot;</span>
+    exit <span class="token number">1</span>
+<span class="token keyword">end</span>
+
+<span class="token constant">ConsumerName</span> <span class="token operator">=</span> <span class="token constant">ARGV</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token constant">GroupName</span> <span class="token operator">=</span> <span class="token string">&quot;mygroup&quot;</span>
+r <span class="token operator">=</span> <span class="token constant">Redis</span><span class="token punctuation">.</span><span class="token keyword">new</span>
+
+<span class="token class-name">def</span> process_message<span class="token punctuation">(</span>id<span class="token punctuation">,</span>msg<span class="token punctuation">)</span>
+    puts <span class="token string">&quot;[<span class="token interpolation"><span class="token delimiter tag">#{</span><span class="token constant">ConsumerName</span><span class="token delimiter tag">}</span></span>] <span class="token interpolation"><span class="token delimiter tag">#{</span>id<span class="token delimiter tag">}</span></span> = <span class="token interpolation"><span class="token delimiter tag">#{</span>msg<span class="token punctuation">.</span>inspect<span class="token delimiter tag">}</span></span>&quot;</span>
+<span class="token keyword">end</span>
+
+<span class="token variable">$lastid</span> <span class="token operator">=</span> <span class="token string">&apos;0-0&apos;</span>
+
+puts <span class="token string">&quot;Consumer <span class="token interpolation"><span class="token delimiter tag">#{</span><span class="token constant">ConsumerName</span><span class="token delimiter tag">}</span></span> starting...&quot;</span>
+check_backlog <span class="token operator">=</span> <span class="token keyword">true</span>
+<span class="token keyword">while</span> <span class="token keyword">true</span>
+    <span class="token comment"># Pick the ID based on the iteration: the first time we want to</span>
+    <span class="token comment"># read our pending messages, in case we crashed and are recovering.</span>
+    <span class="token comment"># Once we consumed our history, we can start getting new messages.</span>
+    <span class="token keyword">if</span> check_backlog
+        myid <span class="token operator">=</span> <span class="token variable">$lastid</span>
+    <span class="token keyword">else</span>
+        myid <span class="token operator">=</span> <span class="token string">&apos;&gt;&apos;</span>
+    <span class="token keyword">end</span>
+
+    items <span class="token operator">=</span> r<span class="token punctuation">.</span>xreadgroup<span class="token punctuation">(</span><span class="token string">&apos;GROUP&apos;</span><span class="token punctuation">,</span><span class="token constant">GroupName</span><span class="token punctuation">,</span><span class="token constant">ConsumerName</span><span class="token punctuation">,</span><span class="token string">&apos;BLOCK&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;2000&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;COUNT&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;10&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;STREAMS&apos;</span><span class="token punctuation">,</span><span class="token symbol">:my_stream_key</span><span class="token punctuation">,</span>myid<span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> items <span class="token operator">==</span> <span class="token keyword">nil</span>
+        puts <span class="token string">&quot;Timeout!&quot;</span>
+        <span class="token keyword">next</span>
+    <span class="token keyword">end</span>
+
+    <span class="token comment"># If we receive an empty reply, it means we were consuming our history</span>
+    <span class="token comment"># and that the history is now empty. Let&apos;s start to consume new messages.</span>
+    check_backlog <span class="token operator">=</span> <span class="token keyword">false</span> <span class="token keyword">if</span> items<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span>
+
+    items<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token keyword">each</span><span class="token punctuation">{</span><span class="token operator">|</span>i<span class="token operator">|</span>
+        id<span class="token punctuation">,</span>fields <span class="token operator">=</span> i
+
+        <span class="token comment"># Process the message</span>
+        process_message<span class="token punctuation">(</span>id<span class="token punctuation">,</span>fields<span class="token punctuation">)</span>
+
+        <span class="token comment"># Acknowledge the message as processed</span>
+        r<span class="token punctuation">.</span>xack<span class="token punctuation">(</span><span class="token symbol">:my_stream_key</span><span class="token punctuation">,</span><span class="token constant">GroupName</span><span class="token punctuation">,</span>id<span class="token punctuation">)</span>
+
+        <span class="token variable">$lastid</span> <span class="token operator">=</span> id
+    <span class="token punctuation">}</span>
+<span class="token keyword">end</span>
+</code></pre>
+<p>As you can see the idea here is to start by consuming the history, that is, our list of pending messages. This is useful because the consumer may have crashed before, so in the event of a restart we want to re-read messages that were delivered to us without getting acknowledged. Note that we might process a message multiple times or one time (at least in the case of consumer failures, but there are also the limits of Redis persistence and replication involved, see the specific section about this topic).</p>
+<p>Once the history was consumed, and we get an empty list of messages, we can switch to use the <code>&gt;</code> special ID in order to consume new messages.</p>
+<h2 id="recovering-from-permanent-failures">Recovering from permanent failures</h2>
+<p>The example above allows us to write consumers that participate in the same consumer group, each taking a subset of messages to process, and when recovering from failures re-reading the pending messages that were delivered just to them. However in the real world consumers may permanently fail and never recover. What happens to the pending messages of the consumer that never recovers after stopping for any reason?</p>
+<p>Redis consumer groups offer a feature that is used in these situations in order to <em>claim</em> the pending messages of a given consumer so that such messages will change ownership and will be re-assigned to a different consumer. The feature is very explicit. A consumer has to inspect the list of pending messages, and will have to claim specific messages using a special command, otherwise the server will leave the messages pending forever and assigned to the old consumer. In this way different applications can choose if to use such a feature or not, and exactly how to use it.</p>
+<p>The first step of this process is just a command that provides observability of pending entries in the consumer group and is called <strong>XPENDING</strong>.
+This is a read-only command which is always safe to call and will not change ownership of any message.
+In its simplest form, the command is called with two arguments, which are the name of the stream and the name of the consumer group.</p>
+<pre class="language-"><code>&gt; XPENDING mystream mygroup
+1) (integer) 2
+2) 1526569498055-0
+3) 1526569506935-0
+4) 1) 1) &quot;Bob&quot;
+      2) &quot;2&quot;
+</code></pre><p>When called in this way the command outputs the total number of pending messages in the consumer group, only two messages in this case, the lower and higher message ID among the pending messages, and finally a list of consumers and the number of pending messages they have.
+We have only Bob with two pending messages because the single message that Alice requested was acknowledged using <strong>XACK</strong>.</p>
+<p>We can ask for more information by giving more arguments to <strong>XPENDING</strong>, because the full command signature is the following:</p>
+<pre class="language-"><code>XPENDING <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>key</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupname</span><span class="token punctuation">&gt;</span></span> [<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>start-id</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>end-id</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>count</span><span class="token punctuation">&gt;</span></span> [<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>consumer-name</span><span class="token punctuation">&gt;</span></span>]]
+</code></pre><p>By providing a start and end ID (that can be just <code>-</code> and <code>+</code> as in <strong>XRANGE</strong>) and a count to control the amount of information returned by the command, we are able to know more about the pending messages. The optional final argument, the consumer name, is used if we want to limit the output to just messages pending for a given consumer, but won&apos;t use this feature in the following example.</p>
+<pre class="language-"><code>&gt; XPENDING mystream mygroup - + 10
+1) 1) 1526569498055-0
+   2) &quot;Bob&quot;
+   3) (integer) 74170458
+   4) (integer) 1
+2) 1) 1526569506935-0
+   2) &quot;Bob&quot;
+   3) (integer) 74170458
+   4) (integer) 1
+</code></pre><p>Now we have the details for each message: the ID, the consumer name, the <em>idle time</em> in milliseconds, which is how much milliseconds have passed since the last time the message was delivered to some consumer, and finally the number of times that a given message was delivered.
+We have two messages from Bob, and they are idle for 74170458 milliseconds, about 20 hours.</p>
+<p>Note that nobody prevents us from checking what the first message content was by just using <strong>XRANGE</strong>.</p>
+<pre class="language-"><code>&gt; XRANGE mystream 1526569498055-0 1526569498055-0
+1) 1) 1526569498055-0
+   2) 1) &quot;message&quot;
+      2) &quot;orange&quot;
+</code></pre><p>We have just to repeat the same ID twice in the arguments. Now that we have some idea, Alice may decide that after 20 hours of not processing messages, Bob will probably not recover in time, and it&apos;s time to <em>claim</em> such messages and resume the processing in place of Bob. To do so, we use the <strong>XCLAIM</strong> command.</p>
+<p>This command is very complex and full of options in its full form, since it is used for replication of consumer groups changes, but we&apos;ll use just the arguments that we need normally. In this case it is as simple as:</p>
+<pre class="language-"><code>XCLAIM <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>key</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>group</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>consumer</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>min-idle-time</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ID-1</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ID-2</span><span class="token punctuation">&gt;</span></span> ... <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ID-N</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>Basically we say, for this specific key and group, I want that the message IDs specified will change ownership, and will be assigned to the specified consumer name <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>consumer</span><span class="token punctuation">&gt;</span></span></code>. However, we also provide a minimum idle time, so that the operation will only work if the idle time of the mentioned messages is greater than the specified idle time. This is useful because maybe two clients are retrying to claim a message at the same time:</p>
+<pre class="language-"><code>Client 1: XCLAIM mystream mygroup Alice 3600000 1526569498055-0
+Client 2: XCLAIM mystream mygroup Lora 3600000 1526569498055-0
+</code></pre><p>However claiming a message, as a side effect will reset its idle time! And will increment its number of deliveries counter, so the second client will fail claiming it. In this way we avoid trivial re-processing of messages (even if in the general case you cannot obtain exactly once processing).</p>
+<p>This is the result of the command execution:</p>
+<pre class="language-"><code>&gt; XCLAIM mystream mygroup Alice 3600000 1526569498055-0
+1) 1) 1526569498055-0
+   2) 1) &quot;message&quot;
+      2) &quot;orange&quot;
+</code></pre><p>The message was successfully claimed by Alice, that can now process the message and acknowledge it, and move things forward even if the original consumer is not recovering.</p>
+<p>It is clear from the example above that as a side effect of successfully claiming a given message, the <strong>XCLAIM</strong> command also returns it. However this is not mandatory. The <strong>JUSTID</strong> option can be used in order to return just the IDs of the message successfully claimed. This is useful if you want to reduce the bandwidth used between the client and the server (and also the performance of the command) and you are not interested in the message because your consumer is implemented in a way that it will rescan the history of pending messages from time to time.</p>
+<p>Claiming may also be implemented by a separate process: one that just checks the list of pending messages, and assigns idle messages to consumers that appear to be active. Active consumers can be obtained using one of the observability features of Redis streams. This is the topic of the next section.</p>
+<h2 id="automatic-claiming">Automatic claiming</h2>
+<p>The <code>XAUTOCLAIM</code> command, added in Redis 6.2, implements the claiming process that we&apos;ve described above.
+<code>XPENDING</code> and <code>XCLAIM</code> provide the basic building blocks for different types of recovery mechanisms.
+This command optimizes the generic process by having Redis manage it and offers a simple solution for most recovery needs.</p>
+<p><code>XAUTOCLAIM</code> identifies idle pending messages and transfers ownership of them to a consumer.
+The command&apos;s signature looks like this:</p>
+<pre class="language-"><code>XAUTOCLAIM <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>key</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>group</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>consumer</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>min-idle-time</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>start</span><span class="token punctuation">&gt;</span></span> [COUNT count] [JUSTID]
+</code></pre><p>So, in the example above, I could have used automatic claiming to claim a single message like this:</p>
+<pre class="language-"><code>&gt; XAUTOCLAIM mystream mygroup Alice 3600000 0-0 COUNT 1
+1) 1526569498055-0
+2) 1) 1526569498055-0
+   2) 1) &quot;message&quot;
+      2) &quot;orange&quot;
+</code></pre><p>Like <code>XCLAIM</code>, the command replies with an array of the claimed messages, but it also returns a stream ID that allows iterating the pending entries.
+The stream ID is a cursor, and I can use it in my next call to continue in claiming idle pending messages:</p>
+<pre class="language-"><code>&gt; XAUTOCLAIM mystream mygroup Lora 3600000 1526569498055-0 COUNT 1
+1) 0-0
+2) 1) 1526569506935-0
+   2) 1) &quot;message&quot;
+      2) &quot;strawberry&quot;
+</code></pre><p>When <code>XAUTOCLAIM</code> returns the &quot;0-0&quot; stream ID as a cursor, that means that it reached the end of the consumer group pending entries list.
+That doesn&apos;t mean that there are no new idle pending messages, so the process continues by calling <code>XAUTOCLAIM</code> from the beginning of the stream.</p>
+<h2 id="claiming-and-the-delivery-counter">Claiming and the delivery counter</h2>
+<p>The counter that you observe in the <strong>XPENDING</strong> output is the number of deliveries of each message. The counter is incremented in two ways: when a message is successfully claimed via <strong>XCLAIM</strong> or when an <strong>XREADGROUP</strong> call is used in order to access the history of pending messages.</p>
+<p>When there are failures, it is normal that messages will be delivered multiple times, but eventually they usually get processed and acknowledged. However there might be a problem processing some specific message, because it is corrupted or crafted in a way that triggers a bug in the processing code. In such a case what happens is that consumers will continuously fail to process this particular message. Because we have the counter of the delivery attempts, we can use that counter to detect messages that for some reason are not processable. So once the deliveries counter reaches a given large number that you chose, it is probably wiser to put such messages in another stream and send a notification to the system administrator. This is basically the way that Redis Streams implements the <em>dead letter</em> concept.</p>
+<h2 id="streams-observability">Streams observability</h2>
+<p>Messaging systems that lack observability are very hard to work with. Not knowing who is consuming messages, what messages are pending, the set of consumer groups active in a given stream, makes everything opaque. For this reason, Redis Streams and consumer groups have different ways to observe what is happening. We already covered <strong>XPENDING</strong>, which allows us to inspect the list of messages that are under processing at a given moment, together with their idle time and number of deliveries.</p>
+<p>However we may want to do more than that, and the <strong>XINFO</strong> command is an observability interface that can be used with sub-commands in order to get information about streams or consumer groups.</p>
+<p>This command uses subcommands in order to show different information about the status of the stream and its consumer groups. For instance <strong>XINFO STREAM <key></key></strong> reports information about the stream itself.</p>
+<pre class="language-"><code>&gt; XINFO STREAM mystream
+ 1) length
+ 2) (integer) 13
+ 3) radix-tree-keys
+ 4) (integer) 1
+ 5) radix-tree-nodes
+ 6) (integer) 2
+ 7) groups
+ 8) (integer) 2
+ 9) first-entry
+10) 1) 1526569495631-0
+    2) 1) &quot;message&quot;
+       2) &quot;apple&quot;
+11) last-entry
+12) 1) 1526569544280-0
+    2) 1) &quot;message&quot;
+       2) &quot;banana&quot;
+</code></pre><p>The output shows information about how the stream is encoded internally, and also shows the first and last message in the stream. Another piece of information available is the number of consumer groups associated with this stream. We can dig further asking for more information about the consumer groups.</p>
+<pre class="language-"><code>&gt; XINFO GROUPS mystream
+1) 1) name
+   2) &quot;mygroup&quot;
+   3) consumers
+   4) (integer) 2
+   5) pending
+   6) (integer) 2
+   7) last-delivered-id
+   8) &quot;1588152489012-0&quot;
+2) 1) name
+   2) &quot;some-other-group&quot;
+   3) consumers
+   4) (integer) 1
+   5) pending
+   6) (integer) 0
+   7) last-delivered-id
+   8) &quot;1588152498034-0&quot;
+</code></pre><p>As you can see in this and in the previous output, the <strong>XINFO</strong> command outputs a sequence of field-value items. Because it is an observability command this allows the human user to immediately understand what information is reported, and allows the command to report more information in the future by adding more fields without breaking compatibility with older clients. Other commands that must be more bandwidth efficient, like <strong>XPENDING</strong>, just report the information without the field names.</p>
+<p>The output of the example above, where the <strong>GROUPS</strong> subcommand is used, should be clear observing the field names. We can check in more detail the state of a specific consumer group by checking the consumers that are registered in the group.</p>
+<pre class="language-"><code>&gt; XINFO CONSUMERS mystream mygroup
+1) 1) name
+   2) &quot;Alice&quot;
+   3) pending
+   4) (integer) 1
+   5) idle
+   6) (integer) 9104628
+2) 1) name
+   2) &quot;Bob&quot;
+   3) pending
+   4) (integer) 1
+   5) idle
+   6) (integer) 83841983
+</code></pre><p>In case you do not remember the syntax of the command, just ask the command itself for help:</p>
+<pre class="language-"><code>&gt; XINFO HELP
+1) XINFO <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>subcommand</span><span class="token punctuation">&gt;</span></span> arg arg ... arg. Subcommands are:
+2) CONSUMERS <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>key</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupname</span><span class="token punctuation">&gt;</span></span>  -- Show consumer groups of group <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupname</span><span class="token punctuation">&gt;</span></span>.
+3) GROUPS <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>key</span><span class="token punctuation">&gt;</span></span>                 -- Show the stream consumer groups.
+4) STREAM <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>key</span><span class="token punctuation">&gt;</span></span>                 -- Show information about the stream.
+5) HELP                         -- Print this help.
+</code></pre><h2 id="differences-with-kafka-tm-partitions">Differences with Kafka (TM) partitions</h2>
+<p>Consumer groups in Redis streams may resemble in some way Kafka (TM) partitioning-based consumer groups, however note that Redis streams are, in practical terms, very different. The partitions are only <em>logical</em> and the messages are just put into a single Redis key, so the way the different clients are served is based on who is ready to process new messages, and not from which partition clients are reading. For instance, if the consumer C3 at some point fails permanently, Redis will continue to serve C1 and C2 all the new messages arriving, as if now there are only two <em>logical</em> partitions.</p>
+<p>Similarly, if a given consumer is much faster at processing messages than the other consumers, this consumer will receive proportionally more messages in the same unit of time. This is possible since Redis tracks all the unacknowledged messages explicitly, and remembers who received which message and the ID of the first message never delivered to any consumer.</p>
+<p>However, this also means that in Redis if you really want to partition messages in the same stream into multiple Redis instances, you have to use multiple keys and some sharding system such as Redis Cluster or some other application-specific sharding system. A single Redis stream is not automatically partitioned to multiple instances.</p>
+<p>We could say that schematically the following is true:</p>
+<ul>
+<li>If you use 1 stream -&gt; 1 consumer, you are processing messages in order.</li>
+<li>If you use N streams with N consumers, so that only a given consumer hits a subset of the N streams, you can scale the above model of 1 stream -&gt; 1 consumer.</li>
+<li>If you use 1 stream -&gt; N consumers, you are load balancing to N consumers, however in that case, messages about the same logical item may be consumed out of order, because a given consumer may process message 3 faster than another consumer is processing message 4.</li>
+</ul>
+<p>So basically Kafka partitions are more similar to using N different Redis keys, while Redis consumer groups are a server-side load balancing system of messages from a given stream to N different consumers.</p>
+<h2 id="capped-streams">Capped Streams</h2>
+<p>Many applications do not want to collect data into a stream forever. Sometimes it is useful to have at maximum a given number of items inside a stream, other times once a given size is reached, it is useful to move data from Redis to a storage which is not in memory and not as fast but suited to store the history for, potentially, decades to come. Redis streams have some support for this. One is the <strong>MAXLEN</strong> option of the <strong>XADD</strong> command. This option is very simple to use:</p>
+<pre class="language-"><code>&gt; XADD mystream MAXLEN 2 * value 1
+1526654998691-0
+&gt; XADD mystream MAXLEN 2 * value 2
+1526654999635-0
+&gt; XADD mystream MAXLEN 2 * value 3
+1526655000369-0
+&gt; XLEN mystream
+(integer) 2
+&gt; XRANGE mystream - +
+1) 1) 1526654999635-0
+   2) 1) &quot;value&quot;
+      2) &quot;2&quot;
+2) 1) 1526655000369-0
+   2) 1) &quot;value&quot;
+      2) &quot;3&quot;
+</code></pre><p>Using <strong>MAXLEN</strong> the old entries are automatically evicted when the specified length is reached, so that the stream is left at a constant size. There is currently no option to tell the stream to just retain items that are not older than a given period, because such command, in order to run consistently, would potentially block for a long time in order to evict items. Imagine for example what happens if there is an insertion spike, then a long pause, and another insertion, all with the same maximum time. The stream would block to evict the data that became too old during the pause. So it is up to the user to do some planning and understand what is the maximum stream length desired. Moreover, while the length of the stream is proportional to the memory used, trimming by time is less simple to control and anticipate: it depends on the insertion rate which often changes over time (and when it does not change, then to just trim by size is trivial).</p>
+<p>However trimming with <strong>MAXLEN</strong> can be expensive: streams are represented by macro nodes into a radix tree, in order to be very memory efficient. Altering the single macro node, consisting of a few tens of elements, is not optimal. So it&apos;s possible to use the command in the following special form:</p>
+<pre class="language-"><code>XADD mystream MAXLEN ~ 1000 * ... entry fields here ...
+</code></pre><p>The <code>~</code> argument between the <strong>MAXLEN</strong> option and the actual count means, I don&apos;t really need this to be exactly 1000 items. It can be 1000 or 1010 or 1030, just make sure to save at least 1000 items. With this argument, the trimming is performed only when we can remove a whole node. This makes it much more efficient, and it is usually what you want.</p>
+<p>There is also the <strong>XTRIM</strong> command, which performs something very similar to what the <strong>MAXLEN</strong> option does above, except that it can be run by itself:</p>
+<pre class="language-"><code>&gt; XTRIM mystream MAXLEN 10
+</code></pre><p>Or, as for the <strong>XADD</strong> option:</p>
+<pre class="language-"><code>&gt; XTRIM mystream MAXLEN ~ 10
+</code></pre><p>However, <strong>XTRIM</strong> is designed to accept different trimming strategies. Another trimming strategy is <strong>MINID</strong>, that evicts entries with IDs lower than the one specified.</p>
+<p>As <strong>XTRIM</strong> is an explicit command, the user is expected to know about the possible shortcomings of different trimming strategies.</p>
+<p>Another useful eviction strategy that may be added to <strong>XTRIM</strong> in the future, is to remove by a range of IDs to ease use of <strong>XRANGE</strong> and <strong>XTRIM</strong> to move data from Redis to other storage systems if needed.</p>
+<h2 id="special-ids-in-the-streams-api">Special IDs in the streams API</h2>
+<p>You may have noticed that there are several special IDs that can be used in the Redis API. Here is a short recap, so that they can make more sense in the future.</p>
+<p>The first two special IDs are <code>-</code> and <code>+</code>, and are used in range queries with the <code>XRANGE</code> command. Those two IDs respectively mean the smallest ID possible (that is basically <code>0-1</code>) and the greatest ID possible (that is <code>18446744073709551615-18446744073709551615</code>). As you can see it is a lot cleaner to write <code>-</code> and <code>+</code> instead of those numbers.</p>
+<p>Then there are APIs where we want to say, the ID of the item with the greatest ID inside the stream. This is what <code>$</code> means. So for instance if I want only new entries with <code>XREADGROUP</code> I use this ID to signify I already have all the existing entries, but not the new ones that will be inserted in the future. Similarly when I create or set the ID of a consumer group, I can set the last delivered item to <code>$</code> in order to just deliver new entries to the consumers in the group.</p>
+<p>As you can see <code>$</code> does not mean <code>+</code>, they are two different things, as <code>+</code> is the greatest ID possible in every possible stream, while <code>$</code> is the greatest ID in a given stream containing given entries. Moreover APIs will usually only understand <code>+</code> or <code>$</code>, yet it was useful to avoid loading a given symbol with multiple meanings.</p>
+<p>Another special ID is <code>&gt;</code>, that is a special meaning only related to consumer groups and only when the <code>XREADGROUP</code> command is used. This special ID means that we want only entries that were never delivered to other consumers so far. So basically the <code>&gt;</code> ID is the <em>last delivered ID</em> of a consumer group.</p>
+<p>Finally the special ID <code>*</code>, that can be used only with the <code>XADD</code> command, means to auto select an ID for us for the new entry.</p>
+<p>So we have <code>-</code>, <code>+</code>, <code>$</code>, <code>&gt;</code> and <code>*</code>, and all have a different meaning, and most of the times, can be used in different contexts.</p>
+<h2 id="persistence-replication-and-message-safety">Persistence, replication and message safety</h2>
+<p>A Stream, like any other Redis data structure, is asynchronously replicated to replicas and persisted into AOF and RDB files. However what may not be so obvious is that also the consumer groups full state is propagated to AOF, RDB and replicas, so if a message is pending in the master, also the replica will have the same information. Similarly, after a restart, the AOF will restore the consumer groups&apos; state.</p>
+<p>However note that Redis streams and consumer groups are persisted and replicated using the Redis default replication, so:</p>
+<ul>
+<li>AOF must be used with a strong fsync policy if persistence of messages is important in your application.</li>
+<li>By default the asynchronous replication will not guarantee that <strong>XADD</strong> commands or consumer groups state changes are replicated: after a failover something can be missing depending on the ability of replicas to receive the data from the master.</li>
+<li>The <strong>WAIT</strong> command may be used in order to force the propagation of the changes to a set of replicas. However note that while this makes it very unlikely that data is lost, the Redis failover process as operated by Sentinel or Redis Cluster performs only a <em>best effort</em> check to failover to the replica which is the most updated, and under certain specific failure conditions may promote a replica that lacks some data.</li>
+</ul>
+<p>So when designing an application using Redis streams and consumer groups, make sure to understand the semantical properties your application should have during failures, and configure things accordingly, evaluating whether it is safe enough for your use case.</p>
+<h2 id="removing-single-items-from-a-stream">Removing single items from a stream</h2>
+<p>Streams also have a special command for removing items from the middle of a stream, just by ID. Normally for an append only data structure this may look like an odd feature, but it is actually useful for applications involving, for instance, privacy regulations. The command is called <strong>XDEL</strong> and receives the name of the stream followed by the IDs to delete:</p>
+<pre class="language-"><code>&gt; XRANGE mystream - + COUNT 2
+1) 1) 1526654999635-0
+   2) 1) &quot;value&quot;
+      2) &quot;2&quot;
+2) 1) 1526655000369-0
+   2) 1) &quot;value&quot;
+      2) &quot;3&quot;
+&gt; XDEL mystream 1526654999635-0
+(integer) 1
+&gt; XRANGE mystream - + COUNT 2
+1) 1) 1526655000369-0
+   2) 1) &quot;value&quot;
+      2) &quot;3&quot;
+</code></pre><p>However in the current implementation, memory is not really reclaimed until a macro node is completely empty, so you should not abuse this feature.</p>
+<h2 id="zero-length-streams">Zero length streams</h2>
+<p>A difference between streams and other Redis data structures is that when the other data structures no longer have any elements, as a side effect of calling commands that remove elements, the key itself will be removed. So for instance, a sorted set will be completely removed when a call to <strong>ZREM</strong> will remove the last element in the sorted set. Streams, on the other hand, are allowed to stay at zero elements, both as a result of using a <strong>MAXLEN</strong> option with a count of zero (<strong>XADD</strong> and <strong>XTRIM</strong> commands), or because <strong>XDEL</strong> was called.</p>
+<p>The reason why such an asymmetry exists is because Streams may have associated consumer groups, and we do not want to lose the state that the consumer groups defined just because there are no longer any items in the stream. Currently the stream is not deleted even when it has no associated consumer groups, but this may change in the future.</p>
+<h2 id="total-latency-of-consuming-a-message">Total latency of consuming a message</h2>
+<p>Non blocking stream commands like XRANGE and XREAD or XREADGROUP without the BLOCK option are served synchronously like any other Redis command, so to discuss latency of such commands is meaningless: it is more interesting to check the time complexity of the commands in the Redis documentation. It should be enough to say that stream commands are at least as fast as sorted set commands when extracting ranges, and that <code>XADD</code> is very fast and can easily insert from half a million to one million items per second in an average machine if pipelining is used.</p>
+<p>However latency becomes an interesting parameter if we want to understand the delay of processing a message, in the context of blocking consumers in a consumer group, from the moment the message is produced via <code>XADD</code>, to the moment the message is obtained by the consumer because <code>XREADGROUP</code> returned with the message.</p>
+<h2 id="how-serving-blocked-consumers-work">How serving blocked consumers work</h2>
+<p>Before providing the results of performed tests, it is interesting to understand what model Redis uses in order to route stream messages (and in general actually how any blocking operation waiting for data is managed).</p>
+<ul>
+<li>The blocked client is referenced in an hash table that maps keys for which there is at least one blocking consumer, to a list of consumers that are waiting for such key. This way, given a key that received data, we can resolve all the clients that are waiting for such data.</li>
+<li>When a write happens, in this case when the <code>XADD</code> command is called, it calls the <code>signalKeyAsReady()</code> function. This function will put the key into a list of keys that need to be processed, because such keys may have new data for blocked consumers. Note that such <em>ready keys</em> will be processed later, so in the course of the same event loop cycle, it is possible that the key will receive other writes.</li>
+<li>Finally, before returning into the event loop, the <em>ready keys</em> are finally processed. For each key the list of clients waiting for data is scanned, and if applicable, such clients will receive the new data that arrived. In the case of streams the data is the messages in the applicable range requested by the consumer.</li>
+</ul>
+<p>As you can see, basically, before returning to the event loop both the client calling <code>XADD</code> and the clients blocked to consume messages, will have their reply in the output buffers, so the caller of <code>XADD</code> should receive the reply from Redis about at the same time the consumers will receive the new messages.</p>
+<p>This model is <em>push based</em>, since adding data to the consumers buffers will be performed directly by the action of calling <code>XADD</code>, so the latency tends to be quite predictable.</p>
+<h2 id="latency-tests-results">Latency tests results</h2>
+<p>In order to check this latency characteristics a test was performed using multiple instances of Ruby programs pushing messages having as an additional field the computer millisecond time, and Ruby programs reading the messages from the consumer group and processing them. The message processing step consisted in comparing the current computer time with the message timestamp, in order to understand the total latency.</p>
+<p>Such programs were not optimized and were executed in a small two core instance also running Redis, in order to try to provide the latency figures you could expect in non optimal conditions. Messages were produced at a rate of 10k per second, with ten simultaneous consumers consuming and acknowledging the messages from the same Redis stream and consumer group.</p>
+<p>Results obtained:</p>
+<pre class="language-"><code>Processed between 0 and 1 ms -&gt; 74.11%
+Processed between 1 and 2 ms -&gt; 25.80%
+Processed between 2 and 3 ms -&gt; 0.06%
+Processed between 3 and 4 ms -&gt; 0.01%
+Processed between 4 and 5 ms -&gt; 0.02%
+</code></pre><p>So 99.9% of requests have a latency &lt;= 2 milliseconds, with the outliers that remain still very close to the average.</p>
+<p>Adding a few million unacknowledged messages to the stream does not change the gist of the benchmark, with most queries still processed with very short latency.</p>
+<p>A few remarks:</p>
+<ul>
+<li>Here we processed up to 10k messages per iteration, this means that the <code>COUNT</code> parameter of XREADGROUP was set to 10000. This adds a lot of latency but is needed in order to allow the slow consumers to be able to keep with the message flow. So you can expect a real world latency that is a lot smaller.</li>
+<li>The system used for this benchmark is very slow compared to today&apos;s standards.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="sponsors.html" class="navigation navigation-prev " aria-label="Previous page: Sponsors">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="trademark.html" class="navigation navigation-next " aria-label="Next page: Trademark">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Streams Intro","level":"1.3.54","depth":2,"next":{"title":"Trademark","level":"1.3.55","depth":2,"path":"topics/trademark.md","ref":"topics/trademark.md","articles":[]},"previous":{"title":"Sponsors","level":"1.3.53","depth":2,"path":"topics/sponsors.md","ref":"topics/sponsors.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Redis 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"topics/streams-intro.md","mtime":"2021-03-03T00:55:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-03T01:00:54.363Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
